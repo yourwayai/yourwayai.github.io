@@ -3,7 +3,7 @@
 layout: home
 
 hero:
-  name: "我的开源导航"
+  name: "YourwayAI"
   text: "发现并探索优质的免费开源软件"
   tagline: 告别高昂订阅费，拥抱开源社区的力量
   actions:

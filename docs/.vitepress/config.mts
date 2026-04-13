@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 export default defineConfig({
   base: '/yourwayai/',
-  title: "开源导航站",
+  title: "yourwayAI开源导航站",
   description: "发现优质的免费开源软件",
   themeConfig: {
     // 网站顶部的导航栏

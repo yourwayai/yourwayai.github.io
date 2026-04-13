@@ -66,34 +66,59 @@ def update_config(info):
     # Define the new item
     new_item = f"{{ text: '{info['name']}', link: '/tools/{info['filename']}' }}"
     
-    # Try to find '自动化收录' category, or create it
+    # Try to find '自动化收录' category
     if '自动化收录' in content:
         # Append to existing category
+        # Look for items: [ ... ] within the '自动化收录' section
         pattern = r"(text:\s*'自动化收录'.*?items:\s*\[)(.*?)(\])"
-        def replacement(m):
+        def item_replacement(m):
             header, items, closer = m.groups()
             if new_item in items:
                 return m.group(0) # Already exists
-            separator = ", " if items.strip() else ""
-            return f"{header}{items}{separator}{new_item}{closer}"
+            
+            items_list = items.strip().split(',')
+            items_list = [i.strip() for i in items_list if i.strip()]
+            items_list.append(new_item)
+            
+            formatted_items = ",\n          ".join(items_list)
+            return f"{header}\n          {formatted_items}\n        {closer}"
         
-        new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
+        new_content = re.sub(pattern, item_replacement, content, flags=re.DOTALL)
     else:
-        # Add new category to sidebar
-        # We'll look for the end of the sidebar array
-        pattern = r"(sidebar:\s*\[)(.*?)(\],)"
-        category = f"""
+        # Add new category to the end of the sidebar array
+        # Find the sidebar array: sidebar: [ ... ]
+        pattern = r"(sidebar:\s*\[)(.*?)(\]\s*,?\s*//?\s*右上角|sidebar:\s*\[)(.*?)(\]\s*\n\s*\})"
+        # Simpler: find the last ']' before the next major section or end of themeConfig
+        # We know our sidebar ends with a ']' followed by some whitespace and ']' (for themeConfig) or similar.
+        
+        # Let's use a non-regex approach for finding the insertion point if regex is too hard
+        sidebar_start = content.find('sidebar: [')
+        if sidebar_start != -1:
+            # Find the match for the sidebar's closing bracket
+            bracket_count = 0
+            idx = sidebar_start + len('sidebar: [')
+            while idx < len(content):
+                if content[idx] == '[':
+                    bracket_count += 1
+                elif content[idx] == ']':
+                    if bracket_count == 0:
+                        # Found the closing bracket of the sidebar array
+                        insertion_point = idx
+                        category = f""",
       {{
         text: '自动化收录',
         items: [
           {new_item}
         ]
-      }},"""
-        def replacement(m):
-            start, mid, end = m.groups()
-            return f"{start}{mid}{category}{end}"
-        
-        new_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
+      }}"""
+                        new_content = content[:insertion_point].rstrip() + category + content[insertion_point:]
+                        break
+                    else:
+                        bracket_count -= 1
+                idx += 1
+        else:
+            print("Could not find sidebar in config.mts")
+            return
 
     with open(config_path, 'w', encoding='utf-8') as f:
         f.write(new_content)

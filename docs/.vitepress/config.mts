@@ -27,7 +27,13 @@ export default defineConfig({
           { text: 'Jellyfin (私人影院)', link: '/tools/jellyfin' }
         ]
       }
-    ],
+    
+      {
+        text: '自动化收录',
+        items: [
+          { text: 'the-art-of-command-line', link: '/tools/the-art-of-command-line' }
+        ]
+      },],
 
     // 右上角的社交链接
     socialLinks: [

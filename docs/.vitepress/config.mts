@@ -9,6 +9,9 @@ export default defineConfig({
   lastUpdated: true,
 
   themeConfig: {
+    // 网站Logo
+    logo: '/logo.png',
+
     // 网站顶部的导航栏
     nav: [
       { text: '首页', link: '/' },

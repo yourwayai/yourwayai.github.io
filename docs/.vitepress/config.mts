@@ -32,7 +32,7 @@ export default defineConfig({
         items: [
           { text: 'the-art-of-command-line',
           link: '/tools/the-art-of-command-line' },
-          { text: 'v8',
+          { text: 'V8 Engine',
           link: '/tools/v8' },
           { text: 'chatwoot', link: '/tools/chatwoot' }
         ]

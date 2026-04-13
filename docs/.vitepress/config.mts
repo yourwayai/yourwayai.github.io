@@ -40,7 +40,9 @@ export default defineConfig({
       {
         text: '公众号优选',
         items: [
-          { text: '本地Copilot：Tabby', link: '/tools/tabby' }
+          { text: '本地Copilot：Tabby',
+          link: '/tools/tabby' },
+          { text: 'GitHub热榜开源 Tabb...', link: '/tools/wx_20260413125042' }
         ]
       }
     ],

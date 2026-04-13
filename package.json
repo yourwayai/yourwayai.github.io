@@ -6,7 +6,8 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
-    "add-tool": "python3 scripts/add_tool.py"
+    "add-tool": "python3 scripts/add_tool.py",
+    "add-wx": "python3 scripts/add_wx.py"
   },
   "keywords": [],
   "author": "",

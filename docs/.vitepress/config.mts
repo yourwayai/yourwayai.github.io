@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  base: '/yourwayai/',
   title: "开源导航站",
   description: "发现优质的免费开源软件",
   themeConfig: {
@@ -30,7 +31,7 @@ export default defineConfig({
 
     // 右上角的社交链接
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/你的用户名' }
+      { icon: 'github', link: 'https://github.com/BruceMi321/yourwayai' }
     ]
   }
 })

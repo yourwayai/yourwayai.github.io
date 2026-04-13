@@ -30,7 +30,9 @@ export default defineConfig({
       {
         text: '自动化收录',
         items: [
-          { text: 'the-art-of-command-line', link: '/tools/the-art-of-command-line' }
+          { text: 'the-art-of-command-line',
+          link: '/tools/the-art-of-command-line' },
+          { text: 'v8', link: '/tools/v8' }
         ]
       }
     ],

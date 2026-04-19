@@ -62,6 +62,20 @@
 
       <!-- Main Content: Tool Grid -->
       <main class="main-content">
+        
+        <!-- Pinned Section -->
+        <section class="pinned-section">
+          <div class="pinned-badge">
+            <span class="pulse-dot"></span>
+            置顶推荐
+          </div>
+          <div class="pinned-content">
+            <h3 class="pinned-title">支付宝可直接付款，3分钟搞定 ChatGPT/Gemini/Claude订阅</h3>
+            <p class="pinned-desc">无需海外信用卡，安全稳定地订阅海外顶级AI大模型，彻底打破支付门槛。</p>
+            <a href="/tools/wx_20260419212858" class="pinned-link">立即阅读 →</a>
+          </div>
+        </section>
+
         <header class="main-header">
           <div class="header-title">
             <h2>📈 Trending</h2>
@@ -302,6 +316,77 @@ const tools = ref([
   flex-direction: column;
   gap: 1.5rem;
 }
+
+/* Pinned Section */
+.pinned-section {
+  background: linear-gradient(135deg, rgba(24, 216, 103, 0.1) 0%, rgba(24, 216, 103, 0.02) 100%);
+  border: 1px solid var(--vp-c-brand-1);
+  border-radius: 12px;
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 20px -5px rgba(24, 216, 103, 0.15);
+}
+
+.pinned-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background-color: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.pulse-dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--vp-c-brand-1);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(24, 216, 103, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(24, 216, 103, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(24, 216, 103, 0); }
+}
+
+.pinned-title {
+  font-size: 1.25rem !important;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  color: var(--vp-c-text-1);
+  line-height: 1.4;
+}
+
+.pinned-desc {
+  font-size: 0.9rem;
+  color: var(--vp-c-text-2);
+  margin: 0 0 1.2rem 0;
+  line-height: 1.5;
+}
+
+.pinned-link {
+  display: inline-block;
+  background-color: var(--vp-c-brand-1);
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.pinned-link:hover {
+  background-color: var(--vp-c-brand-2);
+  transform: translateY(-1px);
+}
+
 
 .main-header {
   display: flex;

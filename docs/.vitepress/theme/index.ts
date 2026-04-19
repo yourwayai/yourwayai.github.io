@@ -1,9 +1,10 @@
 import DefaultTheme from 'vitepress/theme'
 import './style.css'
+import HomeShowcase from './components/HomeShowcase.vue'
 
 export default {
   extends: DefaultTheme,
   enhanceApp({ app, router, siteData }) {
-    // You can add custom plugins or components here later
+    app.component('HomeShowcase', HomeShowcase)
   }
 }

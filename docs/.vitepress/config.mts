@@ -59,7 +59,9 @@ export default defineConfig({
         text: '公众号优选',
         collapsed: false,
         items: [
-          { text: '最强浏览器杀手 Open Ch...', link: '/tools/wx_20260413125458' }
+          { text: '最强浏览器杀手 Open Ch...',
+          link: '/tools/wx_20260413125458' },
+          { text: '手慢无：送出 5 个免手续费汇...', link: '/tools/wx_20260419212801' }
         ]
       }
     ],

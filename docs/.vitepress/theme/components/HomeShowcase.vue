@@ -1,107 +1,6 @@
 <template>
   <div class="home-showcase-container">
     <div class="showcase-content">
-      
-      <!-- Left Sidebar: Categories -->
-      <aside class="sidebar categories-sidebar">
-        <h2 class="sidebar-title">全站分类</h2>
-        
-        <div class="category-group">
-          <div class="group-title">EFFICIENCY & PRODUCTIVITY</div>
-          <ul class="category-list">
-            <li class="active">
-              <div class="cat-label"><span class="icon">📝</span> 笔记与知识库</div>
-              <span class="cat-count">2</span>
-            </li>
-            <li>
-              <div class="cat-label"><span class="icon">📅</span> 任务与项目流</div>
-              <span class="cat-count">0</span>
-            </li>
-            <li>
-              <div class="cat-label"><span class="icon">💬</span> 沟通与客服系统</div>
-              <span class="cat-count">1</span>
-            </li>
-          </ul>
-        </div>
-        
-        <div class="category-group">
-          <div class="group-title">DEVELOPER ECOSYSTEM</div>
-          <ul class="category-list">
-            <li>
-              <div class="cat-label"><span class="icon">👨‍💻</span> 终端与命令行</div>
-              <span class="cat-count">1</span>
-            </li>
-            <li>
-              <div class="cat-label"><span class="icon">⚙️</span> 核心运行环境</div>
-              <span class="cat-count">1</span>
-            </li>
-            <li>
-              <div class="cat-label"><span class="icon">🐳</span> 容器与 DevOps</div>
-              <span class="cat-count">0</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="category-group">
-          <div class="group-title">INFRASTRUCTURE & HOSTING</div>
-          <ul class="category-list">
-            <li>
-              <div class="cat-label"><span class="icon">📊</span> 监控与面板</div>
-              <span class="cat-count">0</span>
-            </li>
-            <li>
-              <div class="cat-label"><span class="icon">☁️</span> 云存储与数据库</div>
-              <span class="cat-count">0</span>
-            </li>
-            <li>
-              <div class="cat-label"><span class="icon">📡</span> 网络与安全</div>
-              <span class="cat-count">0</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="category-group">
-          <div class="group-title">LIFESTYLE & MEDIA</div>
-          <ul class="category-list">
-            <li>
-              <div class="cat-label"><span class="icon">🎬</span> 媒体与影院</div>
-              <span class="cat-count">1</span>
-            </li>
-            <li>
-              <div class="cat-label"><span class="icon">📷</span> 影像与备份</div>
-              <span class="cat-count">0</span>
-            </li>
-            <li>
-              <div class="cat-label"><span class="icon">🏠</span> 智能家居</div>
-              <span class="cat-count">0</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="category-group">
-          <div class="group-title">AI & AUTOMATION</div>
-          <ul class="category-list">
-            <li>
-              <div class="cat-label"><span class="icon">🧠</span> AI 交互与基建</div>
-              <span class="cat-count">0</span>
-            </li>
-            <li>
-              <div class="cat-label"><span class="icon">⚡</span> 自动化工作流</div>
-              <span class="cat-count">0</span>
-            </li>
-          </ul>
-        </div>
-
-        <div class="category-group">
-          <div class="group-title">FEATURED RESOURCES</div>
-          <ul class="category-list">
-            <li>
-              <div class="cat-label"><span class="icon">💡</span> 宝藏教程与专栏</div>
-              <span class="cat-count">3</span>
-            </li>
-          </ul>
-        </div>
-      </aside>
 
       <!-- Main Content: Tool Grid -->
       <main class="main-content">
@@ -277,25 +176,16 @@ const tools = computed(() => {
 
 .showcase-content {
   display: grid;
-  grid-template-columns: 260px 1fr 280px;
+  grid-template-columns: 1fr 280px;
   gap: 2rem;
   align-items: start;
 }
 
-@media (max-width: 1100px) {
-  .showcase-content {
-    grid-template-columns: 260px 1fr;
-  }
-  .right-sidebar {
-    display: none;
-  }
-}
-
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .showcase-content {
     grid-template-columns: 1fr;
   }
-  .categories-sidebar, .right-sidebar {
+  .right-sidebar {
     display: none;
   }
 }
@@ -315,65 +205,7 @@ const tools = computed(() => {
   border-bottom: 1px solid var(--vp-c-border);
 }
 
-.category-group {
-  margin-top: 0.5rem;
-}
 
-.group-title {
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: var(--vp-c-text-3);
-  margin-bottom: 0.75rem;
-  letter-spacing: 0.05em;
-}
-
-.category-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
-.category-list li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 0.75rem;
-  border-radius: 6px;
-  color: var(--vp-c-text-2);
-  font-size: 0.9rem;
-  cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-.category-list li:hover {
-  background-color: var(--vp-c-bg-soft);
-  color: var(--vp-c-text-1);
-}
-
-.category-list li.active {
-  background-color: var(--vp-c-brand-soft);
-  color: var(--vp-c-brand-1);
-  font-weight: 600;
-}
-
-.cat-label {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.cat-count {
-  background-color: var(--vp-c-bg-mute);
-  padding: 0.1rem 0.4rem;
-  border-radius: 10px;
-  font-size: 0.75rem;
-  min-width: 24px;
-  text-align: center;
-}
 
 /* Main Content Styles */
 .main-content {
@@ -549,7 +381,7 @@ const tools = computed(() => {
 /* Tool Grid */
 .tools-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 1.2rem;
 }
 

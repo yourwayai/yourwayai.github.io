@@ -112,8 +112,8 @@ def update_config(info, filename):
 
     new_item = f"{{ text: '{short_title}', link: '/tools/{filename}' }}"
     
-    if '公众号优选' in content:
-        pattern = r"(text:\s*'公众号优选'.*?items:\s*\[)(.*?)(\])"
+    if '星球专栏与优选资源' in content:
+        pattern = r"(text:\s*'星球专栏与优选资源.*?'.*?items:\s*\[)(.*?)(\])"
         def item_replacement(m):
             header, items, closer = m.groups()
             if new_item in items:
@@ -126,7 +126,7 @@ def update_config(info, filename):
         
         new_content = re.sub(pattern, item_replacement, content, flags=re.DOTALL)
     else:
-        print("Warning: '公众号优选' not found in sidebar. Please ensure this category exists.")
+        print("Warning: '星球专栏与优选资源' not found in sidebar. Please ensure this category exists.")
         return
 
     with open(config_path, 'w', encoding='utf-8') as f:

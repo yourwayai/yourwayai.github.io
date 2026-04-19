@@ -4,57 +4,100 @@
       
       <!-- Left Sidebar: Categories -->
       <aside class="sidebar categories-sidebar">
-        <h2 class="sidebar-title">Categories</h2>
+        <h2 class="sidebar-title">全站分类</h2>
+        
         <div class="category-group">
-          <div class="group-title">PLATFORM & INFRASTRUCTURE</div>
+          <div class="group-title">EFFICIENCY & PRODUCTIVITY</div>
           <ul class="category-list">
-            <li>
-              <div class="cat-label"><span class="icon">💻</span> Backend</div>
-              <span class="cat-count">5</span>
-            </li>
-            <li>
-              <div class="cat-label"><span class="icon">☁️</span> Cloud & Object Storage</div>
-              <span class="cat-count">4</span>
-            </li>
-            <li>
-              <div class="cat-label"><span class="icon">🐳</span> Containers & Docker</div>
-              <span class="cat-count">23</span>
-            </li>
             <li class="active">
-              <div class="cat-label"><span class="icon">📊</span> Dashboards & Visualization</div>
-              <span class="cat-count">39</span>
+              <div class="cat-label"><span class="icon">📝</span> 笔记与知识库</div>
+              <span class="cat-count">2</span>
             </li>
             <li>
-              <div class="cat-label"><span class="icon">🗄️</span> Databases</div>
-              <span class="cat-count">24</span>
+              <div class="cat-label"><span class="icon">📅</span> 任务与项目流</div>
+              <span class="cat-count">0</span>
             </li>
             <li>
-              <div class="cat-label"><span class="icon">🚀</span> Deployment & CI/CD</div>
-              <span class="cat-count">16</span>
-            </li>
-            <li>
-              <div class="cat-label"><span class="icon">🌐</span> Web Platforms</div>
-              <span class="cat-count">40</span>
+              <div class="cat-label"><span class="icon">💬</span> 沟通与客服系统</div>
+              <span class="cat-count">1</span>
             </li>
           </ul>
         </div>
         
         <div class="category-group">
-          <div class="group-title">DEVELOPMENT</div>
+          <div class="group-title">DEVELOPER ECOSYSTEM</div>
           <ul class="category-list">
             <li>
-              <div class="cat-label"><span class="icon">👨‍💻</span> Code & Development</div>
-              <span class="cat-count">40</span>
+              <div class="cat-label"><span class="icon">👨‍💻</span> 终端与命令行</div>
+              <span class="cat-count">1</span>
+            </li>
+            <li>
+              <div class="cat-label"><span class="icon">⚙️</span> 核心运行环境</div>
+              <span class="cat-count">1</span>
+            </li>
+            <li>
+              <div class="cat-label"><span class="icon">🐳</span> 容器与 DevOps</div>
+              <span class="cat-count">0</span>
             </li>
           </ul>
         </div>
 
         <div class="category-group">
-          <div class="group-title">NETWORKING</div>
+          <div class="group-title">INFRASTRUCTURE & HOSTING</div>
           <ul class="category-list">
             <li>
-              <div class="cat-label"><span class="icon">📡</span> Networking</div>
-              <span class="cat-count">54</span>
+              <div class="cat-label"><span class="icon">📊</span> 监控与面板</div>
+              <span class="cat-count">0</span>
+            </li>
+            <li>
+              <div class="cat-label"><span class="icon">☁️</span> 云存储与数据库</div>
+              <span class="cat-count">0</span>
+            </li>
+            <li>
+              <div class="cat-label"><span class="icon">📡</span> 网络与安全</div>
+              <span class="cat-count">0</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="category-group">
+          <div class="group-title">LIFESTYLE & MEDIA</div>
+          <ul class="category-list">
+            <li>
+              <div class="cat-label"><span class="icon">🎬</span> 媒体与影院</div>
+              <span class="cat-count">1</span>
+            </li>
+            <li>
+              <div class="cat-label"><span class="icon">📷</span> 影像与备份</div>
+              <span class="cat-count">0</span>
+            </li>
+            <li>
+              <div class="cat-label"><span class="icon">🏠</span> 智能家居</div>
+              <span class="cat-count">0</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="category-group">
+          <div class="group-title">AI & AUTOMATION</div>
+          <ul class="category-list">
+            <li>
+              <div class="cat-label"><span class="icon">🧠</span> AI 交互与基建</div>
+              <span class="cat-count">0</span>
+            </li>
+            <li>
+              <div class="cat-label"><span class="icon">⚡</span> 自动化工作流</div>
+              <span class="cat-count">0</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="category-group">
+          <div class="group-title">FEATURED RESOURCES</div>
+          <ul class="category-list">
+            <li>
+              <div class="cat-label"><span class="icon">💡</span> 宝藏教程与专栏</div>
+              <span class="cat-count">3</span>
             </li>
           </ul>
         </div>

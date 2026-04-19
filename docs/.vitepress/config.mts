@@ -32,37 +32,35 @@ export default defineConfig({
     // 网站左侧的分类侧边栏
     sidebar: [
       {
-        text: '笔记与知识库',
+        text: '效率与生产力 (Productivity)',
         collapsed: false,
         items: [
           { text: 'Outline (团队Wiki)', link: '/tools/outline' },
-          { text: 'Memos (碎片化笔记)', link: '/tools/memos' }
+          { text: 'Memos (碎片化笔记)', link: '/tools/memos' },
+          { text: 'Chatwoot (沟通与客服)', link: '/tools/chatwoot' }
         ]
       },
       {
-        text: '媒体与影音',
+        text: '开发者生态 (Developer Ecosystem)',
+        collapsed: false,
+        items: [
+          { text: '命令行的艺术 (终端)', link: '/tools/the-art-of-command-line' },
+          { text: 'V8 Engine (运行环境)', link: '/tools/v8' }
+        ]
+      },
+      {
+        text: '数字生活与媒体 (Lifestyle & Media)',
         collapsed: false,
         items: [
           { text: 'Jellyfin (私人影院)', link: '/tools/jellyfin' }
         ]
       },
       {
-        text: '自动化收录',
+        text: '星球专栏与优选资源 (Featured Resources)',
         collapsed: false,
         items: [
-          { text: '命令行的艺术', link: '/tools/the-art-of-command-line' },
-          { text: 'V8 Engine', link: '/tools/v8' },
-          { text: 'chatwoot', link: '/tools/chatwoot' }
-        ]
-      },
-      {
-        text: '公众号优选',
-        collapsed: false,
-        items: [
-          { text: '最强浏览器杀手 Open Ch...',
-          link: '/tools/wx_20260413125458' },
-          { text: '手慢无：送出 5 个免手续费汇...',
-          link: '/tools/wx_20260419212801' },
+          { text: '最强浏览器杀手 Open Ch...', link: '/tools/wx_20260413125458' },
+          { text: '手慢无：送出 5 个免手续费汇...', link: '/tools/wx_20260419212801' },
           { text: '支付宝可直接付款，3分钟搞定 ...', link: '/tools/wx_20260419212858' }
         ]
       }

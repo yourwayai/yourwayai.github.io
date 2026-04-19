@@ -132,8 +132,8 @@ def update_config(info):
 
     new_item = f"{{ text: '{info['name']}', link: '/tools/{info['filename']}' }}"
     
-    if '自动化收录' in content:
-        pattern = r"(text:\s*'自动化收录'.*?items:\s*\[)(.*?)(\])"
+    if '开发者生态 (Developer Ecosystem)' in content:
+        pattern = r"(text:\s*'开发者生态 \(Developer Ecosystem\)'.*?items:\s*\[)(.*?)(\])"
         def item_replacement(m):
             header, items, closer = m.groups()
             if new_item in items:
@@ -158,7 +158,8 @@ def update_config(info):
                         insertion_point = idx
                         category = f""",
       {{
-        text: '自动化收录',
+        text: '开发者生态 (Developer Ecosystem)',
+        collapsed: false,
         items: [
           {new_item}
         ]

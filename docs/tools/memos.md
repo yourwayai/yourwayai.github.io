@@ -1,3 +1,9 @@
+---
+title: Memos
+description: 轻量级的碎片化知识管理工具，轻松记录每一次灵感闪现。
+icon: '📝'
+category: '效率与生产力 (Productivity)'
+---
 # Memos
 
 **Memos** 是一个开源、自托管的碎片化笔记，它能帮助您像发微博、发朋友圈一样记录您的灵感、想法和待办事项。

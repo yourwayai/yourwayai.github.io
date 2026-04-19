@@ -94,7 +94,14 @@ def create_markdown(info):
     
     features_section = f"\n## ✨ 核心特性\n{info['features']}" if info['features'] else ""
 
-    content = f"""# {info['name']}
+    content = f"""---
+title: {info['name']}
+description: {info['description'][:100] + ('...' if len(info['description']) > 100 else '')}
+icon: '📦'
+category: '开发者生态 (Developer Ecosystem)'
+---
+
+# {info['name']}
 
 <p align="center">
   <img src="{info['og_image']}" alt="{info['name']} Preview" style="border-radius: 8px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);">

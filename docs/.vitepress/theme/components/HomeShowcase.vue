@@ -138,7 +138,7 @@
 
         <div class="tools-grid">
           <!-- Card 1 -->
-          <div class="tool-card" v-for="tool in tools" :key="tool.id">
+          <a :href="tool.link" class="tool-card" v-for="tool in tools" :key="tool.id" style="text-decoration: none; color: inherit;">
             <div class="tool-card-header">
               <div class="tool-icon" :style="{ backgroundColor: tool.iconBg }">{{ tool.icon }}</div>
               <div class="tool-meta-header">
@@ -157,7 +157,7 @@
             <div class="platform-tags">
               <span v-for="plat in tool.platforms" :key="plat">{{ plat }}</span>
             </div>
-          </div>
+          </a>
         </div>
       </main>
 
@@ -227,19 +227,41 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { computed } from 'vue'
 
-const tools = ref([
-  { id: 1, name: 'stirling-pdf', category: 'System Utilities', icon: 'S', iconBg: '#ff4c4c', desc: 'An all-in-one web-based toolkit for editing and manipulation of PDF files...', stars: '75.0k', views: '557', added: '4mo', platforms: ['PVE', 'Yuno', 'TrueNAS'] },
-  { id: 2, name: 'cert-warden', category: 'Security & Privacy', icon: '🔒', iconBg: '#0ea5e9', desc: 'A certificate management tool for issuing and managing SSL/TLS certificates...', stars: '489', views: '356', added: '4mo', platforms: [] },
-  { id: 3, name: 'immich', category: 'Media Streaming', icon: '📷', iconBg: '#8b5cf6', desc: 'A self-hosted photo and video backup platform with a premium mobile UI app...', stars: '94.1k', views: '329', added: '4mo', platforms: ['PVE', 'Yuno', 'TrueNAS'] },
-  { id: 4, name: 'memos', category: 'Notes & Knowledge Base', icon: '📝', iconBg: '#facc15', desc: 'A lightweight self-hosted note-taking and knowledge management system...', stars: '57.5k', views: '317', added: '4mo', platforms: ['PVE', 'Yuno', 'TrueNAS'] },
-  { id: 5, name: 'windmill', category: 'Automation & Workflows', icon: '⚡', iconBg: '#3b82f6', desc: 'A developer platform for building workflows, APIs, and scalable apps...', stars: '15.7k', views: '296', added: '4mo', platforms: ['TrueNAS'] },
-  { id: 6, name: 'checkmate', category: 'Observability', icon: '♟️', iconBg: '#14b8a6', desc: 'A self-hosted platform for monitoring service uptime, APIs, and SSL statuses...', stars: '9.4k', views: '276', added: '4mo', platforms: ['PVE'] },
-  { id: 7, name: 'outline', category: 'Notes & Knowledge Base', icon: '📓', iconBg: '#f43f5e', desc: 'A modern self-hosted wiki and team knowledge base for growing teams...', stars: '37.5k', views: '270', added: '4mo', platforms: ['PVE', 'Yuno', 'TrueNAS'] },
-  { id: 8, name: 'coolify', category: 'Deployment & CI/CD', icon: '☁️', iconBg: '#a855f7', desc: 'A self-hosted platform for deploying applications and databases easily...', stars: '51.4k', views: '283', added: '4mo', platforms: ['PVE', 'TrueNAS'] },
-  { id: 9, name: 'appwrite', category: 'Backend', icon: '🅰️', iconBg: '#ef4444', desc: 'A backend platform providing authentication, database functionality, and more...', stars: '55.0k', views: '260', added: '4mo', platforms: [] }
-])
+// Use Vite's native glob import to read all markdown frontmatter
+// This works reliably from any component location
+const modules = import.meta.glob('/tools/*.md', { eager: true })
+
+// Simple color rotation for aesthetic card backgrounds
+const colors = [
+  'rgba(24, 216, 103, 0.1)',
+  'rgba(255, 69, 0, 0.1)',
+  'rgba(0, 191, 255, 0.1)',
+  'rgba(138, 43, 226, 0.1)',
+  'rgba(255, 215, 0, 0.1)'
+]
+
+const tools = computed(() => {
+  return Object.entries(modules).map(([path, mod], index) => {
+    const fm = mod.__pageData?.frontmatter || {}
+    // Convert file path like '/tools/chatwoot.md' → '/tools/chatwoot.html'
+    const url = path.replace(/\.md$/, '.html')
+    return {
+      id: index,
+      name: fm.title || 'Untitled',
+      desc: fm.description || '',
+      category: fm.category || '未分类',
+      icon: fm.icon || '📦',
+      iconBg: colors[index % colors.length],
+      link: url,
+      stars: '-',
+      views: '-',
+      added: 'New',
+      platforms: []
+    }
+  })
+})
 </script>
 
 <style scoped>

@@ -80,7 +80,14 @@ def save_article(info):
     timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
     filename = f"wx_{timestamp}"
     
-    content = f"""# {info['title']}
+    content = f"""---
+title: {info['title'][:50]}
+description: '来自 {info['author']} 的优选资源与文章推荐'
+icon: '💡'
+category: '星球专栏与优选资源 (Featured Resources)'
+---
+
+# {info['title']}
 
 **来源**: {info['author']}
 **原文链接**: [点击前往微信阅读]({info['url']})

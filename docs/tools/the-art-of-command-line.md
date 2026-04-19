@@ -1,3 +1,9 @@
+---
+title: 命令行的艺术
+description: 终端环境日常操作的必备指南与极客神仙技巧。
+icon: '👨‍💻'
+category: '开发者生态 (Developer Ecosystem)'
+---
 # 命令行的艺术 (The Art of Command Line)
 
 <p align="center">

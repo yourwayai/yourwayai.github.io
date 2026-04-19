@@ -1,3 +1,9 @@
+---
+title: Outline
+description: 开源且美观的团队 Wiki 与知识库平台，完美适配现代协作工作流。
+icon: '📝'
+category: '效率与生产力 (Productivity)'
+---
 # Outline
 
 **Outline** 是一个现代化的自托管 Wiki 和团队知识库，设计非常优雅，是 Notion 的完美开源替代品。

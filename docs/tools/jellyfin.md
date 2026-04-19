@@ -1,3 +1,9 @@
+---
+title: Jellyfin
+description: 掌握自己媒体资源的终极私人影院解决方案，拒绝商业捆绑。
+icon: '🎬'
+category: '数字生活与媒体 (Lifestyle & Media)'
+---
 # Jellyfin
 
 **Jellyfin** 是一个自由的软件媒体系统，用于控制和管理您的媒体。它是 Emby 和 Plex 的绝佳开源替代品。

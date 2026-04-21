@@ -54,7 +54,7 @@ export default defineConfig({
         ]
       },
       {
-        text: '👨‍💻 开发者工具 (5)',
+        text: '👨‍💻 开发者工具 (6)',
         collapsed: false,
         items: [
           { text: '命令行的艺术 — 终端神技',
@@ -67,15 +67,14 @@ export default defineConfig({
           link: '/tools/hermes-agent' },
           { text: '3x-ui',
           link: '/tools/3x-ui' },
-          { text: '开源神作 Ghost：两分钟部', link: '/tools/wx_20260421130229' }
+          { text: '开源神作 Ghost：两分钟部', link: '/tools/wx_20260421130229' },
+          { text: '最强浏览器杀手 Open Chrome', link: '/tools/wx_20260413125458' }
         ]
       },
       {
-        text: '💡 微信专栏 (4)',
+        text: '💡 微信专栏 (3)',
         collapsed: false,
         items: [
-          { text: '最强浏览器杀手 Open Chrome',
-          link: '/tools/wx_20260413125458' },
           { text: '免手续费跨境汇款名额',
           link: '/tools/wx_20260419212801' },
           { text: '支付宝搞定 AI 订阅全攻略',

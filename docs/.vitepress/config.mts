@@ -62,7 +62,7 @@ export default defineConfig({
         ]
       },
       {
-        text: '💡 星球专栏 (3)',
+        text: '💡 微信专栏 (3)',
         collapsed: false,
         items: [
           { text: '最强浏览器杀手 Open Chrome', link: '/tools/wx_20260413125458' },

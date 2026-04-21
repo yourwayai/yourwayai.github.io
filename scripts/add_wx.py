@@ -84,8 +84,8 @@ def save_article(info):
 title: {info['title'][:50]}
 description: '来自 {info['author']} 的优选资源与文章推荐'
 icon: '💡'
-    if '💡 星球专栏' in content:
-        pattern = r"(text:\s*'💡 星球专栏'.*?items:\s*\[)(.*?)(\])"
+    if '💡 微信专栏' in content:
+        pattern = r"(text:\s*'💡 微信专栏.*?'.*?items:\s*\[)(.*?)(\])"
         def item_replacement(m):
             header, items, closer = m.groups()
             if new_item in items:
@@ -98,7 +98,7 @@ icon: '💡'
         
         new_content = re.sub(pattern, item_replacement, content, flags=re.DOTALL)
     else:
-        print("Warning: '星球专栏与优选资源' not found in sidebar. Please ensure this category exists.")
+        print("Warning: '微信专栏' not found in sidebar. Please ensure this category exists.")
         return
 
     with open(config_path, 'w', encoding='utf-8') as f:

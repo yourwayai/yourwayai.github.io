@@ -97,9 +97,37 @@ def create_markdown(info):
     content = f"""---
 title: {info['name']}
 description: {info['description'][:100] + ('...' if len(info['description']) > 100 else '')}
-icon: '📦'
+category: '👨‍💻 开发者工具'
+---
+# {info['name']}
+
+![{info['name']} OpenGraph Image]({info['og_image']})
+
+{info['description']}
+
+* **GitHub Repo**: [{info['full_name']}]({info['url']})
+* **Star 数**: ⭐ {info['stars']}
+{homepage_section}
+* **核心语言**: {info['language']}
+* **开源协议**: {info['license']}
+{features_section}
+"""
+    file_path = f"docs/tools/{info['filename']}.md"
+    os.makedirs("docs/tools", exist_ok=True)
+    with open(file_path, 'w', encoding='utf-8') as f:
+        f.write(content)
+    print(f"Created {file_path}")
+    return info['filename']
+
+def update_config(info, filename):
+    config_path = 'docs/.vitepress/config.mts'
+    with open(config_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+    new_item = f"{{ text: '{info['name']}', link: '/tools/{filename}' }}"
+
     if '👨‍💻 开发者工具' in content:
-        pattern = r"(text:\s*'👨‍💻 开发者工具'.*?items:\s*\[)(.*?)(\])"
+        pattern = r"(text:\s*'👨‍💻 开发者工具.*?'.*?items:\s*\[)(.*?)(\])"
         def item_replacement(m):
             header, items, closer = m.groups()
             if new_item in items:
@@ -158,7 +186,7 @@ if __name__ == "__main__":
     
     url = sys.argv[1]
     info = fetch_github_info(url)
-    create_markdown(info)
-    update_config(info)
+    filename = create_markdown(info)
+    update_config(info, filename)
     git_push(info)
     print("Done!")

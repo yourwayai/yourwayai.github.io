@@ -57,8 +57,11 @@ export default defineConfig({
         text: '👨‍💻 开发者工具 (2)',
         collapsed: false,
         items: [
-          { text: '命令行的艺术 — 终端神技', link: '/tools/the-art-of-command-line' },
-          { text: 'V8 Engine — JS 运行引擎', link: '/tools/v8' }
+          { text: '命令行的艺术 — 终端神技',
+          link: '/tools/the-art-of-command-line' },
+          { text: 'V8 Engine — JS 运行引擎',
+          link: '/tools/v8' },
+          { text: 'storybook', link: '/tools/storybook' }
         ]
       },
       {

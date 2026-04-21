@@ -63,7 +63,9 @@ export default defineConfig({
           link: '/tools/v8' },
           { text: 'storybook',
           link: '/tools/storybook' },
-          { text: 'hermes-agent', link: '/tools/hermes-agent' }
+          { text: 'hermes-agent',
+          link: '/tools/hermes-agent' },
+          { text: '3x-ui', link: '/tools/3x-ui' }
         ]
       },
       {

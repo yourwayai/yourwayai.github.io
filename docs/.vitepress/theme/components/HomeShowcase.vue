@@ -79,17 +79,27 @@
         </div>
         <div class="footer-links">
           <div class="link-group">
-            <h3>探索分类</h3>
-            <a href="/tools/outline">📝 知识管理</a>
-            <a href="/tools/chatwoot">💬 沟通协作</a>
-            <a href="/tools/jellyfin">🎬 媒体与娱乐</a>
-            <a href="/tools/the-art-of-command-line">👨‍💻 开发者工具</a>
+            <h3>Browse</h3>
+            <a href="#">All Apps</a>
+            <a href="#">Categories</a>
+            <a href="#">Self-hosted</a>
+            <a href="#">Latest Apps</a>
+            <a href="#">Trending</a>
           </div>
           <div class="link-group">
-            <h3>开源社区</h3>
-            <a href="https://github.com/yourwayai/yourwayai.github.io" target="_blank" rel="noopener">GitHub 源代码</a>
-            <a href="https://github.com/yourwayai/yourwayai.github.io/issues" target="_blank" rel="noopener">提交收录申请 (Issues)</a>
-            <a href="https://github.com/yourwayai/yourwayai.github.io/pulls" target="_blank" rel="noopener">参与共建 (PRs)</a>
+            <h3>Quick Links</h3>
+            <a href="#">Add Your App</a>
+            <a href="#">JSON Editor</a>
+            <a href="#">GitHub Repo</a>
+            <a href="#">Report Issue</a>
+            <a href="#">Contribute</a>
+          </div>
+          <div class="link-group">
+            <h3>Resources</h3>
+            <a href="#">Documentation</a>
+            <a href="#">Changelog</a>
+            <a href="#">Discussions</a>
+            <a href="#">RSS Feed</a>
           </div>
         </div>
       </div>

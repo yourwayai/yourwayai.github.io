@@ -71,7 +71,9 @@ export default defineConfig({
           link: '/tools/wx_20260421130229' },
           { text: '最强浏览器杀手 Open Chrome',
           link: '/tools/wx_20260413125458' },
-          { text: 'cookcli', link: '/tools/cookcli' }
+          { text: 'cookcli',
+          link: '/tools/cookcli' },
+          { text: 'penpot', link: '/tools/penpot' }
         ]
       },
       {

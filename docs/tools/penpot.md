@@ -1,6 +1,6 @@
 ---
 title: penpot
-description: Penpot: The open-source design tool for design and code collaboration
+description: "Penpot: The open-source design tool for design and code collaboration"
 category: '👨‍💻 开发者工具'
 ---
 # penpot

@@ -45,13 +45,21 @@
 
       <!-- Right Sidebar: Ads / Sponsored -->
       <aside class="sidebar right-sidebar">
-        <h2 class="sidebar-title sponsor-title">👑 Sponsored Tools</h2>
-        
-        <div class="sponsor-card">
-          <div class="sponsor-icon">👑</div>
-          <h3>5 Spots Available</h3>
-          <p>Be the first to sponsor!</p>
-        </div>
+        <h2 class="sidebar-title sponsor-title">👑 Sponsored</h2>
+
+        <!-- Sponsor #1: YourWayCareer -->
+        <a href="/ywc_resume_landing_page.html" target="_blank" rel="noopener" class="real-sponsor-card">
+          <div class="real-sponsor-badge">✦ 赞助商 #1</div>
+          <div class="real-sponsor-logo">📄</div>
+          <h3 class="real-sponsor-name">YourWayCareer</h3>
+          <p class="real-sponsor-tagline">高竞争岗位简历精修计划</p>
+          <ul class="real-sponsor-points">
+            <li>🎯 投行 · 咨询 · 外企管培</li>
+            <li>✍️ Bullet Point 逐行改写</li>
+            <li>🌐 英文简历精修</li>
+          </ul>
+          <div class="real-sponsor-cta">查看服务详情 →</div>
+        </a>
 
         <div class="ad-card">
           <div class="ad-icon">⭐</div>
@@ -418,9 +426,96 @@ const allTools = computed(() => {
   gap: 0.5rem;
 }
 
-.sponsor-card, .ad-card {
+/* Real Sponsor Card */
+.real-sponsor-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+  background: linear-gradient(145deg, rgba(184, 135, 70, 0.08) 0%, rgba(223, 195, 150, 0.05) 100%);
+  border: 1.5px solid rgba(184, 135, 70, 0.5);
+  border-radius: 14px;
+  padding: 1.4rem 1.2rem;
+  text-align: center;
+  text-decoration: none !important;
+  color: inherit !important;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.real-sponsor-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #b88746, #dfc396, #b88746);
+}
+
+.real-sponsor-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(184, 135, 70, 0.9);
+  box-shadow: 0 12px 30px -8px rgba(184, 135, 70, 0.25);
+}
+
+.real-sponsor-badge {
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: #b88746;
+  background: rgba(184, 135, 70, 0.12);
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.real-sponsor-logo {
+  font-size: 2.2rem;
+  margin: 0.2rem 0;
+}
+
+.real-sponsor-name {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--vp-c-text-1);
+}
+
+.real-sponsor-tagline {
+  font-size: 0.82rem;
+  color: #b88746;
+  font-weight: 600;
+  margin: 0;
+}
+
+.real-sponsor-points {
+  list-style: none;
+  padding: 0;
+  margin: 0.3rem 0;
+  text-align: left;
+  font-size: 0.78rem;
+  color: var(--vp-c-text-2);
+  line-height: 1.8;
+  width: 100%;
+}
+
+.real-sponsor-cta {
+  margin-top: 0.4rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #b88746;
+  transition: transform 0.2s;
+}
+
+.real-sponsor-card:hover .real-sponsor-cta {
+  transform: translateX(3px);
+}
+
+.ad-card {
   background-color: var(--vp-c-bg-soft);
-  border: 1px dashed var(--vp-c-border);
+  border: 1px solid var(--vp-c-border);
   border-radius: 12px;
   padding: 1.5rem;
   text-align: center;
@@ -430,24 +525,14 @@ const allTools = computed(() => {
   gap: 0.8rem;
 }
 
-.sponsor-card h3, .ad-card h3 {
+.ad-card h3 {
   font-size: 1rem;
   font-weight: 600;
   margin: 0;
 }
 
-.sponsor-card p {
-  font-size: 0.85rem;
-  color: var(--vp-c-text-2);
-  margin: 0;
-}
-
-.sponsor-icon, .ad-icon {
+.ad-icon {
   font-size: 2rem;
-}
-
-.ad-card {
-  border-style: solid;
 }
 
 .ad-benefits {

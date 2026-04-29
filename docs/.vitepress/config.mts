@@ -78,7 +78,9 @@ export default defineConfig({
           link: '/tools/penpot' },
           { text: 'goose',
           link: '/tools/goose' },
-          { text: 'FluentFlyout', link: '/tools/fluentflyout' }
+          { text: 'FluentFlyout',
+          link: '/tools/fluentflyout' },
+          { text: '开发者必备 ConvertX：', link: '/tools/wx_20260429211232' }
         ]
       },
       {

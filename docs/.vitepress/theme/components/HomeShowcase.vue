@@ -48,7 +48,7 @@
         <h2 class="sidebar-title sponsor-title">👑 Sponsored</h2>
 
         <!-- Sponsor #1: YourWayCareer -->
-        <a href="/ywc_resume_landing_page.html" target="_blank" rel="noopener" class="real-sponsor-card">
+        <a href="/sponsor/ywc-resume" target="_blank" rel="noopener" class="real-sponsor-card">
           <div class="real-sponsor-badge">✦ 赞助商 #1</div>
           <div class="real-sponsor-logo">📄</div>
           <h3 class="real-sponsor-name">YourWayCareer</h3>

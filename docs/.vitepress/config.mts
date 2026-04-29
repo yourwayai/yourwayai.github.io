@@ -26,6 +26,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '软件库', link: '/tools/outline' },
+      { text: '✨ 简历精修', link: '/sponsor/ywc-resume' },
       { text: '关于', link: '/about' }
     ],
 

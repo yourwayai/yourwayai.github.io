@@ -98,15 +98,22 @@ def categorize_article(info):
     if not categories:
         categories = ['📝 知识管理', '💬 沟通协作', '🎬 媒体与娱乐', '👨‍💻 开发者工具', '💡 微信专栏']
         
-    print("Determining category using NVIDIA LLM...")
+    print("Determining category and short title using NVIDIA LLM...")
     
     prompt = f"""
 Analyze the following markdown content of a WeChat article.
-Is this article primarily introducing or discussing a specific open-source software, developer tool, or project?
-If YES, select the most appropriate category for it from this list: {', '.join(categories)}.
-If NO, or if you are unsure, just respond with: 💡 微信专栏
+1. Determine the most appropriate category from this exact list: {', '.join(categories)}.
+   If it's an open-source project/tool, select the matching category. If unsure, default to '💡 微信专栏'.
+2. Generate a highly concise sidebar title for this article in the format 'ProjectName — Subtitle'.
+   - For open-source tools, use 'ToolName — Short Description' (e.g., 'Ghost — 开源博客系统').
+   - For articles/columns, use 'Keyword — Short Description' (e.g., 'AI 订阅 — 支付宝付款攻略').
+   - Maximum length: 15-20 characters.
 
-Important: Respond ONLY with the exact category string from the list. Do not explain. Do not wrap in quotes.
+Return ONLY a valid JSON object matching this schema exactly, nothing else:
+{{
+  "category": "the chosen category",
+  "short_title": "The generated short title"
+}}
 
 Article Title: {info['title']}
 Content Snippet:
@@ -124,7 +131,7 @@ Content Snippet:
             {"role": "user", "content": prompt}
         ],
         "temperature": 0.1,
-        "max_tokens": 50
+        "max_tokens": 100
     }
     
     try:
@@ -133,20 +140,24 @@ Content Snippet:
         data = res.json()
         ai_response = data['choices'][0]['message']['content'].strip()
         
-        # Clean up response just in case the model added quotes or punctuation
-        ai_response = ai_response.strip("\"'")
+        # Parse JSON
+        # Clean up markdown code blocks if the model added them
+        if ai_response.startswith('```json'): ai_response = ai_response[7:]
+        elif ai_response.startswith('```'): ai_response = ai_response[3:]
+        if ai_response.endswith('```'): ai_response = ai_response[:-3]
         
-        # Validate that the AI response is actually in our categories
-        for cat in categories:
-            if cat in ai_response:
-                print(f"AI Category Selected: {cat}")
-                return cat
-                
-        print(f"AI returned unexpected category: {ai_response}. Falling back to '💡 微信专栏'.")
+        result = json.loads(ai_response.strip())
+        cat = result.get('category', '💡 微信专栏')
+        short_title = result.get('short_title', info['title'][:15])
+        
+        # Validate category
+        valid_cat = cat if any(c in cat for c in categories) else '💡 微信专栏'
+        print(f"AI Category Selected: {valid_cat}, Short Title: {short_title}")
+        return valid_cat, short_title
     except Exception as e:
-        print(f"LLM API Call Failed: {e}. Falling back to default category.")
+        print(f"LLM API Call Failed or Invalid JSON: {e}. Falling back to defaults.")
         
-    return '💡 微信专栏'
+    return '💡 微信专栏', info['title'][:15]
 
 def save_article(info, category):
     # Generate a unique filename based on timestamp
@@ -177,12 +188,12 @@ date: '{current_date}'
     print(f"Created {file_path}")
     return filename
 
-def update_config(info, filename, category):
+def update_config(info, filename, category, short_title):
     config_path = 'docs/.vitepress/config.mts'
     with open(config_path, 'r', encoding='utf-8') as f:
         content = f.read()
 
-    new_item = f"{{ text: '{info['title'][:15]}', link: '/tools/{filename}' }}"
+    new_item = f"{{ text: '{short_title}', link: '/tools/{filename}' }}"
     
     # We dynamically search for the exact matching category
     # E.g. category could be "👨‍💻 开发者工具"
@@ -226,8 +237,8 @@ if __name__ == "__main__":
     
     url = sys.argv[1]
     info = fetch_wechat_article(url)
-    category = categorize_article(info)
+    category, short_title = categorize_article(info)
     filename = save_article(info, category)
-    update_config(info, filename, category)
+    update_config(info, filename, category, short_title)
     git_push(info)
     print("Done!")

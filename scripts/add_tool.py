@@ -85,12 +85,12 @@ Please format your response EXACTLY as follows (in Markdown), keeping the frontm
 
 ---
 title: {info['name']}
+short_title: '{info['name']} — [Short 4-10 char Chinese subtitle]'
 description: [Write a catchy one-line description/pain point in Chinese, max 50 chars]
 category: '👨‍💻 开发者工具'
 date: '{info['current_date']}'
 ---
 # {info['name']}：[Write a catchy subtitle]
-
 
 ![{info['name']} OpenGraph Image]({info['og_image']})
 
@@ -167,8 +167,10 @@ Important Instructions:
         # Fallback to basic structure if API fails
         return f"""---
 title: {info['name']}
+short_title: '{info['name']} — 开源项目'
 description: {info['description'][:50]}
 category: '👨‍💻 开发者工具'
+date: '{info['current_date']}'
 ---
 # {info['name']}
 
@@ -190,14 +192,19 @@ def create_markdown(info):
     with open(file_path, 'w', encoding='utf-8') as f:
         f.write(content)
     print(f"Created {file_path}")
-    return info['filename']
+    
+    # Extract short_title from generated content
+    short_title_match = re.search(r"short_title:\s*['\"]?(.*?)['\"]?\n", content)
+    display_text = short_title_match.group(1) if short_title_match else info['name']
+    
+    return info['filename'], display_text
 
-def update_config(info, filename):
+def update_config(info, filename, display_text):
     config_path = 'docs/.vitepress/config.mts'
     with open(config_path, 'r', encoding='utf-8') as f:
         content = f.read()
 
-    new_item = f"{{ text: '{info['name']}', link: '/tools/{filename}' }}"
+    new_item = f"{{ text: '{display_text}', link: '/tools/{filename}' }}"
 
     if '👨‍💻 开发者工具' in content:
         pattern = r"(text:\s*'👨‍💻 开发者工具.*?'.*?items:\s*\[)(.*?)(\])"
@@ -259,7 +266,7 @@ if __name__ == "__main__":
     
     url = sys.argv[1]
     info = fetch_github_info(url)
-    filename = create_markdown(info)
-    update_config(info, filename)
+    filename, display_text = create_markdown(info)
+    update_config(info, filename, display_text)
     git_push(info)
     print("Done!")

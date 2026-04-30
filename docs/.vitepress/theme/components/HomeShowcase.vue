@@ -108,17 +108,6 @@
           <div class="real-sponsor-cta">查看服务详情 →</div>
         </a>
 
-        <div class="ad-card">
-          <div class="ad-icon">⭐</div>
-          <h3>Advertise Here</h3>
-          <ul class="ad-benefits">
-            <li>🚀 Reach 10,000+ monthly visitors</li>
-            <li>• Highly engaged audience</li>
-            <li>• Premium visibility</li>
-          </ul>
-          <button class="cta-btn">✉️ Get Started</button>
-          <div class="ad-price">From $25/month</div>
-        </div>
       </aside>
     </div>
   </div>
@@ -169,8 +158,6 @@ const rawTools = Object.entries(modules).map(([path, mod], index) => {
     link: url,
     stars: '-',
     views: '-',
-    added: 'New',
-    platforms: [],
     date: fm.date || '2000-01-01'
   }
 })
@@ -735,21 +722,6 @@ const getRelativeTime = (dateString) => {
   transform: translateX(4px);
 }
 
-.platform-tags {
-  display: flex;
-  gap: 0.4rem;
-  flex-wrap: wrap;
-}
-
-.platform-tags span {
-  font-size: 0.65rem;
-  background-color: var(--vp-c-bg-mute);
-  padding: 0.1rem 0.3rem;
-  border-radius: 3px;
-  border: 1px solid var(--vp-c-border);
-  font-weight: 600;
-}
-
 /* Right Sidebar: Ads */
 .sponsor-title {
   display: flex;
@@ -844,58 +816,5 @@ const getRelativeTime = (dateString) => {
   transform: translateX(3px);
 }
 
-.ad-card {
-  background-color: var(--vp-c-bg-soft);
-  border: 1px solid var(--vp-c-border);
-  border-radius: 12px;
-  padding: 1.5rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.8rem;
-}
-
-.ad-card h3 {
-  font-size: 1rem;
-  font-weight: 600;
-  margin: 0;
-}
-
-.ad-icon {
-  font-size: 2rem;
-}
-
-.ad-benefits {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: left;
-  font-size: 0.8rem;
-  color: var(--vp-c-text-2);
-  line-height: 1.6;
-}
-
-.cta-btn {
-  width: 100%;
-  padding: 0.6rem;
-  background-color: var(--vp-c-bg);
-  color: var(--vp-c-text-1);
-  border: 1px solid var(--vp-c-border);
-  border-radius: 6px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-.cta-btn:hover {
-  border-color: var(--vp-c-brand-1);
-  color: var(--vp-c-brand-1);
-}
-
-.ad-price {
-  font-size: 0.75rem;
-  color: var(--vp-c-text-3);
-}
 
 </style>

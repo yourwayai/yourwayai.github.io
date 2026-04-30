@@ -1,6 +1,5 @@
 node_modules
 .DS_Store
 dist
-.vitepress/dist
-.vitepress/cache
-docs/public/ywc_resume_landing_page.html
+docs/.vitepress/dist
+docs/.vitepress/cache

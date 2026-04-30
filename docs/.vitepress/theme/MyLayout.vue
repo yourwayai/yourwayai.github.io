@@ -8,10 +8,8 @@ const { Layout } = DefaultTheme
 
 <template>
   <Layout>
-    <template #doc-footer-before>
-      <SiteFooter />
-    </template>
     <template #layout-bottom>
+      <SiteFooter />
       <ScrollToTopBottom />
     </template>
   </Layout>

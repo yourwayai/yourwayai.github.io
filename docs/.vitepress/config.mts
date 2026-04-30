@@ -84,7 +84,9 @@ export default defineConfig({
           link: '/tools/wx_20260429211232' },
           { text: '2FAuth',
           link: '/tools/2fauth' },
-          { text: 'beszel', link: '/tools/beszel' }
+          { text: 'beszel',
+          link: '/tools/beszel' },
+          { text: 'Stirling-PDF', link: '/tools/stirling-pdf' }
         ]
       },
       {

@@ -2,6 +2,7 @@
 title: FluentFlyout
 description: "Windows 11 上最美的开源媒体浮层应用，完美融合 Fluent 2 设计语言，比微软官方做得更好。"
 category: '👨‍💻 开发者工具'
+date: '2026-04-28T22:46:22+08:00'
 ---
 # FluentFlyout：Windows 11 的媒体浮层完美替代品
 

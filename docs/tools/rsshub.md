@@ -2,6 +2,7 @@
 title: RSSHub
 description: 🧡 万物皆可 RSS，一个开源、容易使用、易于扩展的 RSS 生成器
 category: '👨‍💻 开发者工具'
+date: '2026-04-30T23:02:07+08:00'
 ---
 # RSSHub：万物皆可 RSS
 

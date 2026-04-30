@@ -58,7 +58,8 @@ def fetch_github_info(url):
         'homepage': repo_data.get('homepage') or repo_data.get('html_url'),
         'og_image': og_image,
         'readme_content': readme_clean,
-        'filename': repo_name.lower()
+        'filename': repo_name.lower(),
+        'current_date': __import__('datetime').datetime.now().astimezone().isoformat()
     }
 
 def generate_rich_markdown(info):
@@ -86,8 +87,10 @@ Please format your response EXACTLY as follows (in Markdown), keeping the frontm
 title: {info['name']}
 description: [Write a catchy one-line description/pain point in Chinese, max 50 chars]
 category: '👨‍💻 开发者工具'
+date: '{info['current_date']}'
 ---
 # {info['name']}：[Write a catchy subtitle]
+
 
 ![{info['name']} OpenGraph Image]({info['og_image']})
 

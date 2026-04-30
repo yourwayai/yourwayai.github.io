@@ -3,6 +3,7 @@ title: 命令行的艺术
 description: 终端环境日常操作的必备指南与极客神仙技巧。
 icon: '👨‍💻'
 category: '开发者工具'
+date: '2026-04-13T11:17:03+08:00'
 ---
 # 命令行的艺术 (The Art of Command Line)
 

@@ -2,6 +2,7 @@
 title: Goose
 description: "Block 出品的开源 AI Agent：不只是代码补全，而是能在你的机器上自主完成安装、执行、编辑和测试全流程的智能助手。"
 category: '👨‍💻 开发者工具'
+date: '2026-04-28T22:46:02+08:00'
 ---
 # Goose：你的本地原生开源 AI Agent
 

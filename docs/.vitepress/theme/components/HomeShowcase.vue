@@ -135,7 +135,7 @@ const colors = [
 ]
 
 const allTools = computed(() => {
-  return Object.entries(modules).map(([path, mod], index) => {
+  const tools = Object.entries(modules).map(([path, mod], index) => {
     const fm = mod.default?.__pageData?.frontmatter || mod.__pageData?.frontmatter || {}
     const url = path.replace(/\.md$/, '.html')
     return {
@@ -149,9 +149,13 @@ const allTools = computed(() => {
       stars: '-',
       views: '-',
       added: 'New',
-      platforms: []
+      platforms: [],
+      date: fm.date || '2000-01-01'
     }
   })
+  
+  // Sort tools by date descending (newest first)
+  return tools.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 })
 
 </script>

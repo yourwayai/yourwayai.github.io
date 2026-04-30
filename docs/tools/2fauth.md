@@ -2,6 +2,7 @@
 title: 2FAuth
 description: 自托管的 Web 版两步验证（2FA）管理器，安全生成并管理你的动态密码。
 category: '👨‍💻 开发者工具'
+date: '2026-04-30T22:55:42+08:00'
 ---
 # 2FAuth：你的私有两步验证（2FA）令牌管家
 

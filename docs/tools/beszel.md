@@ -2,6 +2,7 @@
 title: beszel
 description: 轻量级、极简的服务器和 Docker 容器监控面板，带历史数据与告警。
 category: '👨‍💻 开发者工具'
+date: '2026-04-30T22:59:04+08:00'
 ---
 # beszel：轻巧优雅的服务器状态监控面板
 

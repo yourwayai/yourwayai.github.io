@@ -3,6 +3,7 @@ title: Jellyfin
 description: 掌握自己全高清影视与音频库的终极媒体中心解决方案，拒绝一切隐藏订阅门槛。
 icon: '🎬'
 category: '媒体与娱乐'
+date: '2026-04-13T11:07:20+08:00'
 ---
 
 # Jellyfin: 夺回影音主导权的自由多媒体串流中枢

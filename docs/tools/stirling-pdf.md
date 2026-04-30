@@ -2,6 +2,7 @@
 title: Stirling-PDF
 description: 本地托管的强大 PDF 瑞士军刀，满足你对 PDF 的一切操作需求。
 category: '👨‍💻 开发者工具'
+date: '2026-04-30T23:00:32+08:00'
 ---
 # Stirling-PDF：全能开源本地 PDF 工具箱
 

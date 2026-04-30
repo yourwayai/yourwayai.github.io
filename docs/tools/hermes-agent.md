@@ -2,6 +2,7 @@
 title: Hermes Agent — 会随你共同成长的高扩展智能体框架
 description: 搭载长程记忆存储与技能成长系统，能够跨平台接驳 MCP 的下一代开源 Agent 框架。
 category: '👨‍💻 开发者工具'
+date: '2026-04-21T11:38:05+08:00'
 ---
 
 # Hermes Agent: 伴您成长的高级智能体开发框架

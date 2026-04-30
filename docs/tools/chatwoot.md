@@ -3,6 +3,7 @@ title: Chatwoot
 description: 现代化、开源且支持自托管的客户支持平台与多渠道客服中心。
 icon: '💬'
 category: '沟通协作'
+date: '2026-04-13T11:43:30+08:00'
 ---
 # Chatwoot
 

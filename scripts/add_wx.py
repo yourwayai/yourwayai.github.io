@@ -151,6 +151,7 @@ Content Snippet:
 def save_article(info, category):
     # Generate a unique filename based on timestamp
     timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
+    current_date = datetime.now().astimezone().isoformat()
     filename = f"wx_{timestamp}"
     
     content = f"""---
@@ -158,6 +159,7 @@ title: {info['title'][:50]}
 description: '来自 {info['author']} 的优选资源与文章推荐'
 icon: '💡'
 category: '{category.replace("💡 ", "")}'
+date: '{current_date}'
 ---
 # {info['title']}
 

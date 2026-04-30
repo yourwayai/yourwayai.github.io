@@ -3,6 +3,7 @@ title: Outline
 description: 开源且美观的团队 Wiki 与知识库平台，完美适配现代协作工作流。
 icon: '📝'
 category: '知识管理'
+date: '2026-04-13T10:45:02+08:00'
 ---
 # Outline: 优雅的现代化团队知识库
 

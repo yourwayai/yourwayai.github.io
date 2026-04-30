@@ -86,7 +86,9 @@ export default defineConfig({
           link: '/tools/2fauth' },
           { text: 'beszel',
           link: '/tools/beszel' },
-          { text: 'Stirling-PDF', link: '/tools/stirling-pdf' }
+          { text: 'Stirling-PDF',
+          link: '/tools/stirling-pdf' },
+          { text: 'RSSHub', link: '/tools/rsshub' }
         ]
       },
       {

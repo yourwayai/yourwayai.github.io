@@ -19,8 +19,27 @@
 
         </section>
 
+        <!-- Control Bar -->
+        <div class="control-bar">
+          <div class="search-wrapper">
+            <span class="search-icon">🔍</span>
+            <input type="text" v-model="searchQuery" placeholder="搜索工具、专栏或关键字..." class="search-input" />
+          </div>
+          <div class="category-pills">
+            <button 
+              v-for="cat in uniqueCategories" 
+              :key="cat"
+              class="pill-btn"
+              :class="{ active: activeCategory === cat }"
+              @click="activeCategory = cat"
+            >
+              {{ cat }}
+            </button>
+          </div>
+        </div>
+
         <div class="tools-grid">
-          <a :href="tool.link" class="tool-card" v-for="tool in allTools" :key="tool.id">
+          <a :href="tool.link" class="tool-card" v-for="tool in filteredTools" :key="tool.id">
             <div class="card-glow" :style="{ background: tool.iconBg }"></div>
             <div class="tool-card-header">
               <div class="tool-icon-wrapper" :style="{ backgroundColor: tool.iconBg }">
@@ -29,6 +48,9 @@
               <div class="tool-meta-header">
                 <h3>{{ tool.name }}</h3>
                 <span class="tech-tag">{{ tool.category }}</span>
+              </div>
+              <div class="time-badge" v-if="getRelativeTime(tool.date)" :class="{ 'is-new': getRelativeTime(tool.date) === '✨ New' }">
+                {{ getRelativeTime(tool.date) }}
               </div>
             </div>
             <p class="tool-desc">{{ tool.desc }}</p>
@@ -40,6 +62,14 @@
               <div class="visit-btn">详情阅读 →</div>
             </div>
           </a>
+        </div>
+
+        <!-- Empty State -->
+        <div v-if="filteredTools.length === 0" class="empty-state">
+          <div class="empty-icon">📭</div>
+          <h3>没有找到匹配的内容</h3>
+          <p>请尝试其他关键词或分类</p>
+          <button class="reset-btn" @click="searchQuery = ''; activeCategory = '全部'">重置过滤条件</button>
         </div>
       </main>
 
@@ -120,7 +150,7 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { computed, ref } from 'vue'
 
 // Use Vite's native glob import to read all markdown frontmatter
 const modules = import.meta.glob('/tools/*.md', { eager: true })
@@ -134,30 +164,74 @@ const colors = [
   'rgba(255, 215, 0, 0.1)'
 ]
 
-const allTools = computed(() => {
-  const tools = Object.entries(modules).map(([path, mod], index) => {
-    const fm = mod.default?.__pageData?.frontmatter || mod.__pageData?.frontmatter || {}
-    const url = path.replace(/\.md$/, '.html')
-    return {
-      id: index,
-      name: fm.title || 'Untitled',
-      desc: fm.description || '',
-      category: fm.category || '未分类',
-      icon: fm.icon || '📦',
-      iconBg: colors[index % colors.length],
-      link: url,
-      stars: '-',
-      views: '-',
-      added: 'New',
-      platforms: [],
-      date: fm.date || '2000-01-01'
-    }
-  })
-  
-  // Sort tools by date descending (newest first)
-  return tools.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+const searchQuery = ref('')
+const activeCategory = ref('全部')
+
+const rawTools = Object.entries(modules).map(([path, mod], index) => {
+  const fm = mod.default?.__pageData?.frontmatter || mod.__pageData?.frontmatter || {}
+  const url = path.replace(/\.md$/, '.html')
+  return {
+    id: index,
+    name: fm.title || 'Untitled',
+    desc: fm.description || '',
+    category: fm.category || '未分类',
+    icon: fm.icon || '📦',
+    iconBg: colors[index % colors.length],
+    link: url,
+    stars: '-',
+    views: '-',
+    added: 'New',
+    platforms: [],
+    date: fm.date || '2000-01-01'
+  }
 })
 
+// Sort tools by date descending (newest first)
+const allTools = rawTools.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+
+// Compute unique categories
+const uniqueCategories = computed(() => {
+  const cats = new Set(allTools.map(t => t.category))
+  return ['全部', ...Array.from(cats)]
+})
+
+// Compute filtered tools
+const filteredTools = computed(() => {
+  let result = allTools
+
+  if (activeCategory.value !== '全部') {
+    result = result.filter(t => t.category === activeCategory.value)
+  }
+
+  if (searchQuery.value.trim()) {
+    const q = searchQuery.value.toLowerCase()
+    result = result.filter(t => 
+      t.name.toLowerCase().includes(q) || 
+      t.desc.toLowerCase().includes(q) ||
+      t.category.toLowerCase().includes(q)
+    )
+  }
+
+  return result
+})
+
+// Helper for relative time (or "New" badge)
+const getRelativeTime = (dateString) => {
+  const date = new Date(dateString)
+  if (isNaN(date.getTime())) return ''
+  
+  const now = new Date()
+  const diffTime = now - date
+  // Handle edge cases where date is slightly in the future due to timezone
+  if (diffTime < 0) return '✨ New'
+  
+  const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24))
+  
+  if (diffDays <= 7) return '✨ New'
+  if (diffDays <= 30) return `${diffDays} 天前`
+  if (diffDays <= 365) return `${Math.floor(diffDays / 30)} 个月前`
+  return `${Math.floor(diffDays / 365)} 年前`
+}
 </script>
 
 <style scoped>
@@ -282,6 +356,129 @@ const allTools = computed(() => {
 }
 
 
+/* Control Bar & Search */
+.control-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.search-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.8rem 1rem 0.8rem 3rem;
+  border-radius: 12px;
+  border: 1px solid var(--vp-c-border);
+  background-color: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 0 0 3px rgba(24, 216, 103, 0.15);
+  background-color: var(--vp-c-bg);
+}
+
+/* Category Pills */
+.category-pills {
+  display: flex;
+  gap: 0.8rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  scrollbar-width: none;
+}
+
+.category-pills::-webkit-scrollbar {
+  display: none;
+}
+
+.pill-btn {
+  white-space: nowrap;
+  padding: 0.4rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--vp-c-text-2);
+  background-color: transparent;
+  border: 1px solid var(--vp-c-border);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pill-btn:hover {
+  border-color: var(--vp-c-brand-1);
+  color: var(--vp-c-brand-1);
+}
+
+.pill-btn.active {
+  background-color: var(--vp-c-brand-1);
+  color: white;
+  border-color: var(--vp-c-brand-1);
+  box-shadow: 0 4px 12px rgba(24, 216, 103, 0.3);
+}
+
+/* Empty State */
+.empty-state {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: var(--vp-c-bg-soft);
+  border-radius: 16px;
+  border: 1px dashed var(--vp-c-border);
+  margin-top: 1rem;
+}
+
+.empty-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.8;
+}
+
+.empty-state h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.2rem;
+  color: var(--vp-c-text-1);
+}
+
+.empty-state p {
+  margin: 0 0 1.5rem 0;
+  color: var(--vp-c-text-2);
+  font-size: 0.95rem;
+}
+
+.reset-btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  background: var(--vp-c-brand-1);
+  color: white;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.reset-btn:hover {
+  opacity: 0.9;
+}
+
 /* Tool Grid */
 .tools-grid {
   display: grid;
@@ -362,6 +559,33 @@ const allTools = computed(() => {
   display: inline-block;
   margin-top: 0.5rem;
   font-weight: 600;
+}
+
+/* Time Badge */
+.time-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--vp-c-text-3);
+  background: var(--vp-c-bg-mute);
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  pointer-events: none;
+}
+
+.time-badge.is-new {
+  color: #fff;
+  background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+  box-shadow: 0 2px 8px rgba(255, 107, 107, 0.3);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-3px); }
+  100% { transform: translateY(0px); }
 }
 
 .tool-desc {

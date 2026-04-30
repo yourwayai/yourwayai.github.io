@@ -55,7 +55,7 @@ export default defineConfig({
         ]
       },
       {
-        text: '👨‍💻 开发者工具 (11)',
+        text: '👨‍💻 开发者工具 (13)',
         collapsed: false,
         items: [
           { text: '命令行的艺术 — 终端神技',

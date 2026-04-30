@@ -4,6 +4,11 @@ import requests
 import re
 import subprocess
 import base64
+import json
+
+# NVIDIA API Configuration
+NV_API_KEY = "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"
+NV_API_URL = "https://integrate.api.nvidia.com/v1/chat/completions"
 
 def fetch_github_info(url):
     # Extract owner and repo from URL
@@ -33,46 +38,13 @@ def fetch_github_info(url):
     if readme_res.status_code == 200:
         readme_data = readme_res.json()
         if readme_data.get('content'):
-            readme_content = base64.b64decode(readme_data['content']).decode('utf-8')
+            readme_content = base64.b64decode(readme_data['content']).decode('utf-8', errors='ignore')
     
-    # Extract Features or Key Sections from README
-    features = ""
-    if readme_content:
-        # 1. Clean up badges and common headers from the start
-        content_clean = re.sub(r'(\[?!\[.*?\]\(.*?\))', '', readme_content) # Remove images/badges
-        content_clean = re.sub(r'<[^>]+>', '', content_clean) # Remove raw HTML
-        
-        # 2. Try to find Feature-like sections (supporting emojis)
-        # Regex to match headers like: ## ✨ Features, ## 🚀 Highlights, ## 💬 Support
-        header_patterns = [
-            r'## .*?(Features|Key Features|Core Features|Highlights|Capability|What is)(.*?)##',
-            r'# .*?(Features|Key Features|Core Features|Highlights|Capability|What is)(.*?)#',
-            r'## .*?(Usage|Success|About)(.*?)##'
-        ]
-        
-        for pattern in header_patterns:
-            match = re.search(pattern, content_clean, re.DOTALL | re.IGNORECASE)
-            if match:
-                features = match.group(2).strip()
-                break
-        
-        # 3. Fallback: Take the first significant block of text if nothing found
-        if not features:
-            lines = content_clean.split('\n')
-            paragraphs = []
-            current_p = []
-            for line in lines:
-                if line.strip():
-                    current_p.append(line)
-                elif current_p:
-                    paragraphs.append("\n".join(current_p))
-                    current_p = []
-            
-            # Take first 2-3 non-empty paragraphs
-            features = "\n\n".join([p for p in paragraphs if len(p) > 50][:3])
+    # Clean up readme content slightly to save tokens
+    readme_clean = re.sub(r'<img[^>]*>', '', readme_content)
+    readme_clean = re.sub(r'\[!\[.*?\]\(.*?\)\]\(.*?\)', '', readme_clean)
 
     # 4. Construct Image URL (GitHub Social Preview)
-    # The standard URL pattern for GitHub's Open Graph images
     og_image = f"https://opengraph.githubassets.com/1/{owner}/{repo_name}"
 
     return {
@@ -83,20 +55,116 @@ def fetch_github_info(url):
         'language': repo_data.get('language', 'Unknown'),
         'license': repo_data.get('license', {}).get('name', 'No License') if repo_data.get('license') else 'No License',
         'url': repo_data.get('html_url'),
-        'homepage': repo_data.get('homepage'),
+        'homepage': repo_data.get('homepage') or repo_data.get('html_url'),
         'og_image': og_image,
-        'features': features,
+        'readme_content': readme_clean,
         'filename': repo_name.lower()
     }
 
-def create_markdown(info):
-    homepage_section = f"* **官方主页**: [{info['homepage']}]({info['homepage']})" if info['homepage'] else ""
+def generate_rich_markdown(info):
+    print("Generating enriched markdown content using NVIDIA LLM...")
     
-    features_section = f"\n## ✨ 核心特性\n{info['features']}" if info['features'] else ""
+    prompt = f"""
+You are an expert technical writer and developer advocate. I will provide you with the metadata and README content of a GitHub open-source project. 
+Your task is to write a comprehensive, highly readable Chinese documentation page for this project, following a specific structure and using a highly professional and engaging tone.
 
-    content = f"""---
+Project Name: {info['name']}
+Description: {info['description']}
+Stars: {info['stars']}
+Language: {info['language']}
+License: {info['license']}
+URL: {info['url']}
+Homepage: {info['homepage']}
+OpenGraph Image: {info['og_image']}
+
+README Content (truncated):
+{info['readme_content'][:15000]}
+
+Please format your response EXACTLY as follows (in Markdown), keeping the frontmatter exactly as specified:
+
+---
 title: {info['name']}
-description: {info['description'][:100] + ('...' if len(info['description']) > 100 else '')}
+description: [Write a catchy one-line description/pain point in Chinese, max 50 chars]
+category: '👨‍💻 开发者工具'
+---
+# {info['name']}：[Write a catchy subtitle]
+
+![{info['name']} OpenGraph Image]({info['og_image']})
+
+[Write 1-2 paragraphs of highly polished Chinese introduction summarizing the project's main value proposition. Make it sound premium and professional.]
+
+* **GitHub Repo**: [{info['full_name']}]({info['url']})
+* **Star 数**: ⭐ {info['stars']}
+* **官方主页**: [{info['homepage']}]({info['homepage']})
+* **核心语言**: {info['language']}
+* **开源协议**: {info['license']}
+
+---
+
+## ✨ 核心特性
+
+[Extract and rewrite the core features from the README into a structured, well-formatted list or sub-sections in Chinese. Be detailed, professional, and use emojis where appropriate.]
+
+---
+
+## 🚀 快速部署 / 安装
+
+[Provide the installation or Docker deployment commands if found in the README. If not, provide a link to the official docs for installation. Format code blocks properly.]
+
+---
+
+## 💻 使用示例 (Optional)
+
+[Provide a code snippet or usage example if available in the README. If not, omit this section.]
+
+---
+
+## 💡 适用场景与总结
+
+[Conclude with the target audience and best use cases for this tool.]
+
+Important Instructions:
+1. Return ONLY the raw markdown content.
+2. Do NOT wrap it in ```markdown ... ``` tags.
+3. Ensure the Chinese translation is natural, technical, and accurate.
+4. Keep the exact YAML frontmatter block at the very top.
+"""
+
+    headers = {
+        "Authorization": f"Bearer {NV_API_KEY}",
+        "Content-Type": "application/json"
+    }
+    
+    payload = {
+        "model": "meta/llama-3.1-70b-instruct",
+        "messages": [
+            {"role": "user", "content": prompt}
+        ],
+        "temperature": 0.2,
+        "max_tokens": 2048
+    }
+    
+    try:
+        res = requests.post(NV_API_URL, headers=headers, json=payload, timeout=60)
+        res.raise_for_status()
+        data = res.json()
+        ai_response = data['choices'][0]['message']['content'].strip()
+        
+        # Sometimes models still wrap the whole thing in markdown blocks despite instructions
+        if ai_response.startswith('```markdown'):
+            ai_response = ai_response[11:]
+        if ai_response.startswith('```'):
+            ai_response = ai_response[3:]
+        if ai_response.endswith('```'):
+            ai_response = ai_response[:-3]
+            
+        return ai_response.strip()
+    except Exception as e:
+        print(f"LLM API Call Failed: {e}. Generating fallback markdown.")
+        # Fallback to basic structure if API fails
+        return f"""---
+title: {info['name']}
+description: {info['description'][:50]}
 category: '👨‍💻 开发者工具'
 ---
 # {info['name']}
@@ -107,11 +175,13 @@ category: '👨‍💻 开发者工具'
 
 * **GitHub Repo**: [{info['full_name']}]({info['url']})
 * **Star 数**: ⭐ {info['stars']}
-{homepage_section}
+* **官方主页**: [{info['homepage']}]({info['homepage']})
 * **核心语言**: {info['language']}
 * **开源协议**: {info['license']}
-{features_section}
 """
+
+def create_markdown(info):
+    content = generate_rich_markdown(info)
     file_path = f"docs/tools/{info['filename']}.md"
     os.makedirs("docs/tools", exist_ok=True)
     with open(file_path, 'w', encoding='utf-8') as f:

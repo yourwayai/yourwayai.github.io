@@ -463,12 +463,18 @@
 }
 
 /* ===== Contact ===== */
-.contact-card { text-align: center; }
+.contact-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .contact-card h3 { font-size: 17px; font-weight: 700; margin: 0 0 8px; }
 .contact-card img {
   width: 180px; height: 180px; object-fit: cover;
   border-radius: 12px; margin-top: 16px;
   border: 1px solid #eee;
+  display: block;
 }
 
 /* ===== Footer CTA ===== */

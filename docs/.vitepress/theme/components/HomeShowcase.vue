@@ -19,6 +19,16 @@
 
         </section>
 
+        <!-- Mobile-only Sponsor Banner -->
+        <a href="/sponsor/ywc-resume" target="_blank" rel="noopener" class="mobile-sponsor-banner">
+          <span class="mobile-sponsor-icon">📄</span>
+          <div class="mobile-sponsor-text">
+            <strong>YourWayCareer</strong>
+            <span>高端简历精修，提升求职竞争力</span>
+          </div>
+          <span class="mobile-sponsor-arrow">→</span>
+        </a>
+
         <!-- Control Bar -->
         <div class="control-bar">
           <div class="search-wrapper">
@@ -236,7 +246,7 @@ const getRelativeTime = (dateString) => {
     grid-template-columns: 1fr;
   }
   .right-sidebar {
-    display: none;
+    display: none; /* 桌面端侧边栏在移动端隐藏，改用上方的 mobile-sponsor-banner 代替 */
   }
 }
 
@@ -245,6 +255,90 @@ const getRelativeTime = (dateString) => {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  position: sticky;
+  top: calc(var(--vp-nav-height) + 1.5rem); /* 粘帖在导航栏正下方 */
+  max-height: calc(100vh - var(--vp-nav-height) - 3rem);
+  overflow-y: auto;
+  scrollbar-width: none; /* Firefox */
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+/* Mobile Sponsor Banner */
+.mobile-sponsor-banner {
+  display: none; /* hidden on desktop */
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.9rem 1.2rem;
+  background: linear-gradient(135deg, rgba(184, 135, 70, 0.1) 0%, rgba(223, 195, 150, 0.06) 100%);
+  border: 1px solid rgba(184, 135, 70, 0.4);
+  border-radius: 12px;
+  text-decoration: none !important;
+  color: inherit !important;
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.mobile-sponsor-banner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(184, 135, 70, 0.05), transparent);
+  pointer-events: none;
+}
+
+.mobile-sponsor-banner:hover {
+  border-color: rgba(184, 135, 70, 0.8);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px -5px rgba(184, 135, 70, 0.2);
+}
+
+.mobile-sponsor-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.mobile-sponsor-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.mobile-sponsor-text strong {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #b88746;
+}
+
+.mobile-sponsor-text span {
+  font-size: 0.8rem;
+  color: var(--vp-c-text-2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mobile-sponsor-arrow {
+  font-size: 1rem;
+  color: #b88746;
+  font-weight: 700;
+  flex-shrink: 0;
+  transition: transform 0.2s;
+}
+
+.mobile-sponsor-banner:hover .mobile-sponsor-arrow {
+  transform: translateX(3px);
+}
+
+@media (max-width: 900px) {
+  .mobile-sponsor-banner {
+    display: flex;
+  }
 }
 
 .sidebar-title {

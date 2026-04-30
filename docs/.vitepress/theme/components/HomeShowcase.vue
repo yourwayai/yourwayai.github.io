@@ -39,7 +39,14 @@
         </div>
 
         <div class="tools-grid">
-          <a :href="tool.link" class="tool-card" v-for="tool in filteredTools" :key="tool.id">
+          <a
+            :href="tool.link"
+            class="tool-card"
+            v-for="tool in filteredTools"
+            :key="tool.id"
+            @mousemove="onCardMouseMove($event)"
+            @mouseleave="onCardMouseLeave($event)"
+          >
             <div class="card-glow" :style="{ background: tool.iconBg }"></div>
             <div class="time-badge" v-if="getRelativeTime(tool.date)" :class="{ 'is-new': getRelativeTime(tool.date) === '✨ New' }">
               {{ getRelativeTime(tool.date) }}
@@ -104,53 +111,25 @@
         </div>
       </aside>
     </div>
-
-    <!-- Custom Footer -->
-    <footer class="custom-footer">
-      <div class="footer-columns">
-        <div class="footer-brand">
-          <div class="footer-brand-header">
-            <img src="/logo.jpg" alt="YourwayAI Logo" class="footer-logo">
-            <h2>YourwayAI</h2>
-          </div>
-          <p>Discover and explore the best free and open-source software. Curated by the community, for the community.</p>
-        </div>
-        <div class="footer-links">
-          <div class="link-group">
-            <h3>Browse</h3>
-            <a href="#">All Apps</a>
-            <a href="#">Categories</a>
-            <a href="#">Self-hosted</a>
-            <a href="#">Latest Apps</a>
-            <a href="#">Trending</a>
-          </div>
-          <div class="link-group">
-            <h3>Quick Links</h3>
-            <a href="#">Add Your App</a>
-            <a href="#">JSON Editor</a>
-            <a href="#">GitHub Repo</a>
-            <a href="#">Report Issue</a>
-            <a href="#">Contribute</a>
-          </div>
-          <div class="link-group">
-            <h3>Resources</h3>
-            <a href="#">Documentation</a>
-            <a href="#">Changelog</a>
-            <a href="#">Discussions</a>
-            <a href="#">RSS Feed</a>
-          </div>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>Built with ❤️ by the community. Open source on GitHub.</p>
-        <p>© 2026 YourwayAI. All apps belong to their respective owners.</p>
-      </div>
-    </footer>
   </div>
 </template>
 
 <script setup>
 import { computed, ref } from 'vue'
+
+const onCardMouseMove = (e) => {
+  const card = e.currentTarget
+  const rect = card.getBoundingClientRect()
+  const x = e.clientX - rect.left
+  const y = e.clientY - rect.top
+  card.style.setProperty('--spotlight-x', `${x}px`)
+  card.style.setProperty('--spotlight-y', `${y}px`)
+  card.style.setProperty('--spotlight-opacity', '1')
+}
+
+const onCardMouseLeave = (e) => {
+  e.currentTarget.style.setProperty('--spotlight-opacity', '0')
+}
 
 // Use Vite's native glob import to read all markdown frontmatter
 const modules = import.meta.glob('/tools/*.md', { eager: true })
@@ -490,6 +469,12 @@ const getRelativeTime = (dateString) => {
   gap: 1.5rem;
 }
 
+@media (max-width: 480px) {
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .tool-card {
   position: relative;
   background: var(--vp-c-bg-soft);
@@ -503,6 +488,25 @@ const getRelativeTime = (dateString) => {
   text-decoration: none !important;
   color: inherit !important;
   overflow: hidden;
+  --spotlight-x: 50%;
+  --spotlight-y: 50%;
+  --spotlight-opacity: 0;
+}
+
+.tool-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  opacity: var(--spotlight-opacity);
+  background: radial-gradient(
+    400px circle at var(--spotlight-x) var(--spotlight-y),
+    rgba(255, 255, 255, 0.06),
+    transparent 60%
+  );
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 3;
 }
 
 .card-glow {
@@ -800,95 +804,4 @@ const getRelativeTime = (dateString) => {
   color: var(--vp-c-text-3);
 }
 
-/* Custom Footer */
-.custom-footer {
-  margin-top: 5rem;
-  padding-top: 3rem;
-  border-top: 1px solid var(--vp-c-border);
-  color: var(--vp-c-text-2);
-}
-
-.footer-columns {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 3rem;
-  margin-bottom: 3rem;
-}
-
-.footer-brand {
-  max-width: 300px;
-}
-
-.footer-brand-header {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 1rem;
-}
-
-.footer-logo {
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
-  object-fit: cover;
-}
-
-.footer-brand h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 0;
-  color: var(--vp-c-text-1);
-}
-
-.footer-brand p {
-  font-size: 0.9rem;
-  line-height: 1.6;
-}
-
-.footer-links {
-  display: flex;
-  gap: 4rem;
-  flex-wrap: wrap;
-}
-
-.link-group h3 {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: var(--vp-c-text-1);
-  margin-bottom: 1rem;
-}
-
-.link-group a {
-  display: block;
-  font-size: 0.85rem;
-  color: var(--vp-c-text-2);
-  text-decoration: none;
-  margin-bottom: 0.6rem;
-  transition: color 0.2s;
-}
-
-.link-group a:hover {
-  color: var(--vp-c-brand-1);
-}
-
-.footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 1.5rem;
-  border-top: 1px solid var(--vp-c-border);
-  font-size: 0.8rem;
-}
-
-@media (max-width: 600px) {
-  .footer-columns {
-    flex-direction: column;
-  }
-  .footer-bottom {
-    flex-direction: column;
-    gap: 1rem;
-    text-align: center;
-  }
-}
 </style>

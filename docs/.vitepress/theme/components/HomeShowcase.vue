@@ -23,7 +23,7 @@
         <div class="control-bar">
           <div class="search-wrapper">
             <span class="search-icon">🔍</span>
-            <input type="text" v-model="searchQuery" placeholder="搜索工具、专栏或关键字..." class="search-input" />
+            <input type="text" v-model="searchQuery" placeholder="在当前页面过滤卡片..." class="search-input" />
           </div>
           <div class="category-pills">
             <button 
@@ -360,14 +360,17 @@ const getRelativeTime = (dateString) => {
 /* Control Bar & Search */
 .control-bar {
   display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
   margin-bottom: 1.5rem;
 }
 
 .search-wrapper {
   position: relative;
-  width: 100%;
+  flex: 0 0 260px;
+  max-width: 100%;
 }
 
 .search-icon {

@@ -41,6 +41,9 @@
         <div class="tools-grid">
           <a :href="tool.link" class="tool-card" v-for="tool in filteredTools" :key="tool.id">
             <div class="card-glow" :style="{ background: tool.iconBg }"></div>
+            <div class="time-badge" v-if="getRelativeTime(tool.date)" :class="{ 'is-new': getRelativeTime(tool.date) === '✨ New' }">
+              {{ getRelativeTime(tool.date) }}
+            </div>
             <div class="tool-card-header">
               <div class="tool-icon-wrapper" :style="{ backgroundColor: tool.iconBg }">
                 <span class="tool-icon-inner">{{ tool.icon }}</span>
@@ -48,9 +51,6 @@
               <div class="tool-meta-header">
                 <h3>{{ tool.name }}</h3>
                 <span class="tech-tag">{{ tool.category }}</span>
-              </div>
-              <div class="time-badge" v-if="getRelativeTime(tool.date)" :class="{ 'is-new': getRelativeTime(tool.date) === '✨ New' }">
-                {{ getRelativeTime(tool.date) }}
               </div>
             </div>
             <p class="tool-desc">{{ tool.desc }}</p>
@@ -283,6 +283,7 @@ const getRelativeTime = (dateString) => {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  min-width: 0; /* 防止子元素横向溢出导致 CSS Grid 被无限撑开 (Grid Blowout) */
 }
 
 /* Pinned Section */
@@ -564,8 +565,8 @@ const getRelativeTime = (dateString) => {
 /* Time Badge */
 .time-badge {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 1.5rem;
+  right: 1.5rem;
   font-size: 0.7rem;
   font-weight: 600;
   color: var(--vp-c-text-3);
@@ -573,6 +574,7 @@ const getRelativeTime = (dateString) => {
   padding: 0.2rem 0.6rem;
   border-radius: 6px;
   pointer-events: none;
+  z-index: 2;
 }
 
 .time-badge.is-new {

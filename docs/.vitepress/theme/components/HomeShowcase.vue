@@ -30,7 +30,7 @@
         </a>
 
         <!-- Mobile-only Sponsor Banner 2: YourWayCareer -->
-        <a href="/sponsor/ywc-resume" target="_blank" rel="noopener" class="mobile-sponsor-banner">
+        <a href="/ywc_resume_landing_page.html" target="_blank" rel="noopener" class="mobile-sponsor-banner">
           <span class="mobile-sponsor-icon">📄</span>
           <div class="mobile-sponsor-text">
             <strong>YourWayCareer</strong>
@@ -119,7 +119,7 @@
         </a>
 
         <!-- Sponsor #2: YourWayCareer -->
-        <a href="/sponsor/ywc-resume" target="_blank" rel="noopener" class="real-sponsor-card">
+        <a href="/ywc_resume_landing_page.html" target="_blank" rel="noopener" class="real-sponsor-card">
           <div class="real-sponsor-badge">✦ 赞助商 #2</div>
           <div class="real-sponsor-logo">📄</div>
           <h3 class="real-sponsor-name">YourWayCareer</h3>

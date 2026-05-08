@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YourWayCareer 外企求职支持服务</title>
+  <style>
+    :root {
+      --navy: #061f46;
+      --navy-2: #0a2e66;
+      --blue: #1f66d1;
+      --blue-soft: #eaf2ff;
+      --text: #102033;
+      --muted: #61708a;
+      --line: #dce5f2;
+      --bg: #f6f9fd;
+      --white: #ffffff;
+      --shadow: 0 18px 45px rgba(7, 31, 70, 0.10);
+      --radius: 22px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page {
+      overflow: hidden;
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(6, 31, 70, 0.96);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .nav-inner {
+      height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #fff;
+      white-space: nowrap;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .nav-links a:hover {
+      color: #fff;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 24px;
+      border-radius: 999px;
+      font-size: 15px;
+      font-weight: 800;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+    }
+
+    .btn-primary {
+      background: var(--blue);
+      color: #fff;
+      box-shadow: 0 12px 28px rgba(31, 102, 209, 0.28);
+    }
+
+    .btn-white {
+      background: #fff;
+      color: var(--navy);
+    }
+
+    .btn-outline {
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--navy);
+      border-color: #b9c9df;
+    }
+
+    .hero {
+      position: relative;
+      padding: 86px 0 72px;
+      background:
+        radial-gradient(circle at 82% 30%, rgba(31, 102, 209, 0.18), transparent 34%),
+        linear-gradient(180deg, #ffffff 0%, #f4f8ff 100%);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.03fr 0.97fr;
+      align-items: center;
+      gap: 52px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 14px;
+      border: 1px solid #c7d7ef;
+      border-radius: 999px;
+      color: var(--blue);
+      background: #fff;
+      font-size: 14px;
+      font-weight: 800;
+      margin-bottom: 22px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--blue);
+      box-shadow: 0 0 0 6px rgba(31, 102, 209, 0.12);
+    }
+
+    h1 {
+      font-size: clamp(40px, 5vw, 66px);
+      line-height: 1.08;
+      letter-spacing: -0.05em;
+      color: var(--navy);
+      margin-bottom: 22px;
+    }
+
+    .hero-subtitle {
+      font-size: 24px;
+      color: #23344f;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+
+    .hero-highlight {
+      font-size: 22px;
+      color: var(--blue);
+      font-weight: 800;
+      margin-bottom: 24px;
+    }
+
+    .hero-desc {
+      max-width: 650px;
+      color: var(--muted);
+      font-size: 17px;
+      margin-bottom: 34px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 430px;
+      border-radius: 34px;
+      background:
+        linear-gradient(135deg, rgba(6, 31, 70, 0.94), rgba(31, 102, 209, 0.74)),
+        linear-gradient(180deg, #dcecff, #fff);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      padding: 28px;
+    }
+
+    .skyline {
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 48%;
+      background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.18));
+      opacity: 0.8;
+    }
+
+    .skyline::before {
+      content: "";
+      position: absolute;
+      left: 8%;
+      right: 8%;
+      bottom: 0;
+      height: 180px;
+      background: linear-gradient(90deg,
+        transparent 0 2%, rgba(255,255,255,.22) 2% 7%, transparent 7% 9%,
+        rgba(255,255,255,.14) 9% 15%, transparent 15% 19%, rgba(255,255,255,.28) 19% 25%,
+        transparent 25% 29%, rgba(255,255,255,.18) 29% 38%, transparent 38% 41%,
+        rgba(255,255,255,.26) 41% 46%, transparent 46% 50%, rgba(255,255,255,.16) 50% 59%,
+        transparent 59% 62%, rgba(255,255,255,.3) 62% 69%, transparent 69% 74%,
+        rgba(255,255,255,.18) 74% 80%, transparent 80% 84%, rgba(255,255,255,.24) 84% 91%, transparent 91% 100%);
+      clip-path: polygon(0 100%, 0 45%, 7% 45%, 7% 25%, 15% 25%, 15% 55%, 25% 55%, 25% 18%, 34% 18%, 34% 52%, 42% 52%, 42% 30%, 50% 30%, 50% 12%, 57% 12%, 57% 48%, 66% 48%, 66% 22%, 73% 22%, 73% 58%, 83% 58%, 83% 36%, 93% 36%, 93% 60%, 100% 60%, 100% 100%);
+    }
+
+    .dashboard-card {
+      position: absolute;
+      background: rgba(255, 255, 255, 0.94);
+      border: 1px solid rgba(255, 255, 255, 0.55);
+      border-radius: 20px;
+      box-shadow: 0 22px 45px rgba(0, 0, 0, 0.16);
+      color: var(--navy);
+    }
+
+    .dash-main {
+      top: 50px;
+      left: 48px;
+      width: 280px;
+      padding: 22px;
+    }
+
+    .dash-side {
+      top: 150px;
+      right: 38px;
+      width: 240px;
+      padding: 20px;
+    }
+
+    .dash-small {
+      right: 80px;
+      bottom: 66px;
+      width: 210px;
+      padding: 18px;
+    }
+
+    .avatar-line {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--blue-soft);
+      position: relative;
+    }
+
+    .avatar::after {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--blue);
+      top: 8px;
+      left: 13px;
+      box-shadow: 0 18px 0 6px rgba(31, 102, 209, 0.2);
+    }
+
+    .line {
+      height: 9px;
+      border-radius: 999px;
+      background: #d9e6f7;
+      margin: 10px 0;
+    }
+
+    .line.short { width: 68%; }
+    .line.mid { width: 82%; }
+    .line.long { width: 100%; }
+
+    .metric {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .metric div {
+      background: #f2f6fc;
+      border-radius: 12px;
+      padding: 10px;
+      font-size: 12px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .section {
+      padding: 78px 0;
+    }
+
+    .section-white {
+      background: #fff;
+    }
+
+    .section-title {
+      text-align: center;
+      max-width: 780px;
+      margin: 0 auto 38px;
+    }
+
+    .section-title h2 {
+      font-size: clamp(30px, 3vw, 42px);
+      color: var(--navy);
+      letter-spacing: -0.03em;
+      margin-bottom: 12px;
+    }
+
+    .section-title p {
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .pain-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 14px;
+    }
+
+    .pain-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 24px 16px;
+      text-align: center;
+      min-height: 158px;
+      box-shadow: 0 12px 28px rgba(7, 31, 70, 0.05);
+    }
+
+    .icon {
+      width: 46px;
+      height: 46px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 16px;
+      background: var(--blue-soft);
+      color: var(--blue);
+      font-weight: 900;
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .pain-card p {
+      font-size: 14px;
+      color: #26364f;
+      font-weight: 650;
+      line-height: 1.55;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .service-card {
+      position: relative;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: 0 16px 36px rgba(7, 31, 70, 0.07);
+      padding: 26px;
+      min-height: 338px;
+      overflow: hidden;
+    }
+
+    .service-card::after {
+      content: "";
+      position: absolute;
+      right: -42px;
+      top: -42px;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: rgba(31, 102, 209, 0.07);
+    }
+
+    .service-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 16px;
+      background: var(--navy);
+      color: #fff;
+      font-size: 20px;
+      font-weight: 900;
+      flex: 0 0 auto;
+    }
+
+    .price {
+      color: var(--blue);
+      font-size: 18px;
+      font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .service-card h3 {
+      font-size: 21px;
+      color: var(--navy);
+      margin-bottom: 14px;
+      line-height: 1.3;
+    }
+
+    .service-card ul {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+      color: #33445f;
+      font-size: 14.5px;
+    }
+
+    .service-card li {
+      position: relative;
+      padding-left: 18px;
+    }
+
+    .service-card li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--blue);
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      background: #f1f6ff;
+      color: #315b9c;
+      font-size: 12px;
+      font-weight: 800;
+      padding: 7px 10px;
+    }
+
+    .split-grid {
+      display: grid;
+      grid-template-columns: 1fr 0.88fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .panel {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 30px;
+      box-shadow: 0 14px 32px rgba(7, 31, 70, 0.06);
+    }
+
+    .panel h2 {
+      font-size: 30px;
+      color: var(--navy);
+      margin-bottom: 22px;
+      letter-spacing: -0.02em;
+    }
+
+    .decision-row {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 16px;
+      padding: 13px 0;
+      border-bottom: 1px dashed #dbe5f2;
+      font-size: 15px;
+    }
+
+    .decision-row:last-child {
+      border-bottom: none;
+    }
+
+    .decision-row strong {
+      color: var(--blue);
+      background: var(--blue-soft);
+      padding: 7px 12px;
+      border-radius: 999px;
+      display: inline-block;
+      text-align: center;
+    }
+
+    .arrow {
+      color: var(--blue);
+      font-weight: 900;
+    }
+
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .step {
+      text-align: center;
+      position: relative;
+    }
+
+    .step-circle {
+      width: 66px;
+      height: 66px;
+      margin: 0 auto 12px;
+      border-radius: 50%;
+      border: 1px solid #c6d6ec;
+      background: #fff;
+      color: var(--blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-weight: 900;
+    }
+
+    .step span {
+      display: block;
+      font-weight: 900;
+      color: var(--navy);
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+    .process-note {
+      margin-top: 28px;
+      padding: 16px 18px;
+      background: #f3f7fe;
+      border-radius: 16px;
+      color: #31506f;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .benefit-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: 0 14px 32px rgba(7, 31, 70, 0.05);
+    }
+
+    .benefit-card h3 {
+      margin: 8px 0 10px;
+      color: var(--navy);
+      font-size: 20px;
+    }
+
+    .benefit-card p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .feedback-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .quote-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: 0 12px 28px rgba(7, 31, 70, 0.05);
+    }
+
+    .quote-mark {
+      color: var(--blue);
+      font-size: 42px;
+      font-weight: 900;
+      line-height: 0.7;
+      margin-bottom: 8px;
+    }
+
+    .quote-card p {
+      color: #344862;
+      margin-bottom: 18px;
+    }
+
+    .quote-card span {
+      color: var(--muted);
+      font-weight: 800;
+      font-size: 14px;
+    }
+
+    .faq-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .faq-item {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 20px 22px;
+      box-shadow: 0 10px 24px rgba(7, 31, 70, 0.04);
+    }
+
+    .faq-q {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      color: var(--navy);
+      font-weight: 900;
+      margin-bottom: 10px;
+    }
+
+    .faq-q::after {
+      content: "+";
+      color: var(--blue);
+      font-size: 24px;
+      line-height: 1;
+    }
+
+    .faq-item p {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .cta {
+      padding: 76px 0;
+      background:
+        radial-gradient(circle at 15% 20%, rgba(255,255,255,.16), transparent 30%),
+        linear-gradient(135deg, var(--navy), var(--navy-2));
+      color: #fff;
+    }
+
+    .cta-inner {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      gap: 28px;
+    }
+
+    .cta h2 {
+      font-size: clamp(30px, 4vw, 48px);
+      letter-spacing: -0.04em;
+      margin-bottom: 14px;
+    }
+
+    .cta p {
+      color: rgba(255, 255, 255, 0.82);
+      max-width: 760px;
+      font-size: 17px;
+    }
+
+    .footer {
+      background: #041733;
+      color: #fff;
+      padding: 44px 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1.4fr 1fr;
+      gap: 32px;
+    }
+
+    .footer h3 {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    .footer p, .footer a {
+      color: rgba(255, 255, 255, 0.72);
+      font-size: 15px;
+    }
+
+    .contact-list {
+      display: grid;
+      gap: 8px;
+    }
+
+    .footer-links {
+      display: grid;
+      grid-template-columns: repeat(2, max-content);
+      gap: 8px 24px;
+    }
+
+    .copyright {
+      color: rgba(255, 255, 255, 0.48) !important;
+      margin-top: 18px;
+    }
+
+    @media (max-width: 980px) {
+      .nav-links {
+        display: none;
+      }
+
+      .hero-grid,
+      .split-grid,
+      .cta-inner,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-visual {
+        min-height: 360px;
+      }
+
+      .pain-grid,
+      .services-grid,
+      .benefits-grid,
+      .feedback-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .container {
+        width: min(100% - 28px, 1180px);
+      }
+
+      .nav-inner {
+        height: 64px;
+      }
+
+      .logo {
+        font-size: 20px;
+      }
+
+      .hero {
+        padding: 58px 0 52px;
+      }
+
+      .hero-subtitle,
+      .hero-highlight {
+        font-size: 18px;
+      }
+
+      .pain-grid,
+      .services-grid,
+      .benefits-grid,
+      .feedback-grid,
+      .process-steps {
+        grid-template-columns: 1fr;
+      }
+
+      .service-card {
+        min-height: auto;
+      }
+
+      .decision-row {
+        grid-template-columns: 1fr;
+        gap: 8px;
+      }
+
+      .arrow {
+        display: none;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .dash-main {
+        left: 20px;
+        width: 250px;
+      }
+
+      .dash-side {
+        right: 20px;
+        width: 210px;
+      }
+
+      .dash-small {
+        right: 42px;
+        bottom: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="logo" href="#">YourWayCareer</a>
+        <nav class="nav-links" aria-label="主导航">
+          <a href="#home">首页</a>
+          <a href="#services">服务内容</a>
+          <a href="#fit">适合人群</a>
+          <a href="#process">服务流程</a>
+          <a href="#faq">常见问题</a>
+          <a href="#contact">联系我们</a>
+        </nav>
+        <a class="btn btn-white" href="#contact">立即咨询</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <div>
+            <div class="eyebrow">外企求职支持服务</div>
+            <h1>YourWayCareer<br />外企求职支持服务</h1>
+            <p class="hero-subtitle">从职业定位到简历优化，再到岗位投递与求职冲刺</p>
+            <p class="hero-highlight">帮助大学生与职场新人，更高效进入理想外企。</p>
+            <p class="hero-desc">YourWayCareer 专注于职业教育与求职服务，围绕外企求职、英文简历、岗位匹配、求职材料定制与投递支持，提供更系统、更专业的求职解决方案。</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contact">免费初步判断</a>
+              <a class="btn btn-outline" href="#services">查看服务菜单</a>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="职业服务可视化模块">
+            <div class="dashboard-card dash-main">
+              <div class="avatar-line">
+                <div class="avatar"></div>
+                <div style="flex:1">
+                  <div class="line long"></div>
+                  <div class="line short"></div>
+                </div>
+              </div>
+              <div class="line long"></div>
+              <div class="line mid"></div>
+              <div class="line short"></div>
+              <div class="metric">
+                <div>简历</div>
+                <div>岗位</div>
+                <div>面试</div>
+              </div>
+            </div>
+            <div class="dashboard-card dash-side">
+              <div class="line long"></div>
+              <div class="line mid"></div>
+              <div class="line short"></div>
+              <div style="height: 80px; margin-top: 16px; border-radius: 14px; background: linear-gradient(135deg, #eef5ff, #d6e8ff); display:flex; align-items:end; gap:8px; padding:12px;">
+                <span style="width:18%; height:45%; background:#1f66d1; border-radius:8px 8px 0 0;"></span>
+                <span style="width:18%; height:72%; background:#7ba7ee; border-radius:8px 8px 0 0;"></span>
+                <span style="width:18%; height:55%; background:#1f66d1; border-radius:8px 8px 0 0;"></span>
+                <span style="width:18%; height:88%; background:#7ba7ee; border-radius:8px 8px 0 0;"></span>
+              </div>
+            </div>
+            <div class="dashboard-card dash-small">
+              <strong style="display:block;margin-bottom:10px;">Career Match</strong>
+              <div class="line long"></div>
+              <div class="line mid"></div>
+            </div>
+            <div class="skyline"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-white">
+        <div class="container">
+          <div class="section-title">
+            <h2>你是否正面临这些问题？</h2>
+            <p>从方向不清晰到投递没回应，很多求职问题并不是能力不足，而是缺少系统方法。</p>
+          </div>
+          <div class="pain-grid">
+            <div class="pain-card"><div class="icon">?</div><p>不知道自己适合什么岗位，职业方向不清晰</p></div>
+            <div class="pain-card"><div class="icon">▤</div><p>简历写了很多内容，但看起来不够专业</p></div>
+            <div class="pain-card"><div class="icon">◎</div><p>想申请外企，却不了解招聘标准和英文简历要求</p></div>
+            <div class="pain-card"><div class="icon">↗</div><p>投了很多岗位，却始终没有回应</p></div>
+            <div class="pain-card"><div class="icon">◷</div><p>没时间筛选岗位、整理材料、持续投递</p></div>
+            <div class="pain-card"><div class="icon">♕</div><p>想冲刺更好的企业和岗位，但缺少方法和支持</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="container">
+          <div class="section-title">
+            <h2>服务菜单</h2>
+            <p>根据你的阶段与目标，选择更适合的求职支持方案。</p>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card">
+              <div class="service-head"><span class="num">01</span><span class="price">698元 / 小时</span></div>
+              <h3>外企职业路径规划咨询</h3>
+              <ul>
+                <li><strong>适合：</strong>职业方向尚不清晰、需要系统梳理求职路径的人</li>
+                <li><strong>内容：</strong>1V1背景分析、目标行业与岗位建议、求职策略规划</li>
+                <li><strong>价值：</strong>先明确方向，避免盲目求职与重复试错</li>
+              </ul>
+            </article>
+
+            <article class="service-card">
+              <div class="service-head"><span class="num">02</span><span class="price">699元 / 份</span></div>
+              <h3>外企简历诊断优化版</h3>
+              <ul>
+                <li><strong>适合：</strong>已有简历、目标岗位基本明确的人</li>
+                <li><strong>内容：</strong>简历评估、结构优化、经历表达优化、语言润色、ATS关键词基础优化</li>
+                <li><strong>不含：</strong>Cover Letter、LinkedIn包装、代投、面试辅导</li>
+              </ul>
+              <div class="tag-row"><span class="tag">定稿1版</span><span class="tag">1轮修改</span><span class="tag">3个工作日</span></div>
+            </article>
+
+            <article class="service-card">
+              <div class="service-head"><span class="num">03</span><span class="price">1680元 / 套</span></div>
+              <h3>外企求职材料全套定制版</h3>
+              <ul>
+                <li><strong>适合：</strong>准备正式申请外企岗位、需要中英文材料的人</li>
+                <li><strong>内容：</strong>30分钟沟通、中英文简历、中英文Cover Letter、岗位定制、ATS优化、LinkedIn建议</li>
+                <li><strong>不含：</strong>多岗位分别定制、代投、面试辅导、内推服务</li>
+              </ul>
+              <div class="tag-row"><span class="tag">中英文简历</span><span class="tag">Cover Letter</span><span class="tag">2轮修改</span><span class="tag">7个工作日</span></div>
+            </article>
+
+            <article class="service-card">
+              <div class="service-head"><span class="num">04</span><span class="price">499元 / 月</span></div>
+              <h3>外企岗位精准投递服务</h3>
+              <ul>
+                <li><strong>适合：</strong>没有足够时间筛选岗位、希望提升投递效率的人</li>
+                <li><strong>内容：</strong>按背景与目标筛选岗位，每个工作日推荐 / 投递2个岗位</li>
+                <li><strong>范围：</strong>每月不少于40个岗位的匹配与推荐</li>
+                <li><strong>说明：</strong>不承诺面试结果或 offer 结果</li>
+              </ul>
+            </article>
+
+            <article class="service-card">
+              <div class="service-head"><span class="num">05</span><span class="price">2999元 / 次</span></div>
+              <h3>职业优势与岗位匹配测评</h3>
+              <ul>
+                <li><strong>适合：</strong>想系统了解自身职业优势与适配岗位的人</li>
+                <li><strong>内容：</strong>专业测评、结果分析、1V1报告解读、岗位匹配建议</li>
+              </ul>
+              <div class="tag-row"><span class="tag">测评报告1份</span><span class="tag">报告解读1次</span><span class="tag">3个建议方向</span></div>
+            </article>
+
+            <article class="service-card">
+              <div class="service-head"><span class="num">06</span><span class="price">6980元起</span></div>
+              <h3>外企内推面试冲刺服务</h3>
+              <ul>
+                <li><strong>适合：</strong>目标岗位明确、背景较匹配、希望冲刺重点企业机会的人</li>
+                <li><strong>内容：</strong>背景评估、岗位匹配分析、材料优化建议、申请支持、面试准备支持</li>
+                <li><strong>说明：</strong>需先评估，再确认是否适合服务；服务内容与结果机制，以沟通和协议确认为准</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-white" id="fit">
+        <div class="container split-grid">
+          <div class="panel">
+            <h2>不知道该选哪项服务？</h2>
+            <div class="decision-row"><span>不知道自己适合什么岗位</span><span class="arrow">→</span><strong>外企职业路径规划咨询</strong></div>
+            <div class="decision-row"><span>已经有简历，但不确定是否够专业</span><span class="arrow">→</span><strong>外企简历诊断优化版</strong></div>
+            <div class="decision-row"><span>准备正式申请外企岗位</span><span class="arrow">→</span><strong>外企求职材料全套定制版</strong></div>
+            <div class="decision-row"><span>没有时间持续找岗位、投岗位</span><span class="arrow">→</span><strong>外企岗位精准投递服务</strong></div>
+            <div class="decision-row"><span>想系统了解自己的职业优势</span><span class="arrow">→</span><strong>职业优势与岗位匹配测评</strong></div>
+            <div class="decision-row"><span>想冲刺重点岗位面试机会</span><span class="arrow">→</span><strong>外企内推面试冲刺服务</strong></div>
+          </div>
+
+          <div class="panel" id="process">
+            <h2>服务流程</h2>
+            <div class="process-steps">
+              <div class="step"><div class="step-circle">01</div><span>咨询<br />沟通</span></div>
+              <div class="step"><div class="step-circle">02</div><span>初步<br />判断</span></div>
+              <div class="step"><div class="step-circle">03</div><span>确认<br />方案</span></div>
+              <div class="step"><div class="step-circle">04</div><span>付款<br />启动</span></div>
+              <div class="step"><div class="step-circle">05</div><span>交付<br />反馈</span></div>
+            </div>
+            <div class="process-note">根据你的背景与目标岗位，推荐更适合的求职支持方案。</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-title">
+            <h2>为什么选择 YourWayCareer？</h2>
+            <p>我们不只优化一份简历，更关注你的岗位匹配、求职策略与长期发展方向。</p>
+          </div>
+          <div class="benefits-grid">
+            <div class="benefit-card"><div class="icon">◎</div><h3>专注外企求职</h3><p>深入了解外企招聘流程与岗位要求，更懂外企，也更懂你的求职挑战。</p></div>
+            <div class="benefit-card"><div class="icon">▤</div><h3>中英文材料支持</h3><p>提供中英文简历、Cover Letter 等材料的专业优化与定制服务。</p></div>
+            <div class="benefit-card"><div class="icon">↗</div><h3>重视匹配与策略</h3><p>结合你的背景与目标，提供更贴合实际的岗位匹配与求职策略。</p></div>
+            <div class="benefit-card"><div class="icon">●</div><h3>一站式求职支持</h3><p>从职业规划、材料优化到投递与面试冲刺，提供全流程陪伴与支持。</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-white">
+        <div class="container split-grid">
+          <div>
+            <div class="section-title" style="text-align:left;margin-left:0;margin-bottom:24px;">
+              <h2>学员反馈</h2>
+            </div>
+            <div class="feedback-grid">
+              <div class="quote-card"><div class="quote-mark">“</div><p>收到修改后的英文简历后，明显感觉表达更专业了，后续也拿到了几家外企的面试。</p><span>L同学｜市场方向</span></div>
+              <div class="quote-card"><div class="quote-mark">“</div><p>原来我最大的痛点不是能力不够，而是定位不清。咨询后方向清晰了很多。</p><span>W同学｜商科背景</span></div>
+              <div class="quote-card"><div class="quote-mark">“</div><p>节省了很多筛岗位和投递的时间，整个求职过程更有节奏。</p><span>C同学｜应届生</span></div>
+            </div>
+          </div>
+
+          <div id="faq">
+            <div class="section-title" style="text-align:left;margin-left:0;margin-bottom:24px;">
+              <h2>常见问题</h2>
+            </div>
+            <div class="faq-list">
+              <div class="faq-item"><div class="faq-q">如何判断自己适合哪项服务？</div><p>可先联系客服，发送当前简历与目标岗位方向，我们会帮助你做初步判断。</p></div>
+              <div class="faq-item"><div class="faq-q">服务是否保证拿到 offer？</div><p>求职结果受背景、岗位、市场与招聘流程等因素影响，我们不对录用结果作绝对承诺。</p></div>
+              <div class="faq-item"><div class="faq-q">简历服务包含几轮修改？</div><p>不同服务的交付内容、周期与修改次数不同，请以具体服务说明为准。</p></div>
+              <div class="faq-item"><div class="faq-q">高阶服务是否适合所有人？</div><p>外企内推面试冲刺等高阶服务需先评估后确认是否适合。</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta" id="contact">
+        <div class="container cta-inner">
+          <div>
+            <h2>不确定自己适合哪项服务？</h2>
+            <p>欢迎联系客服，发送你的“当前简历 + 目标岗位方向”，我们会帮你做初步判断，并推荐更适合你的求职支持方案。</p>
+          </div>
+          <a class="btn btn-white" href="mailto:biz@yourwaycareer.com">立即咨询</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>YourWayCareer</h3>
+          <p>专注职业教育与求职服务</p>
+        </div>
+        <div class="contact-list">
+          <p>邮箱：biz@yourwaycareer.com</p>
+          <p>官网：www.yourwaycareer.com</p>
+          <p>微信客服：julie_ywc</p>
+        </div>
+        <div>
+          <div class="footer-links">
+            <a href="#services">服务内容</a>
+            <a href="#fit">适合人群</a>
+            <a href="#process">服务流程</a>
+            <a href="#faq">常见问题</a>
+            <a href="#contact">联系我们</a>
+            <a href="#">隐私政策</a>
+          </div>
+          <p class="copyright">© 2024 YourWayCareer. 保留所有权利。</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

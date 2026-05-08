@@ -26,7 +26,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '软件库', link: '/tools/outline' },
-      { text: '✨ 简历精修', link: '/sponsor/ywc-resume' },
+      { text: '✨ 简历精修', link: '/ywc_resume_landing_page.html' },
       { text: '关于', link: '/about' }
     ],
 
@@ -142,7 +142,7 @@ export default defineConfig({
 
     // 页脚
     footer: {
-      message: 'Released under the MIT License.<br/><span style="display:inline-flex;align-items:center;gap:0.8rem;margin-top:0.5rem;font-size:0.9rem;"><a href="/sponsor/ywc-resume">🏅 赞助我们</a> <span style="opacity:0.3">|</span> <a href="https://github.com" target="_blank" rel="noopener">GitHub</a> <span style="opacity:0.3">|</span> <a href="https://openai.com" target="_blank" rel="noopener">OpenAI</a> <span style="opacity:0.3">|</span> <a href="https://gemini.google.com" target="_blank" rel="noopener">Gemini</a> <span style="opacity:0.3">|</span> <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a></span>',
+      message: 'Released under the MIT License.<br/><span style="display:inline-flex;align-items:center;gap:0.8rem;margin-top:0.5rem;font-size:0.9rem;"><a href="/ywc_resume_landing_page.html">🏅 赞助我们</a> <span style="opacity:0.3">|</span> <a href="https://github.com" target="_blank" rel="noopener">GitHub</a> <span style="opacity:0.3">|</span> <a href="https://openai.com" target="_blank" rel="noopener">OpenAI</a> <span style="opacity:0.3">|</span> <a href="https://gemini.google.com" target="_blank" rel="noopener">Gemini</a> <span style="opacity:0.3">|</span> <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a></span>',
       copyright: 'Copyright © 2026-present YourwayAI'
     }
   }

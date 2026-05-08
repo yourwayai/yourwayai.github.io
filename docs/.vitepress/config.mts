@@ -25,7 +25,6 @@ export default defineConfig({
     // 网站顶部的导航栏
     nav: [
       { text: '首页', link: '/' },
-      { text: '软件库', link: '/tools/outline' },
       { text: '✨ 简历精修', link: '/ywc_resume_landing_page.html' },
       { text: '关于', link: '/about' }
     ],

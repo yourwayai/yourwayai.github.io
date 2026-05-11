@@ -95,7 +95,9 @@ export default defineConfig({
           link: '/tools/wx_20260511214626' },
           { text: 'Vaultwarden — 轻量级密码库',
           link: '/tools/wx_20260511214924' },
-          { text: 'LocalSend — 跨平台文件传输', link: '/tools/wx_20260511215131' }
+          { text: 'LocalSend — 跨平台文件传输',
+          link: '/tools/wx_20260511215131' },
+          { text: 'Rapid-MLX — 本地 AI 加速引擎', link: '/tools/wx_20260511215328' }
         ]
       },
       {

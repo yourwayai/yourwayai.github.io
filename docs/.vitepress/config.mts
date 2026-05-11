@@ -91,7 +91,9 @@ export default defineConfig({
           link: '/tools/rsshub' },
           { text: 'Prometheus — 云原生监控',
           link: '/tools/wx_20260511214354' },
-          { text: 'InvoiceShelf — 开源财务管理', link: '/tools/wx_20260511214626' }
+          { text: 'InvoiceShelf — 开源财务管理',
+          link: '/tools/wx_20260511214626' },
+          { text: 'Vaultwarden — 轻量级密码库', link: '/tools/wx_20260511214924' }
         ]
       },
       {

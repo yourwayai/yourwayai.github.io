@@ -93,7 +93,9 @@ export default defineConfig({
           link: '/tools/wx_20260511214354' },
           { text: 'InvoiceShelf — 开源财务管理',
           link: '/tools/wx_20260511214626' },
-          { text: 'Vaultwarden — 轻量级密码库', link: '/tools/wx_20260511214924' }
+          { text: 'Vaultwarden — 轻量级密码库',
+          link: '/tools/wx_20260511214924' },
+          { text: 'LocalSend — 跨平台文件传输', link: '/tools/wx_20260511215131' }
         ]
       },
       {

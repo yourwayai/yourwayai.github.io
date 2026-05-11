@@ -89,7 +89,9 @@ export default defineConfig({
           link: '/tools/stirling-pdf' },
           { text: 'RSSHub — 万物皆可 RSS',
           link: '/tools/rsshub' },
-          { text: 'Prometheus — 云原生监控', link: '/tools/wx_20260511214354' }
+          { text: 'Prometheus — 云原生监控',
+          link: '/tools/wx_20260511214354' },
+          { text: 'InvoiceShelf — 开源财务管理', link: '/tools/wx_20260511214626' }
         ]
       },
       {

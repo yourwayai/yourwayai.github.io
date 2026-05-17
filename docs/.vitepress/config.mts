@@ -106,7 +106,9 @@ export default defineConfig({
           link: '/tools/wx_20260518003237' },
           { text: 'Mercury Agent — 本地 AI 智能体',
           link: '/tools/wx_20260518005305' },
-          { text: 'Project AIRI — 开源赛博女友终结者', link: '/tools/wx_20260518005642' }
+          { text: 'Project AIRI — 开源赛博女友终结者',
+          link: '/tools/wx_20260518005642' },
+          { text: 'Fcitx5 — 开源输入法', link: '/tools/wx_20260518005748' }
         ]
       },
       {

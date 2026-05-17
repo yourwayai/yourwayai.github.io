@@ -39,7 +39,9 @@ export default defineConfig({
           link: '/tools/outline' },
           { text: 'Memos — 碎片化灵感笔记',
           link: '/tools/memos' },
-          { text: 'Jellyfish — AI 短剧生产工作台', link: '/tools/wx_20260518005533' }
+          { text: 'Jellyfish — AI 短剧生产工作台',
+          link: '/tools/wx_20260518005533' },
+          { text: 'Kronos — 金融大模型', link: '/tools/wx_20260518005849' }
         ]
       },
       {

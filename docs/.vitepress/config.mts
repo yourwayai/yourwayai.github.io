@@ -54,7 +54,7 @@ export default defineConfig({
         ]
       },
       {
-        text: '👨‍💻 开发者工具 (21)',
+        text: '👨‍💻 开发者工具 (22)',
         collapsed: false,
         items: [
           { text: 'The Art of Command Line — 终端神技',
@@ -97,7 +97,11 @@ export default defineConfig({
           link: '/tools/wx_20260511214924' },
           { text: 'LocalSend — 跨平台文件传输',
           link: '/tools/wx_20260511215131' },
-          { text: 'Rapid-MLX — 本地 AI 加速引擎', link: '/tools/wx_20260511215328' }
+          { text: 'Rapid-MLX — 本地 AI 加速引擎',
+          link: '/tools/wx_20260511215328' },
+          { text: 'The Agency — AI 专家智能体',
+          link: '/tools/wx_20260518003237' },
+          { text: 'Mercury Agent — 本地 AI 智能体', link: '/tools/wx_20260518005305' }
         ]
       },
       {

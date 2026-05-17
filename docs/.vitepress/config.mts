@@ -57,7 +57,7 @@ export default defineConfig({
         ]
       },
       {
-        text: '👨‍💻 开发者工具 (23)',
+        text: '👨‍💻 开发者工具 (24)',
         collapsed: false,
         items: [
           { text: 'The Art of Command Line — 终端神技',

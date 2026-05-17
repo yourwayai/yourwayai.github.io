@@ -35,8 +35,11 @@ export default defineConfig({
         text: '📝 知识管理 (2)',
         collapsed: false,
         items: [
-          { text: 'Outline — 团队 Wiki 知识库', link: '/tools/outline' },
-          { text: 'Memos — 碎片化灵感笔记', link: '/tools/memos' }
+          { text: 'Outline — 团队 Wiki 知识库',
+          link: '/tools/outline' },
+          { text: 'Memos — 碎片化灵感笔记',
+          link: '/tools/memos' },
+          { text: 'Jellyfish — AI 短剧生产工作台', link: '/tools/wx_20260518005533' }
         ]
       },
       {

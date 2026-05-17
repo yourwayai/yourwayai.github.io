@@ -32,7 +32,7 @@ export default defineConfig({
     // 网站左侧的分类侧边栏
     sidebar: [
       {
-        text: '📝 知识管理 (2)',
+        text: '📝 知识管理 (3)',
         collapsed: false,
         items: [
           { text: 'Outline — 团队 Wiki 知识库',

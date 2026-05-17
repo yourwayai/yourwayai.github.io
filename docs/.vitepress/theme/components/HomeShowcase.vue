@@ -227,7 +227,7 @@ const getRelativeTime = (dateString) => {
   
   const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24))
   
-  if (diffDays <= 7) return '✨ New'
+  if (diffDays < 1) return '✨ New'
   if (diffDays <= 30) return `${diffDays} 天前`
   if (diffDays <= 365) return `${Math.floor(diffDays / 30)} 个月前`
   return `${Math.floor(diffDays / 365)} 年前`

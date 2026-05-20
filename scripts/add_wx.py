@@ -85,9 +85,8 @@ def get_available_categories():
     try:
         with open(config_path, 'r', encoding='utf-8') as f:
             content = f.read()
-            # Match text like: text: '📝 知识管理 (2)'
-            # We want to capture the string before the ' ('
-            matches = re.findall(r"text:\s*'([^']+?)(?:\s+\(\d+\))?'", content)
+            # Match text like: text: '🤖 AI 与智能体 (8)'
+            matches = re.findall(r"text:\s*'([^'()]+?)(?:\s+\(\d+\))?'", content)
             return [m.strip() for m in matches if m.strip()]
     except Exception as e:
         print(f"Failed to read categories from config: {e}")
@@ -96,7 +95,7 @@ def get_available_categories():
 def categorize_article(info):
     categories = get_available_categories()
     if not categories:
-        categories = ['📝 知识管理', '💬 沟通协作', '🎬 媒体与娱乐', '👨‍💻 开发者工具', '💡 微信专栏']
+        categories = ['🤖 AI 与智能体', '🛠️ 系统与运维', '🔒 安全与隐私', '✍️ 知识与协作', '📂 实用与提效', '💰 金融与支付', '🎨 设计与极客', '🍿 影音与娱乐']
         
     print("Determining category and short title using NVIDIA LLM...")
     
@@ -157,7 +156,7 @@ Content Snippet:
     except Exception as e:
         print(f"LLM API Call Failed or Invalid JSON: {e}. Falling back to defaults.")
         
-    return '💡 微信专栏', info['title'][:15]
+    return '📂 实用与提效', info['title'][:15]
 
 def save_article(info, category):
     # Generate a unique filename based on timestamp
@@ -169,7 +168,7 @@ def save_article(info, category):
 title: {info['title'][:50]}
 description: '来自 {info['author']} 的优选资源与文章推荐'
 icon: '💡'
-category: '{category.replace("💡 ", "")}'
+category: '{category}'
 date: '{current_date}'
 ---
 # {info['title']}
@@ -212,7 +211,17 @@ def update_config(info, filename, category, short_title):
             items_list = [i.strip() for i in items.split(',') if i.strip()]
             items_list.append(new_item)
             formatted_items = ",\n          ".join(items_list)
-            return f"{header}\n          {formatted_items}\n        {closer}"
+            
+            # Increment the count
+            count_match = re.search(r'\((\d+)\)', header)
+            if count_match:
+                old_count = int(count_match.group(1))
+                new_count = old_count + 1
+                new_header = header.replace(f"({old_count})", f"({new_count})")
+            else:
+                new_header = header
+                
+            return f"{new_header}\n          {formatted_items}\n        {closer}"
         
         new_content = re.sub(pattern, item_replacement, content, flags=re.DOTALL)
         with open(config_path, 'w', encoding='utf-8') as f:

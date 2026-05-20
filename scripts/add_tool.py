@@ -87,7 +87,7 @@ Please format your response EXACTLY as follows (in Markdown), keeping the frontm
 title: {info['name']}
 short_title: '{info['name']} — [Short 4-10 char Chinese subtitle]'
 description: [Write a catchy one-line description/pain point in Chinese, max 50 chars]
-category: '👨‍💻 开发者工具'
+category: '[Choose exactly one from: 🤖 AI 与智能体, 🛠️ 系统与运维, 🔒 安全与隐私, ✍️ 知识与协作, 📂 实用与提效, 💰 金融与支付, 🎨 设计与极客, 🍿 影音与娱乐]'
 date: '{info['current_date']}'
 ---
 # {info['name']}：[Write a catchy subtitle]
@@ -169,7 +169,7 @@ Important Instructions:
 title: {info['name']}
 short_title: '{info['name']} — 开源项目'
 description: {info['description'][:50]}
-category: '👨‍💻 开发者工具'
+category: '🎨 设计与极客'
 date: '{info['current_date']}'
 ---
 # {info['name']}
@@ -197,54 +197,59 @@ def create_markdown(info):
     short_title_match = re.search(r"short_title:\s*['\"]?(.*?)['\"]?\n", content)
     display_text = short_title_match.group(1) if short_title_match else info['name']
     
-    return info['filename'], display_text
+    # Extract category from generated content
+    category_match = re.search(r"category:\s*['\"]?(.*?)['\"]?\n", content)
+    category_name = category_match.group(1) if category_match else "🎨 设计与极客"
+    
+    valid_categories = [
+        "🤖 AI 与智能体", "🛠️ 系统与运维", "🔒 安全与隐私", "✍️ 知识与协作",
+        "📂 实用与提效", "💰 金融与支付", "🎨 设计与极客", "🍿 影音与娱乐"
+    ]
+    matched_cat = "🎨 设计与极客"
+    for cat in valid_categories:
+        if cat in category_name:
+            matched_cat = cat
+            break
+            
+    return info['filename'], display_text, matched_cat
 
-def update_config(info, filename, display_text):
+def update_config(info, filename, display_text, category_name):
     config_path = 'docs/.vitepress/config.mts'
     with open(config_path, 'r', encoding='utf-8') as f:
         content = f.read()
 
     new_item = f"{{ text: '{display_text}', link: '/tools/{filename}' }}"
 
-    if '👨‍💻 开发者工具' in content:
-        pattern = r"(text:\s*'👨‍💻 开发者工具.*?'.*?items:\s*\[)(.*?)(\])"
-        def item_replacement(m):
-            header, items, closer = m.groups()
-            if new_item in items:
-                return m.group(0)
-            
-            items_list = [i.strip() for i in items.split(',') if i.strip()]
-            items_list.append(new_item)
-            formatted_items = ",\n          ".join(items_list)
-            return f"{header}\n          {formatted_items}\n        {closer}"
+    # Find the category section in the config
+    escaped_cat = re.escape(category_name)
+    pattern = rf"(text:\s*'[^']*?{escaped_cat}.*?'.*?items:\s*\[)(.*?)(\])"
+    
+    def item_replacement(m):
+        header, items, closer = m.groups()
+        if new_item in items:
+            return m.group(0)
         
-        new_content = re.sub(pattern, item_replacement, content, flags=re.DOTALL)
-    else:
-        sidebar_start = content.find('sidebar: [')
-        if sidebar_start != -1:
-            bracket_count = 0
-            idx = sidebar_start + len('sidebar: [')
-            while idx < len(content):
-                if content[idx] == '[':
-                    bracket_count += 1
-                elif content[idx] == ']':
-                    if bracket_count == 0:
-                        insertion_point = idx
-                        category = f""",
-      {{
-        text: '开发者生态 (Developer Ecosystem)',
-        collapsed: false,
-        items: [
-          {new_item}
-        ]
-      }}"""
-                        new_content = content[:insertion_point].rstrip() + category + content[insertion_point:]
-                        break
-                    else:
-                        bracket_count -= 1
-                idx += 1
+        items_list = [i.strip() for i in items.split(',') if i.strip()]
+        items_list.append(new_item)
+        formatted_items = ",\n          ".join(items_list)
+        
+        # Increment the count
+        count_match = re.search(r'\((\d+)\)', header)
+        if count_match:
+            old_count = int(count_match.group(1))
+            new_count = old_count + 1
+            new_header = header.replace(f"({old_count})", f"({new_count})")
         else:
-            return
+            new_header = header
+            
+        return f"{new_header}\n          {formatted_items}\n        {closer}"
+    
+    new_content, count = re.subn(pattern, item_replacement, content, flags=re.DOTALL)
+    
+    if count == 0:
+        # Fallback if category_name not found: add to '🎨 设计与极客'
+        pattern = r"(text:\s*'🎨 设计与极客.*?'.*?items:\s*\[)(.*?)(\])"
+        new_content = re.sub(pattern, item_replacement, content, flags=re.DOTALL)
 
     with open(config_path, 'w', encoding='utf-8') as f:
         f.write(new_content)
@@ -266,7 +271,7 @@ if __name__ == "__main__":
     
     url = sys.argv[1]
     info = fetch_github_info(url)
-    filename, display_text = create_markdown(info)
-    update_config(info, filename, display_text)
+    filename, display_text, category_name = create_markdown(info)
+    update_config(info, filename, display_text, category_name)
     git_push(info)
     print("Done!")

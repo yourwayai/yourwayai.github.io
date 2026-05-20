@@ -26,7 +26,7 @@ const isHome = computed(() => frontmatter.value.layout === 'home')
         <div class="footer-links-section">
           <div class="footer-links-column">
             <h3 class="footer-column-title">支持我们</h3>
-            <a href="/sponsor/ywc-resume" class="footer-link sponsor-link">🏅 成为赞助商</a>
+            <a href="/ywc_resume_landing_page.html" target="_blank" rel="noopener" class="footer-link sponsor-link">🏅 成为赞助商</a>
           </div>
           <div class="footer-links-column">
             <h3 class="footer-column-title">关注动态</h3>

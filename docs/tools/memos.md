@@ -2,7 +2,7 @@
 title: Memos
 description: 轻量的带有本地数据主权的碎片化灵感速记与状态共享引擎。
 icon: '📝'
-category: '知识管理'
+category: '✍️ 知识与协作'
 date: '2026-04-13T11:07:20+08:00'
 ---
 

@@ -39,6 +39,16 @@
           <span class="mobile-sponsor-arrow">→</span>
         </a>
 
+        <!-- Mobile-only Sponsor Banner 3: giffgaff -->
+        <a href="/giffgaff-sim-promo.html" target="_blank" rel="noopener" class="mobile-sponsor-banner" style="background: linear-gradient(135deg, rgba(255, 79, 109, 0.1) 0%, rgba(255, 204, 0, 0.05) 100%); border-color: rgba(255, 79, 109, 0.3);">
+          <span class="mobile-sponsor-icon">📶</span>
+          <div class="mobile-sponsor-text">
+            <strong style="color: #ff4f6d;">giffgaff</strong>
+            <span>英国免费 SIM 卡直邮激活送 £5</span>
+          </div>
+          <span class="mobile-sponsor-arrow" style="color: #ff4f6d;">→</span>
+        </a>
+
         <!-- Control Bar -->
         <div class="control-bar">
           <div class="search-wrapper">
@@ -130,6 +140,20 @@
             <li>🌐 英文简历精修</li>
           </ul>
           <div class="real-sponsor-cta">查看服务详情 →</div>
+        </a>
+
+        <!-- Sponsor #3: giffgaff -->
+        <a href="/giffgaff-sim-promo.html" target="_blank" rel="noopener" class="real-sponsor-card" style="background: linear-gradient(145deg, rgba(255, 79, 109, 0.08) 0%, rgba(255, 204, 0, 0.04) 100%); border-color: rgba(255, 79, 109, 0.4);">
+          <div class="real-sponsor-badge" style="color: #ff4f6d; background: rgba(255, 79, 109, 0.12);">✦ 赞助商 #3</div>
+          <div class="real-sponsor-logo">📶</div>
+          <h3 class="real-sponsor-name">giffgaff</h3>
+          <p class="real-sponsor-tagline" style="color: #ff4f6d;">英国免费 SIM 卡全球直邮</p>
+          <ul class="real-sponsor-points">
+            <li>🌍 不在英国也能申请与直邮</li>
+            <li>🔓 无长期合约，套餐极其灵活</li>
+            <li>🎁 激活获赠 £5 加入奖励</li>
+          </ul>
+          <div class="real-sponsor-cta" style="color: #ff4f6d;">免费申领手机卡 →</div>
         </a>
 
       </aside>

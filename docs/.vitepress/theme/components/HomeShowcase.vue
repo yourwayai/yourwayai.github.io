@@ -19,35 +19,38 @@
 
         </section>
 
-        <!-- Mobile-only Sponsor Banner 1: GamsGo -->
-        <a href="https://www.gamsgo.com/partner/WzbXX" target="_blank" rel="noopener" class="mobile-sponsor-banner" style="background: linear-gradient(135deg, rgba(138, 43, 226, 0.1) 0%, rgba(255, 69, 0, 0.05) 100%); border-color: rgba(138, 43, 226, 0.3);">
-          <span class="mobile-sponsor-icon">🍿</span>
-          <div class="mobile-sponsor-text">
-            <strong style="color: #8a2be2;">GamsGo</strong>
-            <span>全球领先的流媒体与AI合租平台</span>
-          </div>
-          <span class="mobile-sponsor-arrow" style="color: #8a2be2;">→</span>
-        </a>
+        <!-- Mobile-only Sponsors Swipe Container -->
+        <div class="mobile-sponsors-container">
+          <!-- Mobile-only Sponsor Banner 1: GamsGo -->
+          <a href="https://www.gamsgo.com/partner/WzbXX" target="_blank" rel="noopener" class="mobile-sponsor-banner" style="background: linear-gradient(135deg, rgba(138, 43, 226, 0.08) 0%, rgba(255, 69, 0, 0.04) 100%); border-color: rgba(138, 43, 226, 0.25);">
+            <span class="mobile-sponsor-icon">🍿</span>
+            <div class="mobile-sponsor-text">
+              <strong style="color: #8a2be2;">GamsGo</strong>
+              <span>流媒体与 AI 合租平台</span>
+            </div>
+            <span class="mobile-sponsor-arrow" style="color: #8a2be2;">→</span>
+          </a>
 
-        <!-- Mobile-only Sponsor Banner 2: YourWayCareer -->
-        <a href="/ywc_resume_landing_page.html" target="_blank" rel="noopener" class="mobile-sponsor-banner">
-          <span class="mobile-sponsor-icon">📄</span>
-          <div class="mobile-sponsor-text">
-            <strong>YourWayCareer</strong>
-            <span>高端简历精修，提升求职竞争力</span>
-          </div>
-          <span class="mobile-sponsor-arrow">→</span>
-        </a>
+          <!-- Mobile-only Sponsor Banner 2: YourWayCareer -->
+          <a href="/ywc_resume_landing_page.html" target="_blank" rel="noopener" class="mobile-sponsor-banner">
+            <span class="mobile-sponsor-icon">📄</span>
+            <div class="mobile-sponsor-text">
+              <strong>YourWayCareer</strong>
+              <span>高端简历精修服务</span>
+            </div>
+            <span class="mobile-sponsor-arrow">→</span>
+          </a>
 
-        <!-- Mobile-only Sponsor Banner 3: giffgaff -->
-        <a href="/giffgaff-sim-promo.html" target="_blank" rel="noopener" class="mobile-sponsor-banner" style="background: linear-gradient(135deg, rgba(255, 79, 109, 0.1) 0%, rgba(255, 204, 0, 0.05) 100%); border-color: rgba(255, 79, 109, 0.3);">
-          <span class="mobile-sponsor-icon">📶</span>
-          <div class="mobile-sponsor-text">
-            <strong style="color: #ff4f6d;">giffgaff</strong>
-            <span>英国免费 SIM 卡直邮激活送 £5</span>
-          </div>
-          <span class="mobile-sponsor-arrow" style="color: #ff4f6d;">→</span>
-        </a>
+          <!-- Mobile-only Sponsor Banner 3: giffgaff -->
+          <a href="/giffgaff-sim-promo.html" target="_blank" rel="noopener" class="mobile-sponsor-banner" style="background: linear-gradient(135deg, rgba(255, 79, 109, 0.08) 0%, rgba(255, 204, 0, 0.04) 100%); border-color: rgba(255, 79, 109, 0.25);">
+            <span class="mobile-sponsor-icon">📶</span>
+            <div class="mobile-sponsor-text">
+              <strong style="color: #ff4f6d;">giffgaff</strong>
+              <span>英国免费 SIM 全球直邮</span>
+            </div>
+            <span class="mobile-sponsor-arrow" style="color: #ff4f6d;">→</span>
+          </a>
+        </div>
 
         <!-- Control Bar -->
         <div class="control-bar">
@@ -115,45 +118,39 @@
         <h2 class="sidebar-title sponsor-title">👑 Sponsored</h2>
 
         <!-- Sponsor #1: GamsGo -->
-        <a href="https://www.gamsgo.com/partner/WzbXX" target="_blank" rel="noopener" class="real-sponsor-card" style="background: linear-gradient(145deg, rgba(138, 43, 226, 0.08) 0%, rgba(255, 69, 0, 0.04) 100%); border-color: rgba(138, 43, 226, 0.4);">
-          <div class="real-sponsor-badge" style="color: #8a2be2; background: rgba(138, 43, 226, 0.12);">✦ 赞助商 #1</div>
-          <div class="real-sponsor-logo">🍿</div>
-          <h3 class="real-sponsor-name">GamsGo</h3>
-          <p class="real-sponsor-tagline" style="color: #8a2be2;">领先的流媒体与AI合租平台</p>
-          <ul class="real-sponsor-points">
-            <li>🤖 ChatGPT Plus / Claude Pro</li>
-            <li>🎬 Netflix / Spotify / Disney+</li>
-            <li>⚡ 自动发车，稳定无忧</li>
-          </ul>
-          <div class="real-sponsor-cta" style="color: #8a2be2;">立即上车体验 →</div>
+        <a href="https://www.gamsgo.com/partner/WzbXX" target="_blank" rel="noopener" class="real-sponsor-card" style="background: linear-gradient(145deg, rgba(138, 43, 226, 0.06) 0%, rgba(255, 69, 0, 0.03) 100%); border-color: rgba(138, 43, 226, 0.3);">
+          <div class="sponsor-header">
+            <span class="sponsor-logo" style="background: rgba(138, 43, 226, 0.08);">🍿</span>
+            <div class="sponsor-meta">
+              <h3 class="sponsor-name">GamsGo</h3>
+              <p class="sponsor-tagline" style="color: #8a2be2;">流媒体与 AI 合租平台</p>
+            </div>
+          </div>
+          <div class="sponsor-action" style="color: #8a2be2; border-top-color: rgba(138, 43, 226, 0.15);">立即上车体验 →</div>
         </a>
 
         <!-- Sponsor #2: YourWayCareer -->
         <a href="/ywc_resume_landing_page.html" target="_blank" rel="noopener" class="real-sponsor-card">
-          <div class="real-sponsor-badge">✦ 赞助商 #2</div>
-          <div class="real-sponsor-logo">📄</div>
-          <h3 class="real-sponsor-name">YourWayCareer</h3>
-          <p class="real-sponsor-tagline">高竞争岗位简历精修计划</p>
-          <ul class="real-sponsor-points">
-            <li>🎯 投行 · 咨询 · 外企管培</li>
-            <li>✍️ Bullet Point 逐行改写</li>
-            <li>🌐 英文简历精修</li>
-          </ul>
-          <div class="real-sponsor-cta">查看服务详情 →</div>
+          <div class="sponsor-header">
+            <span class="sponsor-logo">📄</span>
+            <div class="sponsor-meta">
+              <h3 class="sponsor-name">YourWayCareer</h3>
+              <p class="sponsor-tagline">高竞争岗位简历精修计划</p>
+            </div>
+          </div>
+          <div class="sponsor-action">查看服务详情 →</div>
         </a>
 
         <!-- Sponsor #3: giffgaff -->
-        <a href="/giffgaff-sim-promo.html" target="_blank" rel="noopener" class="real-sponsor-card" style="background: linear-gradient(145deg, rgba(255, 79, 109, 0.08) 0%, rgba(255, 204, 0, 0.04) 100%); border-color: rgba(255, 79, 109, 0.4);">
-          <div class="real-sponsor-badge" style="color: #ff4f6d; background: rgba(255, 79, 109, 0.12);">✦ 赞助商 #3</div>
-          <div class="real-sponsor-logo">📶</div>
-          <h3 class="real-sponsor-name">giffgaff</h3>
-          <p class="real-sponsor-tagline" style="color: #ff4f6d;">英国免费 SIM 卡全球直邮</p>
-          <ul class="real-sponsor-points">
-            <li>🌍 不在英国也能申请与直邮</li>
-            <li>🔓 无长期合约，套餐极其灵活</li>
-            <li>🎁 激活获赠 £5 加入奖励</li>
-          </ul>
-          <div class="real-sponsor-cta" style="color: #ff4f6d;">免费申领手机卡 →</div>
+        <a href="/giffgaff-sim-promo.html" target="_blank" rel="noopener" class="real-sponsor-card" style="background: linear-gradient(145deg, rgba(255, 79, 109, 0.06) 0%, rgba(255, 204, 0, 0.03) 100%); border-color: rgba(255, 79, 109, 0.3);">
+          <div class="sponsor-header">
+            <span class="sponsor-logo" style="background: rgba(255, 79, 109, 0.08);">📶</span>
+            <div class="sponsor-meta">
+              <h3 class="sponsor-name">giffgaff</h3>
+              <p class="sponsor-tagline" style="color: #ff4f6d;">英国免费 SIM 全球直邮</p>
+            </div>
+          </div>
+          <div class="sponsor-action" style="color: #ff4f6d; border-top-color: rgba(255, 79, 109, 0.15);">免费申领手机卡 →</div>
         </a>
 
       </aside>
@@ -301,57 +298,72 @@ const getRelativeTime = (dateString) => {
   display: none; /* Chrome/Safari */
 }
 
+/* Mobile Sponsor Carousel Container */
+.mobile-sponsors-container {
+  display: none; /* hidden on desktop */
+  gap: 0.8rem;
+  overflow-x: auto;
+  padding: 0.2rem 0.5rem 0.8rem;
+  scrollbar-width: none; /* Firefox */
+  -webkit-overflow-scrolling: touch;
+}
+
+.mobile-sponsors-container::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
 /* Mobile Sponsor Banner */
 .mobile-sponsor-banner {
-  display: none; /* hidden on desktop */
+  display: flex;
   align-items: center;
-  gap: 0.9rem;
-  padding: 0.9rem 1.2rem;
-  background: linear-gradient(135deg, rgba(184, 135, 70, 0.1) 0%, rgba(223, 195, 150, 0.06) 100%);
-  border: 1px solid rgba(184, 135, 70, 0.4);
-  border-radius: 12px;
+  gap: 0.7rem;
+  padding: 0.55rem 0.8rem;
+  background: linear-gradient(135deg, rgba(184, 135, 70, 0.08) 0%, rgba(223, 195, 150, 0.04) 100%);
+  border: 1px solid rgba(184, 135, 70, 0.35);
+  border-radius: 10px;
   text-decoration: none !important;
   color: inherit !important;
   transition: all 0.25s ease;
   position: relative;
   overflow: hidden;
+  flex: 0 0 260px; /* fixed width in scrolling carousel */
 }
 
 .mobile-sponsor-banner::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(90deg, rgba(184, 135, 70, 0.05), transparent);
+  background: linear-gradient(90deg, rgba(184, 135, 70, 0.04), transparent);
   pointer-events: none;
 }
 
 .mobile-sponsor-banner:hover {
-  border-color: rgba(184, 135, 70, 0.8);
+  border-color: rgba(184, 135, 70, 0.6);
   transform: translateY(-1px);
-  box-shadow: 0 6px 20px -5px rgba(184, 135, 70, 0.2);
+  box-shadow: 0 4px 12px -3px rgba(184, 135, 70, 0.15);
 }
 
 .mobile-sponsor-icon {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   flex-shrink: 0;
 }
 
 .mobile-sponsor-text {
   display: flex;
   flex-direction: column;
-  gap: 0.1rem;
+  gap: 0.05rem;
   flex: 1;
   min-width: 0;
 }
 
 .mobile-sponsor-text strong {
-  font-size: 0.9rem;
+  font-size: 0.82rem;
   font-weight: 700;
   color: #b88746;
 }
 
 .mobile-sponsor-text span {
-  font-size: 0.8rem;
+  font-size: 0.72rem;
   color: var(--vp-c-text-2);
   white-space: nowrap;
   overflow: hidden;
@@ -359,7 +371,7 @@ const getRelativeTime = (dateString) => {
 }
 
 .mobile-sponsor-arrow {
-  font-size: 1rem;
+  font-size: 0.85rem;
   color: #b88746;
   font-weight: 700;
   flex-shrink: 0;
@@ -367,11 +379,11 @@ const getRelativeTime = (dateString) => {
 }
 
 .mobile-sponsor-banner:hover .mobile-sponsor-arrow {
-  transform: translateX(3px);
+  transform: translateX(2px);
 }
 
 @media (max-width: 900px) {
-  .mobile-sponsor-banner {
+  .mobile-sponsors-container {
     display: flex;
   }
 }
@@ -753,18 +765,17 @@ const getRelativeTime = (dateString) => {
 .real-sponsor-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 0.7rem;
+  align-items: stretch;
   background: linear-gradient(145deg, rgba(184, 135, 70, 0.08) 0%, rgba(223, 195, 150, 0.05) 100%);
-  border: 1.5px solid rgba(184, 135, 70, 0.5);
-  border-radius: 14px;
-  padding: 1.4rem 1.2rem;
-  text-align: center;
+  border: 1px solid rgba(184, 135, 70, 0.35);
+  border-radius: 12px;
+  padding: 0.75rem 0.9rem;
   text-decoration: none !important;
   color: inherit !important;
-  transition: all 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.01);
 }
 
 .real-sponsor-card::before {
@@ -778,62 +789,68 @@ const getRelativeTime = (dateString) => {
 }
 
 .real-sponsor-card:hover {
-  transform: translateY(-3px);
-  border-color: rgba(184, 135, 70, 0.9);
-  box-shadow: 0 12px 30px -8px rgba(184, 135, 70, 0.25);
+  transform: translateY(-2px);
+  border-color: rgba(184, 135, 70, 0.6);
+  box-shadow: 0 6px 16px -4px rgba(184, 135, 70, 0.15);
 }
 
-.real-sponsor-badge {
-  font-size: 0.65rem;
-  font-weight: 800;
-  letter-spacing: 0.1em;
-  color: #b88746;
-  background: rgba(184, 135, 70, 0.12);
-  padding: 0.2rem 0.6rem;
-  border-radius: 20px;
-  text-transform: uppercase;
+.sponsor-header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
 }
 
-.real-sponsor-logo {
-  font-size: 2.2rem;
-  margin: 0.2rem 0;
+.sponsor-logo {
+  font-size: 1.6rem;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(184, 135, 70, 0.08);
+  border-radius: 8px;
+  flex-shrink: 0;
 }
 
-.real-sponsor-name {
-  font-size: 1.05rem;
+.sponsor-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  text-align: left;
+  min-width: 0;
+}
+
+.sponsor-name {
+  font-size: 0.95rem;
   font-weight: 700;
   margin: 0;
   color: var(--vp-c-text-1);
+  line-height: 1.2;
 }
 
-.real-sponsor-tagline {
-  font-size: 0.82rem;
+.sponsor-tagline {
+  font-size: 0.75rem;
   color: #b88746;
-  font-weight: 600;
+  font-weight: 500;
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.real-sponsor-points {
-  list-style: none;
-  padding: 0;
-  margin: 0.3rem 0;
-  text-align: left;
+.sponsor-action {
+  margin-top: 0.5rem;
+  padding-top: 0.4rem;
+  border-top: 1px dashed rgba(150, 150, 150, 0.15);
   font-size: 0.78rem;
-  color: var(--vp-c-text-2);
-  line-height: 1.8;
-  width: 100%;
-}
-
-.real-sponsor-cta {
-  margin-top: 0.4rem;
-  font-size: 0.82rem;
   font-weight: 700;
   color: #b88746;
+  text-align: right;
   transition: transform 0.2s;
 }
 
-.real-sponsor-card:hover .real-sponsor-cta {
-  transform: translateX(3px);
+.real-sponsor-card:hover .sponsor-action {
+  transform: translateX(2px);
 }
 
 

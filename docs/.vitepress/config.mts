@@ -32,7 +32,7 @@ export default defineConfig({
     // 网站左侧的分类侧边栏
     sidebar: [
       {
-        text: '🤖 AI 与智能体 (11)',
+        text: '🤖 AI 与智能体 (12)',
         collapsed: false,
         items: [
           { text: 'Jellyfish — AI 短剧生产工作台', link: '/tools/wx_20260518005533' },
@@ -45,7 +45,8 @@ export default defineConfig({
           { text: 'Project AIRI — 开源赛博女友终结者', link: '/tools/wx_20260518005642' },
           { text: 'llmfit — 本地 LLM 模型硬件智能管家', link: '/tools/wx_20260524213111' },
           { text: 'CLI-Anything — 软件Agent化终结者', link: '/tools/wx_20260524213854' },
-          { text: 'Supertonic — 极速本地 TTS 引擎', link: '/tools/wx_20260524214020' }
+          { text: 'Supertonic — 极速本地 TTS 引擎', link: '/tools/wx_20260524214020' },
+          { text: 'financial-services — 金融 AI 智能体', link: '/tools/wx_20260524214529' }
         ]
       },
       {
@@ -78,22 +79,15 @@ export default defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (7)',
+        text: '📂 实用与提效 (6)',
         collapsed: false,
         items: [
-          { text: 'Stirling-PDF — 全能 PDF 工具箱',
-          link: '/tools/stirling-pdf' },
-          { text: 'RSSHub — 万物皆可 RSS',
-          link: '/tools/rsshub' },
-          { text: 'LocalSend — 跨平台文件传输',
-          link: '/tools/wx_20260511215131' },
-          { text: 'Open Chrome — 浏览器神器',
-          link: '/tools/wx_20260413125458' },
-          { text: 'ConvertX — 格式转换利器',
-          link: '/tools/wx_20260429211232' },
-          { text: 'CookCLI — 菜谱管理命令行',
-          link: '/tools/cookcli' },
-          { text: 'Claude重磅发布/金融神器', link: '/tools/wx_20260524214529' }
+          { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
+          { text: 'RSSHub — 万物皆可 RSS', link: '/tools/rsshub' },
+          { text: 'LocalSend — 跨平台文件传输', link: '/tools/wx_20260511215131' },
+          { text: 'Open Chrome — 浏览器神器', link: '/tools/wx_20260413125458' },
+          { text: 'ConvertX — 格式转换利器', link: '/tools/wx_20260429211232' },
+          { text: 'CookCLI — 菜谱管理命令行', link: '/tools/cookcli' }
         ]
       },
       {

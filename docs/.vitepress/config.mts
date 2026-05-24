@@ -78,15 +78,22 @@ export default defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (6)',
+        text: '📂 实用与提效 (7)',
         collapsed: false,
         items: [
-          { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
-          { text: 'RSSHub — 万物皆可 RSS', link: '/tools/rsshub' },
-          { text: 'LocalSend — 跨平台文件传输', link: '/tools/wx_20260511215131' },
-          { text: 'Open Chrome — 浏览器神器', link: '/tools/wx_20260413125458' },
-          { text: 'ConvertX — 格式转换利器', link: '/tools/wx_20260429211232' },
-          { text: 'CookCLI — 菜谱管理命令行', link: '/tools/cookcli' }
+          { text: 'Stirling-PDF — 全能 PDF 工具箱',
+          link: '/tools/stirling-pdf' },
+          { text: 'RSSHub — 万物皆可 RSS',
+          link: '/tools/rsshub' },
+          { text: 'LocalSend — 跨平台文件传输',
+          link: '/tools/wx_20260511215131' },
+          { text: 'Open Chrome — 浏览器神器',
+          link: '/tools/wx_20260413125458' },
+          { text: 'ConvertX — 格式转换利器',
+          link: '/tools/wx_20260429211232' },
+          { text: 'CookCLI — 菜谱管理命令行',
+          link: '/tools/cookcli' },
+          { text: 'Claude重磅发布/金融神器', link: '/tools/wx_20260524214529' }
         ]
       },
       {

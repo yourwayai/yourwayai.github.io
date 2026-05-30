@@ -62,12 +62,16 @@ export default defineConfig({
         ]
       },
       {
-        text: '🔒 安全与隐私 (3)',
+        text: '🔒 安全与隐私 (4)',
         collapsed: false,
         items: [
-          { text: '2FAuth — 自托管 2FA 令牌', link: '/tools/2fauth' },
-          { text: 'Vaultwarden — 轻量级密码库', link: '/tools/wx_20260511214924' },
-          { text: 'Fcitx5 — 开源输入法', link: '/tools/wx_20260518005748' }
+          { text: '2FAuth — 自托管 2FA 令牌',
+          link: '/tools/2fauth' },
+          { text: 'Vaultwarden — 轻量级密码库',
+          link: '/tools/wx_20260511214924' },
+          { text: 'Fcitx5 — 开源输入法',
+          link: '/tools/wx_20260518005748' },
+          { text: 'Bumblebee — 开源安全扫描工具', link: '/tools/wx_20260530171127' }
         ]
       },
       {

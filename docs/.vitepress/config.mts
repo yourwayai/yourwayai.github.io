@@ -53,13 +53,18 @@ export default defineConfig({
         ]
       },
       {
-        text: '🛠️ 系统与运维 (4)',
+        text: '🛠️ 系统与运维 (5)',
         collapsed: false,
         items: [
-          { text: '3x-ui — Xray 协议面板', link: '/tools/3x-ui' },
-          { text: 'Beszel — 轻量服务器监控', link: '/tools/beszel' },
-          { text: 'Prometheus — 云原生监控', link: '/tools/wx_20260511214354' },
-          { text: 'FluentFlyout — 电池弹窗美化', link: '/tools/fluentflyout' }
+          { text: '3x-ui — Xray 协议面板',
+          link: '/tools/3x-ui' },
+          { text: 'Beszel — 轻量服务器监控',
+          link: '/tools/beszel' },
+          { text: 'Prometheus — 云原生监控',
+          link: '/tools/wx_20260511214354' },
+          { text: 'FluentFlyout — 电池弹窗美化',
+          link: '/tools/fluentflyout' },
+          { text: 'DroidDesk — 轻松部署 Linux 桌面', link: '/tools/wx_20260530171455' }
         ]
       },
       {

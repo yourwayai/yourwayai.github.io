@@ -107,13 +107,18 @@ export default defineConfig({
         ]
       },
       {
-        text: '🎨 设计与极客 (4)',
+        text: '🎨 设计与极客 (5)',
         collapsed: false,
         items: [
-          { text: 'Penpot — 开源设计工具', link: '/tools/penpot' },
-          { text: 'Storybook — UI 组件开发环境', link: '/tools/storybook' },
-          { text: 'V8 Engine — JS 运行引擎', link: '/tools/v8' },
-          { text: 'The Art of Command Line — 终端神技', link: '/tools/the-art-of-command-line' }
+          { text: 'Penpot — 开源设计工具',
+          link: '/tools/penpot' },
+          { text: 'Storybook — UI 组件开发环境',
+          link: '/tools/storybook' },
+          { text: 'V8 Engine — JS 运行引擎',
+          link: '/tools/v8' },
+          { text: 'The Art of Command Line — 终端神技',
+          link: '/tools/the-art-of-command-line' },
+          { text: 'MoBrowser-App-Icon-Maker — AI 图标生成', link: '/tools/wx_20260530171623' }
         ]
       },
       {

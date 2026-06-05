@@ -32,7 +32,7 @@ export default defineConfig({
     // 网站左侧的分类侧边栏
     sidebar: [
       {
-        text: '🤖 AI 与智能体 (15)',
+        text: '🤖 AI 与智能体 (21)',
         collapsed: false,
         items: [
           { text: 'Jellyfish — AI 短剧生产工作台', link: '/tools/wx_20260518005533' },
@@ -49,7 +49,13 @@ export default defineConfig({
           { text: 'financial-services — 金融 AI 智能体', link: '/tools/wx_20260524214529' },
           { text: 'UI-TARS — 多模态 GUI Agent', link: '/tools/wx_20260524214734' },
           { text: 'Vane — 本地 AI 搜索引擎', link: '/tools/wx_20260524214934' },
-          { text: 'OmniVoice Studio — 本地 AI 配音', link: '/tools/wx_20260530171254' }
+          { text: 'OmniVoice Studio — 本地 AI 配音', link: '/tools/wx_20260530171254' },
+          { text: 'Next AI Draw.io — 本地 AI 交互画图', link: '/tools/wx_20260605172228' },
+          { text: 'VoxCPM2 — 未来语音大模型', link: '/tools/wx_20260605172524' },
+          { text: 'Agentic Inbox — AI 智能收件箱', link: '/tools/wx_20260605173109' },
+          { text: 'TuriX-CUA — 开源桌面自动化助手', link: '/tools/wx_20260605173551' },
+          { text: 'PilotDeck — Agent 生产力操作系统', link: '/tools/wx_20260605173728' },
+          { text: 'Nanobot — 港大轻量开源 Agent', link: '/tools/wx_20260605173904' }
         ]
       },
       {

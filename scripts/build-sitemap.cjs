@@ -115,7 +115,9 @@ function main() {
     const publicFiles = fs.readdirSync(PUBLIC_DIR);
     for (const file of publicFiles) {
       if (file.endsWith('.html')) {
-        // Exclude sitemap.xml if generated in public directory (it's XML anyway, but safety check)
+        // Exclude google site verification html files
+        if (file.startsWith('google') && file.endsWith('.html')) continue;
+        // Exclude sitemap.xml if generated in public directory
         if (file.endsWith('.xml')) continue;
         const filePath = path.join(PUBLIC_DIR, file);
         const lastmod = getFileLastmod(filePath);

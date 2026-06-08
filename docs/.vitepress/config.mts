@@ -1,4 +1,6 @@
 import { defineConfig } from 'vitepress'
+import fs from 'fs'
+import path from 'path'
 
 export default defineConfig({
   base: '/',
@@ -9,9 +11,7 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', href: '/logo.jpg' }],
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:title', content: 'YourwayAI开源导航站' }],
     ['meta', { property: 'og:image', content: 'https://yourwayai.github.io/logo.jpg' }],
-    ['meta', { property: 'og:description', content: '发现极致优雅的重磅开源软件与极客工具' }],
     ['meta', { name: 'twitter:card', content: 'summary_large_image' }]
   ],
   
@@ -25,6 +25,7 @@ export default defineConfig({
     // 网站顶部的导航栏
     nav: [
       { text: '首页', link: '/' },
+      { text: '项目目录', link: '/projects' },
       { text: '✨ 求职服务', link: '/ywc_resume_landing_page.html', target: '_blank' },
       { text: '关于', link: '/about' }
     ],
@@ -190,6 +191,129 @@ export default defineConfig({
     footer: {
       message: 'Released under the MIT License.<br/><span style="display:inline-flex;align-items:center;gap:0.8rem;margin-top:0.5rem;font-size:0.9rem;"><a href="/ywc_resume_landing_page.html" target="_blank" rel="noopener">🏅 赞助我们</a> <span style="opacity:0.3">|</span> <a href="https://github.com" target="_blank" rel="noopener">GitHub</a> <span style="opacity:0.3">|</span> <a href="https://openai.com" target="_blank" rel="noopener">OpenAI</a> <span style="opacity:0.3">|</span> <a href="https://gemini.google.com" target="_blank" rel="noopener">Gemini</a> <span style="opacity:0.3">|</span> <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a></span>',
       copyright: 'Copyright © 2026-present YourwayAI'
+    }
+  },
+
+  async transformPageData(pageData) {
+    const title = pageData.frontmatter.title || pageData.title || 'YourwayAI开源导航站'
+    const desc = pageData.frontmatter.description || pageData.description || '发现极致优雅的重磅开源软件与极客工具'
+    
+    // Ensure head array exists
+    pageData.frontmatter.head = pageData.frontmatter.head || []
+    
+    // Add og:title & og:description dynamically
+    pageData.frontmatter.head.push(['meta', { property: 'og:title', content: title }])
+    pageData.frontmatter.head.push(['meta', { property: 'og:description', content: desc }])
+    pageData.frontmatter.head.push(['meta', { property: 'og:url', content: `https://yourwayai.github.io/${pageData.relativePath.replace(/\.md$/, '.html')}` }])
+    
+    // Check if there is a GitHub repository link in content and inject JSON-LD
+    let githubUrl = null
+    try {
+      const absolutePath = path.resolve(__dirname, '..', pageData.relativePath)
+      if (fs.existsSync(absolutePath)) {
+        const content = fs.readFileSync(absolutePath, 'utf-8')
+        // Regex to search for typical GitHub repository URL
+        const githubMatch = content.match(/https:\/\/github\.com\/[a-zA-Z0-9_-]+\/[a-zA-Z0-9_.-]+/i)
+        if (githubMatch) {
+          githubUrl = githubMatch[0].replace(/\.git$/, '')
+        }
+      }
+    } catch (e) {
+      console.error(`Error reading file for ${pageData.relativePath}:`, e)
+    }
+
+    if (pageData.relativePath.startsWith('tools/') && githubUrl) {
+      const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "SoftwareSourceCode",
+        "name": title,
+        "url": `https://yourwayai.github.io/${pageData.relativePath.replace(/\.md$/, '.html')}`,
+        "codeRepository": githubUrl
+      }
+      pageData.frontmatter.head.push([
+        'script',
+        { type: 'application/ld+json' },
+        JSON.stringify(jsonLd)
+      ])
+    }
+  },
+
+  async buildEnd(siteConfig) {
+    const outDir = siteConfig.outDir
+    const toolsDir = path.resolve(siteConfig.srcDir, 'tools')
+    
+    if (!fs.existsSync(toolsDir)) return
+
+    try {
+      const files = fs.readdirSync(toolsDir).filter(f => f.endsWith('.md'))
+      const tools = []
+
+      for (const file of files) {
+        const filePath = path.join(toolsDir, file)
+        const content = fs.readFileSync(filePath, 'utf-8')
+        
+        // Parse frontmatter
+        const match = content.match(/^---\r?\n([\s\S]*?)\r?\n---/)
+        const fm = {}
+        if (match) {
+          const lines = match[1].split('\n')
+          for (let line of lines) {
+            const parts = line.split(':')
+            if (parts.length >= 2) {
+              const key = parts[0].trim()
+              const value = parts.slice(1).join(':').trim().replace(/^['"]|['"]$/g, '')
+              fm[key] = value
+            }
+          }
+        }
+        
+        // Parse title and description
+        const title = fm.title || file.replace(/\.md$/, '')
+        const description = fm.description || ''
+        const dateStr = fm.date || fs.statSync(filePath).mtime.toISOString()
+        const date = new Date(dateStr)
+
+        tools.push({
+          title,
+          description,
+          date,
+          link: `https://yourwayai.github.io/tools/${file.replace(/\.md$/, '.html')}`
+        })
+      }
+
+      // Sort by date descending and take top 50
+      tools.sort((a, b) => b.date.getTime() - a.date.getTime())
+      const latestTools = tools.slice(0, 50)
+
+      // Generate RSS XML
+      let rssXml = '<?xml version="1.0" encoding="utf-8"?>\n'
+      rssXml += '<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">\n'
+      rssXml += '  <channel>\n'
+      rssXml += '    <title>YourwayAI开源导航站</title>\n'
+      rssXml += '    <link>https://yourwayai.github.io</link>\n'
+      rssXml += '    <description>发现极致优雅的重磅开源软件与极客工具</description>\n'
+      rssXml += '    <language>zh-CN</language>\n'
+      rssXml += `    <pubDate>${new Date().toUTCString()}</pubDate>\n`
+      rssXml += '    <atom:link href="https://yourwayai.github.io/rss.xml" rel="self" type="application/rss+xml"/>\n'
+
+      for (const tool of latestTools) {
+        rssXml += '    <item>\n'
+        rssXml += `      <title><![CDATA[${tool.title}]]></title>\n`
+        rssXml += `      <link>${tool.link}</link>\n`
+        rssXml += `      <guid>${tool.link}</guid>\n`
+        rssXml += `      <description><![CDATA[${tool.description}]]></description>\n`
+        rssXml += `      <pubDate>${tool.date.toUTCString()}</pubDate>\n`
+        rssXml += '    </item>\n'
+      }
+
+      rssXml += '  </channel>\n'
+      rssXml += '</rss>\n'
+
+      const rssPath = path.join(outDir, 'rss.xml')
+      fs.writeFileSync(rssPath, rssXml, 'utf-8')
+      console.log(`Generated RSS feed at ${rssPath} with ${latestTools.length} items.`)
+    } catch (e) {
+      console.error('Error generating RSS feed:', e)
     }
   }
 })

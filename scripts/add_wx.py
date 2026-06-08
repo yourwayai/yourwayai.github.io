@@ -97,7 +97,7 @@ def categorize_article(info):
     if not categories:
         categories = ['🤖 AI 与智能体', '🛠️ 系统与运维', '🔒 安全与隐私', '✍️ 知识与协作', '📂 实用与提效', '💰 金融与支付', '🎨 设计与极客', '🍿 影音与娱乐']
         
-    print("Determining category and short title using NVIDIA LLM...")
+    print("Determining category, short title, and description using NVIDIA LLM...")
     
     prompt = f"""
 Analyze the following markdown content of a WeChat article.
@@ -107,11 +107,13 @@ Analyze the following markdown content of a WeChat article.
    - For open-source tools, use 'ToolName — Short Description' (e.g., 'Ghost — 开源博客系统').
    - For articles/columns, use 'Keyword — Short Description' (e.g., 'AI 订阅 — 支付宝付款攻略').
    - Maximum length: 15-20 characters.
+3. Generate a dynamic, engaging, SEO-friendly short description (50-100 characters) in Chinese summarizing the key value or content of the article.
 
 Return ONLY a valid JSON object matching this schema exactly, nothing else:
 {{
   "category": "the chosen category",
-  "short_title": "The generated short title"
+  "short_title": "The generated short title",
+  "description": "The generated short description"
 }}
 
 Article Title: {info['title']}
@@ -130,7 +132,7 @@ Content Snippet:
             {"role": "user", "content": prompt}
         ],
         "temperature": 0.1,
-        "max_tokens": 100
+        "max_tokens": 250
     }
     
     try:
@@ -148,17 +150,18 @@ Content Snippet:
         result = json.loads(ai_response.strip())
         cat = result.get('category', '💡 微信专栏')
         short_title = result.get('short_title', info['title'][:15])
+        description = result.get('description', f"来自 {info['author']} 的优选资源与文章推荐")
         
         # Validate category
         valid_cat = cat if any(c in cat for c in categories) else '💡 微信专栏'
         print(f"AI Category Selected: {valid_cat}, Short Title: {short_title}")
-        return valid_cat, short_title
+        return valid_cat, short_title, description
     except Exception as e:
         print(f"LLM API Call Failed or Invalid JSON: {e}. Falling back to defaults.")
         
-    return '📂 实用与提效', info['title'][:15]
+    return '📂 实用与提效', info['title'][:15], f"来自 {info['author']} 的优选资源与文章推荐"
 
-def save_article(info, category):
+def save_article(info, category, short_title, description):
     # Generate a unique filename based on timestamp
     timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
     current_date = datetime.now().astimezone().isoformat()
@@ -166,7 +169,8 @@ def save_article(info, category):
     
     content = f"""---
 title: {info['title'][:50]}
-description: '来自 {info['author']} 的优选资源与文章推荐'
+short_title: '{short_title}'
+description: '{description}'
 icon: '💡'
 category: '{category}'
 date: '{current_date}'
@@ -246,8 +250,8 @@ if __name__ == "__main__":
     
     url = sys.argv[1]
     info = fetch_wechat_article(url)
-    category, short_title = categorize_article(info)
-    filename = save_article(info, category)
+    category, short_title, description = categorize_article(info)
+    filename = save_article(info, category, short_title, description)
     update_config(info, filename, category, short_title)
     git_push(info)
     print("Done!")

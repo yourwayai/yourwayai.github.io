@@ -9,8 +9,9 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 
 ---
 
-## 🤖 AI 与智能体 (21)
+## 🤖 AI 与智能体 (22)
 
+- [**NVIDIA Agent Skills — AI 助手精准接管**](/tools/wx_20260611153942.html)：NVIDIA 开源 Agent Skills，让 AI 助手精准接管 CUDA 与大模型开发，提供了一套官方验证过的外挂技能包，支持 24 条产品线的渐进式加载策略和极客级别的供应链安全验证
 - [**港大重磅开源Nanobot：干掉臃肿的 AI 助手，完美集成 MCP 彻底解放你的生产力！**](/tools/wx_20260605173904.html)：来自 YourwayAI 的优选资源与文章推荐
 - [**清华大学联合开源PilotDeck：Agent 时代的生产力操作系统，重塑 AI 工作流！**](/tools/wx_20260605173728.html)：来自 YourwayAI 的优选资源与文章推荐
 - [**开源效率神器 TuriX-CUA：首创热插拔大模型架构，零成本打造你的 24 小时全能桌面助理！**](/tools/wx_20260605173551.html)：来自 YourwayAI 的优选资源与文章推荐

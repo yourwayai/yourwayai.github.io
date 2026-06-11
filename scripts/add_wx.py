@@ -202,8 +202,8 @@ def update_config(info, filename, category, short_title):
     # E.g. category could be "👨‍💻 开发者工具"
     # We match "text: '👨‍💻 开发者工具 (5)'" taking into account the number part dynamically
     
-    escaped_cat = re.escape(category)
-    pattern = rf"(text:\s*'{escaped_cat}.*?'.*?items:\s*\[)(.*?)(\])"
+    escap = re.escape(category)
+    pattern = rf"(text:\s*'{escap}.*?'.*?items:\s*\[)(.*?)(\])"
     
     match = re.search(pattern, content, flags=re.DOTALL)
     if match:
@@ -212,8 +212,10 @@ def update_config(info, filename, category, short_title):
             if new_item in items:
                 return m.group(0)
             
-            items_list = [i.strip() for i in items.split(',') if i.strip()]
-            items_list.append(new_item)
+            # Find all { ... } blocks instead of splitting by comma
+            items_list = re.findall(r'\{[^{}]*\}', items)
+            if new_item not in items_list:
+                items_list.append(new_item)
             formatted_items = ",\n          ".join(items_list)
             
             # Increment the count

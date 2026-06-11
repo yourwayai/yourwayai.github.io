@@ -685,7 +685,7 @@ const getRelativeTime = (dateString) => {
 
 .tool-meta-header h3 {
   margin: 0;
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   font-weight: 600;
   line-height: 1.4;
   color: var(--vp-c-text-1);

@@ -206,7 +206,7 @@ const rawTools = Object.entries(modules).map(([path, mod], index) => {
   const url = path.replace(/\.md$/, '.html')
   return {
     id: index,
-    name: fm.short_title || fm.title || 'Untitled',
+    name: fm.title || 'Untitled',
     desc: fm.description || '',
     category: fm.category || '未分类',
     icon: fm.icon || '📦',

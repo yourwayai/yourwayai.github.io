@@ -3,6 +3,8 @@ title: Stirling-PDF
 description: 本地托管的强大 PDF 瑞士军刀，满足你对 PDF 的一切操作需求。
 category: '📂 实用与提效'
 date: '2026-04-30T23:00:32+08:00'
+icon: 'https://github.com/Stirling-Tools.png'
+stars: 'N/A'
 ---
 # Stirling-PDF：全能开源本地 PDF 工具箱
 
@@ -75,5 +77,15 @@ docker run -d \
 
 如果你经常需要处理 PDF 文件（合并合同、提取页面、转换格式、打水印），但又对将包含敏感信息的文档上传到第三方网站（如 iLovePDF）感到担忧，那么 **Stirling-PDF** 就是为你量身定制的。它非常适合部署在公司内网供全员使用，或是作为个人的私有云 PDF 处理中心。
 
+<GithubRepoCard 
+  repo="Stirling-Tools/Stirling-PDF"
+  initialStars="N/A"
+  initialForks="N/A"
+  initialContributors="N/A"
+  initialVersion="N/A"
+  initialPushedAt="2026-06-11"
+  :platforms="['Linux', 'macOS', 'Windows']"
+  :deployments="['Docker', 'Source Code']"
+/>
 
-* **GitHub 仓库**: [Stirling-Tools/Stirling-PDF](https://github.com/Stirling-Tools/Stirling-PDF)
+

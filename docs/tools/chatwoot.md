@@ -1,9 +1,10 @@
 ---
 title: Chatwoot
 description: 现代化、开源且支持自托管的客户支持平台与多渠道客服中心。
-icon: '💬'
+icon: 'https://github.com/chatwoot.png'
 category: '✍️ 知识与协作'
 date: '2026-04-13T11:43:30+08:00'
+stars: 'N/A'
 ---
 # Chatwoot
 
@@ -73,5 +74,15 @@ volumes:
 
 *(温馨提示：生产环境部署请务必参考[官方环境配置文档](https://www.chatwoot.com/docs/environment-variables) 设置正确的 Redis、Postgres 和环境变量。)*
 
+<GithubRepoCard 
+  repo="chatwoot/chatwoot"
+  initialStars="N/A"
+  initialForks="N/A"
+  initialContributors="N/A"
+  initialVersion="N/A"
+  initialPushedAt="2026-06-11"
+  :platforms="['Linux', 'macOS', 'Windows']"
+  :deployments="['Docker', 'Source Code']"
+/>
 
-* **GitHub 仓库**: [chatwoot/chatwoot](https://github.com/chatwoot/chatwoot)
+

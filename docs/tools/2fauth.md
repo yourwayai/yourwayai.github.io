@@ -3,6 +3,8 @@ title: 2FAuth
 description: 自托管的 Web 版两步验证（2FA）管理器，安全生成并管理你的动态密码。
 category: '🔒 安全与隐私'
 date: '2026-04-30T22:55:42+08:00'
+icon: 'https://github.com/Bubka.png'
+stars: '4.0k'
 ---
 # 2FAuth：你的私有两步验证（2FA）令牌管家
 
@@ -78,5 +80,15 @@ services:
 
 对于注重隐私安全、拥有多台设备（手机和多台电脑）、经常需要在不同终端输入验证码的数字极客和开发者来说，**2FAuth** 是极佳的选择。它不仅消除了手机不在手边时的焦虑，更确保了所有核心安全令牌完全掌握在自己手中。
 
+<GithubRepoCard 
+  repo="Bubka/2FAuth"
+  initialStars="4.0k"
+  initialForks="289"
+  initialContributors="N/A"
+  initialVersion="N/A"
+  initialPushedAt="2026-06-10"
+  :platforms="['Linux', 'macOS', 'Windows']"
+  :deployments="['Docker', 'Source Code']"
+/>
 
-* **GitHub 仓库**: [Bubka/2FAuth](https://github.com/Bubka/2FAuth)
+

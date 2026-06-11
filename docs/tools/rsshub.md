@@ -3,6 +3,8 @@ title: RSSHub
 description: 🧡 万物皆可 RSS，一个开源、容易使用、易于扩展的 RSS 生成器
 category: '📂 实用与提效'
 date: '2026-04-30T23:02:07+08:00'
+icon: 'https://github.com/DIYgod.png'
+stars: 'N/A'
 ---
 # RSSHub：万物皆可 RSS
 
@@ -78,5 +80,15 @@ docker-compose up -d
 
 RSSHub 适合每一位患有“信息焦虑症”、希望重新掌控自己信息流的高级用户、研究员和开发者。它是现代 RSS 复兴运动的核心基础设施。配合 Docker 轻松自建后，你将拥有一个不受限制的超级信息聚合引擎。
 
+<GithubRepoCard 
+  repo="DIYgod/RSSHub"
+  initialStars="N/A"
+  initialForks="N/A"
+  initialContributors="N/A"
+  initialVersion="N/A"
+  initialPushedAt="2026-06-11"
+  :platforms="['Linux', 'macOS', 'Windows']"
+  :deployments="['Docker', 'Source Code']"
+/>
 
-* **GitHub 仓库**: [DIYgod/RSSHub](https://github.com/DIYgod/RSSHub)
+

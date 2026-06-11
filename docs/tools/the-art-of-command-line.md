@@ -1,9 +1,10 @@
 ---
 title: 命令行的艺术
 description: 终端环境日常操作的必备指南与极客神仙技巧。
-icon: '👨‍💻'
+icon: 'https://github.com/jlevy.png'
 category: '🎨 设计与极客'
 date: '2026-04-13T11:17:03+08:00'
+stars: 'N/A'
 ---
 # 命令行的艺术 (The Art of Command Line)
 
@@ -50,5 +51,15 @@ date: '2026-04-13T11:17:03+08:00'
 
 > **推荐阅读方式**：把它存入收藏夹。当你觉得自己每天都在重复使用一些繁琐的命令时，就翻开它看一条，也许它能为你节省无数的生命。
 
+<GithubRepoCard 
+  repo="jlevy/the-art-of-command-line"
+  initialStars="N/A"
+  initialForks="N/A"
+  initialContributors="N/A"
+  initialVersion="N/A"
+  initialPushedAt="2026-06-11"
+  :platforms="['Linux', 'macOS', 'Windows']"
+  :deployments="['Docker', 'Source Code']"
+/>
 
-* **GitHub 仓库**: [jlevy/the-art-of-command-line](https://github.com/jlevy/the-art-of-command-line)
+

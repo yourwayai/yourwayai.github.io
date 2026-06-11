@@ -1,9 +1,10 @@
 ---
 title: Memos
 description: 轻量的带有本地数据主权的碎片化灵感速记与状态共享引擎。
-icon: '📝'
+icon: 'https://github.com/usememos.png'
 category: '✍️ 知识与协作'
 date: '2026-04-13T11:07:20+08:00'
+stars: 'N/A'
 ---
 
 # Memos: 轻盈掌控瞬间灵感的碎片知识胶囊
@@ -57,5 +58,15 @@ docker run -d \
 这是作为**开发者个人及任何极客小群体的“神经第一缓冲记忆带”**。
 当你忙着写代码调试，而根本没心力或时间去打开 Notion 或者 Github Project 去建档整理知识体系时，不妨把随手追溯的堆栈报错信息、StackOverflow 的关键答案链接等全无脑堆入 Memos 中；随后等到复盘阶段，再利用它极速的局域模糊检索功能或 `#标签` 分类机制慢慢归纳消化掉。
 
+<GithubRepoCard 
+  repo="usememos/memos"
+  initialStars="N/A"
+  initialForks="N/A"
+  initialContributors="N/A"
+  initialVersion="N/A"
+  initialPushedAt="2026-06-11"
+  :platforms="['Linux', 'macOS', 'Windows']"
+  :deployments="['Docker', 'Source Code']"
+/>
 
-* **GitHub 仓库**: [usememos/memos](https://github.com/usememos/memos)
+

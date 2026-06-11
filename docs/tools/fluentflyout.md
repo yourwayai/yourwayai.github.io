@@ -3,6 +3,8 @@ title: FluentFlyout
 description: "Windows 11 上最美的开源媒体浮层应用，完美融合 Fluent 2 设计语言，比微软官方做得更好。"
 category: '🛠️ 系统与运维'
 date: '2026-04-28T22:46:22+08:00'
+icon: 'https://github.com/unchihugo.png'
+stars: 'N/A'
 ---
 # FluentFlyout：Windows 11 的媒体浮层完美替代品
 
@@ -97,5 +99,15 @@ FluentFlyout 基于成熟的 Windows 开发生态构建：
 
 如果你是 Windows 11 用户，且对系统自带的媒体控制 OSD（屏幕显示）感到不满——它太丑、信息太少、动画太生硬——FluentFlyout 就是你需要的答案。它不需要任何配置即可开箱即用，静静地待在系统托盘里，在你需要时以最优雅的方式呈现媒体信息。安装后几乎没有任何理由卸载它。
 
+<GithubRepoCard 
+  repo="unchihugo/FluentFlyout"
+  initialStars="N/A"
+  initialForks="N/A"
+  initialContributors="N/A"
+  initialVersion="N/A"
+  initialPushedAt="2026-06-11"
+  :platforms="['Linux', 'macOS', 'Windows']"
+  :deployments="['Docker', 'Source Code']"
+/>
 
-* **GitHub 仓库**: [unchihugo/FluentFlyout](https://github.com/unchihugo/FluentFlyout)
+

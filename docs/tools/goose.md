@@ -3,6 +3,8 @@ title: Goose
 description: "Block 出品的开源 AI Agent：不只是代码补全，而是能在你的机器上自主完成安装、执行、编辑和测试全流程的智能助手。"
 category: '🤖 AI 与智能体'
 date: '2026-04-28T22:46:02+08:00'
+icon: 'https://github.com/aaif-goose.png'
+stars: 'N/A'
 ---
 # Goose：你的本地原生开源 AI Agent
 
@@ -110,5 +112,15 @@ Goose 最初由 Block（Jack Dorsey 创立的金融科技公司）内部团队�
 
 Goose 最适合希望将 AI 真正融入工程工作流的开发者。它不只是一个"聊天助手"，而是一个可以**自主完成端到端任务**的本地代理——从读 issue 到写代码、跑测试、提 PR，整个链路都可以交给 Goose 自动完成。对于想要 Cursor/Copilot 之外更强大自主性的工程师来说，Goose 是目前开源生态中最值得关注的选项。
 
+<GithubRepoCard 
+  repo="aaif-goose/goose"
+  initialStars="N/A"
+  initialForks="N/A"
+  initialContributors="N/A"
+  initialVersion="N/A"
+  initialPushedAt="2026-06-11"
+  :platforms="['Linux', 'macOS', 'Windows']"
+  :deployments="['Docker', 'Source Code']"
+/>
 
-* **GitHub 仓库**: [aaif-goose/goose](https://github.com/aaif-goose/goose)
+

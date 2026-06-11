@@ -1,9 +1,10 @@
 ---
 title: Jellyfin
 description: 掌握自己全高清影视与音频库的终极媒体中心解决方案，拒绝一切隐藏订阅门槛。
-icon: '🎬'
+icon: 'https://github.com/jellyfin.png'
 category: '🍿 影音与娱乐'
 date: '2026-04-13T11:07:20+08:00'
+stars: 'N/A'
 ---
 
 # Jellyfin: 夺回影音主导权的自由多媒体串流中枢
@@ -61,5 +62,15 @@ services:
 
 不论是仅通过借用随手买来的极低功耗廉价版便携版微型主机树莓派插挂移动 SSD 轻度运行构组家庭内部无线局域网的客厅小规模媒体信号源放送设备；亦或者是利用了自身专业运维开发底蕴技术力全方位深度配置挂接到具有大批冗余多队列工作全天候阵列硬盘服役体系中充当全家企业集群级的群晖超级软硬件联合控制的高端家庭私人私密化综合级存储柜内作为重量型流量进出节点主水管阀。它都属于完全符合当下那批渴望不受束缚**深度数字囤积仓鼠症极致重度观影收集迷**群体的心头白月光。
 
+<GithubRepoCard 
+  repo="jellyfin/jellyfin"
+  initialStars="N/A"
+  initialForks="N/A"
+  initialContributors="N/A"
+  initialVersion="N/A"
+  initialPushedAt="2026-06-11"
+  :platforms="['Linux', 'macOS', 'Windows']"
+  :deployments="['Docker', 'Source Code']"
+/>
 
-* **GitHub 仓库**: [jellyfin/jellyfin](https://github.com/jellyfin/jellyfin)
+

@@ -1,9 +1,10 @@
 ---
 title: Outline
 description: 开源且美观的团队 Wiki 与知识库平台，完美适配现代协作工作流。
-icon: '📝'
+icon: 'https://github.com/outlinewiki.png'
 category: '✍️ 知识与协作'
 date: '2026-04-13T10:45:02+08:00'
+stars: 'N/A'
 ---
 # Outline: 优雅的现代化团队知识库
 
@@ -59,5 +60,15 @@ services:
 
 Outline 非常适合被用于**建立研发开发团队的核心技术架构与操作手册规约库**。相比起臃肿缓慢的巨无霸型 Wiki，Outline 依靠其毫无学习成本的交互界面赢得了多数工程师的好感，它能极大地促进团队成员们乐于主动沉淀技术资产。
 
+<GithubRepoCard 
+  repo="outlinewiki/outline"
+  initialStars="N/A"
+  initialForks="N/A"
+  initialContributors="N/A"
+  initialVersion="N/A"
+  initialPushedAt="2026-06-11"
+  :platforms="['Linux', 'macOS', 'Windows']"
+  :deployments="['Docker', 'Source Code']"
+/>
 
-* **GitHub 仓库**: [outlinewiki/outline](https://github.com/outlinewiki/outline)
+

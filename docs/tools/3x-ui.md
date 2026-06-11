@@ -3,6 +3,8 @@ title: 3x-ui — 下一代 Xray 节点可视化管理面板
 description: 支持目前最全代理通信协议与多出口配置的极客首选自建节点管理系统。
 category: '🛠️ 系统与运维'
 date: '2026-04-21T11:43:26+08:00'
+icon: 'https://github.com/MHSanaei.png'
+stars: 'N/A'
 ---
 
 # 3x-ui: 顶级的 Xray 节点全能可视化桌面
@@ -57,5 +59,15 @@ bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.
 * 需要针对不同的物理设备（如手机、外置路由器软路由平台等）精准分发特定专线通道配置操作。
 * 对直接操控晦涩难懂的 Xray-core `config.json` 感到极大排斥，渴望一键生成所有主流协议分享链接并能从 UI 点选免费申请域名的技术玩家。
 
+<GithubRepoCard 
+  repo="MHSanaei/3x-ui"
+  initialStars="N/A"
+  initialForks="N/A"
+  initialContributors="N/A"
+  initialVersion="N/A"
+  initialPushedAt="2026-06-11"
+  :platforms="['Linux', 'macOS', 'Windows']"
+  :deployments="['Docker', 'Source Code']"
+/>
 
-* **GitHub 仓库**: [MHSanaei/3x-ui](https://github.com/MHSanaei/3x-ui)
+

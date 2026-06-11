@@ -3,6 +3,8 @@ title: beszel
 description: 轻量级、极简的服务器和 Docker 容器监控面板，带历史数据与告警。
 category: '🛠️ 系统与运维'
 date: '2026-04-30T22:59:04+08:00'
+icon: 'https://github.com/henrygd.png'
+stars: 'N/A'
 ---
 # beszel：轻巧优雅的服务器状态监控面板
 
@@ -84,5 +86,15 @@ docker run -d --name beszel-agent --restart unless-stopped \
 
 对于拥有多台 VPS 或 HomeLab 的个人开发者、独立站长以及中小型团队来说，Beszel 找到了功能与轻量的绝佳平衡点。它去除了企业级监控工具（如 Prometheus）那陡峭的学习曲线，又比传统的探针（如 ServerStatus）提供了更具价值的历史数据记录和容器追踪能力，是目前不可多得的新锐监控工具。
 
+<GithubRepoCard 
+  repo="henrygd/beszel"
+  initialStars="N/A"
+  initialForks="N/A"
+  initialContributors="N/A"
+  initialVersion="N/A"
+  initialPushedAt="2026-06-11"
+  :platforms="['Linux', 'macOS', 'Windows']"
+  :deployments="['Docker', 'Source Code']"
+/>
 
-* **GitHub 仓库**: [henrygd/beszel](https://github.com/henrygd/beszel)
+

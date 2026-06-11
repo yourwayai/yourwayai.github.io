@@ -66,7 +66,8 @@ const props = defineProps({
   initialPushedAt: { type: String, default: '' },
   platforms: { type: Array, default: () => [] },
   deployments: { type: Array, default: () => [] },
-  docsUrl: { type: String, default: '' }
+  docsUrl: { type: String, default: '' },
+  logoUrl: { type: String, default: '' }
 })
 
 const stars = ref(props.initialStars)
@@ -78,6 +79,7 @@ const pushedAt = ref(props.initialPushedAt)
 const releasesCount = ref(null)
 
 const avatarUrl = computed(() => {
+  if (props.logoUrl) return props.logoUrl
   const parts = props.repo.split('/')
   return parts.length ? `https://github.com/${parts[0]}.png` : ''
 })

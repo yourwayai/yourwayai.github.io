@@ -86,7 +86,8 @@
             </div>
             <div class="tool-card-header">
               <div class="tool-icon-wrapper" :style="{ backgroundColor: tool.iconBg }">
-                <span class="tool-icon-inner">{{ tool.icon }}</span>
+                <img v-if="isUrl(tool.icon)" :src="tool.icon" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;" />
+                <span v-else class="tool-icon-inner">{{ tool.icon }}</span>
               </div>
               <div class="tool-meta-header">
                 <h3>{{ tool.name }}</h3>
@@ -212,8 +213,8 @@ const rawTools = Object.entries(modules).map(([path, mod], index) => {
     icon: fm.icon || '📦',
     iconBg: colors[index % colors.length],
     link: url,
-    stars: '-',
-    views: '-',
+    stars: fm.stars || '-',
+    views: fm.views || '-',
     date: fm.date || '2000-01-01'
   }
 })
@@ -254,6 +255,11 @@ const filteredTools = computed(() => {
 
   return result
 })
+
+const isUrl = (str) => {
+  if (!str) return false
+  return str.startsWith('http://') || str.startsWith('https://') || str.startsWith('/')
+}
 
 // Helper for relative time (or "New" badge)
 const getRelativeTime = (dateString) => {

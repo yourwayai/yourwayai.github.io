@@ -3,7 +3,7 @@ title: 2FAuth
 description: 自托管的 Web 版两步验证（2FA）管理器，安全生成并管理你的动态密码。
 category: '🔒 安全与隐私'
 date: '2026-04-30T22:55:42+08:00'
-icon: 'https://github.com/Bubka.png'
+icon: 'https://raw.githubusercontent.com/Bubka/2FAuth/master/public/logo.svg'
 stars: '4.0k'
 ---
 # 2FAuth：你的私有两步验证（2FA）令牌管家
@@ -87,6 +87,7 @@ services:
   initialContributors="N/A"
   initialVersion="N/A"
   initialPushedAt="2026-06-10"
+  logoUrl="https://raw.githubusercontent.com/Bubka/2FAuth/master/public/logo.svg"
   :platforms="['Linux', 'macOS', 'Windows']"
   :deployments="['Docker', 'Source Code']"
 />

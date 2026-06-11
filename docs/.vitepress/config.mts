@@ -33,7 +33,7 @@ export default defineConfig({
     // 网站左侧的分类侧边栏
     sidebar: [
       {
-        text: '🤖 AI 与智能体 (23)',
+        text: '🤖 AI 与智能体 (24)',
         collapsed: false,
         items: [
           { text: 'Jellyfish — AI 短剧生产工作台', link: '/tools/wx_20260518005533' },
@@ -58,7 +58,8 @@ export default defineConfig({
           { text: 'PilotDeck — Agent 生产力操作系统', link: '/tools/wx_20260605173728' },
           { text: 'Nanobot — 港大轻量开源 Agent', link: '/tools/wx_20260605173904' },
           { text: 'NVIDIA Agent Skills — AI 助手精准接管', link: '/tools/wx_20260611153942' },
-          { text: 'Anthropic Agent Skills — AI 定制化时代', link: '/tools/wx_20260611154756' }
+          { text: 'Anthropic Agent Skills — AI 定制化时代', link: '/tools/wx_20260611154756' },
+          { text: 'Agent Reach — 联网脚手架', link: '/tools/wx_20260611155218' }
         ]
       },
       {

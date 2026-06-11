@@ -34,8 +34,9 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 - [**Goose**](/tools/goose.html)：Block 出品的开源 AI Agent：不只是代码补全，而是能在你的机器上自主完成安装、执行、编辑和测试全流程的智能助手。
 - [**Hermes Agent — 会随你共同成长的高扩展智能体框架**](/tools/hermes-agent.html)：搭载长程记忆存储与技能成长系统，能够跨平台接驳 MCP 的下一代开源 Agent 框架。
 
-## 🛠️ 系统与运维 (6)
+## 🛠️ 系统与运维 (7)
 
+- [**OfficeCLI — 自动化 Office 工作流**](/tools/wx_20260611154651.html)：告别繁杂的 Python 库，用单文件 CLI 重构本地 Office 自动化工作流
 - [**GitHub热榜 optimizerDuck：开源免费的 Windows 调优神器，一键拯救卡顿老电**](/tools/wx_20260530171710.html)：来自 YourwayAI 的优选资源与文章推荐
 - [**开源神器 DroidDesk：完美调用GPU硬件加速，让闲置手机流畅运行VS Code与本地大模型！**](/tools/wx_20260530171455.html)：来自 YourwayAI 的优选资源与文章推荐
 - [**GitHub高热 Prometheus：从0到1构建自动化监控预警体系，云原生开发者必备护身符！**](/tools/wx_20260511214354.html)：来自 YourwayAI 的优选资源与文章推荐

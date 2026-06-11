@@ -33,7 +33,7 @@
 
           <!-- Mobile-only Sponsor Banner 2: YourWayCareer -->
           <a href="/ywc_resume_landing_page.html" target="_blank" rel="noopener" class="mobile-sponsor-banner">
-            <span class="mobile-sponsor-icon">📄</span>
+            <img class="mobile-sponsor-icon" src="/ywc.jpg" style="width: 24px; height: 24px; border-radius: 6px; object-fit: cover;" />
             <div class="mobile-sponsor-text">
               <strong>YourWayCareer</strong>
               <span>高端简历精修服务</span>
@@ -133,7 +133,7 @@
         <!-- Sponsor #2: YourWayCareer -->
         <a href="/ywc_resume_landing_page.html" target="_blank" rel="noopener" class="real-sponsor-card">
           <div class="sponsor-header">
-            <span class="sponsor-logo">📄</span>
+            <img class="sponsor-logo" src="/ywc.jpg" style="object-fit: cover;" />
             <div class="sponsor-meta">
               <h3 class="sponsor-name">YourWayCareer</h3>
               <p class="sponsor-tagline">高竞争岗位简历精修计划</p>

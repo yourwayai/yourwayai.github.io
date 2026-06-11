@@ -23,7 +23,7 @@
         <div class="mobile-sponsors-container">
           <!-- Mobile-only Sponsor Banner 1: GamsGo -->
           <a href="https://www.gamsgo.com/partner/WzbXX" target="_blank" rel="noopener" class="mobile-sponsor-banner" style="background: linear-gradient(135deg, rgba(138, 43, 226, 0.08) 0%, rgba(255, 69, 0, 0.04) 100%); border-color: rgba(138, 43, 226, 0.25);">
-            <span class="mobile-sponsor-icon">🍿</span>
+            <img class="mobile-sponsor-icon" src="/gamsgo.png" style="width: 24px; height: 24px; border-radius: 6px; object-fit: cover;" />
             <div class="mobile-sponsor-text">
               <strong style="color: #8a2be2;">GamsGo</strong>
               <span>流媒体与 AI 合租平台</span>
@@ -121,7 +121,7 @@
         <!-- Sponsor #1: GamsGo -->
         <a href="https://www.gamsgo.com/partner/WzbXX" target="_blank" rel="noopener" class="real-sponsor-card" style="background: linear-gradient(145deg, rgba(138, 43, 226, 0.06) 0%, rgba(255, 69, 0, 0.03) 100%); border-color: rgba(138, 43, 226, 0.3);">
           <div class="sponsor-header">
-            <span class="sponsor-logo" style="background: rgba(138, 43, 226, 0.08);">🍿</span>
+            <img class="sponsor-logo" src="/gamsgo.png" style="background: rgba(138, 43, 226, 0.08); object-fit: cover;" />
             <div class="sponsor-meta">
               <h3 class="sponsor-name">GamsGo</h3>
               <p class="sponsor-tagline" style="color: #8a2be2;">流媒体与 AI 合租平台</p>

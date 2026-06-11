@@ -85,17 +85,18 @@ export default defineConfig({
         ]
       },
       {
-        text: '✍️ 知识与协作 (4)',
+        text: '✍️ 知识与协作 (5)',
         collapsed: false,
         items: [
           { text: 'Outline — 团队 Wiki 知识库', link: '/tools/outline' },
           { text: 'Memos — 碎片化灵感笔记', link: '/tools/memos' },
           { text: 'Ghost — 开源博客系统', link: '/tools/wx_20260421130229' },
-          { text: 'Chatwoot — 全渠道客服中台', link: '/tools/chatwoot' }
+          { text: 'Chatwoot — 全渠道客服中台', link: '/tools/chatwoot' },
+          { text: 'Twenty — TypeScript 开源 CRM', link: '/tools/wx_20260611154932' }
         ]
       },
       {
-        text: '📂 实用与提效 (8)',
+        text: '📂 实用与提效 (7)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -104,8 +105,7 @@ export default defineConfig({
           { text: 'Open Chrome — 浏览器神器', link: '/tools/wx_20260413125458' },
           { text: 'ConvertX — 格式转换利器', link: '/tools/wx_20260429211232' },
           { text: 'CookCLI — 菜谱管理命令行', link: '/tools/cookcli' },
-          { text: 'AirTranslate — Mac全局音频翻译', link: '/tools/wx_20260530171544' },
-          { text: '像写代码一样写业务系统？实测 ', link: '/tools/wx_20260611154932' }
+          { text: 'AirTranslate — Mac全局音频翻译', link: '/tools/wx_20260530171544' }
         ]
       },
       {

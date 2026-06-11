@@ -52,8 +52,9 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 - [**极客首选 Vaultwarden：压榨树莓派的终极金库，10MB内存跑满全功能Bitwarden！**](/tools/wx_20260511214924.html)：来自 YourwayAI 的优选资源与文章推荐
 - [**2FAuth**](/tools/2fauth.html)：自托管的 Web 版两步验证（2FA）管理器，安全生成并管理你的动态密码。
 
-## ✍️ 知识与协作 (4)
+## ✍️ 知识与协作 (5)
 
+- [**Twenty — TypeScript 开源 CRM**](/tools/wx_20260611154932.html)：极客理念的现代开源 CRM 系统 Twenty，支持万物皆代码（CRM as Code），基于 NestJS/React 全栈 TypeScript 生态构建。
 - [**开源神作 Ghost：两分钟部署企业级内容平台，让你的博客提速300%！**](/tools/wx_20260421130229.html)：来自 YourwayAI 的优选资源与文章推荐
 - [**Chatwoot**](/tools/chatwoot.html)：现代化、开源且支持自托管的客户支持平台与多渠道客服中心。
 - [**Memos**](/tools/memos.html)：轻量的带有本地数据主权的碎片化灵感速记与状态共享引擎。

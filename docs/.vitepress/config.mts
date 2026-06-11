@@ -61,7 +61,7 @@ export default defineConfig({
         ]
       },
       {
-        text: '🛠️ 系统与运维 (6)',
+        text: '🛠️ 系统与运维 (7)',
         collapsed: false,
         items: [
           { text: '3x-ui — Xray 协议面板', link: '/tools/3x-ui' },
@@ -69,7 +69,8 @@ export default defineConfig({
           { text: 'Prometheus — 云原生监控', link: '/tools/wx_20260511214354' },
           { text: 'FluentFlyout — 电池弹窗美化', link: '/tools/fluentflyout' },
           { text: 'DroidDesk — 轻松部署 Linux 桌面', link: '/tools/wx_20260530171455' },
-          { text: 'optimizerDuck — 免费 Windows 调优神器', link: '/tools/wx_20260530171710' }
+          { text: 'optimizerDuck — 免费 Windows 调优神器', link: '/tools/wx_20260530171710' },
+          { text: 'OfficeCLI — 自动化 Office 工作流', link: '/tools/wx_20260611154651' }
         ]
       },
       {

@@ -190,12 +190,23 @@ const colors = [
 const searchQuery = ref('')
 const activeCategory = ref('全部')
 
+const categoryOrder = [
+  '🤖 AI 与智能体',
+  '🛠️ 系统与运维',
+  '🔒 安全与隐私',
+  '✍️ 知识与协作',
+  '📂 实用与提效',
+  '💰 金融与支付',
+  '🎨 设计与极客',
+  '🍿 影音与娱乐'
+]
+
 const rawTools = Object.entries(modules).map(([path, mod], index) => {
   const fm = mod.default?.__pageData?.frontmatter || mod.__pageData?.frontmatter || {}
   const url = path.replace(/\.md$/, '.html')
   return {
     id: index,
-    name: fm.title || 'Untitled',
+    name: fm.short_title || fm.title || 'Untitled',
     desc: fm.description || '',
     category: fm.category || '未分类',
     icon: fm.icon || '📦',
@@ -213,7 +224,15 @@ const allTools = rawTools.sort((a, b) => new Date(b.date).getTime() - new Date(a
 // Compute unique categories
 const uniqueCategories = computed(() => {
   const cats = new Set(allTools.map(t => t.category))
-  return ['全部', ...Array.from(cats)]
+  const sortedCats = Array.from(cats).sort((a, b) => {
+    const idxA = categoryOrder.indexOf(a)
+    const idxB = categoryOrder.indexOf(b)
+    if (idxA === -1 && idxB === -1) return a.localeCompare(b)
+    if (idxA === -1) return 1
+    if (idxB === -1) return -1
+    return idxA - idxB
+  })
+  return ['全部', ...sortedCats]
 })
 
 // Compute filtered tools

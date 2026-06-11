@@ -33,7 +33,7 @@ export default defineConfig({
     // 网站左侧的分类侧边栏
     sidebar: [
       {
-        text: '🤖 AI 与智能体 (22)',
+        text: '🤖 AI 与智能体 (23)',
         collapsed: false,
         items: [
           { text: 'Jellyfish — AI 短剧生产工作台', link: '/tools/wx_20260518005533' },
@@ -57,7 +57,8 @@ export default defineConfig({
           { text: 'TuriX-CUA — 开源桌面自动化助手', link: '/tools/wx_20260605173551' },
           { text: 'PilotDeck — Agent 生产力操作系统', link: '/tools/wx_20260605173728' },
           { text: 'Nanobot — 港大轻量开源 Agent', link: '/tools/wx_20260605173904' },
-          { text: 'NVIDIA Agent Skills — AI 助手精准接管', link: '/tools/wx_20260611153942' }
+          { text: 'NVIDIA Agent Skills — AI 助手精准接管', link: '/tools/wx_20260611153942' },
+          { text: 'Anthropic Agent Skills — AI 定制化时代', link: '/tools/wx_20260611154756' }
         ]
       },
       {
@@ -94,7 +95,7 @@ export default defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (8)',
+        text: '📂 实用与提效 (7)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -103,8 +104,7 @@ export default defineConfig({
           { text: 'Open Chrome — 浏览器神器', link: '/tools/wx_20260413125458' },
           { text: 'ConvertX — 格式转换利器', link: '/tools/wx_20260429211232' },
           { text: 'CookCLI — 菜谱管理命令行', link: '/tools/cookcli' },
-          { text: 'AirTranslate — Mac全局音频翻译', link: '/tools/wx_20260530171544' },
-          { text: 'Anthropic 开源 Ag', link: '/tools/wx_20260611154756' }
+          { text: 'AirTranslate — Mac全局音频翻译', link: '/tools/wx_20260530171544' }
         ]
       },
       {

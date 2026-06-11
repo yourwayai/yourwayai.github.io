@@ -9,8 +9,9 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 
 ---
 
-## 🤖 AI 与智能体 (23)
+## 🤖 AI 与智能体 (24)
 
+- [**Agent Reach — 联网脚手架**](/tools/wx_20260611155218.html)：告别付费 API 与 403 报错：Agent Reach 联网脚手架架构拆解，解决 AI 代理联网问题
 - [**Anthropic Agent Skills — AI 定制化时代**](/tools/wx_20260611154756.html)：Anthropic 开源 Agent Skills 参考库，基于 agentskills.io 标准，提供了大模型按需动态加载专有知识和工作流的官方实现参考。
 - [**NVIDIA Agent Skills — AI 助手精准接管**](/tools/wx_20260611153942.html)：NVIDIA 开源 Agent Skills，让 AI 助手精准接管 CUDA 与大模型开发，提供了一套官方验证过的外挂技能包，支持 24 条产品线的渐进式加载策略和极客级别的供应链安全验证
 - [**港大重磅开源Nanobot：干掉臃肿的 AI 助手，完美集成 MCP 彻底解放你的生产力！**](/tools/wx_20260605173904.html)：来自 YourwayAI 的优选资源与文章推荐

@@ -1,18 +1,18 @@
 ---
 title: Outline
 description: 开源且美观的团队 Wiki 与知识库平台，完美适配现代协作工作流。
-icon: 'https://github.com/outlinewiki.png'
+icon: 'https://raw.githubusercontent.com/outline/outline/main/public/images/icon-512.png'
 category: '✍️ 知识与协作'
 date: '2026-04-13T10:45:02+08:00'
-stars: 'N/A'
+stars: '38.8k'
 ---
 # Outline: 优雅的现代化团队知识库
 
-![Outline OpenGraph Image](https://opengraph.githubassets.com/1/outlinewiki/outline)
+![Outline OpenGraph Image](https://opengraph.githubassets.com/1/outline/outline)
 
 **Outline** 是一个为现代团队构建的开源自托管 Wiki 与知识库平台。其极简的类 Notion UI 和流畅的交互体验，使其在开源文档领域中独树一帜，是企业或独立开发者脱离昂贵商业 SaaS 服务（如 Notion, Confluence）的首选平替方案。
 
-* **Star 数**: ⭐ 29000+
+* **Star 数**: ⭐ 38,800+
 * **官方主页**: [https://www.getoutline.com](https://www.getoutline.com)
 * **核心语言**: TypeScript (Node.js & React)
 * **开源协议**: BSD 3-Clause License
@@ -61,12 +61,13 @@ services:
 Outline 非常适合被用于**建立研发开发团队的核心技术架构与操作手册规约库**。相比起臃肿缓慢的巨无霸型 Wiki，Outline 依靠其毫无学习成本的交互界面赢得了多数工程师的好感，它能极大地促进团队成员们乐于主动沉淀技术资产。
 
 <GithubRepoCard 
-  repo="outlinewiki/outline"
-  initialStars="N/A"
-  initialForks="N/A"
+  repo="outline/outline"
+  initialStars="38.8k"
+  initialForks="3.3k"
   initialContributors="N/A"
   initialVersion="N/A"
   initialPushedAt="2026-06-11"
+  logoUrl="https://raw.githubusercontent.com/outline/outline/main/public/images/icon-512.png"
   :platforms="['Linux', 'macOS', 'Windows']"
   :deployments="['Docker', 'Source Code']"
 />

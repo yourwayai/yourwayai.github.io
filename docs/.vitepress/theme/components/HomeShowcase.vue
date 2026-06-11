@@ -43,7 +43,7 @@
 
           <!-- Mobile-only Sponsor Banner 3: giffgaff -->
           <a href="/giffgaff-sim-promo.html" target="_blank" rel="noopener" class="mobile-sponsor-banner" style="background: linear-gradient(135deg, rgba(255, 79, 109, 0.08) 0%, rgba(255, 204, 0, 0.04) 100%); border-color: rgba(255, 79, 109, 0.25);">
-            <span class="mobile-sponsor-icon">📶</span>
+            <img class="mobile-sponsor-icon" src="/giffgaff.png" style="width: 24px; height: 24px; border-radius: 6px; object-fit: cover;" />
             <div class="mobile-sponsor-text">
               <strong style="color: #ff4f6d;">giffgaff</strong>
               <span>英国免费 SIM 全球直邮</span>
@@ -145,7 +145,7 @@
         <!-- Sponsor #3: giffgaff -->
         <a href="/giffgaff-sim-promo.html" target="_blank" rel="noopener" class="real-sponsor-card" style="background: linear-gradient(145deg, rgba(255, 79, 109, 0.06) 0%, rgba(255, 204, 0, 0.03) 100%); border-color: rgba(255, 79, 109, 0.3);">
           <div class="sponsor-header">
-            <span class="sponsor-logo" style="background: rgba(255, 79, 109, 0.08);">📶</span>
+            <img class="sponsor-logo" src="/giffgaff.png" style="background: rgba(255, 79, 109, 0.08); object-fit: cover;" />
             <div class="sponsor-meta">
               <h3 class="sponsor-name">giffgaff</h3>
               <p class="sponsor-tagline" style="color: #ff4f6d;">英国免费 SIM 全球直邮</p>

@@ -14,7 +14,6 @@ date: '2026-04-13T11:17:03+08:00'
 **The Art of Command Line** 是一份在 GitHub 上口口相传的神级开源文档。它由数十位资深工程师共同维护，浓缩了在 Linux/macOS 终端中最高效、最硬核的使用技巧。
 
 ## 📊 项目信息
-* **GitHub**: [https://github.com/jlevy/the-art-of-command-line](https://github.com/jlevy/the-art-of-command-line)
 * **星标数**: ⭐ 150k+ (真正的殿堂级开源项目)
 * **主要收录**: 🏷️ Shell 脚本、Unix 工具链
 * **开源协议**: ⚖️ CC-BY-SA-4.0
@@ -50,3 +49,6 @@ date: '2026-04-13T11:17:03+08:00'
 👉 **[立即阅读《命令行的艺术》（中文版）](https://github.com/jlevy/the-art-of-command-line/blob/master/README-zh.md)**
 
 > **推荐阅读方式**：把它存入收藏夹。当你觉得自己每天都在重复使用一些繁琐的命令时，就翻开它看一条，也许它能为你节省无数的生命。
+
+
+* **GitHub 仓库**: [jlevy/the-art-of-command-line](https://github.com/jlevy/the-art-of-command-line)

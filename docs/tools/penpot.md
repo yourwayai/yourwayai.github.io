@@ -10,7 +10,6 @@ date: '2026-04-28T22:45:40+08:00'
 
 **Penpot** 是面向专业团队的开源设计与原型平台，由西班牙公司 Kaleidos 开发。凭借对 SVG、CSS、HTML 和 JSON 等开放标准的原生支持，Penpot 打破了设计与开发之间的信息壁垒——设计稿本身就是代码可读的结构，让产品真正实现所见即所得的交付。
 
-* **GitHub Repo**: [penpot/penpot](https://github.com/penpot/penpot)
 * **Star 数**: ⭐ 47,000+
 * **官方主页**: [https://penpot.app](https://penpot.app)
 * **核心语言**: Clojure (75%) / JavaScript / Rust
@@ -80,3 +79,6 @@ Penpot 特别适合以下团队：
 - 已受够 Figma 高价订阅费的**中小型团队**。
 
 > "Penpot connects design, code, and AI workflows through a code-based approach, making designs readable by developers and AI via the MCP server."
+
+
+* **GitHub 仓库**: [penpot/penpot](https://github.com/penpot/penpot)

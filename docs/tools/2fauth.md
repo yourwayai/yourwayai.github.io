@@ -10,7 +10,6 @@ date: '2026-04-30T22:55:42+08:00'
 
 **2FAuth** 是一个基于 Web 的开源应用程序，用于安全地管理你的两步验证（2FA）账户并生成其安全代码（动态密码）。对于不想将 2FA 令牌绑定在单一手机设备（如 Google Authenticator）上，或者不信任第三方云同步服务（如 Authy）的用户来说，2FAuth 提供了一个完美且优雅的自托管替代方案。
 
-* **GitHub Repo**: [Bubka/2FAuth](https://github.com/Bubka/2FAuth)
 * **Star 数**: ⭐ 3,900+
 * **官方主页**: [https://docs.2fauth.app/](https://docs.2fauth.app/)
 * **核心语言**: PHP (Laravel) / Vue.js
@@ -78,3 +77,6 @@ services:
 ## 💡 适用场景与总结
 
 对于注重隐私安全、拥有多台设备（手机和多台电脑）、经常需要在不同终端输入验证码的数字极客和开发者来说，**2FAuth** 是极佳的选择。它不仅消除了手机不在手边时的焦虑，更确保了所有核心安全令牌完全掌握在自己手中。
+
+
+* **GitHub 仓库**: [Bubka/2FAuth](https://github.com/Bubka/2FAuth)

@@ -10,7 +10,6 @@ date: '2026-04-30T23:00:32+08:00'
 
 **Stirling-PDF** 是一款功能强大、开源且支持本地托管的网页版 PDF 操作工具（PDF 瑞士军刀）。它允许你在任何设备上编辑和处理 PDF 文件。由于所有操作都在本地服务器上进行，数据不会离开你的机器，彻底解决了商业云端 PDF 工具带来的隐私泄露和费用高昂的问题。
 
-* **GitHub Repo**: [Stirling-Tools/Stirling-PDF](https://github.com/Stirling-Tools/Stirling-PDF)
 * **Star 数**: ⭐ 41,000+
 * **官方主页**: [https://stirlingpdf.com](https://stirlingpdf.com)
 * **核心语言**: Java / Vue
@@ -75,3 +74,6 @@ docker run -d \
 ## 💡 适用场景与总结
 
 如果你经常需要处理 PDF 文件（合并合同、提取页面、转换格式、打水印），但又对将包含敏感信息的文档上传到第三方网站（如 iLovePDF）感到担忧，那么 **Stirling-PDF** 就是为你量身定制的。它非常适合部署在公司内网供全员使用，或是作为个人的私有云 PDF 处理中心。
+
+
+* **GitHub 仓库**: [Stirling-Tools/Stirling-PDF](https://github.com/Stirling-Tools/Stirling-PDF)

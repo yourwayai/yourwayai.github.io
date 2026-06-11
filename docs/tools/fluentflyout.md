@@ -14,7 +14,6 @@ date: '2026-04-28T22:46:22+08:00'
 >
 > "Does a better job than what Microsoft officially offers." — **Neowin**
 
-* **GitHub Repo**: [unchihugo/FluentFlyout](https://github.com/unchihugo/FluentFlyout)
 * **Star 数**: ⭐ 2,600+
 * **官方主页**: [https://fluentflyout.com](https://fluentflyout.com)
 * **核心语言**: C# (WPF)
@@ -97,3 +96,6 @@ FluentFlyout 基于成熟的 Windows 开发生态构建：
 ## 💡 适用场景与总结
 
 如果你是 Windows 11 用户，且对系统自带的媒体控制 OSD（屏幕显示）感到不满——它太丑、信息太少、动画太生硬——FluentFlyout 就是你需要的答案。它不需要任何配置即可开箱即用，静静地待在系统托盘里，在你需要时以最优雅的方式呈现媒体信息。安装后几乎没有任何理由卸载它。
+
+
+* **GitHub 仓库**: [unchihugo/FluentFlyout](https://github.com/unchihugo/FluentFlyout)

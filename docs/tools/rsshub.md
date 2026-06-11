@@ -10,7 +10,6 @@ date: '2026-04-30T23:02:07+08:00'
 
 **RSSHub** 是一个开源、易于使用且易于扩展的 RSS 生成器。它可以给任何奇奇怪怪的内容生成 RSS 订阅源，让使用者能够在各类 RSS 阅读器中追踪不支持 RSS 的网站更新。结合 RSSHub Radar 等生态工具，它可以极大提升信息获取的效率和体验。
 
-* **GitHub Repo**: [DIYgod/RSSHub](https://github.com/DIYgod/RSSHub)
 * **Star 数**: ⭐ 43,700+
 * **官方主页**: [https://docs.rsshub.app](https://docs.rsshub.app)
 * **核心语言**: TypeScript
@@ -78,3 +77,6 @@ docker-compose up -d
 ## 💡 适用场景与总结
 
 RSSHub 适合每一位患有“信息焦虑症”、希望重新掌控自己信息流的高级用户、研究员和开发者。它是现代 RSS 复兴运动的核心基础设施。配合 Docker 轻松自建后，你将拥有一个不受限制的超级信息聚合引擎。
+
+
+* **GitHub 仓库**: [DIYgod/RSSHub](https://github.com/DIYgod/RSSHub)

@@ -167,6 +167,54 @@ def save_article(info, category, short_title, description):
     current_date = datetime.now().astimezone().isoformat()
     filename = f"wx_{timestamp}"
     
+    # Try to extract github repo URL from markdown content
+    github_url = None
+    github_match = re.search(r"https://github\.com/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_.-]+)", info['markdown'])
+    if github_match:
+        owner = github_match.group(1)
+        repo = github_match.group(2).replace(".git", "").strip()
+        github_url = f"https://github.com/{owner}/{repo}"
+        repo_name = f"{owner}/{repo}"
+        
+        # Clean up existing duplicate lines in markdown body
+        lines = info['markdown'].split("\n")
+        cleaned_lines = []
+        for line in lines:
+            stripped = line.strip()
+            is_link_line = (
+                "开源仓库直达" in stripped or
+                "项目仓库直达" in stripped or
+                "官方项目仓库" in stripped or
+                "项目官方 GitHub 仓库" in stripped or
+                "项目开源地址" in stripped or
+                stripped.startswith("* **GitHub Repo**:") or
+                stripped.startswith("* **GitHub 仓库**:") or
+                stripped.startswith("* **GitHub**:")
+            )
+            if not is_link_line:
+                cleaned_lines.append(line)
+        info['markdown'] = "\n".join(cleaned_lines)
+
+    # Reconstruct body with standardized link
+    body = info['markdown'].strip()
+    if github_url:
+        new_link_block = f"\n* **GitHub 仓库**: [{repo_name}]({github_url})\n"
+        # Try to insert right before recommended reading separators, or append
+        insert_patterns = [
+            r"\n---\n\n\*\*推荐阅读[：:]?\*\*",
+            r"\n👇👇👇"
+        ]
+        inserted = False
+        for pat in insert_patterns:
+            m = re.search(pat, body)
+            if m:
+                idx = m.start()
+                body = body[:idx] + "\n" + new_link_block + body[idx:]
+                inserted = True
+                break
+        if not inserted:
+            body = body + "\n\n" + new_link_block
+            
     content = f"""---
 title: {info['title'][:50]}
 short_title: '{short_title}'
@@ -182,7 +230,7 @@ date: '{current_date}'
 
 ---
 
-{info['markdown']}
+{body}
 """
     file_path = f"docs/tools/{filename}.md"
     os.makedirs("docs/tools", exist_ok=True)

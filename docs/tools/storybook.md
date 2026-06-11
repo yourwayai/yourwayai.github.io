@@ -11,7 +11,6 @@ date: '2026-04-21T11:29:45+08:00'
 
 Storybook 是全行业标配的**前端 UI 组件独立工作台**。它允许开发者在不干扰应用程序主业务逻辑和复杂上下文的情况下，**独立构建、测试和记录 UI 组件**。无论是搭建企业级的设计系统（Design System），还是开发高复用的组件库，Storybook 都能极大程度地降低耦合，提升组件的交付质量。
 
-* **GitHub Repo**: [storybookjs/storybook](https://github.com/storybookjs/storybook)
 * **Star 数**: ⭐ 89755+
 * **官方主页**: [https://storybook.js.org](https://storybook.js.org)
 * **核心语言**: TypeScript
@@ -70,3 +69,6 @@ npm run storybook
 * 需要对外沉淀并发布开源 UI 组件库（如 ElementPlus, AntDesign）。
 * 企业内部建设高阶基建团队的 Design System 物料体系。
 * 亟需降低 UI 样式逻辑耦合度，并在重构时能快速回归视觉变更。
+
+
+* **GitHub 仓库**: [storybookjs/storybook](https://github.com/storybookjs/storybook)

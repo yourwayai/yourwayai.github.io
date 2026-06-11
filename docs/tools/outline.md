@@ -11,7 +11,6 @@ date: '2026-04-13T10:45:02+08:00'
 
 **Outline** 是一个为现代团队构建的开源自托管 Wiki 与知识库平台。其极简的类 Notion UI 和流畅的交互体验，使其在开源文档领域中独树一帜，是企业或独立开发者脱离昂贵商业 SaaS 服务（如 Notion, Confluence）的首选平替方案。
 
-* **GitHub Repo**: [outlinewiki/outline](https://github.com/outlinewiki/outline)
 * **Star 数**: ⭐ 29000+
 * **官方主页**: [https://www.getoutline.com](https://www.getoutline.com)
 * **核心语言**: TypeScript (Node.js & React)
@@ -59,3 +58,6 @@ services:
 ## 💡 适用场景与总结
 
 Outline 非常适合被用于**建立研发开发团队的核心技术架构与操作手册规约库**。相比起臃肿缓慢的巨无霸型 Wiki，Outline 依靠其毫无学习成本的交互界面赢得了多数工程师的好感，它能极大地促进团队成员们乐于主动沉淀技术资产。
+
+
+* **GitHub 仓库**: [outlinewiki/outline](https://github.com/outlinewiki/outline)

@@ -10,7 +10,6 @@ date: '2026-04-28T22:46:02+08:00'
 
 **Goose** 是由 Block（Square 母公司）开发、现已捐赠给 Linux 基金会旗下 **Agentic AI Foundation (AAIF)** 的开源 AI Agent。与仅提供代码补全的传统 AI 工具不同，Goose 是一个真正运行在你本地机器上的**通用 AI 执行代理**——它可以安装软件、执行脚本、修改文件、运行测试，并自主完成复杂的多步骤任务。
 
-* **GitHub Repo**: [aaif-goose/goose](https://github.com/aaif-goose/goose)
 * **Star 数**: ⭐ 43,500+
 * **官方主页**: [https://goose-docs.ai](https://goose-docs.ai)
 * **核心语言**: Rust (49%) / TypeScript (45%)
@@ -110,3 +109,6 @@ Goose 最初由 Block（Jack Dorsey 创立的金融科技公司）内部团队�
 ## 💡 适用场景与总结
 
 Goose 最适合希望将 AI 真正融入工程工作流的开发者。它不只是一个"聊天助手"，而是一个可以**自主完成端到端任务**的本地代理——从读 issue 到写代码、跑测试、提 PR，整个链路都可以交给 Goose 自动完成。对于想要 Cursor/Copilot 之外更强大自主性的工程师来说，Goose 是目前开源生态中最值得关注的选项。
+
+
+* **GitHub 仓库**: [aaif-goose/goose](https://github.com/aaif-goose/goose)

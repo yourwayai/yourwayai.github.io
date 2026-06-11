@@ -11,7 +11,6 @@ date: '2026-04-21T11:38:05+08:00'
 
 Hermes Agent 是由 AI 明星机构 NousResearch 开源的一套高级定制化 Agent（智能体）集成框架，它的核心愿景是 **"The agent that grows with you"**。与传统的单次问答式机器人截然不同，Hermes 提供了一套完善的程序化记忆架构、动态生长的技能包（Skills Hub）机制以及对新兴扩展协议（如 MCP 协议）的深度集成。它不仅仅是一个执行工具，更是一个能不断学习上下文、沉淀企业工作流的专属数字助理。
 
-* **GitHub Repo**: [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)
 * **Star 数**: ⭐ 105848+
 * **官方主页**: [https://hermes-agent.nousresearch.com](https://hermes-agent.nousresearch.com)
 * **核心语言**: Python
@@ -55,3 +54,6 @@ python main.py start --verbose
 ```
 
 > **注意：** 该框架面向高级定制型 Python 开发者或研究团队效能组体验最佳，推荐先完整浏览官方配套 [Architecture Docs](https://hermes-agent.nousresearch.com/docs/developer-guide/architecture) 建立循环逻辑体系认知。
+
+
+* **GitHub 仓库**: [NousResearch/hermes-agent](https://github.com/NousResearch/hermes-agent)

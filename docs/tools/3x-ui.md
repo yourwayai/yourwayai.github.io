@@ -11,7 +11,6 @@ date: '2026-04-21T11:43:26+08:00'
 
 在现今纷繁复杂的网络分流与多协议架构需求下，**3x-ui** 凭借其对 Xray-core 底层的极致榨取和优雅的中文 Web 管理交互面，成为了极客群体自建节点时几乎必然装配的“大杀器”。它不仅支持市面上所有的主流网络协议配置，还能精确展示服务器硬件资源曲线和流量大盘。
 
-* **GitHub Repo**: [MHSanaei/3x-ui](https://github.com/MHSanaei/3x-ui)
 * **Star 数**: ⭐ 29000+
 * **核心语言**: Go (Golang) / Vue
 * **开源协议**: GPL-3.0 License
@@ -57,3 +56,6 @@ bash <(curl -Ls https://raw.githubusercontent.com/mhsanaei/3x-ui/master/install.
 * 开发组或者独立全栈工作者常需与海外服务器拉取大型构建环境（国际化部署）时确保网络无瓶颈。
 * 需要针对不同的物理设备（如手机、外置路由器软路由平台等）精准分发特定专线通道配置操作。
 * 对直接操控晦涩难懂的 Xray-core `config.json` 感到极大排斥，渴望一键生成所有主流协议分享链接并能从 UI 点选免费申请域名的技术玩家。
+
+
+* **GitHub 仓库**: [MHSanaei/3x-ui](https://github.com/MHSanaei/3x-ui)

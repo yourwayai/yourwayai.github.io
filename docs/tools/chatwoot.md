@@ -14,7 +14,6 @@ date: '2026-04-13T11:43:30+08:00'
 **Chatwoot** 是一款现代化、开源且支持自托管的客户支持平台。它旨在全方位升级您的客服体验，是 Intercom、Zendesk 和 Salesforce Service Cloud 等昂贵商业软件的完美开源替代品。
 
 ## 📊 项目信息
-* **GitHub**: [https://github.com/chatwoot/chatwoot](https://github.com/chatwoot/chatwoot)
 * **官方主页**: [https://www.chatwoot.com](https://www.chatwoot.com)
 * **星标数**: ![GitHub Repo stars](https://img.shields.io/github/stars/chatwoot/chatwoot?style=social)
 * **版本**: ![GitHub tag (latest SemVer)](https://img.shields.io/github/v/release/chatwoot/chatwoot?style=flat-square)
@@ -73,3 +72,6 @@ volumes:
 ```
 
 *(温馨提示：生产环境部署请务必参考[官方环境配置文档](https://www.chatwoot.com/docs/environment-variables) 设置正确的 Redis、Postgres 和环境变量。)*
+
+
+* **GitHub 仓库**: [chatwoot/chatwoot](https://github.com/chatwoot/chatwoot)

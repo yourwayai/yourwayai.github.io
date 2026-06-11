@@ -12,7 +12,6 @@ date: '2026-04-13T11:07:20+08:00'
 
 **Memos** 是一个完全开源、支持高度定制与自托管的跨平台碎片信息管理中枢。对于任何想迅速捕获一闪而过的念头、待办事项、图片剪报或一串短小 URL 的朋友来说，Memos 提供了媲美发推特、发朋友圈的极低操作负担和舒适体验。
 
-* **GitHub Repo**: [usememos/memos](https://github.com/usememos/memos)
 * **Star 数**: ⭐ 32000+
 * **官方主页**: [https://www.usememos.com](https://www.usememos.com)
 * **核心语言**: Go / TypeScript (React)
@@ -57,3 +56,6 @@ docker run -d \
 
 这是作为**开发者个人及任何极客小群体的“神经第一缓冲记忆带”**。
 当你忙着写代码调试，而根本没心力或时间去打开 Notion 或者 Github Project 去建档整理知识体系时，不妨把随手追溯的堆栈报错信息、StackOverflow 的关键答案链接等全无脑堆入 Memos 中；随后等到复盘阶段，再利用它极速的局域模糊检索功能或 `#标签` 分类机制慢慢归纳消化掉。
+
+
+* **GitHub 仓库**: [usememos/memos](https://github.com/usememos/memos)

@@ -10,7 +10,6 @@ date: '2026-04-30T22:59:04+08:00'
 
 **beszel** 是一款轻量级的服务器监控系统，专为那些认为传统监控方案（如 Prometheus + Grafana）过于沉重和复杂的开发者设计。它提供了一个现代化的 Web UI，支持多用户管理，不仅可以监控主机的 CPU、内存和磁盘，还能精确追踪 Docker 容器的历史资源占用情况，并内置了灵活的告警系统。
 
-* **GitHub Repo**: [henrygd/beszel](https://github.com/henrygd/beszel)
 * **Star 数**: ⭐ 21,400+
 * **官方主页**: [https://beszel.dev](https://beszel.dev)
 * **核心语言**: Go (后端) / Svelte (前端)
@@ -84,3 +83,6 @@ docker run -d --name beszel-agent --restart unless-stopped \
 ## 💡 适用场景与总结
 
 对于拥有多台 VPS 或 HomeLab 的个人开发者、独立站长以及中小型团队来说，Beszel 找到了功能与轻量的绝佳平衡点。它去除了企业级监控工具（如 Prometheus）那陡峭的学习曲线，又比传统的探针（如 ServerStatus）提供了更具价值的历史数据记录和容器追踪能力，是目前不可多得的新锐监控工具。
+
+
+* **GitHub 仓库**: [henrygd/beszel](https://github.com/henrygd/beszel)

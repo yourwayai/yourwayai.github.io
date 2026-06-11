@@ -10,7 +10,6 @@ date: '2026-04-28T22:45:04+08:00'
 
 **CookCLI** 是 [Cooklang](https://cooklang.org) 生态系统的官方命令行工具，用 Rust 构建，集菜谱解析、购物清单生成、食材库存管理和内嵌 Web 服务器于一体。它的核心理念是将厨房食谱纳入 UNIX 哲学管理体系——**像管理代码一样管理你的食谱**。
 
-* **GitHub Repo**: [cooklang/cookcli](https://github.com/cooklang/cookcli)
 * **Star 数**: ⭐ 1,300+
 * **官方主页**: [https://demo.cooklang.org](https://demo.cooklang.org)
 * **核心语言**: Rust
@@ -159,3 +158,6 @@ cargo install cookcli
 CookCLI 是工程师审美与厨房生活的完美结合。如果你习惯用 Git 管理一切，厌倦了截图或手抄食谱，想要用脚本自动化一周的饮食计划并生成精准购物清单——CookCLI 是目前最优雅的解决方案。
 
 > 将你的食谱库放进 Git 仓库，像版本控制代码一样管理它，就是 Cooklang 生态给出的终极答案。
+
+
+* **GitHub 仓库**: [cooklang/cookcli](https://github.com/cooklang/cookcli)

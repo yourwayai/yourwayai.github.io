@@ -5,6 +5,13 @@ category: '🎨 设计与极客'
 date: '2026-04-28T22:45:40+08:00'
 icon: 'https://github.com/penpot.png'
 stars: 'N/A'
+platforms:
+  - Linux
+  - macOS
+  - Windows
+deployments:
+  - Docker
+  - Source Code
 ---
 # Penpot：设计与代码协同的开源平台
 

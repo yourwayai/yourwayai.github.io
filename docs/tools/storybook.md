@@ -5,6 +5,13 @@ category: '🎨 设计与极客'
 date: '2026-04-21T11:29:45+08:00'
 icon: 'https://github.com/storybookjs.png'
 stars: 'N/A'
+platforms:
+  - Linux
+  - macOS
+  - Windows
+deployments:
+  - Docker
+  - Source Code
 ---
 
 # Storybook: 行业标准的 UI 组件独立开发工作台

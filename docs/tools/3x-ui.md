@@ -5,6 +5,13 @@ category: '🛠️ 系统与运维'
 date: '2026-04-21T11:43:26+08:00'
 icon: 'https://github.com/MHSanaei.png'
 stars: 'N/A'
+platforms:
+  - Linux
+  - macOS
+  - Windows
+deployments:
+  - Docker
+  - Source Code
 ---
 
 # 3x-ui: 顶级的 Xray 节点全能可视化桌面

@@ -5,6 +5,13 @@ icon: 'https://raw.githubusercontent.com/outline/outline/main/public/images/icon
 category: '✍️ 知识与协作'
 date: '2026-04-13T10:45:02+08:00'
 stars: '38.8k'
+platforms:
+  - Linux
+  - macOS
+  - Windows
+deployments:
+  - Docker
+  - Source Code
 ---
 # Outline: 优雅的现代化团队知识库
 

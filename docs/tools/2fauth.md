@@ -5,6 +5,13 @@ category: '🔒 安全与隐私'
 date: '2026-04-30T22:55:42+08:00'
 icon: 'https://raw.githubusercontent.com/Bubka/2FAuth/master/public/logo.svg'
 stars: '4.0k'
+platforms:
+  - Linux
+  - macOS
+  - Windows
+deployments:
+  - Docker
+  - Source Code
 ---
 # 2FAuth：你的私有两步验证（2FA）令牌管家
 

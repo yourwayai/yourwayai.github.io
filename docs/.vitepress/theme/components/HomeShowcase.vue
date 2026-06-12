@@ -54,10 +54,102 @@
 
         <!-- Control Bar -->
         <div class="control-bar">
-          <div class="search-wrapper">
-            <span class="search-icon">🔍</span>
-            <input type="text" v-model="searchQuery" placeholder="在当前页面过滤卡片..." class="search-input" />
+          <div class="search-container">
+            <div class="search-wrapper">
+              <span class="search-icon">🔍</span>
+              <input 
+                ref="searchInput"
+                type="text" 
+                v-model="searchQuery" 
+                placeholder="在当前页面过滤卡片..." 
+                class="search-input" 
+              />
+              <span class="search-shortcut">/</span>
+            </div>
+            <button 
+              class="filter-toggle-btn" 
+              :class="{ active: isFilterOpen }"
+              @click="isFilterOpen = !isFilterOpen"
+            >
+              <span class="filter-icon">
+                <svg xmlns="http://www.w3.org/2005/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
+              </span>
+              <span>筛选</span>
+              <span class="active-filters-badge" v-if="selectedPlatforms.length || selectedDeployments.length">
+                {{ selectedPlatforms.length + selectedDeployments.length }}
+              </span>
+            </button>
+            <button
+              class="random-btn"
+              @click="redirectToRandom"
+              title="随机推荐一个工具"
+            >
+              <span class="random-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.017 2.814a1 1 0 0 1 1.966 0l1.051 5.558a2 2 0 0 0 1.594 1.594l5.558 1.051a1 1 0 0 1 0 1.966l-5.558 1.051a2 2 0 0 0-1.594 1.594l-1.051 5.558a1 1 0 0 1-1.966 0l-1.051-5.558a2 2 0 0 0-1.594-1.594l-5.558-1.051a1 1 0 0 1 0-1.966l5.558-1.051a2 2 0 0 0 1.594-1.594z"/><path d="M20 2v4"/><path d="M22 4h-4"/><circle cx="4" cy="20" r="2"/></svg>
+              </span>
+              <span class="random-text">手气不错</span>
+            </button>
           </div>
+
+          <!-- Filters Panel -->
+          <transition name="slide-fade">
+            <div v-if="isFilterOpen" class="filter-panel">
+              <div class="filter-columns">
+                <!-- Platform Column -->
+                <div class="filter-column">
+                  <h4 class="filter-column-title">支持系统</h4>
+                  <div class="filter-options">
+                    <label v-for="plat in availablePlatforms" :key="plat" class="filter-option-label">
+                      <input type="checkbox" :value="plat" v-model="selectedPlatforms" />
+                      <span class="checkbox-custom"></span>
+                      <span class="option-text">{{ plat }}</span>
+                      <span class="option-count">{{ getPlatformCount(plat) }}</span>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Deployment Column -->
+                <div class="filter-column">
+                  <h4 class="filter-column-title">部署与安装</h4>
+                  <div class="filter-options">
+                    <label v-for="dep in availableDeployments" :key="dep" class="filter-option-label">
+                      <input type="checkbox" :value="dep" v-model="selectedDeployments" />
+                      <span class="checkbox-custom"></span>
+                      <span class="option-text">{{ dep }}</span>
+                      <span class="option-count">{{ getDeploymentCount(dep) }}</span>
+                    </label>
+                  </div>
+                </div>
+
+                <!-- Sorting Column -->
+                <div class="filter-column">
+                  <h4 class="filter-column-title">排序规则</h4>
+                  <div class="filter-options">
+                    <label class="filter-option-label">
+                      <input type="radio" value="newest" v-model="sortBy" />
+                      <span class="radio-custom"></span>
+                      <span class="option-text">最新发布</span>
+                    </label>
+                    <label class="filter-option-label">
+                      <input type="radio" value="stars" v-model="sortBy" />
+                      <span class="radio-custom"></span>
+                      <span class="option-text">GitHub Star数</span>
+                    </label>
+                    <label class="filter-option-label">
+                      <input type="radio" value="views" v-model="sortBy" />
+                      <span class="radio-custom"></span>
+                      <span class="option-text">浏览热度</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="filter-footer">
+                <button class="clear-filters-btn" @click="clearFilters">重置筛选</button>
+              </div>
+            </div>
+          </transition>
+
           <div class="category-pills">
             <button 
               v-for="cat in uniqueCategories" 
@@ -110,7 +202,7 @@
           <div class="empty-icon">📭</div>
           <h3>没有找到匹配的内容</h3>
           <p>请尝试其他关键词或分类</p>
-          <button class="reset-btn" @click="searchQuery = ''; activeCategory = '全部'">重置过滤条件</button>
+          <button class="reset-btn" @click="searchQuery = ''; activeCategory = '全部'; clearFilters()">重置过滤条件</button>
         </div>
       </main>
 
@@ -160,7 +252,7 @@
 </template>
 
 <script setup>
-import { computed, ref } from 'vue'
+import { computed, ref, onMounted, onUnmounted } from 'vue'
 
 const onCardMouseMove = (e) => {
   const card = e.currentTarget
@@ -191,6 +283,30 @@ const colors = [
 const searchQuery = ref('')
 const activeCategory = ref('全部')
 
+const searchInput = ref(null)
+const isFilterOpen = ref(false)
+const selectedPlatforms = ref([])
+const selectedDeployments = ref([])
+const sortBy = ref('newest') // newest, stars, views
+
+// Available filter choices
+const availablePlatforms = ['Linux', 'Windows', 'macOS']
+const availableDeployments = ['Docker', 'Source Code', 'CLI / Command Line', 'Binary / packages']
+
+// Setup hotkey listener for "/"
+onMounted(() => {
+  const handleKeyDown = (e) => {
+    if (e.key === '/' && document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
+      e.preventDefault()
+      searchInput.value?.focus()
+    }
+  }
+  window.addEventListener('keydown', handleKeyDown)
+  onUnmounted(() => {
+    window.removeEventListener('keydown', handleKeyDown)
+  })
+})
+
 const categoryOrder = [
   '🤖 AI 与智能体',
   '🛠️ 系统与运维',
@@ -215,7 +331,9 @@ const rawTools = Object.entries(modules).map(([path, mod], index) => {
     link: url,
     stars: fm.stars || '-',
     views: fm.views || '-',
-    date: fm.date || '2000-01-01'
+    date: fm.date || '2000-01-01',
+    platforms: fm.platforms || [],
+    deployments: fm.deployments || []
   }
 })
 
@@ -236,8 +354,28 @@ const uniqueCategories = computed(() => {
   return ['全部', ...sortedCats]
 })
 
-// Compute filtered tools
-const filteredTools = computed(() => {
+// Filter matching deployments (helper)
+const matchesDeploymentFilter = (toolDeployments, filterVal) => {
+  if (!toolDeployments || !Array.isArray(toolDeployments)) return false
+  const lowerDeps = toolDeployments.map(d => d.toLowerCase())
+  
+  if (filterVal === 'Docker') {
+    return lowerDeps.includes('docker') || lowerDeps.includes('docker compose')
+  }
+  if (filterVal === 'Source Code') {
+    return lowerDeps.includes('source code') || lowerDeps.includes('source')
+  }
+  if (filterVal === 'CLI / Command Line') {
+    return lowerDeps.includes('cli') || lowerDeps.includes('command line') || lowerDeps.includes('cargo') || lowerDeps.includes('brew') || lowerDeps.includes('pip')
+  }
+  if (filterVal === 'Binary / packages') {
+    return lowerDeps.includes('binary') || lowerDeps.includes('npx') || lowerDeps.includes('plugins')
+  }
+  return false
+}
+
+// Base filtered tools by category & query
+const baseFilteredTools = computed(() => {
   let result = allTools
 
   if (activeCategory.value !== '全部') {
@@ -256,6 +394,65 @@ const filteredTools = computed(() => {
   return result
 })
 
+// Filter Option counts
+const getPlatformCount = (plat) => {
+  return baseFilteredTools.value.filter(t => t.platforms && Array.isArray(t.platforms) && t.platforms.includes(plat)).length
+}
+
+const getDeploymentCount = (dep) => {
+  return baseFilteredTools.value.filter(t => matchesDeploymentFilter(t.deployments, dep)).length
+}
+
+const clearFilters = () => {
+  selectedPlatforms.value = []
+  selectedDeployments.value = []
+  sortBy.value = 'newest'
+}
+
+// Compute filtered tools including platform, deployment filters and sorting
+const filteredTools = computed(() => {
+  let result = baseFilteredTools.value
+
+  // Apply Platform Filter
+  if (selectedPlatforms.value.length > 0) {
+    result = result.filter(t => 
+      t.platforms && Array.isArray(t.platforms) && 
+      selectedPlatforms.value.some(plat => t.platforms.includes(plat))
+    )
+  }
+
+  // Apply Deployment Filter
+  if (selectedDeployments.value.length > 0) {
+    result = result.filter(t => 
+      selectedDeployments.value.some(dep => matchesDeploymentFilter(t.deployments, dep))
+    )
+  }
+
+  // Apply Sorting
+  return [...result].sort((a, b) => {
+    if (sortBy.value === 'stars') {
+      const parseStars = (str) => {
+        if (!str || str === '-') return 0
+        const s = str.toLowerCase()
+        if (s.endsWith('k')) return parseFloat(s) * 1000
+        if (s.endsWith('m')) return parseFloat(s) * 1000000
+        return parseFloat(s) || 0
+      }
+      return parseStars(b.stars) - parseStars(a.stars)
+    } else if (sortBy.value === 'views') {
+      const parseViews = (str) => {
+        if (!str || str === '-') return 0
+        const s = str.toLowerCase()
+        if (s.endsWith('k')) return parseFloat(s) * 1000
+        return parseFloat(s) || 0
+      }
+      return parseViews(b.views) - parseViews(a.views)
+    } else {
+      return new Date(b.date).getTime() - new Date(a.date).getTime()
+    }
+  })
+})
+
 const isUrl = (str) => {
   if (!str) return false
   return str.startsWith('http://') || str.startsWith('https://') || str.startsWith('/')
@@ -268,7 +465,6 @@ const getRelativeTime = (dateString) => {
   
   const now = new Date()
   const diffTime = now - date
-  // Handle edge cases where date is slightly in the future due to timezone
   if (diffTime < 0) return '✨ New'
   
   const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24))
@@ -277,6 +473,16 @@ const getRelativeTime = (dateString) => {
   if (diffDays <= 30) return `${diffDays} 天前`
   if (diffDays <= 365) return `${Math.floor(diffDays / 30)} 个月前`
   return `${Math.floor(diffDays / 365)} 年前`
+}
+
+// Navigate to a random tool
+const redirectToRandom = () => {
+  if (allTools && allTools.length > 0) {
+    const eligibleTools = allTools.filter(t => !t.link.includes('212801') && !t.link.includes('212858') && !t.link.includes('112236'))
+    const pool = eligibleTools.length > 0 ? eligibleTools : allTools
+    const randomTool = pool[Math.floor(Math.random() * pool.length)]
+    window.location.href = randomTool.link
+  }
 }
 </script>
 
@@ -507,17 +713,23 @@ const getRelativeTime = (dateString) => {
 /* Control Bar & Search */
 .control-bar {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: stretch;
   gap: 1rem;
   margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  width: 100%;
 }
 
 .search-wrapper {
   position: relative;
-  flex: 0 0 260px;
-  max-width: 100%;
+  flex: 1;
 }
 
 .search-icon {
@@ -532,7 +744,7 @@ const getRelativeTime = (dateString) => {
 
 .search-input {
   width: 100%;
-  padding: 0.8rem 1rem 0.8rem 3rem;
+  padding: 0.8rem 3rem 0.8rem 3rem;
   border-radius: 999px;
   border: 1px solid var(--vp-c-border);
   background-color: var(--vp-c-bg-soft);
@@ -540,6 +752,7 @@ const getRelativeTime = (dateString) => {
   font-size: 1rem;
   transition: all 0.3s ease;
   box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+  box-sizing: border-box;
 }
 
 .search-input:focus {
@@ -547,6 +760,313 @@ const getRelativeTime = (dateString) => {
   border-color: var(--vp-c-brand-1);
   box-shadow: 0 0 0 3px rgba(24, 216, 103, 0.15);
   background-color: var(--vp-c-bg);
+}
+
+.search-shortcut {
+  position: absolute;
+  right: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--vp-c-bg-mute);
+  border: 1px solid var(--vp-c-border);
+  color: var(--vp-c-text-3);
+  font-size: 0.75rem;
+  padding: 1px 6px;
+  border-radius: 4px;
+  pointer-events: none;
+  font-family: var(--vp-font-family-mono);
+}
+
+.filter-toggle-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: 999px;
+  border: 1px solid var(--vp-c-border);
+  background-color: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1);
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+  white-space: nowrap;
+}
+
+.filter-toggle-btn:hover {
+  border-color: var(--vp-c-brand-1);
+  color: var(--vp-c-brand-1);
+  background-color: var(--vp-c-bg);
+}
+
+.filter-toggle-btn.active {
+  background-color: var(--vp-c-brand-soft);
+  border-color: var(--vp-c-brand-1);
+  color: var(--vp-c-brand-1);
+}
+
+/* Random Tool Button */
+.random-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 149, 0, 0.35);
+  background-color: rgba(255, 149, 0, 0.06);
+  color: #ff9500;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(255, 149, 0, 0.06);
+  white-space: nowrap;
+}
+
+.random-btn:hover {
+  background-color: rgba(255, 149, 0, 0.14);
+  border-color: #ff9500;
+  box-shadow: 0 4px 16px rgba(255, 149, 0, 0.18);
+  transform: translateY(-1px);
+}
+
+.random-btn:active {
+  transform: translateY(0px);
+}
+
+.dark .random-btn {
+  border-color: rgba(255, 149, 0, 0.4);
+  background-color: rgba(255, 149, 0, 0.08);
+}
+
+.dark .random-btn:hover {
+  background-color: rgba(255, 149, 0, 0.18);
+}
+
+.random-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s ease;
+}
+
+.random-btn:hover .random-icon {
+  transform: rotate(20deg) scale(1.15);
+}
+
+
+.filter-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.active-filters-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--vp-c-brand-1);
+  color: white;
+  font-size: 0.72rem;
+  font-weight: 700;
+  min-width: 18px;
+  height: 18px;
+  padding: 0 5px;
+  border-radius: 9px;
+  margin-left: 2px;
+}
+
+/* Filter Panel Drawer */
+.filter-panel {
+  width: 100%;
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  margin-top: 0.5rem;
+  box-sizing: border-box;
+}
+
+.filter-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .filter-columns {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+.filter-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.filter-column-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--vp-c-text-2);
+  margin: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed var(--vp-c-border);
+}
+
+.filter-options {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+/* Checkbox & Radio styling */
+.filter-option-label {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.9rem;
+  color: var(--vp-c-text-1);
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  padding: 0.2rem 0;
+  transition: color 0.2s ease;
+}
+
+.filter-option-label:hover {
+  color: var(--vp-c-brand-1);
+}
+
+.filter-option-label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Custom Checkbox */
+.checkbox-custom {
+  height: 16px;
+  width: 16px;
+  background-color: var(--vp-c-bg-mute);
+  border: 1px solid var(--vp-c-border);
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.filter-option-label input:checked ~ .checkbox-custom {
+  background-color: var(--vp-c-brand-1);
+  border-color: var(--vp-c-brand-1);
+}
+
+.checkbox-custom::after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 5px;
+  top: 2px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.filter-option-label input:checked ~ .checkbox-custom::after {
+  display: block;
+}
+
+/* Custom Radio */
+.radio-custom {
+  height: 16px;
+  width: 16px;
+  background-color: var(--vp-c-bg-mute);
+  border: 1px solid var(--vp-c-border);
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.filter-option-label input:checked ~ .radio-custom {
+  border-color: var(--vp-c-brand-1);
+}
+
+.radio-custom::after {
+  content: "";
+  position: absolute;
+  display: none;
+  top: 4px;
+  left: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--vp-c-brand-1);
+}
+
+.filter-option-label input:checked ~ .radio-custom::after {
+  display: block;
+}
+
+.option-text {
+  flex: 1;
+}
+
+.option-count {
+  font-size: 0.78rem;
+  color: var(--vp-c-text-3);
+  font-weight: 500;
+  background-color: var(--vp-c-bg-mute);
+  padding: 1px 6px;
+  border-radius: 10px;
+}
+
+.filter-footer {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--vp-c-border);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.clear-filters-btn {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--vp-c-text-2);
+  background: transparent;
+  border: 1px solid var(--vp-c-border);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.clear-filters-btn:hover {
+  border-color: var(--vp-c-brand-1);
+  color: var(--vp-c-brand-1);
+  background-color: var(--vp-c-brand-soft);
+}
+
+/* slide-fade animation */
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.25s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateY(-10px);
+  opacity: 0;
 }
 
 /* Category Pills */

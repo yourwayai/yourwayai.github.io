@@ -5,6 +5,13 @@ icon: 'https://github.com/chatwoot.png'
 category: '✍️ 知识与协作'
 date: '2026-04-13T11:43:30+08:00'
 stars: 'N/A'
+platforms:
+  - Linux
+  - macOS
+  - Windows
+deployments:
+  - Docker
+  - Source Code
 ---
 # Chatwoot
 

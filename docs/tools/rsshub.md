@@ -5,6 +5,13 @@ category: '📂 实用与提效'
 date: '2026-04-30T23:02:07+08:00'
 icon: 'https://raw.githubusercontent.com/DIYgod/RSSHub/master/public/logo.png'
 stars: '43.7k'
+platforms:
+  - Linux
+  - macOS
+  - Windows
+deployments:
+  - Docker
+  - Source Code
 ---
 # RSSHub：万物皆可 RSS
 

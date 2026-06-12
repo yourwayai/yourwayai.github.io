@@ -5,6 +5,13 @@ category: '🛠️ 系统与运维'
 date: '2026-04-30T22:59:04+08:00'
 icon: 'https://github.com/henrygd.png'
 stars: 'N/A'
+platforms:
+  - Linux
+  - macOS
+  - Windows
+deployments:
+  - Docker
+  - Source Code
 ---
 # beszel：轻巧优雅的服务器状态监控面板
 

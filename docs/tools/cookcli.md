@@ -5,6 +5,13 @@ category: '📂 实用与提效'
 date: '2026-04-28T22:45:04+08:00'
 icon: 'https://github.com/cooklang.png'
 stars: 'N/A'
+platforms:
+  - Linux
+  - macOS
+  - Windows
+deployments:
+  - Docker
+  - Source Code
 ---
 # CookCLI：程序员的菜谱管理神器
 

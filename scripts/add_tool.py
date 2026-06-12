@@ -89,6 +89,12 @@ short_title: '{info['name']} — [Short 4-10 char Chinese subtitle]'
 description: [Write a catchy one-line description/pain point in Chinese, max 50 chars]
 category: '[Choose exactly one from: 🤖 AI 与智能体, 🛠️ 系统与运维, 🔒 安全与隐私, ✍️ 知识与协作, 📂 实用与提效, 💰 金融与支付, 🎨 设计与极客, 🍿 影音与娱乐]'
 date: '{info['current_date']}'
+platforms:
+  - [Choose from: Linux, macOS, Windows. E.g. Linux]
+  - [macOS]
+  - [Windows]
+deployments:
+  - [Choose from: Docker, Source Code, CLI, Binary, pip, cargo, brew, npx, plugins. E.g. Docker]
 ---
 # {info['name']}：[Write a catchy subtitle]
 
@@ -171,6 +177,13 @@ short_title: '{info['name']} — 开源项目'
 description: {info['description'][:50]}
 category: '🎨 设计与极客'
 date: '{info['current_date']}'
+platforms:
+  - Linux
+  - macOS
+  - Windows
+deployments:
+  - Docker
+  - Source Code
 ---
 # {info['name']}
 

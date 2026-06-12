@@ -5,6 +5,13 @@ category: '🛠️ 系统与运维'
 date: '2026-04-28T22:46:22+08:00'
 icon: 'https://github.com/unchihugo.png'
 stars: 'N/A'
+platforms:
+  - Linux
+  - macOS
+  - Windows
+deployments:
+  - Docker
+  - Source Code
 ---
 # FluentFlyout：Windows 11 的媒体浮层完美替代品
 

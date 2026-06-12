@@ -5,6 +5,13 @@ category: '📂 实用与提效'
 date: '2026-04-30T23:00:32+08:00'
 icon: 'https://github.com/Stirling-Tools.png'
 stars: 'N/A'
+platforms:
+  - Linux
+  - macOS
+  - Windows
+deployments:
+  - Docker
+  - Source Code
 ---
 # Stirling-PDF：全能开源本地 PDF 工具箱
 

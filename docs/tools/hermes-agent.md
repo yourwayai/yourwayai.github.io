@@ -5,6 +5,13 @@ category: '🤖 AI 与智能体'
 date: '2026-04-21T11:38:05+08:00'
 icon: 'https://github.com/NousResearch.png'
 stars: 'N/A'
+platforms:
+  - Linux
+  - macOS
+  - Windows
+deployments:
+  - Docker
+  - Source Code
 ---
 
 # Hermes Agent: 伴您成长的高级智能体开发框架

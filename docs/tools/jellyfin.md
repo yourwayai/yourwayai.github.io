@@ -5,6 +5,13 @@ icon: 'https://github.com/jellyfin.png'
 category: '🍿 影音与娱乐'
 date: '2026-04-13T11:07:20+08:00'
 stars: 'N/A'
+platforms:
+  - Linux
+  - macOS
+  - Windows
+deployments:
+  - Docker
+  - Source Code
 ---
 
 # Jellyfin: 夺回影音主导权的自由多媒体串流中枢

@@ -5,6 +5,13 @@ icon: 'https://github.com/jlevy.png'
 category: '🎨 设计与极客'
 date: '2026-04-13T11:17:03+08:00'
 stars: 'N/A'
+platforms:
+  - Linux
+  - macOS
+  - Windows
+deployments:
+  - Docker
+  - Source Code
 ---
 # 命令行的艺术 (The Art of Command Line)
 

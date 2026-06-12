@@ -22,6 +22,11 @@
   color: var(--vp-c-brand-1);
 }
 
+/* Hide Navigation Search Bar on Homepage only */
+.is-home .VPNavBarSearch {
+  display: none !important;
+}
+
 /* Premium Search Box Styling for Desktop */
 @media (min-width: 768px) {
   .VPNavBarSearch .DocSearch-Button {
@@ -246,4 +251,15 @@
 .link-btn.primary:hover {
   background: var(--vp-c-brand-2);
   border-color: var(--vp-c-brand-2);
+}
+
+/* Remove vertical divider line between logo and menu in top navbar */
+@media (min-width: 960px) {
+  .VPNavBarTitle.has-sidebar {
+    border-right: none !important;
+  }
+  .VPSidebar {
+    top: var(--vp-nav-height) !important;
+    padding-top: 32px !important;
+  }
 }

@@ -5,6 +5,13 @@ category: '🤖 AI 与智能体'
 date: '2026-04-28T22:46:02+08:00'
 icon: 'https://github.com/aaif-goose.png'
 stars: 'N/A'
+platforms:
+  - Linux
+  - macOS
+  - Windows
+deployments:
+  - Docker
+  - Source Code
 ---
 # Goose：你的本地原生开源 AI Agent
 

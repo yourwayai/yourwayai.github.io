@@ -5,6 +5,13 @@ icon: 'https://github.com/usememos.png'
 category: '✍️ 知识与协作'
 date: '2026-04-13T11:07:20+08:00'
 stars: 'N/A'
+platforms:
+  - Linux
+  - macOS
+  - Windows
+deployments:
+  - Docker
+  - Source Code
 ---
 
 # Memos: 轻盈掌控瞬间灵感的碎片知识胶囊

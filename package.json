@@ -8,7 +8,9 @@
     "docs:build": "npm run build:sitemap && vitepress build docs",
     "docs:preview": "vitepress preview docs",
     "add-tool": "python3 scripts/add_tool.py",
-    "add-wx": "python3 scripts/add_wx.py"
+    "add-wx": "python3 scripts/add_wx.py",
+    "update:stars": "python3 scripts/update_stars.py",
+    "update:stars:dry": "DRY_RUN=1 python3 scripts/update_stars.py"
   },
   "keywords": [],
   "author": "",

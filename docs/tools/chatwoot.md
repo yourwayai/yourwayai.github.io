@@ -12,8 +12,13 @@ platforms:
 deployments:
   - Docker
   - Source Code
+screenshots:
+  - 'https://user-images.githubusercontent.com/73185/155075340-89a96a0e-ea0e-4f19-8eb3-c9f7427d4b22.png'
+  - 'https://user-images.githubusercontent.com/73185/209480536-5b4eb42e-7b3c-4c0a-af41-0e04cd2c45e4.png'
 ---
 # Chatwoot
+
+<ScreenshotCarousel :screenshots="$frontmatter.screenshots" :title="$frontmatter.title" />
 
 <p align="center">
   <img src="https://opengraph.githubassets.com/1/chatwoot/chatwoot" alt="chatwoot Preview" style="border-radius: 8px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);">

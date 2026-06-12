@@ -1,8 +1,58 @@
 import { defineConfig } from 'vitepress'
 import fs from 'fs'
 import path from 'path'
+import { withPwa } from '@vite-pwa/vitepress'
 
-export default defineConfig({
+export default withPwa(defineConfig({
+  pwa: {
+    outDir: '.vitepress/dist',
+    registerType: 'autoUpdate',
+    includeAssets: ['favicon.ico', 'logo.jpg'],
+    manifest: {
+      name: 'YourwayAI开源导航站',
+      short_name: 'YourwayAI',
+      description: '发现极致优雅的重磅开源软件与极客工具',
+      theme_color: '#646cff',
+      background_color: '#1b1b1f',
+      display: 'standalone',
+      start_url: '/',
+      icons: [
+        {
+          src: '/logo.jpg',
+          sizes: '192x192',
+          type: 'image/jpeg'
+        },
+        {
+          src: '/logo.jpg',
+          sizes: '512x512',
+          type: 'image/jpeg'
+        }
+      ]
+    },
+    workbox: {
+      globPatterns: ['**/*.{js,css,html,ico,jpg,png,svg,woff2}'],
+      navigateFallback: null,
+      runtimeCaching: [
+        {
+          urlPattern: /^https:\/\/yourwayai\.github\.io\/.*/i,
+          handler: 'NetworkFirst',
+          options: {
+            cacheName: 'yourwayai-cache',
+            expiration: { maxEntries: 100, maxAgeSeconds: 60 * 60 * 24 * 7 }
+          }
+        },
+        {
+          urlPattern: /^https:\/\/github\.com\/.*/i,
+          handler: 'StaleWhileRevalidate',
+          options: {
+            cacheName: 'github-avatars',
+            expiration: { maxEntries: 200, maxAgeSeconds: 60 * 60 * 24 * 30 }
+          }
+        }
+      ]
+    }
+  },
+
   base: '/',
   title: "YourwayAI开源导航站",
   description: "发现优质的免费开源软件",
@@ -322,4 +372,4 @@ export default defineConfig({
       console.error('Error generating RSS feed:', e)
     }
   }
-})
+}))

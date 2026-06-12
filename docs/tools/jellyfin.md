@@ -12,9 +12,16 @@ platforms:
 deployments:
   - Docker
   - Source Code
+screenshots:
+  - 'https://jellyfin.org/images/screenshots/movie_detail.png'
+  - 'https://jellyfin.org/images/screenshots/home.png'
+  - 'https://jellyfin.org/images/screenshots/login.png'
+  - 'https://jellyfin.org/images/screenshots/playback.png'
 ---
 
 # Jellyfin: 夺回影音主导权的自由多媒体串流中枢
+
+<ScreenshotCarousel :screenshots="$frontmatter.screenshots" :title="$frontmatter.title" />
 
 ![Jellyfin OpenGraph Image](https://opengraph.githubassets.com/1/jellyfin/jellyfin)
 

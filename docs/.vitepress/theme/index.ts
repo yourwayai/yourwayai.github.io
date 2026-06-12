@@ -2,6 +2,7 @@ import DefaultTheme from 'vitepress/theme'
 import './style.css'
 import HomeShowcase from './components/HomeShowcase.vue'
 import GithubRepoCard from './components/GithubRepoCard.vue'
+import ScreenshotCarousel from './components/ScreenshotCarousel.vue'
 import MyLayout from './MyLayout.vue'
 
 export default {
@@ -10,5 +11,6 @@ export default {
   enhanceApp({ app, router, siteData }) {
     app.component('HomeShowcase', HomeShowcase)
     app.component('GithubRepoCard', GithubRepoCard)
+    app.component('ScreenshotCarousel', ScreenshotCarousel)
   }
 }

@@ -12,8 +12,14 @@ platforms:
 deployments:
   - Docker
   - Source Code
+screenshots:
+  - 'https://penpot.app/images/home/penpot-screenshot-1.webp'
+  - 'https://penpot.app/images/home/penpot-screenshot-2.webp'
+  - 'https://penpot.app/images/home/penpot-screenshot-3.webp'
 ---
 # Penpot：设计与代码协同的开源平台
+
+<ScreenshotCarousel :screenshots="$frontmatter.screenshots" :title="$frontmatter.title" />
 
 ![Penpot OpenGraph Image](https://opengraph.githubassets.com/1/penpot/penpot)
 

@@ -2,6 +2,7 @@
 import DefaultTheme from 'vitepress/theme'
 import ScrollToTopBottom from './components/ScrollToTopBottom.vue'
 import SiteFooter from './components/SiteFooter.vue'
+import CommandPalette from './components/CommandPalette.vue'
 import { useData } from 'vitepress'
 import { watch, onMounted, onUnmounted } from 'vue'
 
@@ -25,6 +26,10 @@ onUnmounted(() => {
 
 <template>
   <Layout>
+    <!-- 全站命令面板搜索 (⌘K / /) -->
+    <template #nav-bar-content-before>
+      <CommandPalette />
+    </template>
     <template #layout-bottom>
       <SiteFooter />
       <ScrollToTopBottom />

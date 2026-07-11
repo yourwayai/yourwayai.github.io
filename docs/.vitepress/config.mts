@@ -155,7 +155,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (7)',
+        text: '📂 实用与提效 (8)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -164,7 +164,8 @@ export default withPwa(defineConfig({
           { text: 'Open Chrome — 浏览器神器', link: '/tools/wx_20260413125458' },
           { text: 'ConvertX — 格式转换利器', link: '/tools/wx_20260429211232' },
           { text: 'CookCLI — 菜谱管理命令行', link: '/tools/cookcli' },
-          { text: 'AirTranslate — Mac全局音频翻译', link: '/tools/wx_20260530171544' }
+          { text: 'AirTranslate — Mac全局音频翻译', link: '/tools/wx_20260530171544' },
+          { text: '如何在受限硬件上跑起大参数模型', link: '/tools/wx_20260711133118' }
         ]
       },
       {

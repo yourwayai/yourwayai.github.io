@@ -83,7 +83,7 @@ export default withPwa(defineConfig({
     // 网站左侧的分类侧边栏
     sidebar: [
       {
-        text: '🤖 AI 与智能体 (26)',
+        text: '🤖 AI 与智能体 (27)',
         collapsed: false,
         items: [
           { text: 'Jellyfish — AI 短剧生产工作台', link: '/tools/wx_20260518005533' },
@@ -111,7 +111,8 @@ export default withPwa(defineConfig({
           { text: 'Anthropic Agent Skills — AI 定制化时代', link: '/tools/wx_20260611154756' },
           { text: 'Agent Reach — 联网脚手架', link: '/tools/wx_20260611155218' },
           { text: 'Open Notebook — 本地化 NotebookLM 替代方案', link: '/tools/wx_20260612100000' },
-          { text: 'Supervision — 统一视觉模型输出标准', link: '/tools/wx_20260623201519' }
+          { text: 'Supervision — 统一视觉模型输出标准', link: '/tools/wx_20260623201519' },
+          { text: 'Skills — AI 上下文约束', link: '/tools/wx_20260711124623' }
         ]
       },
       {
@@ -150,7 +151,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (8)',
+        text: '📂 实用与提效 (7)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -159,8 +160,7 @@ export default withPwa(defineConfig({
           { text: 'Open Chrome — 浏览器神器', link: '/tools/wx_20260413125458' },
           { text: 'ConvertX — 格式转换利器', link: '/tools/wx_20260429211232' },
           { text: 'CookCLI — 菜谱管理命令行', link: '/tools/cookcli' },
-          { text: 'AirTranslate — Mac全局音频翻译', link: '/tools/wx_20260530171544' },
-          { text: '为什么 AI 助手总写错云端部', link: '/tools/wx_20260711124623' }
+          { text: 'AirTranslate — Mac全局音频翻译', link: '/tools/wx_20260530171544' }
         ]
       },
       {

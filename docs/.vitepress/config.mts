@@ -166,7 +166,7 @@ export default withPwa(defineConfig({
           { text: 'ConvertX — 格式转换利器', link: '/tools/wx_20260429211232' },
           { text: 'CookCLI — 菜谱管理命令行', link: '/tools/cookcli' },
           { text: 'AirTranslate — Mac全局音频翻译', link: '/tools/wx_20260530171544' },
-          { text: 'LibreTranslate ', link: '/tools/wx_20260711133932' }
+          { text: 'LibreTranslate — 自托管离线翻译', link: '/tools/wx_20260711133932' }
         ]
       },
       {

@@ -12,20 +12,28 @@ from datetime import datetime
 NV_API_KEY = "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"
 NV_API_URL = "https://integrate.api.nvidia.com/v1/chat/completions"
 
-def parse_local_chunks(scratchpad_path, url):
-    print(f"Reading from local scratchpad: {scratchpad_path}...")
-    with open(scratchpad_path, 'r', encoding='utf-8') as f:
-        content = f.read()
-    
-    # Extract HTML chunks
-    chunks = re.findall(r'```html\n(.*?)\n```', content, re.DOTALL)
-    if not chunks:
-        print("No HTML chunks found in scratchpad.")
+def fetch_via_curl(url):
+    print(f"Fetching {url} via curl...")
+    ua = "Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1"
+    try:
+        res = subprocess.run(
+            ["curl", "-s", "-H", f"User-Agent: {ua}", url],
+            capture_output=True,
+            text=True,
+            check=True
+        )
+        html = res.stdout
+        if "环境异常" in html and "去验证" in html:
+            print("Error: WeChat blocked this request (Current environment is abnormal).")
+            print("Please fallback to browser scratchpad method.")
+            sys.exit(1)
+        return html
+    except Exception as e:
+        print(f"Failed to fetch via curl: {e}")
         sys.exit(1)
-        
-    full_html = "".join(chunks)
-    
-    # Unescape escaped newlines that were logged as '\\n'
+
+def parse_html_content(full_html, url):
+    # Unescape escaped newlines if they were logged as '\\n'
     full_html = full_html.replace('\\\\n', '\n').replace('\\n', '\n')
     
     soup = BeautifulSoup(full_html, 'html.parser')
@@ -46,7 +54,7 @@ def parse_local_chunks(scratchpad_path, url):
         content_div = soup.find('div', class_='rich_media_content')
     
     if not content_div:
-        print("Failed to find main content block in the HTML chunks.")
+        print("Failed to find main content block (js_content / rich_media_content).")
         sys.exit(1)
 
     # Process Images to bypass anti-hotlinking
@@ -74,6 +82,23 @@ def parse_local_chunks(scratchpad_path, url):
         'url': url,
         'markdown': md_content.strip()
     }
+
+def parse_local_file(file_path, url):
+    print(f"Reading from local file: {file_path}...")
+    with open(file_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+    
+    # If the file is a markdown file with HTML chunks (scratchpad format)
+    if file_path.endswith('.md'):
+        chunks = re.findall(r'```html\n(.*?)\n```', content, re.DOTALL)
+        if chunks:
+            full_html = "".join(chunks)
+        else:
+            full_html = content
+    else:
+        full_html = content
+        
+    return parse_html_content(full_html, url)
 
 def get_available_categories():
     config_path = 'docs/.vitepress/config.mts'
@@ -276,13 +301,23 @@ def git_push(info):
         print(f"Git command failed: {e}")
 
 if __name__ == "__main__":
-    if len(sys.argv) < 3:
-        print("Usage: python3 scripts/add_wx_local.py <scratchpad_path> <wechat_url>")
+    if len(sys.argv) < 2:
+        print("Usage: python3 scripts/add_wx_local.py <wechat_url_or_scratchpad_path> [wechat_url]")
         sys.exit(1)
-    
-    scratchpad_path = sys.argv[1]
-    url = sys.argv[2]
-    info = parse_local_chunks(scratchpad_path, url)
+        
+    arg1 = sys.argv[1]
+    if arg1.startswith("http://") or arg1.startswith("https://"):
+        url = arg1
+        html = fetch_via_curl(url)
+        info = parse_html_content(html, url)
+    else:
+        file_path = arg1
+        if len(sys.argv) < 3:
+            print("Usage for file parsing: python3 scripts/add_wx_local.py <scratchpad_path> <wechat_url>")
+            sys.exit(1)
+        url = sys.argv[2]
+        info = parse_local_file(file_path, url)
+        
     category, short_title, description = categorize_article(info)
     filename = save_article(info, category, short_title, description)
     update_config(info, filename, category, short_title)

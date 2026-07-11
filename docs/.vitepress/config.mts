@@ -83,7 +83,7 @@ export default withPwa(defineConfig({
     // 网站左侧的分类侧边栏
     sidebar: [
       {
-        text: '🤖 AI 与智能体 (27)',
+        text: '🤖 AI 与智能体 (28)',
         collapsed: false,
         items: [
           { text: 'Jellyfish — AI 短剧生产工作台', link: '/tools/wx_20260518005533' },
@@ -112,7 +112,8 @@ export default withPwa(defineConfig({
           { text: 'Agent Reach — 联网脚手架', link: '/tools/wx_20260611155218' },
           { text: 'Open Notebook — 本地化 NotebookLM 替代方案', link: '/tools/wx_20260612100000' },
           { text: 'Supervision — 统一视觉模型输出标准', link: '/tools/wx_20260623201519' },
-          { text: 'Skills — AI 上下文约束', link: '/tools/wx_20260711124623' }
+          { text: 'Skills — AI 上下文约束', link: '/tools/wx_20260711124623' },
+          { text: 'Obsidian-Skills — 规范本地知识库', link: '/tools/wx_20260711131603' }
         ]
       },
       {

@@ -123,7 +123,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '🛠️ 系统与运维 (10)',
+        text: '🛠️ 系统与运维 (11)',
         collapsed: false,
         items: [
           { text: '3x-ui — Xray 协议面板', link: '/tools/3x-ui' },
@@ -135,7 +135,8 @@ export default withPwa(defineConfig({
           { text: 'OfficeCLI — 自动化 Office 工作流', link: '/tools/wx_20260611154651' },
           { text: 'Jujutsu — 极客版本地 Git', link: '/tools/wx_20260611155310' },
           { text: 'Apple Container — macOS 原生容器', link: '/tools/wx_20260711131141' },
-          { text: 'Forel — macOS 本地文件自动化', link: '/tools/wx_20260711134309' }
+          { text: 'Forel — macOS 本地文件自动化', link: '/tools/wx_20260711134309' },
+          { text: 'pgrust — Rust 重写 Postgres', link: '/tools/wx_20260722214639' }
         ]
       },
       {

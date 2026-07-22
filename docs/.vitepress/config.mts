@@ -83,7 +83,7 @@ export default withPwa(defineConfig({
     // 网站左侧的分类侧边栏
     sidebar: [
       {
-        text: '🤖 AI 与智能体 (31)',
+        text: '🤖 AI 与智能体 (32)',
         collapsed: false,
         items: [
           { text: 'Jellyfish — AI 短剧生产工作台', link: '/tools/wx_20260518005533' },
@@ -116,7 +116,8 @@ export default withPwa(defineConfig({
           { text: 'Obsidian-Skills — 规范本地知识库', link: '/tools/wx_20260711131603' },
           { text: 'MisoTTS — 8B 开源语音模型', link: '/tools/wx_20260711132559' },
           { text: 'TimesFM — 谷歌开源时序预测模型', link: '/tools/wx_20260711132813' },
-          { text: 'AirLLM — 低显存本地大模型推理', link: '/tools/wx_20260711133118' }
+          { text: 'AirLLM — 低显存本地大模型推理', link: '/tools/wx_20260711133118' },
+          { text: 'json-render — Vercel 开源生成式 UI 框架', link: '/tools/wx_20260722212844' }
         ]
       },
       {
@@ -157,7 +158,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (9)',
+        text: '📂 实用与提效 (8)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -167,8 +168,7 @@ export default withPwa(defineConfig({
           { text: 'ConvertX — 格式转换利器', link: '/tools/wx_20260429211232' },
           { text: 'CookCLI — 菜谱管理命令行', link: '/tools/cookcli' },
           { text: 'AirTranslate — Mac全局音频翻译', link: '/tools/wx_20260530171544' },
-          { text: 'LibreTranslate — 自托管离线翻译', link: '/tools/wx_20260711133932' },
-          { text: 'Vercel 实验室新作 js', link: '/tools/wx_20260722212844' }
+          { text: 'LibreTranslate — 自托管离线翻译', link: '/tools/wx_20260711133932' }
         ]
       },
       {

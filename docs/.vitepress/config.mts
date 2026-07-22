@@ -136,7 +136,7 @@ export default withPwa(defineConfig({
           { text: 'Jujutsu — 极客版本地 Git', link: '/tools/wx_20260611155310' },
           { text: 'Apple Container — macOS 原生容器', link: '/tools/wx_20260711131141' },
           { text: 'Forel — macOS 本地文件自动化', link: '/tools/wx_20260711134309' },
-          { text: 'pgrust — Rust 重写 Postgres', link: '/tools/wx_20260722214639' }
+          { text: 'pgrust — Rust 重写 Postgres 18.3', link: '/tools/wx_20260722214639' }
         ]
       },
       {

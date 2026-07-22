@@ -76,13 +76,14 @@ curl -s "https://api.github.com/repos/<owner>/<repo>" | grep -E '"stargazers_cou
 />
 ```
 
-#### 2c. 修正 frontmatter（如 LLM 超时导致默认值）
+#### 2c. 修正 frontmatter（确认元数据与图标）
 
 检查文件顶部的 frontmatter，确认以下字段正确：
 ```yaml
 short_title: 'ToolName — 简短中文描述'   # 格式：工具名 — 描述，≤20字
 description: '有意义的一句话描述'         # 非默认的"来自 YourwayAI 的优选资源"
 category: '🤖 AI 与智能体'               # 见下方分类列表
+icon: 'https://github.com/<owner>.png'   # 必须确认/更新：使用 GitHub 仓库/组织 Avatar 图标，禁止留空或保留默认 '💡'
 ```
 
 #### 2d. 检查并修正侧边栏标签

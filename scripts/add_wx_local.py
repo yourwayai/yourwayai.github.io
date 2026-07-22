@@ -228,11 +228,13 @@ def save_article(info, category, short_title, description):
         if not inserted:
             body = body + "\n\n" + new_link_block
             
+    icon_val = f"https://github.com/{owner}.png" if github_url else '💡'
+
     content = f"""---
 title: {info['title'][:50]}
 short_title: '{short_title}'
 description: '{description}'
-icon: '💡'
+icon: '{icon_val}'
 category: '{category}'
 date: '{current_date}'
 ---

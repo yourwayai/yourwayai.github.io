@@ -124,7 +124,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '🛠️ 系统与运维 (11)',
+        text: '🛠️ 系统与运维 (12)',
         collapsed: false,
         items: [
           { text: '3x-ui — Xray 协议面板', link: '/tools/3x-ui' },
@@ -137,7 +137,8 @@ export default withPwa(defineConfig({
           { text: 'Jujutsu — 极客版本地 Git', link: '/tools/wx_20260611155310' },
           { text: 'Apple Container — macOS 原生容器', link: '/tools/wx_20260711131141' },
           { text: 'Forel — macOS 本地文件自动化', link: '/tools/wx_20260711134309' },
-          { text: 'pgrust — Rust 重写 Postgres 18.3', link: '/tools/wx_20260722214639' }
+          { text: 'pgrust — Rust 重写 Postgres 18.3', link: '/tools/wx_20260722214639' },
+          { text: 'franken_markdown — Rust零依赖 Markdown 渲染器', link: '/tools/wx_20260727161131' }
         ]
       },
       {
@@ -162,7 +163,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (9)',
+        text: '📂 实用与提效 (8)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -172,8 +173,7 @@ export default withPwa(defineConfig({
           { text: 'ConvertX — 格式转换利器', link: '/tools/wx_20260429211232' },
           { text: 'CookCLI — 菜谱管理命令行', link: '/tools/cookcli' },
           { text: 'AirTranslate — Mac全局音频翻译', link: '/tools/wx_20260530171544' },
-          { text: 'LibreTranslate — 自托管离线翻译', link: '/tools/wx_20260711133932' },
-          { text: '零第三方依赖：Rust 编写的', link: '/tools/wx_20260727161131' }
+          { text: 'LibreTranslate — 自托管离线翻译', link: '/tools/wx_20260711133932' }
         ]
       },
       {

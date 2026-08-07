@@ -83,7 +83,7 @@ export default withPwa(defineConfig({
     // 网站左侧的分类侧边栏
     sidebar: [
       {
-        text: '🤖 AI 与智能体 (37)',
+        text: '🤖 AI 与智能体 (38)',
         collapsed: false,
         items: [
           { text: 'Jellyfish — AI 短剧生产工作台', link: '/tools/wx_20260518005533' },
@@ -122,7 +122,8 @@ export default withPwa(defineConfig({
           { text: 'PPT Master — PDF 到可编辑 PPT 自动化', link: '/tools/wx_20260722214006' },
           { text: 'SenseNova-U1 — 商汤信息图生成与定点编辑大模型', link: '/tools/wx_20260727160720' },
           { text: 'ClawFeed — 开源 AI 资讯提炼与分发平台', link: '/tools/wx_20260727161635' },
-          { text: 'StaffDeck — 数字员工全生命周期管理平台', link: '/tools/wx_20260727161713' }
+          { text: 'StaffDeck — 数字员工全生命周期管理平台', link: '/tools/wx_20260727161713' },
+          { text: 'Understand Anything — 代码库架构直观仪表盘', link: '/tools/wx_20260807225907' }
         ]
       },
       {
@@ -168,7 +169,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (9)',
+        text: '📂 实用与提效 (8)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -178,8 +179,7 @@ export default withPwa(defineConfig({
           { text: 'ConvertX — 格式转换利器', link: '/tools/wx_20260429211232' },
           { text: 'CookCLI — 菜谱管理命令行', link: '/tools/cookcli' },
           { text: 'AirTranslate — Mac全局音频翻译', link: '/tools/wx_20260530171544' },
-          { text: 'LibreTranslate — 自托管离线翻译', link: '/tools/wx_20260711133932' },
-          { text: '原生适配 Claude Cod', link: '/tools/wx_20260807225907' }
+          { text: 'LibreTranslate — 自托管离线翻译', link: '/tools/wx_20260711133932' }
         ]
       },
       {

@@ -174,7 +174,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (10)',
+        text: '📂 实用与提效 (9)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -185,8 +185,7 @@ export default withPwa(defineConfig({
           { text: 'CookCLI — 菜谱管理命令行', link: '/tools/cookcli' },
           { text: 'AirTranslate — Mac全局音频翻译', link: '/tools/wx_20260530171544' },
           { text: 'LibreTranslate — 自托管离线翻译', link: '/tools/wx_20260711133932' },
-          { text: 'MD-This-Page — 网页一键转 Markdown', link: '/tools/wx_20260815093123' },
-          { text: '生成 PDF 为什么还要 np', link: '/tools/wx_20260815093312' }
+          { text: 'MD-This-Page — 网页一键转 Markdown', link: '/tools/wx_20260815093123' }
         ]
       },
       {
@@ -200,14 +199,15 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '🎨 设计与极客 (5)',
+        text: '🎨 设计与极客 (6)',
         collapsed: false,
         items: [
           { text: 'Penpot — 开源设计工具', link: '/tools/penpot' },
           { text: 'Storybook — UI 组件开发环境', link: '/tools/storybook' },
           { text: 'V8 Engine — JS 运行引擎', link: '/tools/v8' },
           { text: 'The Art of Command Line — 终端神技', link: '/tools/the-art-of-command-line' },
-          { text: 'MoBrowser-App-Icon-Maker — AI 图标生成', link: '/tools/wx_20260530171623' }
+          { text: 'MoBrowser-App-Icon-Maker — AI 图标生成', link: '/tools/wx_20260530171623' },
+          { text: 'PDFx — React 开源 PDF 组件库', link: '/tools/wx_20260815093312' }
         ]
       },
       {

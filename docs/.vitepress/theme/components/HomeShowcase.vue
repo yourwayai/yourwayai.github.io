@@ -23,10 +23,13 @@
         <div class="mobile-sponsors-container">
           <!-- Mobile-only Sponsor Banner 1: GamsGo -->
           <a href="https://www.gamsgo.com/partner/WzbXX" target="_blank" rel="noopener" class="mobile-sponsor-banner" style="background: linear-gradient(135deg, rgba(138, 43, 226, 0.08) 0%, rgba(255, 69, 0, 0.04) 100%); border-color: rgba(138, 43, 226, 0.25);">
-            <img class="mobile-sponsor-icon" src="/gamsgo.png" style="width: 24px; height: 24px; border-radius: 6px; object-fit: cover;" />
+            <img class="mobile-sponsor-icon" src="/gamsgo.png" alt="GamsGo - 海外 AI 与流媒体合租平台" style="width: 24px; height: 24px; border-radius: 6px; object-fit: cover;" />
             <div class="mobile-sponsor-text">
-              <strong style="color: #8a2be2;">GamsGo</strong>
-              <span>流媒体与 AI 合租平台</span>
+              <div style="display: flex; align-items: center; gap: 4px;">
+                <strong style="color: #8a2be2;">GamsGo</strong>
+                <span style="font-size: 0.62rem; background: rgba(138, 43, 226, 0.15); color: #8a2be2; padding: 0 4px; border-radius: 3px; font-weight: 700; line-height: 1.2;">2折合租</span>
+              </div>
+              <span>ChatGPT / Claude / Netflix (支付宝付款)</span>
             </div>
             <span class="mobile-sponsor-arrow" style="color: #8a2be2;">→</span>
           </a>
@@ -211,13 +214,20 @@
         <h2 class="sidebar-title sponsor-title">👑 Sponsored</h2>
 
         <!-- Sponsor #1: GamsGo -->
-        <a href="https://www.gamsgo.com/partner/WzbXX" target="_blank" rel="noopener" class="real-sponsor-card" style="background: linear-gradient(145deg, rgba(138, 43, 226, 0.06) 0%, rgba(255, 69, 0, 0.03) 100%); border-color: rgba(138, 43, 226, 0.3);">
+        <a href="https://www.gamsgo.com/partner/WzbXX" target="_blank" rel="noopener" class="real-sponsor-card" style="background: linear-gradient(145deg, rgba(138, 43, 226, 0.07) 0%, rgba(255, 69, 0, 0.03) 100%); border-color: rgba(138, 43, 226, 0.35);">
           <div class="sponsor-header">
-            <img class="sponsor-logo" src="/gamsgo.png" style="background: rgba(138, 43, 226, 0.08); object-fit: cover;" />
+            <img class="sponsor-logo" src="/gamsgo.png" alt="GamsGo - 海外 AI 与流媒体合租平台" style="background: rgba(138, 43, 226, 0.08); object-fit: cover;" />
             <div class="sponsor-meta">
-              <h3 class="sponsor-name">GamsGo</h3>
-              <p class="sponsor-tagline" style="color: #8a2be2;">流媒体与 AI 合租平台</p>
+              <div style="display: flex; align-items: center; gap: 6px;">
+                <h3 class="sponsor-name">GamsGo</h3>
+                <span style="font-size: 0.65rem; background: rgba(138, 43, 226, 0.15); color: #8a2be2; padding: 1px 5px; border-radius: 4px; font-weight: 700; line-height: 1.2;">低至 2 折</span>
+              </div>
+              <p class="sponsor-tagline" style="color: #8a2be2;">ChatGPT / Claude / Netflix 合租</p>
             </div>
+          </div>
+          <div style="display: flex; gap: 4px; flex-wrap: wrap; margin-top: 6px; font-size: 0.7rem; color: var(--vp-c-text-2);">
+            <span style="background: var(--vp-c-bg-mute); padding: 1px 6px; border-radius: 4px;">⚡ 支付宝付款</span>
+            <span style="background: var(--vp-c-bg-mute); padding: 1px 6px; border-radius: 4px;">🔒 自动质保续费</span>
           </div>
           <div class="sponsor-action" style="color: #8a2be2; border-top-color: rgba(138, 43, 226, 0.15);">立即上车体验 →</div>
         </a>

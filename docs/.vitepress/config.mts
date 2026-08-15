@@ -185,7 +185,7 @@ export default withPwa(defineConfig({
           { text: 'CookCLI — 菜谱管理命令行', link: '/tools/cookcli' },
           { text: 'AirTranslate — Mac全局音频翻译', link: '/tools/wx_20260530171544' },
           { text: 'LibreTranslate — 自托管离线翻译', link: '/tools/wx_20260711133932' },
-          { text: '浏览器扩展 MD-This-P', link: '/tools/wx_20260815093123' }
+          { text: 'MD-This-Page — 网页一键转 Markdown', link: '/tools/wx_20260815093123' }
         ]
       },
       {

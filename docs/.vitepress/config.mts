@@ -83,7 +83,7 @@ export default withPwa(defineConfig({
     // 网站左侧的分类侧边栏
     sidebar: [
       {
-        text: '🤖 AI 与智能体 (41)',
+        text: '🤖 AI 与智能体 (42)',
         collapsed: false,
         items: [
           { text: 'Jellyfish — AI 短剧生产工作台', link: '/tools/wx_20260518005533' },
@@ -126,7 +126,8 @@ export default withPwa(defineConfig({
           { text: 'Understand Anything — 代码库架构直观仪表盘', link: '/tools/wx_20260807225907' },
           { text: 'TokenHub — 私有化企业级 AI 网关', link: '/tools/wx_20260807230325' },
           { text: 'ai-for-grant-writing — 学术标书撰写 AI 工作流', link: '/tools/wx_20260815092126' },
-          { text: 'ClaudeBar — macOS AI 编程配额监控', link: '/tools/wx_20260815092531' }
+          { text: 'ClaudeBar — macOS AI 编程配额监控', link: '/tools/wx_20260815092531' },
+          { text: 'Amphion — 音频语音音乐生成全家桶', link: '/tools/wx_20260815093448' }
         ]
       },
       {
@@ -174,7 +175,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (10)',
+        text: '📂 实用与提效 (9)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -185,8 +186,7 @@ export default withPwa(defineConfig({
           { text: 'CookCLI — 菜谱管理命令行', link: '/tools/cookcli' },
           { text: 'AirTranslate — Mac全局音频翻译', link: '/tools/wx_20260530171544' },
           { text: 'LibreTranslate — 自托管离线翻译', link: '/tools/wx_20260711133932' },
-          { text: 'MD-This-Page — 网页一键转 Markdown', link: '/tools/wx_20260815093123' },
-          { text: 'OpenMMLab 出品 Am', link: '/tools/wx_20260815093448' }
+          { text: 'MD-This-Page — 网页一键转 Markdown', link: '/tools/wx_20260815093123' }
         ]
       },
       {

@@ -83,7 +83,7 @@ export default withPwa(defineConfig({
     // 网站左侧的分类侧边栏
     sidebar: [
       {
-        text: '🤖 AI 与智能体 (44)',
+        text: '🤖 AI 与智能体 (45)',
         collapsed: false,
         items: [
           { text: 'Jellyfish — AI 短剧生产工作台', link: '/tools/wx_20260518005533' },
@@ -129,7 +129,8 @@ export default withPwa(defineConfig({
           { text: 'ClaudeBar — macOS AI 编程配额监控', link: '/tools/wx_20260815092531' },
           { text: 'Amphion — 音频语音音乐生成全家桶', link: '/tools/wx_20260815093448' },
           { text: 'OpenHuman — 本地优先 AI 智能体', link: '/tools/wx_20260823172019' },
-          { text: 'Octop — 自托管多智能体平台', link: '/tools/wx_20260823172503' }
+          { text: 'Octop — 自托管多智能体平台', link: '/tools/wx_20260823172503' },
+          { text: 'Cloudflare Computer — Agent 运行时', link: '/tools/wx_20260823172645' }
         ]
       },
       {
@@ -177,7 +178,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (12)',
+        text: '📂 实用与提效 (11)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -190,8 +191,7 @@ export default withPwa(defineConfig({
           { text: 'LibreTranslate — 自托管离线翻译', link: '/tools/wx_20260711133932' },
           { text: 'MD-This-Page — 网页一键转 Markdown', link: '/tools/wx_20260815093123' },
           { text: 'anydoc — 办公文档秒转 Markdown', link: '/tools/wx_20260823171805' },
-          { text: 'CloakBrowser — 源码级防检测浏览器', link: '/tools/wx_20260823172310' },
-          { text: 'Cloudflare Comp', link: '/tools/wx_20260823172645' }
+          { text: 'CloakBrowser — 源码级防检测浏览器', link: '/tools/wx_20260823172310' }
         ]
       },
       {

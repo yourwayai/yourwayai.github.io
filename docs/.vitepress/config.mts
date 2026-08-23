@@ -189,7 +189,7 @@ export default withPwa(defineConfig({
           { text: 'LibreTranslate — 自托管离线翻译', link: '/tools/wx_20260711133932' },
           { text: 'MD-This-Page — 网页一键转 Markdown', link: '/tools/wx_20260815093123' },
           { text: 'anydoc — 办公文档秒转 Markdown', link: '/tools/wx_20260823171805' },
-          { text: '71 个 C++ 源码级补丁重', link: '/tools/wx_20260823172310' }
+          { text: 'CloakBrowser — 源码级防检测浏览器', link: '/tools/wx_20260823172310' }
         ]
       },
       {

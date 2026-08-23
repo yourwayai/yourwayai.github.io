@@ -175,7 +175,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (10)',
+        text: '📂 实用与提效 (11)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -187,7 +187,8 @@ export default withPwa(defineConfig({
           { text: 'AirTranslate — Mac全局音频翻译', link: '/tools/wx_20260530171544' },
           { text: 'LibreTranslate — 自托管离线翻译', link: '/tools/wx_20260711133932' },
           { text: 'MD-This-Page — 网页一键转 Markdown', link: '/tools/wx_20260815093123' },
-          { text: 'anydoc — 办公文档秒转 Markdown', link: '/tools/wx_20260823171805' }
+          { text: 'anydoc — 办公文档秒转 Markdown', link: '/tools/wx_20260823171805' },
+          { text: '本地优先的 AI 超级智能体：', link: '/tools/wx_20260823172019' }
         ]
       },
       {

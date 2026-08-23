@@ -83,7 +83,7 @@ export default withPwa(defineConfig({
     // 网站左侧的分类侧边栏
     sidebar: [
       {
-        text: '🤖 AI 与智能体 (46)',
+        text: '🤖 AI 与智能体 (47)',
         collapsed: false,
         items: [
           { text: 'Jellyfish — AI 短剧生产工作台', link: '/tools/wx_20260518005533' },
@@ -131,7 +131,8 @@ export default withPwa(defineConfig({
           { text: 'OpenHuman — 本地优先 AI 智能体', link: '/tools/wx_20260823172019' },
           { text: 'Octop — 自托管多智能体平台', link: '/tools/wx_20260823172503' },
           { text: 'Cloudflare Computer — Agent 运行时', link: '/tools/wx_20260823172645' },
-          { text: 'Prime Agent — 自进化 RLM 智能体', link: '/tools/wx_20260823172809' }
+          { text: 'Prime Agent — 自进化 RLM 智能体', link: '/tools/wx_20260823172809' },
+          { text: 'Ironsmith — AI 原生应用生成器', link: '/tools/wx_20260823173222' }
         ]
       },
       {
@@ -179,7 +180,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (14)',
+        text: '📂 实用与提效 (13)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -194,8 +195,7 @@ export default withPwa(defineConfig({
           { text: 'anydoc — 办公文档秒转 Markdown', link: '/tools/wx_20260823171805' },
           { text: 'CloakBrowser — 源码级防检测浏览器', link: '/tools/wx_20260823172310' },
           { text: 'Cling — macOS 全盘模糊搜索神器', link: '/tools/wx_20260823172937' },
-          { text: 'Gander — 零权限全格式文件预览', link: '/tools/wx_20260823173053' },
-          { text: '不装 Xcode、自带沙箱、支', link: '/tools/wx_20260823173222' }
+          { text: 'Gander — 零权限全格式文件预览', link: '/tools/wx_20260823173053' }
         ]
       },
       {

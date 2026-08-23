@@ -179,7 +179,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (13)',
+        text: '📂 实用与提效 (14)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -194,7 +194,8 @@ export default withPwa(defineConfig({
           { text: 'anydoc — 办公文档秒转 Markdown', link: '/tools/wx_20260823171805' },
           { text: 'CloakBrowser — 源码级防检测浏览器', link: '/tools/wx_20260823172310' },
           { text: 'Cling — macOS 全盘模糊搜索神器', link: '/tools/wx_20260823172937' },
-          { text: 'Gander — 零权限全格式文件预览', link: '/tools/wx_20260823173053' }
+          { text: 'Gander — 零权限全格式文件预览', link: '/tools/wx_20260823173053' },
+          { text: '不装 Xcode、自带沙箱、支', link: '/tools/wx_20260823173222' }
         ]
       },
       {

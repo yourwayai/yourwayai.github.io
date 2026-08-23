@@ -187,7 +187,7 @@ export default withPwa(defineConfig({
           { text: 'AirTranslate — Mac全局音频翻译', link: '/tools/wx_20260530171544' },
           { text: 'LibreTranslate — 自托管离线翻译', link: '/tools/wx_20260711133932' },
           { text: 'MD-This-Page — 网页一键转 Markdown', link: '/tools/wx_20260815093123' },
-          { text: 'Firecrawl 开源 an', link: '/tools/wx_20260823171805' }
+          { text: 'anydoc — 办公文档秒转 Markdown', link: '/tools/wx_20260823171805' }
         ]
       },
       {

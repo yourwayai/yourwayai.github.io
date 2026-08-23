@@ -181,7 +181,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (14)',
+        text: '📂 实用与提效 (13)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -196,8 +196,7 @@ export default withPwa(defineConfig({
           { text: 'anydoc — 办公文档秒转 Markdown', link: '/tools/wx_20260823171805' },
           { text: 'CloakBrowser — 源码级防检测浏览器', link: '/tools/wx_20260823172310' },
           { text: 'Cling — macOS 全盘模糊搜索神器', link: '/tools/wx_20260823172937' },
-          { text: 'Gander — 零权限全格式文件预览', link: '/tools/wx_20260823173053' },
-          { text: 'Drawnix：基于 Plai', link: '/tools/wx_20260823173518' }
+          { text: 'Gander — 零权限全格式文件预览', link: '/tools/wx_20260823173053' }
         ]
       },
       {
@@ -211,7 +210,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '🎨 设计与极客 (6)',
+        text: '🎨 设计与极客 (7)',
         collapsed: false,
         items: [
           { text: 'Penpot — 开源设计工具', link: '/tools/penpot' },
@@ -219,7 +218,8 @@ export default withPwa(defineConfig({
           { text: 'V8 Engine — JS 运行引擎', link: '/tools/v8' },
           { text: 'The Art of Command Line — 终端神技', link: '/tools/the-art-of-command-line' },
           { text: 'MoBrowser-App-Icon-Maker — AI 图标生成', link: '/tools/wx_20260530171623' },
-          { text: 'PDFx — React 开源 PDF 组件库', link: '/tools/wx_20260815093312' }
+          { text: 'PDFx — React 开源 PDF 组件库', link: '/tools/wx_20260815093312' },
+          { text: 'Drawnix — 开源一体化白板与导图', link: '/tools/wx_20260823173518' }
         ]
       },
       {

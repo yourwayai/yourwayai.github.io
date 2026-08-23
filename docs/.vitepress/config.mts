@@ -179,7 +179,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (11)',
+        text: '📂 实用与提效 (12)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -192,7 +192,8 @@ export default withPwa(defineConfig({
           { text: 'LibreTranslate — 自托管离线翻译', link: '/tools/wx_20260711133932' },
           { text: 'MD-This-Page — 网页一键转 Markdown', link: '/tools/wx_20260815093123' },
           { text: 'anydoc — 办公文档秒转 Markdown', link: '/tools/wx_20260823171805' },
-          { text: 'CloakBrowser — 源码级防检测浏览器', link: '/tools/wx_20260823172310' }
+          { text: 'CloakBrowser — 源码级防检测浏览器', link: '/tools/wx_20260823172310' },
+          { text: 'Alfred、Raycast ', link: '/tools/wx_20260823172937' }
         ]
       },
       {

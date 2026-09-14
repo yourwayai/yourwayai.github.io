@@ -7,16 +7,42 @@
         
         <!-- Pinned Section -->
         <section class="pinned-section">
-          <div class="pinned-badge">
-            <span class="pulse-dot"></span>
-            置顶推荐
+          <div class="pinned-top-row">
+            <div class="pinned-badge">
+              <span class="pulse-dot"></span>
+              置顶推荐
+            </div>
+            <div class="pinned-promo-tag">
+              🔥 官方通道 · 2折起
+            </div>
           </div>
           <div class="pinned-content">
-            <h3 class="pinned-title">支付宝可直接付款，3分钟搞定 ChatGPT/Gemini/Claude订阅</h3>
-            <p class="pinned-desc">无需海外信用卡，安全稳定地订阅海外顶级AI大模型，彻底打破支付门槛。</p>
-            <a href="/tools/wx_20260419212858" class="pinned-link">立即阅读 →</a>
+            <div class="pinned-header">
+              <img class="pinned-logo" src="/gamsgo.png" alt="GamsGo" />
+              <div class="pinned-title-wrapper">
+                <a href="https://www.gamsgo.com/zh/showcase/ab45v8y2" target="_blank" rel="noopener" class="pinned-title-link">
+                  <h3 class="pinned-title">GamsGo — 支付宝直接付款，3分钟极速订阅 ChatGPT / Claude / Gemini</h3>
+                </a>
+              </div>
+            </div>
+            <p class="pinned-desc">老牌海外数字订阅服务平台，无需海外信用卡，告别封号拒付风险。支持独享与低至2折合租，售后全自动质保续费。</p>
+            <div class="pinned-tags">
+              <span class="pinned-tag">⚡ 支付宝 / 微信付款</span>
+              <span class="pinned-tag">🔒 官方自动质保</span>
+              <span class="pinned-tag">🚀 30秒全自动交付</span>
+              <span class="pinned-tag">💰 低至 2 折合租 / 独享可选</span>
+            </div>
+            <div class="pinned-actions">
+              <a href="https://www.gamsgo.com/zh/showcase/ab45v8y2" target="_blank" rel="noopener" class="pinned-link">
+                <span>立即直达 GamsGo 官网选购</span>
+                <span class="pinned-link-arrow">→</span>
+              </a>
+              <a href="/tools/wx_20260419212858" class="pinned-secondary-link">
+                <span>查看保姆级实操教程</span>
+                <span class="pinned-link-arrow">→</span>
+              </a>
+            </div>
           </div>
-
         </section>
 
         <!-- Mobile-only Sponsors Swipe Container -->
@@ -649,74 +675,243 @@ const redirectToRandom = () => {
 
 /* Pinned Section */
 .pinned-section {
-  background: rgba(150, 150, 150, 0.04);
+  background: linear-gradient(135deg, rgba(138, 43, 226, 0.06) 0%, rgba(24, 216, 103, 0.03) 100%);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid var(--vp-c-border);
+  border: 1px solid rgba(138, 43, 226, 0.28);
   border-radius: 20px;
   padding: 1.5rem;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 4px 24px rgba(138, 43, 226, 0.05);
+  transition: all 0.3s ease;
+}
+
+.dark .pinned-section {
+  background: linear-gradient(135deg, rgba(138, 43, 226, 0.12) 0%, rgba(24, 216, 103, 0.04) 100%);
+  border-color: rgba(138, 43, 226, 0.35);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.pinned-section:hover {
+  border-color: rgba(138, 43, 226, 0.5);
+  box-shadow: 0 8px 32px rgba(138, 43, 226, 0.12);
+}
+
+.pinned-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
 }
 
 .pinned-badge {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  background-color: var(--vp-c-brand-soft);
-  color: var(--vp-c-brand-1);
-  padding: 0.2rem 0.6rem;
+  background-color: rgba(138, 43, 226, 0.12);
+  color: #8a2be2;
+  padding: 0.25rem 0.65rem;
   border-radius: 20px;
   font-size: 0.75rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  border: 1px solid rgba(138, 43, 226, 0.2);
+}
+
+.dark .pinned-badge {
+  background-color: rgba(168, 85, 247, 0.18);
+  color: #c084fc;
+  border-color: rgba(168, 85, 247, 0.3);
+}
+
+.pinned-promo-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #ff5722;
+  background: rgba(255, 87, 34, 0.1);
+  padding: 0.2rem 0.55rem;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 87, 34, 0.2);
+}
+
+.dark .pinned-promo-tag {
+  background: rgba(255, 87, 34, 0.18);
+  color: #ff8a65;
+  border-color: rgba(255, 87, 34, 0.3);
 }
 
 .pulse-dot {
   width: 6px;
   height: 6px;
-  background-color: var(--vp-c-brand-1);
+  background-color: #8a2be2;
   border-radius: 50%;
   animation: pulse 2s infinite;
 }
 
+.dark .pulse-dot {
+  background-color: #c084fc;
+}
+
 @keyframes pulse {
-  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(24, 216, 103, 0.7); }
-  70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(24, 216, 103, 0); }
-  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(24, 216, 103, 0); }
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(138, 43, 226, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 6px rgba(138, 43, 226, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(138, 43, 226, 0); }
+}
+
+.pinned-header {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  margin-bottom: 0.6rem;
+}
+
+.pinned-logo {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  object-fit: cover;
+  background: rgba(138, 43, 226, 0.08);
+  border: 1px solid rgba(138, 43, 226, 0.2);
+  flex-shrink: 0;
+}
+
+.pinned-title-wrapper {
+  flex: 1;
+  min-width: 0;
+}
+
+.pinned-title-link {
+  text-decoration: none !important;
+  color: inherit !important;
 }
 
 .pinned-title {
   font-size: 1.25rem !important;
   font-weight: 700;
-  margin: 0 0 0.5rem 0;
+  margin: 0;
   color: var(--vp-c-text-1);
   line-height: 1.4;
+  transition: color 0.2s ease;
+}
+
+.pinned-title-link:hover .pinned-title {
+  color: #8a2be2;
+}
+
+.dark .pinned-title-link:hover .pinned-title {
+  color: #c084fc;
 }
 
 .pinned-desc {
   font-size: 0.9rem;
   color: var(--vp-c-text-2);
-  margin: 0 0 1.2rem 0;
-  line-height: 1.5;
+  margin: 0 0 0.85rem 0;
+  line-height: 1.55;
+}
+
+.pinned-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.pinned-tag {
+  font-size: 0.75rem;
+  background: var(--vp-c-bg-mute);
+  color: var(--vp-c-text-2);
+  padding: 0.2rem 0.55rem;
+  border-radius: 6px;
+  border: 1px solid var(--vp-c-border);
+  font-weight: 500;
+}
+
+.pinned-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex-wrap: wrap;
 }
 
 .pinned-link {
-  display: inline-block;
-  background-color: var(--vp-c-brand-1);
-  color: #fff;
-  padding: 0.5rem 1.2rem;
-  border-radius: 6px;
-  font-size: 0.85rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: linear-gradient(135deg, #8a2be2 0%, #7022b8 100%);
+  color: #fff !important;
+  padding: 0.55rem 1.25rem;
+  border-radius: 8px;
+  font-size: 0.88rem;
   font-weight: 600;
-  text-decoration: none;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  text-decoration: none !important;
+  box-shadow: 0 4px 14px rgba(138, 43, 226, 0.3);
+  transition: all 0.2s ease;
 }
 
 .pinned-link:hover {
-  background-color: var(--vp-c-brand-2);
+  background: linear-gradient(135deg, #9b3cf0 0%, #8028d2 100%);
   transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(138, 43, 226, 0.4);
+}
+
+.pinned-secondary-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1) !important;
+  padding: 0.55rem 1.1rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  border: 1px solid var(--vp-c-border);
+  transition: all 0.2s ease;
+}
+
+.pinned-secondary-link:hover {
+  border-color: #8a2be2;
+  color: #8a2be2 !important;
+  background: var(--vp-c-bg-mute);
+  transform: translateY(-1px);
+}
+
+.dark .pinned-secondary-link:hover {
+  border-color: #c084fc;
+  color: #c084fc !important;
+}
+
+.pinned-link-arrow {
+  transition: transform 0.2s ease;
+}
+
+.pinned-link:hover .pinned-link-arrow,
+.pinned-secondary-link:hover .pinned-link-arrow {
+  transform: translateX(3px);
+}
+
+@media (max-width: 600px) {
+  .pinned-section {
+    padding: 1.2rem;
+    border-radius: 16px;
+  }
+  .pinned-header {
+    align-items: flex-start;
+  }
+  .pinned-title {
+    font-size: 1.08rem !important;
+  }
+  .pinned-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .pinned-link,
+  .pinned-secondary-link {
+    justify-content: center;
+    width: 100%;
+  }
 }
 
 

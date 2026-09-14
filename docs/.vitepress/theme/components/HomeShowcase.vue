@@ -79,6 +79,19 @@
             </div>
             <span class="mobile-sponsor-arrow" style="color: #ff4f6d;">→</span>
           </a>
+
+          <!-- Mobile-only Sponsor Banner 4: Three UK -->
+          <a href="https://aklam.io/m3uaf1bG" target="_blank" rel="noopener" class="mobile-sponsor-banner" style="background: linear-gradient(135deg, rgba(230, 0, 126, 0.08) 0%, rgba(30, 30, 30, 0.04) 100%); border-color: rgba(230, 0, 126, 0.25);">
+            <img class="mobile-sponsor-icon" src="/three.png" alt="Three UK - 英国电信运营商" style="width: 24px; height: 24px; border-radius: 6px; object-fit: cover;" />
+            <div class="mobile-sponsor-text">
+              <div style="display: flex; align-items: center; gap: 4px;">
+                <strong style="color: #e6007e;">Three UK</strong>
+                <span style="font-size: 0.62rem; background: rgba(230, 0, 126, 0.15); color: #e6007e; padding: 0 4px; border-radius: 3px; font-weight: 700; line-height: 1.2;">推荐返现</span>
+              </div>
+              <span>英国主流电信网络，高速5G与宽带特惠</span>
+            </div>
+            <span class="mobile-sponsor-arrow" style="color: #e6007e;">→</span>
+          </a>
         </div>
 
         <!-- Control Bar -->
@@ -280,6 +293,25 @@
             </div>
           </div>
           <div class="sponsor-action" style="color: #ff4f6d; border-top-color: rgba(255, 79, 109, 0.15);">免费申领手机卡 →</div>
+        </a>
+
+        <!-- Sponsor #4: Three UK -->
+        <a href="https://aklam.io/m3uaf1bG" target="_blank" rel="noopener" class="real-sponsor-card" style="background: linear-gradient(145deg, rgba(230, 0, 126, 0.06) 0%, rgba(30, 30, 30, 0.03) 100%); border-color: rgba(230, 0, 126, 0.3);">
+          <div class="sponsor-header">
+            <img class="sponsor-logo" src="/three.png" alt="Three UK" style="background: #000; object-fit: cover;" />
+            <div class="sponsor-meta">
+              <div style="display: flex; align-items: center; gap: 6px;">
+                <h3 class="sponsor-name">Three UK</h3>
+                <span style="font-size: 0.65rem; background: rgba(230, 0, 126, 0.15); color: #e6007e; padding: 1px 5px; border-radius: 4px; font-weight: 700; line-height: 1.2;">推荐签约礼</span>
+              </div>
+              <p class="sponsor-tagline" style="color: #e6007e;">英国电信巨头，高速 5G 与宽带</p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 4px; flex-wrap: wrap; margin-top: 6px; font-size: 0.7rem; color: var(--vp-c-text-2);">
+            <span style="background: var(--vp-c-bg-mute); padding: 1px 6px; border-radius: 4px;">🇬🇧 英国本土主流网络</span>
+            <span style="background: var(--vp-c-bg-mute); padding: 1px 6px; border-radius: 4px;">🎁 官方推荐现金奖励</span>
+          </div>
+          <div class="sponsor-action" style="color: #e6007e; border-top-color: rgba(230, 0, 126, 0.15);">签约办理享受返现 →</div>
         </a>
 
       </aside>

@@ -92,6 +92,19 @@
             </div>
             <span class="mobile-sponsor-arrow" style="color: #e6007e;">→</span>
           </a>
+
+          <!-- Mobile-only Sponsor Banner 5: SAVO -->
+          <a href="https://sv.me/r/2RIO6" target="_blank" rel="noopener" class="mobile-sponsor-banner" style="background: linear-gradient(135deg, rgba(0, 200, 150, 0.08) 0%, rgba(0, 122, 255, 0.04) 100%); border-color: rgba(0, 200, 150, 0.25);">
+            <img class="mobile-sponsor-icon" src="/savo.png" alt="SAVO - Visa 虚拟卡与多币种钱包" style="width: 24px; height: 24px; border-radius: 6px; object-fit: contain; background: #fff;" />
+            <div class="mobile-sponsor-text">
+              <div style="display: flex; align-items: center; gap: 4px;">
+                <strong style="color: #00a878;">SAVO</strong>
+                <span style="font-size: 0.62rem; background: rgba(0, 200, 150, 0.15); color: #00a878; padding: 0 4px; border-radius: 3px; font-weight: 700; line-height: 1.2;">Visa 虚拟卡</span>
+              </div>
+              <span>多币种数字钱包，支持 Apple / Google Pay</span>
+            </div>
+            <span class="mobile-sponsor-arrow" style="color: #00a878;">→</span>
+          </a>
         </div>
 
         <!-- Control Bar -->
@@ -312,6 +325,25 @@
             <span style="background: var(--vp-c-bg-mute); padding: 1px 6px; border-radius: 4px;">🎁 官方推荐现金奖励</span>
           </div>
           <div class="sponsor-action" style="color: #e6007e; border-top-color: rgba(230, 0, 126, 0.15);">签约办理享受返现 →</div>
+        </a>
+
+        <!-- Sponsor #5: SAVO -->
+        <a href="https://sv.me/r/2RIO6" target="_blank" rel="noopener" class="real-sponsor-card" style="background: linear-gradient(145deg, rgba(0, 200, 150, 0.07) 0%, rgba(0, 122, 255, 0.03) 100%); border-color: rgba(0, 200, 150, 0.35);">
+          <div class="sponsor-header">
+            <img class="sponsor-logo" src="/savo.png" alt="SAVO" style="background: #ffffff; object-fit: contain; padding: 2px;" />
+            <div class="sponsor-meta">
+              <div style="display: flex; align-items: center; gap: 6px;">
+                <h3 class="sponsor-name">SAVO</h3>
+                <span style="font-size: 0.65rem; background: rgba(0, 200, 150, 0.15); color: #00a878; padding: 1px 5px; border-radius: 4px; font-weight: 700; line-height: 1.2;">全球 Visa 卡</span>
+              </div>
+              <p class="sponsor-tagline" style="color: #00a878;">多币种数字钱包，随时随地畅快支付</p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 4px; flex-wrap: wrap; margin-top: 6px; font-size: 0.7rem; color: var(--vp-c-text-2);">
+            <span style="background: var(--vp-c-bg-mute); padding: 1px 6px; border-radius: 4px;">💳 Visa 虚拟卡/实体卡</span>
+            <span style="background: var(--vp-c-bg-mute); padding: 1px 6px; border-radius: 4px;">🍎 Apple / Google Pay</span>
+          </div>
+          <div class="sponsor-action" style="color: #00a878; border-top-color: rgba(0, 200, 150, 0.15);">立即免费开卡体验 →</div>
         </a>
 
       </aside>

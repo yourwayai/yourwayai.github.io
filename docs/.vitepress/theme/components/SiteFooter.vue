@@ -27,6 +27,7 @@ const isHome = computed(() => frontmatter.value.layout === 'home')
           <div class="footer-links-column">
             <h3 class="footer-column-title">支持我们</h3>
             <a href="https://app.bxjddjt.com/card/redirect?key=invite&invite_code=VFLEAWOOBQ" target="_blank" rel="noopener" class="footer-link sponsor-link">💳 Gate Card 加密借记卡</a>
+            <a href="https://sv.me/r/2RIO6" target="_blank" rel="noopener" class="footer-link sponsor-link">💳 SAVO 全球 Visa 卡</a>
             <a href="https://www.gamsgo.com/zh/showcase/ab45v8y2" target="_blank" rel="noopener" class="footer-link sponsor-link">👑 GamsGo 优惠专区</a>
             <a href="https://aklam.io/m3uaf1bG" target="_blank" rel="noopener" class="footer-link sponsor-link">🇬🇧 Three UK 英国电信</a>
             <a href="/ywc_resume_landing_page.html" target="_blank" rel="noopener" class="footer-link sponsor-link">🏅 求职简历精修</a>

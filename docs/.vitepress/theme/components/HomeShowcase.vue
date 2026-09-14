@@ -105,6 +105,19 @@
             </div>
             <span class="mobile-sponsor-arrow" style="color: #00a878;">→</span>
           </a>
+
+          <!-- Mobile-only Sponsor Banner 6: Wise -->
+          <a href="https://wise.com/invite/ilpc/fd9svnr" target="_blank" rel="noopener" class="mobile-sponsor-banner" style="background: linear-gradient(135deg, rgba(159, 232, 112, 0.12) 0%, rgba(34, 197, 94, 0.04) 100%); border-color: rgba(159, 232, 112, 0.35);">
+            <img class="mobile-sponsor-icon" src="/wise.png" alt="Wise - 全球跨境汇款与多币种账户" style="width: 24px; height: 24px; border-radius: 6px; object-fit: contain; background: #fff;" />
+            <div class="mobile-sponsor-text">
+              <div style="display: flex; align-items: center; gap: 4px;">
+                <strong style="color: #2e7d32;">Wise</strong>
+                <span style="font-size: 0.62rem; background: rgba(159, 232, 112, 0.3); color: #2e7d32; padding: 0 4px; border-radius: 3px; font-weight: 700; line-height: 1.2;">首笔免手续费</span>
+              </div>
+              <span>全球多币种账户，真实中间汇率极速跨境</span>
+            </div>
+            <span class="mobile-sponsor-arrow" style="color: #2e7d32;">→</span>
+          </a>
         </div>
 
         <!-- Control Bar -->
@@ -344,6 +357,25 @@
             <span style="background: var(--vp-c-bg-mute); padding: 1px 6px; border-radius: 4px;">🍎 Apple / Google Pay</span>
           </div>
           <div class="sponsor-action" style="color: #00a878; border-top-color: rgba(0, 200, 150, 0.15);">立即免费开卡体验 →</div>
+        </a>
+
+        <!-- Sponsor #6: Wise -->
+        <a href="https://wise.com/invite/ilpc/fd9svnr" target="_blank" rel="noopener" class="real-sponsor-card" style="background: linear-gradient(145deg, rgba(159, 232, 112, 0.09) 0%, rgba(34, 197, 94, 0.03) 100%); border-color: rgba(159, 232, 112, 0.4);">
+          <div class="sponsor-header">
+            <img class="sponsor-logo" src="/wise.png" alt="Wise" style="background: #ffffff; object-fit: contain; padding: 2px;" />
+            <div class="sponsor-meta">
+              <div style="display: flex; align-items: center; gap: 6px;">
+                <h3 class="sponsor-name">Wise</h3>
+                <span style="font-size: 0.65rem; background: rgba(159, 232, 112, 0.3); color: #2e7d32; padding: 1px 5px; border-radius: 4px; font-weight: 700; line-height: 1.2;">首笔免费汇款</span>
+              </div>
+              <p class="sponsor-tagline" style="color: #2e7d32;">全球多币种账户与极速跨境汇款</p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 4px; flex-wrap: wrap; margin-top: 6px; font-size: 0.7rem; color: var(--vp-c-text-2);">
+            <span style="background: var(--vp-c-bg-mute); padding: 1px 6px; border-radius: 4px;">🌍 真实中间市场汇率</span>
+            <span style="background: var(--vp-c-bg-mute); padding: 1px 6px; border-radius: 4px;">⚡ 40+币种个人银行账户</span>
+          </div>
+          <div class="sponsor-action" style="color: #2e7d32; border-top-color: rgba(159, 232, 112, 0.25);">免费开户享汇款免手续费 →</div>
         </a>
 
       </aside>

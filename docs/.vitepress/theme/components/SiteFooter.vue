@@ -26,6 +26,7 @@ const isHome = computed(() => frontmatter.value.layout === 'home')
         <div class="footer-links-section">
           <div class="footer-links-column">
             <h3 class="footer-column-title">支持我们</h3>
+            <a href="https://wise.com/invite/ilpc/fd9svnr" target="_blank" rel="noopener" class="footer-link sponsor-link">🌍 Wise 跨境多币种账户</a>
             <a href="https://app.bxjddjt.com/card/redirect?key=invite&invite_code=VFLEAWOOBQ" target="_blank" rel="noopener" class="footer-link sponsor-link">💳 Gate Card 加密借记卡</a>
             <a href="https://sv.me/r/2RIO6" target="_blank" rel="noopener" class="footer-link sponsor-link">💳 SAVO 全球 Visa 卡</a>
             <a href="https://www.gamsgo.com/zh/showcase/ab45v8y2" target="_blank" rel="noopener" class="footer-link sponsor-link">👑 GamsGo 优惠专区</a>

@@ -47,17 +47,17 @@
 
         <!-- Mobile-only Sponsors Swipe Container -->
         <div class="mobile-sponsors-container">
-          <!-- Mobile-only Sponsor Banner 1: GamsGo -->
-          <a href="https://www.gamsgo.com/zh/showcase/ab45v8y2" target="_blank" rel="noopener" class="mobile-sponsor-banner" style="background: linear-gradient(135deg, rgba(138, 43, 226, 0.08) 0%, rgba(255, 69, 0, 0.04) 100%); border-color: rgba(138, 43, 226, 0.25);">
-            <img class="mobile-sponsor-icon" src="/gamsgo.png" alt="GamsGo - 海外 AI 与流媒体合租平台" style="width: 24px; height: 24px; border-radius: 6px; object-fit: cover;" />
+          <!-- Mobile-only Sponsor Banner 1: Gate Card -->
+          <a href="https://app.bxjddjt.com/card/redirect?key=invite&invite_code=VFLEAWOOBQ" target="_blank" rel="noopener" class="mobile-sponsor-banner" style="background: linear-gradient(135deg, rgba(35, 84, 230, 0.08) 0%, rgba(0, 210, 255, 0.04) 100%); border-color: rgba(35, 84, 230, 0.25);">
+            <img class="mobile-sponsor-icon" src="/gatecard.png" alt="Gate Card - 加密借记卡" style="width: 24px; height: 24px; border-radius: 6px; object-fit: contain; background: #ffffff;" />
             <div class="mobile-sponsor-text">
               <div style="display: flex; align-items: center; gap: 4px;">
-                <strong style="color: #8a2be2;">GamsGo</strong>
-                <span style="font-size: 0.62rem; background: rgba(138, 43, 226, 0.15); color: #8a2be2; padding: 0 4px; border-radius: 3px; font-weight: 700; line-height: 1.2;">2折合租</span>
+                <strong style="color: #2354e6;">Gate Card</strong>
+                <span style="font-size: 0.62rem; background: rgba(35, 84, 230, 0.15); color: #2354e6; padding: 0 4px; border-radius: 3px; font-weight: 700; line-height: 1.2;">5%返现</span>
               </div>
-              <span>ChatGPT / Gemini / Claude / Cursor (支付宝付款)</span>
+              <span>BTC / USDT 随心消费，支持全球线上支付与开通</span>
             </div>
-            <span class="mobile-sponsor-arrow" style="color: #8a2be2;">→</span>
+            <span class="mobile-sponsor-arrow" style="color: #2354e6;">→</span>
           </a>
 
           <!-- Mobile-only Sponsor Banner 2: YourWayCareer -->
@@ -239,23 +239,23 @@
       <aside class="sidebar right-sidebar">
         <h2 class="sidebar-title sponsor-title">👑 Sponsored</h2>
 
-        <!-- Sponsor #1: GamsGo -->
-        <a href="https://www.gamsgo.com/zh/showcase/ab45v8y2" target="_blank" rel="noopener" class="real-sponsor-card" style="background: linear-gradient(145deg, rgba(138, 43, 226, 0.07) 0%, rgba(255, 69, 0, 0.03) 100%); border-color: rgba(138, 43, 226, 0.35);">
+        <!-- Sponsor #1: Gate Card -->
+        <a href="https://app.bxjddjt.com/card/redirect?key=invite&invite_code=VFLEAWOOBQ" target="_blank" rel="noopener" class="real-sponsor-card" style="background: linear-gradient(145deg, rgba(35, 84, 230, 0.07) 0%, rgba(0, 210, 255, 0.03) 100%); border-color: rgba(35, 84, 230, 0.35);">
           <div class="sponsor-header">
-            <img class="sponsor-logo" src="/gamsgo.png" alt="GamsGo - 海外 AI 与流媒体合租平台" style="background: rgba(138, 43, 226, 0.08); object-fit: cover;" />
+            <img class="sponsor-logo" src="/gatecard.png" alt="Gate Card - 加密借记卡" style="background: #ffffff; object-fit: contain; padding: 2px;" />
             <div class="sponsor-meta">
               <div style="display: flex; align-items: center; gap: 6px;">
-                <h3 class="sponsor-name">GamsGo</h3>
-                <span style="font-size: 0.65rem; background: rgba(138, 43, 226, 0.15); color: #8a2be2; padding: 1px 5px; border-radius: 4px; font-weight: 700; line-height: 1.2;">低至 2 折</span>
+                <h3 class="sponsor-name">Gate Card</h3>
+                <span style="font-size: 0.65rem; background: rgba(35, 84, 230, 0.15); color: #2354e6; padding: 1px 5px; border-radius: 4px; font-weight: 700; line-height: 1.2;">最高5%返现</span>
               </div>
-              <p class="sponsor-tagline" style="color: #8a2be2;">ChatGPT / Claude / Gemini / Cursor 合租与充值</p>
+              <p class="sponsor-tagline" style="color: #2354e6;">随时消费 BTC / USDT，畅享全球无界支付</p>
             </div>
           </div>
           <div style="display: flex; gap: 4px; flex-wrap: wrap; margin-top: 6px; font-size: 0.7rem; color: var(--vp-c-text-2);">
-            <span style="background: var(--vp-c-bg-mute); padding: 1px 6px; border-radius: 4px;">⚡ 支付宝付款</span>
-            <span style="background: var(--vp-c-bg-mute); padding: 1px 6px; border-radius: 4px;">🔒 自动质保续费</span>
+            <span style="background: var(--vp-c-bg-mute); padding: 1px 6px; border-radius: 4px;">💳 虚拟卡/实体卡</span>
+            <span style="background: var(--vp-c-bg-mute); padding: 1px 6px; border-radius: 4px;">⚡ 丝滑加密支付</span>
           </div>
-          <div class="sponsor-action" style="color: #8a2be2; border-top-color: rgba(138, 43, 226, 0.15);">立即选购精选服务 →</div>
+          <div class="sponsor-action" style="color: #2354e6; border-top-color: rgba(35, 84, 230, 0.15);">立即免费申领开卡 →</div>
         </a>
 
         <!-- Sponsor #2: YourWayCareer -->

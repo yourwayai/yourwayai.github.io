@@ -118,6 +118,19 @@
             </div>
             <span class="mobile-sponsor-arrow" style="color: #2e7d32;">→</span>
           </a>
+
+          <!-- Mobile-only Sponsor Banner 7: VOXI -->
+          <a href="https://join.voxi.co.uk/Kc5x2g" target="_blank" rel="noopener" class="mobile-sponsor-banner" style="background: linear-gradient(135deg, rgba(255, 180, 0, 0.08) 0%, rgba(255, 80, 0, 0.04) 100%); border-color: rgba(255, 180, 0, 0.3);">
+            <img class="mobile-sponsor-icon" src="/voxi.png" alt="VOXI by Vodafone" style="width: 24px; height: 24px; border-radius: 6px; object-fit: contain; background: #fff;" />
+            <div class="mobile-sponsor-text">
+              <div style="display: flex; align-items: center; gap: 4px;">
+                <strong style="color: #d97706;">VOXI</strong>
+                <span style="font-size: 0.62rem; background: rgba(255, 180, 0, 0.2); color: #d97706; padding: 0 4px; border-radius: 3px; font-weight: 700; line-height: 1.2;">送£20礼品卡</span>
+              </div>
+              <span>英国沃达丰旗下，无限社交免流手机卡</span>
+            </div>
+            <span class="mobile-sponsor-arrow" style="color: #d97706;">→</span>
+          </a>
         </div>
 
         <!-- Control Bar -->
@@ -376,6 +389,25 @@
             <span style="background: var(--vp-c-bg-mute); padding: 1px 6px; border-radius: 4px;">⚡ 40+币种个人银行账户</span>
           </div>
           <div class="sponsor-action" style="color: #2e7d32; border-top-color: rgba(159, 232, 112, 0.25);">免费开户享汇款免手续费 →</div>
+        </a>
+
+        <!-- Sponsor #7: VOXI -->
+        <a href="https://join.voxi.co.uk/Kc5x2g" target="_blank" rel="noopener" class="real-sponsor-card" style="background: linear-gradient(145deg, rgba(255, 180, 0, 0.07) 0%, rgba(255, 80, 0, 0.03) 100%); border-color: rgba(255, 180, 0, 0.35);">
+          <div class="sponsor-header">
+            <img class="sponsor-logo" src="/voxi.png" alt="VOXI by Vodafone" style="background: #ffffff; object-fit: contain; padding: 2px;" />
+            <div class="sponsor-meta">
+              <div style="display: flex; align-items: center; gap: 6px;">
+                <h3 class="sponsor-name">VOXI</h3>
+                <span style="font-size: 0.65rem; background: rgba(255, 180, 0, 0.2); color: #d97706; padding: 1px 5px; border-radius: 4px; font-weight: 700; line-height: 1.2;">送最高£20礼品卡</span>
+              </div>
+              <p class="sponsor-tagline" style="color: #d97706;">沃达丰旗下年轻手机卡，无限社交免流</p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 4px; flex-wrap: wrap; margin-top: 6px; font-size: 0.7rem; color: var(--vp-c-text-2);">
+            <span style="background: var(--vp-c-bg-mute); padding: 1px 6px; border-radius: 4px;">🇬🇧 沃达丰 5G 全网覆盖</span>
+            <span style="background: var(--vp-c-bg-mute); padding: 1px 6px; border-radius: 4px;">🎁 享亚马逊/PayPal礼品卡</span>
+          </div>
+          <div class="sponsor-action" style="color: #d97706; border-top-color: rgba(255, 180, 0, 0.2);">签约办卡领取礼品卡 →</div>
         </a>
 
       </aside>

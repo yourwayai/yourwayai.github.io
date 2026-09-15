@@ -184,7 +184,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (18)',
+        text: '📂 实用与提效 (17)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -203,18 +203,18 @@ export default withPwa(defineConfig({
           { text: 'office-website — 纯客户端 Wasm Office', link: '/tools/wx_20260915172525' },
           { text: 'Windrecorder — Windows 屏幕时光机', link: '/tools/wx_20260915174948' },
           { text: 'Python-Type-Challenges — Python 类型体操', link: '/tools/wx_20260915175340' },
-          { text: 'awesome-go — Go 生态精选导航', link: '/tools/wx_20260915175433' },
-          { text: '告别封号与高价卡！低至 $5.', link: '/tools/wx_20260915175717' }
+          { text: 'awesome-go — Go 生态精选导航', link: '/tools/wx_20260915175433' }
         ]
       },
       {
-        text: '💰 金融与支付 (4)',
+        text: '💰 金融与支付 (5)',
         collapsed: false,
         items: [
           { text: '熊猫速汇 — 跨境汇款攻略', link: '/tools/wx_20260419212801' },
           { text: 'AI 订阅 — 支付宝付款全攻略', link: '/tools/wx_20260419212858' },
           { text: '效率工具 — AI 时代神器推荐', link: '/tools/wx_20260421112236' },
-          { text: 'InvoiceShelf — 开源财务管理', link: '/tools/wx_20260511214626' }
+          { text: 'InvoiceShelf — 开源财务管理', link: '/tools/wx_20260511214626' },
+          { text: 'Claude 订阅 — 低价稳定合租方案', link: '/tools/wx_20260915175717' }
         ]
       },
       {

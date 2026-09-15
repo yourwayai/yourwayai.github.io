@@ -1542,6 +1542,12 @@ const redirectToRandom = () => {
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
 }
 
+.tool-meta-header {
+  flex: 1;
+  min-width: 0;
+  padding-right: 4.5rem;
+}
+
 .tool-meta-header h3 {
   margin: 0;
   font-size: 0.95rem;
@@ -1574,6 +1580,7 @@ const redirectToRandom = () => {
   border-radius: 6px;
   pointer-events: none;
   z-index: 2;
+  white-space: nowrap;
 }
 
 .time-badge.is-new {

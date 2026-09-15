@@ -4,7 +4,7 @@ description: "基于 Cooklang 的开源菜谱管理工具：命令行+内嵌 Web
 category: '📂 实用与提效'
 date: '2026-04-28T22:45:04+08:00'
 icon: 'https://github.com/cooklang.png'
-stars: 'N/A'
+stars: '1.4k'
 platforms:
   - Linux
   - macOS
@@ -30,7 +30,7 @@ deployments:
 
 Cooklang 是一种专为菜谱设计的**纯文本标记语言**。你用 `.cook` 文件格式记录食谱，食材、炊具和步骤都有明确的语法标记，便于机器解析和程序处理：
 
-```cooklang
+```markdown
 将 @橄榄油{2%汤匙} 加热，放入 @大蒜{3%瓣} 翻炒，
 加入 @番茄罐头{400%克} 和 @食盐{适量}，用 #平底锅 小火炖 ~{20%分钟}。
 ```

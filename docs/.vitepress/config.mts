@@ -83,7 +83,7 @@ export default withPwa(defineConfig({
     // 网站左侧的分类侧边栏
     sidebar: [
       {
-        text: '🤖 AI 与智能体 (50)',
+        text: '🤖 AI 与智能体 (51)',
         collapsed: false,
         items: [
           { text: 'Jellyfish — AI 短剧生产工作台', link: '/tools/wx_20260518005533' },
@@ -135,7 +135,8 @@ export default withPwa(defineConfig({
           { text: 'Ironsmith — AI 原生应用生成器', link: '/tools/wx_20260823173222' },
           { text: 'agent-skills — AI 编码工程技能包', link: '/tools/wx_20260823173347' },
           { text: 'dgx-spark-qwen38 — Qwen3.8 极速推理部署', link: '/tools/wx_20260823173638' },
-          { text: 'DeepSeek Harness — 插件化 Agent 运行时', link: '/tools/wx_20260823173808' }
+          { text: 'DeepSeek Harness — 插件化 Agent 运行时', link: '/tools/wx_20260823173808' },
+          { text: 'prompt-master — 提示词工程技能库', link: '/tools/wx_20260915175524' }
         ]
       },
       {
@@ -183,7 +184,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (18)',
+        text: '📂 实用与提效 (17)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -202,8 +203,7 @@ export default withPwa(defineConfig({
           { text: 'office-website — 纯客户端 Wasm Office', link: '/tools/wx_20260915172525' },
           { text: 'Windrecorder — Windows 屏幕时光机', link: '/tools/wx_20260915174948' },
           { text: 'Python-Type-Challenges — Python 类型体操', link: '/tools/wx_20260915175340' },
-          { text: 'awesome-go — Go 生态精选导航', link: '/tools/wx_20260915175433' },
-          { text: 'prompt-master：把', link: '/tools/wx_20260915175524' }
+          { text: 'awesome-go — Go 生态精选导航', link: '/tools/wx_20260915175433' }
         ]
       },
       {

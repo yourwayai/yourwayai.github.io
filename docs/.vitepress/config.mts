@@ -205,7 +205,7 @@ export default withPwa(defineConfig({
           { text: 'Python-Type-Challenges — Python 类型体操', link: '/tools/wx_20260915175340' },
           { text: 'awesome-go — Go 生态精选导航', link: '/tools/wx_20260915175433' },
           { text: 'Decodo — Reddit 爬虫与 AI 舆情分析', link: '/tools/wx_20260915180231' },
-          { text: 'Maxun：把「写爬虫、养代理', link: '/tools/wx_20260915182008' }
+          { text: 'Maxun — 开源无代码 AI 爬虫平台', link: '/tools/wx_20260915182008' }
         ]
       },
       {

@@ -1638,10 +1638,12 @@ const redirectToRandom = () => {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  flex-shrink: 0;
 }
 
 /* Real Sponsor Card */
 .real-sponsor-card {
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   align-items: stretch;

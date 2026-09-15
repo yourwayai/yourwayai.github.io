@@ -204,7 +204,7 @@ export default withPwa(defineConfig({
           { text: 'Windrecorder — Windows 屏幕时光机', link: '/tools/wx_20260915174948' },
           { text: 'Python-Type-Challenges — Python 类型体操', link: '/tools/wx_20260915175340' },
           { text: 'awesome-go — Go 生态精选导航', link: '/tools/wx_20260915175433' },
-          { text: '我用 Decodo 抓了 3 ', link: '/tools/wx_20260915180231' }
+          { text: 'Decodo — Reddit 爬虫与 AI 舆情分析', link: '/tools/wx_20260915180231' }
         ]
       },
       {

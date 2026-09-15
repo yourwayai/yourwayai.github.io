@@ -202,7 +202,7 @@ export default withPwa(defineConfig({
           { text: 'office-website — 纯客户端 Wasm Office', link: '/tools/wx_20260915172525' },
           { text: 'Windrecorder — Windows 屏幕时光机', link: '/tools/wx_20260915174948' },
           { text: 'Python-Type-Challenges — Python 类型体操', link: '/tools/wx_20260915175340' },
-          { text: 'awesome-go 十年 1', link: '/tools/wx_20260915175433' }
+          { text: 'awesome-go — Go 生态精选导航', link: '/tools/wx_20260915175433' }
         ]
       },
       {

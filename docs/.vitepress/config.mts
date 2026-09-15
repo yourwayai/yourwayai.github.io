@@ -199,7 +199,7 @@ export default withPwa(defineConfig({
           { text: 'CloakBrowser — 源码级防检测浏览器', link: '/tools/wx_20260823172310' },
           { text: 'Cling — macOS 全盘模糊搜索神器', link: '/tools/wx_20260823172937' },
           { text: 'Gander — 零权限全格式文件预览', link: '/tools/wx_20260823173053' },
-          { text: '浏览器里能跑多重的 Offic', link: '/tools/wx_20260915172525' }
+          { text: 'office-website — 纯客户端 Wasm Office', link: '/tools/wx_20260915172525' }
         ]
       },
       {

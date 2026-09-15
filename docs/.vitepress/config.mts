@@ -140,7 +140,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '🛠️ 系统与运维 (17)',
+        text: '🛠️ 系统与运维 (18)',
         collapsed: false,
         items: [
           { text: '3x-ui — Xray 协议面板', link: '/tools/3x-ui' },
@@ -159,7 +159,8 @@ export default withPwa(defineConfig({
           { text: 'Openship — 开源自托管容器化部署平台', link: '/tools/wx_20260727161521' },
           { text: 'Dokploy — 开源 Docker Swarm 自托管 PaaS 面板', link: '/tools/wx_20260727161558' },
           { text: 'Home Lab Hub — 开源 Homelab 基础设施看板', link: '/tools/wx_20260807230942' },
-          { text: 'Mailu — Docker 开源邮件服务器', link: '/tools/wx_20260815092411' }
+          { text: 'Mailu — Docker 开源邮件服务器', link: '/tools/wx_20260815092411' },
+          { text: 'x-cmd — POSIX Shell 增强标准库', link: '/tools/wx_20260915182214' }
         ]
       },
       {
@@ -184,7 +185,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (20)',
+        text: '📂 实用与提效 (19)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -205,8 +206,7 @@ export default withPwa(defineConfig({
           { text: 'Python-Type-Challenges — Python 类型体操', link: '/tools/wx_20260915175340' },
           { text: 'awesome-go — Go 生态精选导航', link: '/tools/wx_20260915175433' },
           { text: 'Decodo — Reddit 爬虫与 AI 舆情分析', link: '/tools/wx_20260915180231' },
-          { text: 'Maxun — 开源无代码 AI 爬虫平台', link: '/tools/wx_20260915182008' },
-          { text: 'x-cmd：用 Shell +', link: '/tools/wx_20260915182214' }
+          { text: 'Maxun — 开源无代码 AI 爬虫平台', link: '/tools/wx_20260915182008' }
         ]
       },
       {

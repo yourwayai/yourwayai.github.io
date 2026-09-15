@@ -184,7 +184,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (17)',
+        text: '📂 实用与提效 (18)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -203,7 +203,8 @@ export default withPwa(defineConfig({
           { text: 'office-website — 纯客户端 Wasm Office', link: '/tools/wx_20260915172525' },
           { text: 'Windrecorder — Windows 屏幕时光机', link: '/tools/wx_20260915174948' },
           { text: 'Python-Type-Challenges — Python 类型体操', link: '/tools/wx_20260915175340' },
-          { text: 'awesome-go — Go 生态精选导航', link: '/tools/wx_20260915175433' }
+          { text: 'awesome-go — Go 生态精选导航', link: '/tools/wx_20260915175433' },
+          { text: '我用 Decodo 抓了 3 ', link: '/tools/wx_20260915180231' }
         ]
       },
       {

@@ -184,7 +184,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (19)',
+        text: '📂 实用与提效 (18)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -204,8 +204,7 @@ export default withPwa(defineConfig({
           { text: 'Windrecorder — Windows 屏幕时光机', link: '/tools/wx_20260915174948' },
           { text: 'Python-Type-Challenges — Python 类型体操', link: '/tools/wx_20260915175340' },
           { text: 'awesome-go — Go 生态精选导航', link: '/tools/wx_20260915175433' },
-          { text: 'Decodo — Reddit 爬虫与 AI 舆情分析', link: '/tools/wx_20260915180231' },
-          { text: '还在手写 Service Wo', link: '/tools/wx_20260915181404' }
+          { text: 'Decodo — Reddit 爬虫与 AI 舆情分析', link: '/tools/wx_20260915180231' }
         ]
       },
       {
@@ -220,7 +219,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '🎨 设计与极客 (7)',
+        text: '🎨 设计与极客 (8)',
         collapsed: false,
         items: [
           { text: 'Penpot — 开源设计工具', link: '/tools/penpot' },
@@ -229,7 +228,8 @@ export default withPwa(defineConfig({
           { text: 'The Art of Command Line — 终端神技', link: '/tools/the-art-of-command-line' },
           { text: 'MoBrowser-App-Icon-Maker — AI 图标生成', link: '/tools/wx_20260530171623' },
           { text: 'PDFx — React 开源 PDF 组件库', link: '/tools/wx_20260815093312' },
-          { text: 'Drawnix — 开源一体化白板与导图', link: '/tools/wx_20260823173518' }
+          { text: 'Drawnix — 开源一体化白板与导图', link: '/tools/wx_20260823173518' },
+          { text: 'vite-plugin-pwa — Vite 零配置 PWA 插件', link: '/tools/wx_20260915181404' }
         ]
       },
       {

@@ -213,7 +213,7 @@ export default withPwa(defineConfig({
           { text: 'Maxun — 开源无代码 AI 爬虫平台', link: '/tools/wx_20260915182008' },
           { text: 'awesome-low-level-design — LLD与设计模式导航', link: '/tools/wx_20260922144047' },
           { text: 'qxresearch-event-1 — 50个Python实战小工具', link: '/tools/wx_20260922145650' },
-          { text: 'Asyar 实测：Tauri+', link: '/tools/wx_20260922150523' }
+          { text: 'Asyar — Tauri+Rust 开源启动器', link: '/tools/wx_20260922150523' }
         ]
       },
       {

@@ -189,7 +189,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (21)',
+        text: '📂 实用与提效 (22)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -212,7 +212,8 @@ export default withPwa(defineConfig({
           { text: 'Decodo — Reddit 爬虫与 AI 舆情分析', link: '/tools/wx_20260915180231' },
           { text: 'Maxun — 开源无代码 AI 爬虫平台', link: '/tools/wx_20260915182008' },
           { text: 'awesome-low-level-design — LLD与设计模式导航', link: '/tools/wx_20260922144047' },
-          { text: 'qxresearch-event-1 — 50个Python实战小工具', link: '/tools/wx_20260922145650' }
+          { text: 'qxresearch-event-1 — 50个Python实战小工具', link: '/tools/wx_20260922145650' },
+          { text: 'Mitosis 实测：一套组件', link: '/tools/wx_20260922150202' }
         ]
       },
       {

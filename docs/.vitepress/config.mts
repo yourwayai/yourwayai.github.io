@@ -189,7 +189,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (22)',
+        text: '📂 实用与提效 (23)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -213,7 +213,8 @@ export default withPwa(defineConfig({
           { text: 'Maxun — 开源无代码 AI 爬虫平台', link: '/tools/wx_20260915182008' },
           { text: 'awesome-low-level-design — LLD与设计模式导航', link: '/tools/wx_20260922144047' },
           { text: 'qxresearch-event-1 — 50个Python实战小工具', link: '/tools/wx_20260922145650' },
-          { text: 'Asyar — Tauri+Rust 开源启动器', link: '/tools/wx_20260922150523' }
+          { text: 'Asyar — Tauri+Rust 开源启动器', link: '/tools/wx_20260922150523' },
+          { text: 'Open-Sora-Plan ', link: '/tools/wx_20260922150716' }
         ]
       },
       {

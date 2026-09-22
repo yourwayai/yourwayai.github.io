@@ -141,7 +141,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '🛠️ 系统与运维 (19)',
+        text: '🛠️ 系统与运维 (20)',
         collapsed: false,
         items: [
           { text: '3x-ui — Xray 协议面板', link: '/tools/3x-ui' },
@@ -162,7 +162,8 @@ export default withPwa(defineConfig({
           { text: 'Home Lab Hub — 开源 Homelab 基础设施看板', link: '/tools/wx_20260807230942' },
           { text: 'Mailu — Docker 开源邮件服务器', link: '/tools/wx_20260815092411' },
           { text: 'x-cmd — POSIX Shell 增强标准库', link: '/tools/wx_20260915182214' },
-          { text: 'kickstart.nvim — 极简 Neovim 起手配置', link: '/tools/wx_20260922145500' }
+          { text: 'kickstart.nvim — 极简 Neovim 起手配置', link: '/tools/wx_20260922145500' },
+          { text: 'Appwrite — 开源自托管 BaaS 平台', link: '/tools/wx_20260922145813' }
         ]
       },
       {
@@ -187,7 +188,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (22)',
+        text: '📂 实用与提效 (21)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -210,8 +211,7 @@ export default withPwa(defineConfig({
           { text: 'Decodo — Reddit 爬虫与 AI 舆情分析', link: '/tools/wx_20260915180231' },
           { text: 'Maxun — 开源无代码 AI 爬虫平台', link: '/tools/wx_20260915182008' },
           { text: 'awesome-low-level-design — LLD与设计模式导航', link: '/tools/wx_20260922144047' },
-          { text: 'qxresearch-event-1 — 50个Python实战小工具', link: '/tools/wx_20260922145650' },
-          { text: 'Appwrite 1.9：用 ', link: '/tools/wx_20260922145813' }
+          { text: 'qxresearch-event-1 — 50个Python实战小工具', link: '/tools/wx_20260922145650' }
         ]
       },
       {

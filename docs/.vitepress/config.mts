@@ -83,7 +83,7 @@ export default withPwa(defineConfig({
     // 网站左侧的分类侧边栏
     sidebar: [
       {
-        text: '🤖 AI 与智能体 (52)',
+        text: '🤖 AI 与智能体 (53)',
         collapsed: false,
         items: [
           { text: 'Jellyfish — AI 短剧生产工作台', link: '/tools/wx_20260518005533' },
@@ -137,7 +137,8 @@ export default withPwa(defineConfig({
           { text: 'dgx-spark-qwen38 — Qwen3.8 极速推理部署', link: '/tools/wx_20260823173638' },
           { text: 'DeepSeek Harness — 插件化 Agent 运行时', link: '/tools/wx_20260823173808' },
           { text: 'prompt-master — 提示词工程技能库', link: '/tools/wx_20260915175524' },
-          { text: 'img2threejs — 图像转 Three.js 过程化代码', link: '/tools/wx_20260922145242' }
+          { text: 'img2threejs — 图像转 Three.js 过程化代码', link: '/tools/wx_20260922145242' },
+          { text: 'Open-Sora-Plan — 开源视频生成大模型', link: '/tools/wx_20260922150716' }
         ]
       },
       {
@@ -189,7 +190,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (23)',
+        text: '📂 实用与提效 (22)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -213,8 +214,7 @@ export default withPwa(defineConfig({
           { text: 'Maxun — 开源无代码 AI 爬虫平台', link: '/tools/wx_20260915182008' },
           { text: 'awesome-low-level-design — LLD与设计模式导航', link: '/tools/wx_20260922144047' },
           { text: 'qxresearch-event-1 — 50个Python实战小工具', link: '/tools/wx_20260922145650' },
-          { text: 'Asyar — Tauri+Rust 开源启动器', link: '/tools/wx_20260922150523' },
-          { text: 'Open-Sora-Plan ', link: '/tools/wx_20260922150716' }
+          { text: 'Asyar — Tauri+Rust 开源启动器', link: '/tools/wx_20260922150523' }
         ]
       },
       {

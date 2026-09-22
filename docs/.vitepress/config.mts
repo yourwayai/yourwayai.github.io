@@ -189,7 +189,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (22)',
+        text: '📂 实用与提效 (21)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -212,8 +212,7 @@ export default withPwa(defineConfig({
           { text: 'Decodo — Reddit 爬虫与 AI 舆情分析', link: '/tools/wx_20260915180231' },
           { text: 'Maxun — 开源无代码 AI 爬虫平台', link: '/tools/wx_20260915182008' },
           { text: 'awesome-low-level-design — LLD与设计模式导航', link: '/tools/wx_20260922144047' },
-          { text: 'qxresearch-event-1 — 50个Python实战小工具', link: '/tools/wx_20260922145650' },
-          { text: '大厂设计系统怎么开源？Clou', link: '/tools/wx_20260922150348' }
+          { text: 'qxresearch-event-1 — 50个Python实战小工具', link: '/tools/wx_20260922145650' }
         ]
       },
       {
@@ -228,7 +227,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '🎨 设计与极客 (9)',
+        text: '🎨 设计与极客 (10)',
         collapsed: false,
         items: [
           { text: 'Penpot — 开源设计工具', link: '/tools/penpot' },
@@ -239,7 +238,8 @@ export default withPwa(defineConfig({
           { text: 'PDFx — React 开源 PDF 组件库', link: '/tools/wx_20260815093312' },
           { text: 'Drawnix — 开源一体化白板与导图', link: '/tools/wx_20260823173518' },
           { text: 'vite-plugin-pwa — Vite 零配置 PWA 插件', link: '/tools/wx_20260915181404' },
-          { text: 'Mitosis — 跨框架前端组件编译器', link: '/tools/wx_20260922150202' }
+          { text: 'Mitosis — 跨框架前端组件编译器', link: '/tools/wx_20260922150202' },
+          { text: 'kumo — Cloudflare 开源设计系统', link: '/tools/wx_20260922150348' }
         ]
       },
       {

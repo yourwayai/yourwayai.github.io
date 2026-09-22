@@ -207,7 +207,7 @@ export default withPwa(defineConfig({
           { text: 'awesome-go — Go 生态精选导航', link: '/tools/wx_20260915175433' },
           { text: 'Decodo — Reddit 爬虫与 AI 舆情分析', link: '/tools/wx_20260915180231' },
           { text: 'Maxun — 开源无代码 AI 爬虫平台', link: '/tools/wx_20260915182008' },
-          { text: '面试被问「用设计模式重构这个类', link: '/tools/wx_20260922144047' }
+          { text: 'awesome-low-level-design — LLD与设计模式导航', link: '/tools/wx_20260922144047' }
         ]
       },
       {

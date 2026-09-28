@@ -191,7 +191,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (23)',
+        text: '📂 实用与提效 (22)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -215,8 +215,7 @@ export default withPwa(defineConfig({
           { text: 'Maxun — 开源无代码 AI 爬虫平台', link: '/tools/wx_20260915182008' },
           { text: 'awesome-low-level-design — LLD与设计模式导航', link: '/tools/wx_20260922144047' },
           { text: 'qxresearch-event-1 — 50个Python实战小工具', link: '/tools/wx_20260922145650' },
-          { text: 'Asyar — Tauri+Rust 开源启动器', link: '/tools/wx_20260922150523' },
-          { text: 'Lap v0.3：离线优先的 ', link: '/tools/wx_20260928192021' }
+          { text: 'Asyar — Tauri+Rust 开源启动器', link: '/tools/wx_20260922150523' }
         ]
       },
       {
@@ -247,13 +246,14 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '🍿 影音与娱乐 (4)',
+        text: '🍿 影音与娱乐 (5)',
         collapsed: false,
         items: [
           { text: 'Jellyfin — 自建私人影院', link: '/tools/jellyfin' },
           { text: 'video-autopilot-kit — 开源短视频自动化框架', link: '/tools/wx_20260722214409' },
           { text: 'Wizarr — 影音服务器自动化邀请', link: '/tools/wx_20260722214537' },
-          { text: 'Antra — 跨平台无损本地音乐库构建器', link: '/tools/wx_20260727160923' }
+          { text: 'Antra — 跨平台无损本地音乐库构建器', link: '/tools/wx_20260727160923' },
+          { text: 'Lap — 离线优先本地 AI 相册', link: '/tools/wx_20260928192021' }
         ]
       }
     ],

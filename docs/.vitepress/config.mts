@@ -222,7 +222,7 @@ export default withPwa(defineConfig({
           { text: 'qxresearch-event-1 — 50个Python实战小工具', link: '/tools/wx_20260922145650' },
           { text: 'Asyar — Tauri+Rust 开源启动器', link: '/tools/wx_20260922150523' },
           { text: 'Snippai — 本地 AI 智能截图识别', link: '/tools/wx_20260928192153' },
-          { text: '开源定位模拟器 Roam Co', link: '/tools/wx_20260928193107' }
+          { text: 'Roam Control — iOS 原生定位模拟器', link: '/tools/wx_20260928193107' }
         ]
       },
       {

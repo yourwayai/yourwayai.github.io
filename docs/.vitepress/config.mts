@@ -196,7 +196,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (24)',
+        text: '📂 实用与提效 (25)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -222,7 +222,8 @@ export default withPwa(defineConfig({
           { text: 'qxresearch-event-1 — 50个Python实战小工具', link: '/tools/wx_20260922145650' },
           { text: 'Asyar — Tauri+Rust 开源启动器', link: '/tools/wx_20260922150523' },
           { text: 'Snippai — 本地 AI 智能截图识别', link: '/tools/wx_20260928192153' },
-          { text: 'Roam Control — iOS 原生定位模拟器', link: '/tools/wx_20260928193107' }
+          { text: 'Roam Control — iOS 原生定位模拟器', link: '/tools/wx_20260928193107' },
+          { text: 'Nanonets 开源 Doc', link: '/tools/wx_20260928193230' }
         ]
       },
       {

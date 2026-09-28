@@ -83,7 +83,7 @@ export default withPwa(defineConfig({
     // 网站左侧的分类侧边栏
     sidebar: [
       {
-        text: '🤖 AI 与智能体 (55)',
+        text: '🤖 AI 与智能体 (56)',
         collapsed: false,
         items: [
           { text: 'Jellyfish — AI 短剧生产工作台', link: '/tools/wx_20260518005533' },
@@ -140,7 +140,8 @@ export default withPwa(defineConfig({
           { text: 'img2threejs — 图像转 Three.js 过程化代码', link: '/tools/wx_20260922145242' },
           { text: 'Open-Sora-Plan — 开源视频生成大模型', link: '/tools/wx_20260922150716' },
           { text: 'FinRobot — 开源金融 AI Agent 平台', link: '/tools/wx_20260928191513' },
-          { text: 'OpenHands — 开源 AI 软件工程师', link: '/tools/wx_20260928192307' }
+          { text: 'OpenHands — 开源 AI 软件工程师', link: '/tools/wx_20260928192307' },
+          { text: 'kimi-k3-in-c — 极简 C 语言推理引擎', link: '/tools/wx_20260928192459' }
         ]
       },
       {
@@ -192,7 +193,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (24)',
+        text: '📂 实用与提效 (23)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -217,8 +218,7 @@ export default withPwa(defineConfig({
           { text: 'awesome-low-level-design — LLD与设计模式导航', link: '/tools/wx_20260922144047' },
           { text: 'qxresearch-event-1 — 50个Python实战小工具', link: '/tools/wx_20260922145650' },
           { text: 'Asyar — Tauri+Rust 开源启动器', link: '/tools/wx_20260922150523' },
-          { text: 'Snippai — 本地 AI 智能截图识别', link: '/tools/wx_20260928192153' },
-          { text: '2.78 万亿参数模型能在笔记', link: '/tools/wx_20260928192459' }
+          { text: 'Snippai — 本地 AI 智能截图识别', link: '/tools/wx_20260928192153' }
         ]
       },
       {

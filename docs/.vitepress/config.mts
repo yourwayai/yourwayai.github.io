@@ -184,18 +184,19 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '✍️ 知识与协作 (5)',
+        text: '✍️ 知识与协作 (6)',
         collapsed: false,
         items: [
           { text: 'Outline — 团队 Wiki 知识库', link: '/tools/outline' },
           { text: 'Memos — 碎片化灵感笔记', link: '/tools/memos' },
           { text: 'Ghost — 开源博客系统', link: '/tools/wx_20260421130229' },
           { text: 'Chatwoot — 全渠道客服中台', link: '/tools/chatwoot' },
-          { text: 'Twenty — TypeScript 开源 CRM', link: '/tools/wx_20260611154932' }
+          { text: 'Twenty — TypeScript 开源 CRM', link: '/tools/wx_20260611154932' },
+          { text: 'Papra — 极简自托管文档归档', link: '/tools/wx_20260928192910' }
         ]
       },
       {
-        text: '📂 实用与提效 (24)',
+        text: '📂 实用与提效 (23)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -220,8 +221,7 @@ export default withPwa(defineConfig({
           { text: 'awesome-low-level-design — LLD与设计模式导航', link: '/tools/wx_20260922144047' },
           { text: 'qxresearch-event-1 — 50个Python实战小工具', link: '/tools/wx_20260922145650' },
           { text: 'Asyar — Tauri+Rust 开源启动器', link: '/tools/wx_20260922150523' },
-          { text: 'Snippai — 本地 AI 智能截图识别', link: '/tools/wx_20260928192153' },
-          { text: 'Papra：极简自托管文档归档', link: '/tools/wx_20260928192910' }
+          { text: 'Snippai — 本地 AI 智能截图识别', link: '/tools/wx_20260928192153' }
         ]
       },
       {

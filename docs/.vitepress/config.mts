@@ -84,7 +84,7 @@ export default withPwa(defineConfig({
     // 网站左侧的分类侧边栏
     sidebar: [
       {
-        text: '🤖 AI 与智能体 (58)',
+        text: '🤖 AI 与智能体 (59)',
         collapsed: false,
         items: [
           { text: 'Jellyfish — AI 短剧生产工作台', link: '/tools/wx_20260518005533' },
@@ -144,7 +144,8 @@ export default withPwa(defineConfig({
           { text: 'OpenHands — 开源 AI 软件工程师', link: '/tools/wx_20260928192307' },
           { text: 'kimi-k3-in-c — 极简 C 语言推理引擎', link: '/tools/wx_20260928192459' },
           { text: 'WeKnora — 腾讯开源企业知识库', link: '/tools/wx_20260928193354' },
-          { text: 'FastChat — 分布式 LLM 服务框架', link: '/tools/wx_20261005113410' }
+          { text: 'FastChat — 分布式 LLM 服务框架', link: '/tools/wx_20261005113410' },
+          { text: 'OpenExecutive — 虚拟高管 Agent 团队', link: '/tools/wx_20261005115321' }
         ]
       },
       {
@@ -202,7 +203,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (27)',
+        text: '📂 实用与提效 (26)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -230,8 +231,7 @@ export default withPwa(defineConfig({
           { text: 'Snippai — 本地 AI 智能截图识别', link: '/tools/wx_20260928192153' },
           { text: 'Roam Control — iOS 原生定位模拟器', link: '/tools/wx_20260928193107' },
           { text: 'DocStrange — AI 文档转 Markdown', link: '/tools/wx_20260928193230' },
-          { text: 'MarkPDFDown — 视觉大模型转 Markdown', link: '/tools/wx_20261005112903' },
-          { text: '创业公司请不起全职 CXO？O', link: '/tools/wx_20261005115321' }
+          { text: 'MarkPDFDown — 视觉大模型转 Markdown', link: '/tools/wx_20261005112903' }
         ]
       },
       {

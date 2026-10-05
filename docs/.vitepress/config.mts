@@ -201,7 +201,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (26)',
+        text: '📂 实用与提效 (27)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -229,7 +229,8 @@ export default withPwa(defineConfig({
           { text: 'Snippai — 本地 AI 智能截图识别', link: '/tools/wx_20260928192153' },
           { text: 'Roam Control — iOS 原生定位模拟器', link: '/tools/wx_20260928193107' },
           { text: 'DocStrange — AI 文档转 Markdown', link: '/tools/wx_20260928193230' },
-          { text: 'MarkPDFDown — 视觉大模型转 Markdown', link: '/tools/wx_20261005112903' }
+          { text: 'MarkPDFDown — 视觉大模型转 Markdown', link: '/tools/wx_20261005112903' },
+          { text: 'PPT 还在用静态图片？bol', link: '/tools/wx_20261005114716' }
         ]
       },
       {

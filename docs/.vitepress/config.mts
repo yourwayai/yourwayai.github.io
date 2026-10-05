@@ -147,7 +147,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '🛠️ 系统与运维 (23)',
+        text: '🛠️ 系统与运维 (24)',
         collapsed: false,
         items: [
           { text: '3x-ui — Xray 协议面板', link: '/tools/3x-ui' },
@@ -172,7 +172,8 @@ export default withPwa(defineConfig({
           { text: 'Appwrite — 开源自托管 BaaS 平台', link: '/tools/wx_20260922145813' },
           { text: 'CaskHub — Homebrew Cask 原生商店', link: '/tools/wx_20260922145954' },
           { text: 'UpSnap — 现代化网络唤醒面板', link: '/tools/wx_20260928192649' },
-          { text: 'Kudu — 开源无遥测系统清理', link: '/tools/wx_20261005111433' }
+          { text: 'Kudu — 开源无遥测系统清理', link: '/tools/wx_20261005111433' },
+          { text: 'OneTerm — 开源极简运维堡垒机', link: '/tools/wx_20261005112733' }
         ]
       },
       {
@@ -198,7 +199,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (26)',
+        text: '📂 实用与提效 (25)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -225,8 +226,7 @@ export default withPwa(defineConfig({
           { text: 'Asyar — Tauri+Rust 开源启动器', link: '/tools/wx_20260922150523' },
           { text: 'Snippai — 本地 AI 智能截图识别', link: '/tools/wx_20260928192153' },
           { text: 'Roam Control — iOS 原生定位模拟器', link: '/tools/wx_20260928193107' },
-          { text: 'DocStrange — AI 文档转 Markdown', link: '/tools/wx_20260928193230' },
-          { text: '开源堡垒机 OneTerm 实', link: '/tools/wx_20261005112733' }
+          { text: 'DocStrange — AI 文档转 Markdown', link: '/tools/wx_20260928193230' }
         ]
       },
       {

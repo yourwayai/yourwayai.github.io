@@ -227,7 +227,7 @@ export default withPwa(defineConfig({
           { text: 'Snippai — 本地 AI 智能截图识别', link: '/tools/wx_20260928192153' },
           { text: 'Roam Control — iOS 原生定位模拟器', link: '/tools/wx_20260928193107' },
           { text: 'DocStrange — AI 文档转 Markdown', link: '/tools/wx_20260928193230' },
-          { text: 'PDF 转 Markdown ', link: '/tools/wx_20261005112903' }
+          { text: 'MarkPDFDown — 视觉大模型转 Markdown', link: '/tools/wx_20261005112903' }
         ]
       },
       {

@@ -233,7 +233,7 @@ export default withPwa(defineConfig({
           { text: 'Roam Control — iOS 原生定位模拟器', link: '/tools/wx_20260928193107' },
           { text: 'DocStrange — AI 文档转 Markdown', link: '/tools/wx_20260928193230' },
           { text: 'MarkPDFDown — 视觉大模型转 Markdown', link: '/tools/wx_20261005112903' },
-          { text: '还在手写操作手册、截图圈红框？', link: '/tools/wx_20261005120030' }
+          { text: 'Mimik — 自动化操作指南生成扩展', link: '/tools/wx_20261005120030' }
         ]
       },
       {

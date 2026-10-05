@@ -197,7 +197,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (25)',
+        text: '📂 实用与提效 (26)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -224,7 +224,8 @@ export default withPwa(defineConfig({
           { text: 'Asyar — Tauri+Rust 开源启动器', link: '/tools/wx_20260922150523' },
           { text: 'Snippai — 本地 AI 智能截图识别', link: '/tools/wx_20260928192153' },
           { text: 'Roam Control — iOS 原生定位模拟器', link: '/tools/wx_20260928193107' },
-          { text: 'DocStrange — AI 文档转 Markdown', link: '/tools/wx_20260928193230' }
+          { text: 'DocStrange — AI 文档转 Markdown', link: '/tools/wx_20260928193230' },
+          { text: '系统清理工具还能开源、无遥测、', link: '/tools/wx_20261005111433' }
         ]
       },
       {

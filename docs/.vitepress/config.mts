@@ -188,7 +188,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '✍️ 知识与协作 (6)',
+        text: '✍️ 知识与协作 (7)',
         collapsed: false,
         items: [
           { text: 'Outline — 团队 Wiki 知识库', link: '/tools/outline' },
@@ -196,11 +196,12 @@ export default withPwa(defineConfig({
           { text: 'Ghost — 开源博客系统', link: '/tools/wx_20260421130229' },
           { text: 'Chatwoot — 全渠道客服中台', link: '/tools/chatwoot' },
           { text: 'Twenty — TypeScript 开源 CRM', link: '/tools/wx_20260611154932' },
-          { text: 'Papra — 极简自托管文档归档', link: '/tools/wx_20260928192910' }
+          { text: 'Papra — 极简自托管文档归档', link: '/tools/wx_20260928192910' },
+          { text: 'Fleetbase — 开源物流与供应链系统', link: '/tools/wx_20261005113729' }
         ]
       },
       {
-        text: '📂 实用与提效 (27)',
+        text: '📂 实用与提效 (26)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -228,8 +229,7 @@ export default withPwa(defineConfig({
           { text: 'Snippai — 本地 AI 智能截图识别', link: '/tools/wx_20260928192153' },
           { text: 'Roam Control — iOS 原生定位模拟器', link: '/tools/wx_20260928193107' },
           { text: 'DocStrange — AI 文档转 Markdown', link: '/tools/wx_20260928193230' },
-          { text: 'MarkPDFDown — 视觉大模型转 Markdown', link: '/tools/wx_20261005112903' },
-          { text: '物流 SaaS 不想被锁死、数', link: '/tools/wx_20261005113729' }
+          { text: 'MarkPDFDown — 视觉大模型转 Markdown', link: '/tools/wx_20261005112903' }
         ]
       },
       {

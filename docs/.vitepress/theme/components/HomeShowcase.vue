@@ -60,7 +60,20 @@
             <span class="mobile-sponsor-arrow" style="color: #2354e6;">→</span>
           </a>
 
-          <!-- Mobile-only Sponsor Banner 2: YourWayCareer -->
+          <!-- Mobile-only Sponsor Banner 2: Plasma One -->
+          <a href="https://plasma.org/download/MQDJFV" target="_blank" rel="noopener" class="mobile-sponsor-banner" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.08) 0%, rgba(6, 182, 212, 0.04) 100%); border-color: rgba(16, 185, 129, 0.25);">
+            <img class="mobile-sponsor-icon" src="/plasma.png" alt="Plasma One - 非托管稳定币卡" style="width: 24px; height: 24px; border-radius: 6px; object-fit: cover; background: #000;" />
+            <div class="mobile-sponsor-text">
+              <div style="display: flex; align-items: center; gap: 4px;">
+                <strong style="color: #059669;">Plasma One</strong>
+                <span style="font-size: 0.62rem; background: rgba(16, 185, 129, 0.15); color: #059669; padding: 0 4px; border-radius: 3px; font-weight: 700; line-height: 1.2;">邀请码 MQDJFV</span>
+              </div>
+              <span>非托管稳定币卡，支持 Apple Pay 全球消费</span>
+            </div>
+            <span class="mobile-sponsor-arrow" style="color: #059669;">→</span>
+          </a>
+
+          <!-- Mobile-only Sponsor Banner 3: YourWayCareer -->
           <a href="/ywc_resume_landing_page.html" target="_blank" rel="noopener" class="mobile-sponsor-banner">
             <img class="mobile-sponsor-icon" src="/ywc.jpg" style="width: 24px; height: 24px; border-radius: 6px; object-fit: cover;" />
             <div class="mobile-sponsor-text">
@@ -310,7 +323,27 @@
           <div class="sponsor-action" style="color: #2354e6; border-top-color: rgba(35, 84, 230, 0.15);">立即免费申领开卡 →</div>
         </a>
 
-        <!-- Sponsor #2: YourWayCareer -->
+        <!-- Sponsor #2: Plasma One -->
+        <a href="https://plasma.org/download/MQDJFV" target="_blank" rel="noopener" class="real-sponsor-card" style="background: linear-gradient(145deg, rgba(16, 185, 129, 0.07) 0%, rgba(6, 182, 212, 0.03) 100%); border-color: rgba(16, 185, 129, 0.35);">
+          <div class="sponsor-header">
+            <img class="sponsor-logo" src="/plasma.png" alt="Plasma One - 非托管稳定币卡" style="background: #000; object-fit: cover;" />
+            <div class="sponsor-meta">
+              <div style="display: flex; align-items: center; gap: 6px;">
+                <h3 class="sponsor-name">Plasma One</h3>
+                <span style="font-size: 0.65rem; background: rgba(16, 185, 129, 0.15); color: #059669; padding: 1px 5px; border-radius: 4px; font-weight: 700; line-height: 1.2;">邀请码 MQDJFV</span>
+              </div>
+              <p class="sponsor-tagline" style="color: #059669;">非托管稳定币 Visa 卡，全球无界消费</p>
+            </div>
+          </div>
+          <div style="display: flex; gap: 4px; flex-wrap: wrap; margin-top: 6px; font-size: 0.7rem; color: var(--vp-c-text-2);">
+            <span style="background: var(--vp-c-bg-mute); padding: 1px 6px; border-radius: 4px;">💳 非托管 Visa 卡</span>
+            <span style="background: var(--vp-c-bg-mute); padding: 1px 6px; border-radius: 4px;">⚡ USDT/USDC 即充即刷</span>
+            <span style="background: var(--vp-c-bg-mute); padding: 1px 6px; border-radius: 4px;">🍎 Apple / Google Pay</span>
+          </div>
+          <div class="sponsor-action" style="color: #059669; border-top-color: rgba(16, 185, 129, 0.15);">使用邀请码立即开通 →</div>
+        </a>
+
+        <!-- Sponsor #3: YourWayCareer -->
         <a href="/ywc_resume_landing_page.html" target="_blank" rel="noopener" class="real-sponsor-card">
           <div class="sponsor-header">
             <img class="sponsor-logo" src="/ywc.jpg" style="object-fit: cover;" />

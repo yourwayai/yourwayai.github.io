@@ -212,7 +212,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (28)',
+        text: '📂 实用与提效 (27)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -241,8 +241,7 @@ export default withPwa(defineConfig({
           { text: 'Roam Control — iOS 原生定位模拟器', link: '/tools/wx_20260928193107' },
           { text: 'DocStrange — AI 文档转 Markdown', link: '/tools/wx_20260928193230' },
           { text: 'MarkPDFDown — 视觉大模型转 Markdown', link: '/tools/wx_20261005112903' },
-          { text: 'Mimik — 自动化操作指南生成扩展', link: '/tools/wx_20261005120030' },
-          { text: '从代码还原界面、鼠标自动点点点', link: '/tools/wx_20261015095706' }
+          { text: 'Mimik — 自动化操作指南生成扩展', link: '/tools/wx_20261005120030' }
         ]
       },
       {
@@ -274,14 +273,15 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '🍿 影音与娱乐 (5)',
+        text: '🍿 影音与娱乐 (6)',
         collapsed: false,
         items: [
           { text: 'Jellyfin — 自建私人影院', link: '/tools/jellyfin' },
           { text: 'video-autopilot-kit — 开源短视频自动化框架', link: '/tools/wx_20260722214409' },
           { text: 'Wizarr — 影音服务器自动化邀请', link: '/tools/wx_20260722214537' },
           { text: 'Antra — 跨平台无损本地音乐库构建器', link: '/tools/wx_20260727160923' },
-          { text: 'Lap — 离线优先本地 AI 相册', link: '/tools/wx_20260928192021' }
+          { text: 'Lap — 离线优先本地 AI 相册', link: '/tools/wx_20260928192021' },
+          { text: 'explainroo — AI 讲解视频生成工具', link: '/tools/wx_20261015095706' }
         ]
       }
     ],

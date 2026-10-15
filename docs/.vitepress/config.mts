@@ -84,7 +84,7 @@ export default withPwa(defineConfig({
     // 网站左侧的分类侧边栏
     sidebar: [
       {
-        text: '🤖 AI 与智能体 (64)',
+        text: '🤖 AI 与智能体 (65)',
         collapsed: false,
         items: [
           { text: 'Jellyfish — AI 短剧生产工作台', link: '/tools/wx_20260518005533' },
@@ -150,7 +150,8 @@ export default withPwa(defineConfig({
           { text: 'agtx — 编码智能体看板开发环境', link: '/tools/wx_20261005120649' },
           { text: 'AutoHedge — 自主智能体对冲基金', link: '/tools/wx_20261005120859' },
           { text: 'Vibe-Trading — 个人量化交易Agent', link: '/tools/wx_20261015093602' },
-          { text: 'Claude Ads — 多平台广告审计Agent', link: '/tools/wx_20261015094257' }
+          { text: 'Claude Ads — 多平台广告审计Agent', link: '/tools/wx_20261015094257' },
+          { text: 'NotFair — 营销运营Agent技能包', link: '/tools/wx_20261015094512' }
         ]
       },
       {
@@ -208,7 +209,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (28)',
+        text: '📂 实用与提效 (27)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -237,8 +238,7 @@ export default withPwa(defineConfig({
           { text: 'Roam Control — iOS 原生定位模拟器', link: '/tools/wx_20260928193107' },
           { text: 'DocStrange — AI 文档转 Markdown', link: '/tools/wx_20260928193230' },
           { text: 'MarkPDFDown — 视觉大模型转 Markdown', link: '/tools/wx_20261005112903' },
-          { text: 'Mimik — 自动化操作指南生成扩展', link: '/tools/wx_20261005120030' },
-          { text: '让AI做SEO审计、广告优化、', link: '/tools/wx_20261015094512' }
+          { text: 'Mimik — 自动化操作指南生成扩展', link: '/tools/wx_20261005120030' }
         ]
       },
       {

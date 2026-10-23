@@ -1,4 +1,5 @@
 <script setup>
+const emit = defineEmits(['update:chatOpen'])
 // NexconnChat.vue — 放到 docs/.vitepress/theme/components/
 // 作用: 右下角浮动聊天窗, 访客以 guest 身份和站长 1 对 1 发消息
 // 依赖: npm install @nexconn/engine@latest @nexconn/chat@latest -S
@@ -77,6 +78,7 @@ async function send() {
 
 function toggle() {
   open.value = !open.value
+  emit('update:chatOpen', open.value)
   if (open.value) ensureConnected().catch(console.error)
 }
 </script>
@@ -99,9 +101,10 @@ function toggle() {
 </template>
 
 <style scoped>
-.nc-wrap { position: fixed; right: 20px; bottom: 88px; z-index: 99; display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
-.nc-btn { border: 0; border-radius: 999px; padding: 10px 18px; background: #18d867; color: #fff; font-weight: 600; cursor: pointer; box-shadow: 0 8px 24px rgba(0,0,0,.18); }
-.nc-panel { width: 320px; max-width: 86vw; height: 420px; display: flex; flex-direction: column; background: var(--vp-c-bg); border: 1px solid var(--vp-c-border); border-radius: 14px; overflow: hidden; box-shadow: 0 16px 40px rgba(0,0,0,.22); }
+.nc-wrap { position: fixed; right: 20px; bottom: 148px; z-index: 99; display: flex; flex-direction: column; align-items: flex-end; gap: 10px; }
+.nc-btn { border: 0; border-radius: 999px; padding: 14px 24px; font-size: 16px; background: #18d867; color: #fff; font-weight: 600; cursor: pointer; box-shadow: 0 8px 24px rgba(0,0,0,.18); transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.nc-btn:hover { transform: scale(1.05); box-shadow: 0 10px 28px rgba(0,0,0,.24); }
+.nc-panel { width: 380px; max-width: 90vw; height: 520px; max-height: 70vh; display: flex; flex-direction: column; background: var(--vp-c-bg); border: 1px solid var(--vp-c-border); border-radius: 14px; overflow: hidden; box-shadow: 0 16px 40px rgba(0,0,0,.22); }
 .nc-head { padding: 10px 14px; font-weight: 600; border-bottom: 1px solid var(--vp-c-border); display: flex; justify-content: space-between; }
 .nc-head span { font-weight: 400; font-size: 12px; opacity: .7; }
 .nc-body { flex: 1; overflow-y: auto; padding: 12px; display: flex; flex-direction: column; gap: 8px; }

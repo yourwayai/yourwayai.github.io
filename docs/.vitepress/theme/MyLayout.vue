@@ -5,10 +5,11 @@ import SiteFooter from './components/SiteFooter.vue'
 import CommandPalette from './components/CommandPalette.vue'
 import NexconnChat from './components/NexconnChat.vue'
 import { useData } from 'vitepress'
-import { watch, onMounted, onUnmounted } from 'vue'
+import { ref, watch, onMounted, onUnmounted } from 'vue'
 
 const { Layout } = DefaultTheme
 const { page } = useData()
+const chatOpen = ref(false)
 
 onMounted(() => {
   watch(() => page.value.relativePath, (path) => {
@@ -33,8 +34,8 @@ onUnmounted(() => {
     </template>
     <template #layout-bottom>
       <SiteFooter />
-      <ScrollToTopBottom />
-      <NexconnChat />
+      <ScrollToTopBottom v-show="!chatOpen" />
+      <NexconnChat @update:chat-open="chatOpen = $event" />
     </template>
   </Layout>
 </template>

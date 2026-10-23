@@ -3,6 +3,7 @@ import DefaultTheme from 'vitepress/theme'
 import ScrollToTopBottom from './components/ScrollToTopBottom.vue'
 import SiteFooter from './components/SiteFooter.vue'
 import CommandPalette from './components/CommandPalette.vue'
+import NexconnChat from './components/NexconnChat.vue'
 import { useData } from 'vitepress'
 import { watch, onMounted, onUnmounted } from 'vue'
 
@@ -33,6 +34,7 @@ onUnmounted(() => {
     <template #layout-bottom>
       <SiteFooter />
       <ScrollToTopBottom />
+      <NexconnChat />
     </template>
   </Layout>
 </template>

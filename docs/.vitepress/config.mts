@@ -161,7 +161,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '🛠️ 系统与运维 (30)',
+        text: '🛠️ 系统与运维 (31)',
         collapsed: false,
         items: [
           { text: '3x-ui — Xray 协议面板', link: '/tools/3x-ui' },
@@ -193,7 +193,8 @@ export default withPwa(defineConfig({
           { text: 'Checkstyle — Java代码风格检查', link: '/tools/wx_20261029223108' },
           { text: 'Habblaud — Claude Code 监控面板', link: '/tools/wx_20261029234450' },
           { text: 'OpenMouse — 浏览器鼠标面板', link: '/tools/wx_20261030000903' },
-          { text: 'Thaw — 开源 macOS 菜单栏管理', link: '/tools/wx_20261030001251' }
+          { text: 'Thaw — 开源 macOS 菜单栏管理', link: '/tools/wx_20261030001251' },
+          { text: 'dsh-context — DeepSeek Harness 上下文可视化', link: '/tools/wx_20261030001823' }
         ]
       },
       {

@@ -221,7 +221,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (28)',
+        text: '📂 实用与提效 (29)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -251,7 +251,8 @@ export default withPwa(defineConfig({
           { text: 'DocStrange — AI 文档转 Markdown', link: '/tools/wx_20260928193230' },
           { text: 'MarkPDFDown — 视觉大模型转 Markdown', link: '/tools/wx_20261005112903' },
           { text: 'Mimik — 自动化操作指南生成扩展', link: '/tools/wx_20261005120030' },
-          { text: 'WordCraft — 纯Rust复刻Word', link: '/tools/wx_20261030000204' }
+          { text: 'WordCraft — 纯Rust复刻Word', link: '/tools/wx_20261030000204' },
+          { text: '一条 brew 命令装完，公证', link: '/tools/wx_20261030001251' }
         ]
       },
       {

@@ -132,8 +132,9 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 - [**Memos**](/tools/memos.html)：轻量的带有本地数据主权的碎片化灵感速记与状态共享引擎。
 - [**Outline**](/tools/outline.html)：开源且美观的团队 Wiki 与知识库平台，完美适配现代协作工作流。
 
-## 📂 实用与提效 (27)
+## 📂 实用与提效 (28)
 
+- [**WordCraft — 纯Rust复刻Word**](/tools/wx_20261030000204.html)：基于纯 Rust + egui + Wasm 构建的 Word 替代品，支持 .docx 极速排版、格式转换与原生 MCP 驱动
 - [**Mimik — 自动化操作指南生成扩展**](/tools/wx_20261005120030.html)：轻量级开源浏览器扩展，自动捕获点击与输入并生成带标注截图的操作指南，数据纯本地存储
 - [**MarkPDFDown — 视觉大模型转 Markdown**](/tools/wx_20261005112903.html)：基于多模态视觉大模型的高质量 PDF 转 Markdown 工具，所见即所得完美还原复杂表格、公式与手写批注
 - [**DocStrange — AI 文档转 Markdown**](/tools/wx_20260928193230.html)：7B 模型驱动的文档结构化转 Markdown 工具，支持多引擎 OCR、全本地 GPU 推理与 MCP 接口

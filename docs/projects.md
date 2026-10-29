@@ -189,8 +189,9 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 - [**V8 Engine**](/tools/v8.html)：Google的开源高性能JavaScript和WebAssembly引擎。
 - [**命令行的艺术**](/tools/the-art-of-command-line.html)：终端环境日常操作的必备指南与极客神仙技巧。
 
-## 🍿 影音与娱乐 (6)
+## 🍿 影音与娱乐 (7)
 
+- [**StreamLingo — 直播实时字幕翻译**](/tools/wx_20261030001519.html)：实测基于本地 Whisper + Ollama 的直播双语字幕工具 StreamLingo，毫秒级实现 YouTube 实时语音识别与英中互译
 - [**explainroo — AI 讲解视频生成工具**](/tools/wx_20261015095706.html)：基于本地开源模型让 AI Agent 自动生成手绘风讲解与产品演示视频的工具
 - [**Lap — 离线优先本地 AI 相册**](/tools/wx_20260928192021.html)：离线优先的开源本地 AI 相册管理器，支持十万级照片秒开、自然语言搜索与人脸聚类
 - [**Antra — 跨平台无损本地音乐库构建器**](/tools/wx_20260727160923.html)：自动化将流媒体链接解析并下载为高解析无损 FLAC 与完整元数据/歌词的本地音乐库构建器。

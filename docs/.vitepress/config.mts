@@ -161,7 +161,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '🛠️ 系统与运维 (31)',
+        text: '🛠️ 系统与运维 (30)',
         collapsed: false,
         items: [
           { text: '3x-ui — Xray 协议面板', link: '/tools/3x-ui' },
@@ -193,8 +193,7 @@ export default withPwa(defineConfig({
           { text: 'Checkstyle — Java代码风格检查', link: '/tools/wx_20261029223108' },
           { text: 'Habblaud — Claude Code 监控面板', link: '/tools/wx_20261029234450' },
           { text: 'OpenMouse — 浏览器鼠标面板', link: '/tools/wx_20261030000903' },
-          { text: 'Thaw — 开源 macOS 菜单栏管理', link: '/tools/wx_20261030001251' },
-          { text: 'StreamLingo — 直播字幕工具', link: '/tools/wx_20261030001519' }
+          { text: 'Thaw — 开源 macOS 菜单栏管理', link: '/tools/wx_20261030001251' }
         ]
       },
       {
@@ -286,7 +285,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '🍿 影音与娱乐 (6)',
+        text: '🍿 影音与娱乐 (7)',
         collapsed: false,
         items: [
           { text: 'Jellyfin — 自建私人影院', link: '/tools/jellyfin' },
@@ -294,7 +293,8 @@ export default withPwa(defineConfig({
           { text: 'Wizarr — 影音服务器自动化邀请', link: '/tools/wx_20260722214537' },
           { text: 'Antra — 跨平台无损本地音乐库构建器', link: '/tools/wx_20260727160923' },
           { text: 'Lap — 离线优先本地 AI 相册', link: '/tools/wx_20260928192021' },
-          { text: 'explainroo — AI 讲解视频生成工具', link: '/tools/wx_20261015095706' }
+          { text: 'explainroo — AI 讲解视频生成工具', link: '/tools/wx_20261015095706' },
+          { text: 'StreamLingo — 直播实时字幕翻译', link: '/tools/wx_20261030001519' }
         ]
       }
     ],

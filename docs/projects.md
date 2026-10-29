@@ -9,8 +9,9 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 
 ---
 
-## 🤖 AI 与智能体 (70)
+## 🤖 AI 与智能体 (71)
 
+- [**Agent Reach — 智能体全网路由层**](/tools/wx_20261030000420.html)：一键为 AI Agent 赋予全网访问能力的路由层，支持推特、小红书、B站等多平台多后端无缝热切换
 - [**Ouroboros — 自进化 AI 智能体**](/tools/wx_20261029235936.html)：实测 Ouroboros 自我创造 AI Agent：具备持久记忆、Git 级自重写架构与专家 Agent 集群指挥能力
 - [**lark-channel-bridge — 飞书连本地Agent**](/tools/wx_20261015100531.html)：轻量级桥接飞书/Lark与本地Claude Code及Codex CLI的会话桥
 - [**LiveContext — 自托管AI自动化平台**](/tools/wx_20261015095301.html)：集聊天、工作流、AI Agent 与小应用构建于一体的自托管自动化基建平台

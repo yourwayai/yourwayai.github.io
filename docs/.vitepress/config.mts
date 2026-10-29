@@ -157,7 +157,7 @@ export default withPwa(defineConfig({
           { text: 'LiveContext — 自托管AI自动化平台', link: '/tools/wx_20261015095301' },
           { text: 'lark-channel-bridge — 飞书连本地Agent', link: '/tools/wx_20261015100531' },
           { text: 'Ouroboros — 自进化 AI 智能体', link: '/tools/wx_20261029235936' },
-          { text: 'Agent Reach — AI 路由层', link: '/tools/wx_20261030000420' }
+          { text: 'Agent Reach — 智能体全网路由层', link: '/tools/wx_20261030000420' }
         ]
       },
       {

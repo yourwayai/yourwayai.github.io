@@ -159,7 +159,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '🛠️ 系统与运维 (28)',
+        text: '🛠️ 系统与运维 (29)',
         collapsed: false,
         items: [
           { text: '3x-ui — Xray 协议面板', link: '/tools/3x-ui' },
@@ -189,7 +189,8 @@ export default withPwa(defineConfig({
           { text: 'Pluton — 开源可视化加密备份平台', link: '/tools/wx_20261005115032' },
           { text: 'ServerBox — 安卓免Root变Linux服务', link: '/tools/wx_20261015095952' },
           { text: 'Checkstyle — Java代码风格检查', link: '/tools/wx_20261029223108' },
-          { text: 'Habblaud — Claude Code 监控面板', link: '/tools/wx_20261029234450' }
+          { text: 'Habblaud — Claude Code 监控面板', link: '/tools/wx_20261029234450' },
+          { text: 'TaskView — 自托管项目管理', link: '/tools/wx_20261029235625' }
         ]
       },
       {

@@ -84,7 +84,7 @@ export default withPwa(defineConfig({
     // 网站左侧的分类侧边栏
     sidebar: [
       {
-        text: '🤖 AI 与智能体 (71)',
+        text: '🤖 AI 与智能体 (72)',
         collapsed: false,
         items: [
           { text: 'Jellyfish — AI 短剧生产工作台', link: '/tools/wx_20260518005533' },
@@ -157,11 +157,12 @@ export default withPwa(defineConfig({
           { text: 'LiveContext — 自托管AI自动化平台', link: '/tools/wx_20261015095301' },
           { text: 'lark-channel-bridge — 飞书连本地Agent', link: '/tools/wx_20261015100531' },
           { text: 'Ouroboros — 自进化 AI 智能体', link: '/tools/wx_20261029235936' },
-          { text: 'Agent Reach — 智能体全网路由层', link: '/tools/wx_20261030000420' }
+          { text: 'Agent Reach — 智能体全网路由层', link: '/tools/wx_20261030000420' },
+          { text: 'dsh-context — 智能体上下文透视', link: '/tools/wx_20261030001823' }
         ]
       },
       {
-        text: '🛠️ 系统与运维 (31)',
+        text: '🛠️ 系统与运维 (30)',
         collapsed: false,
         items: [
           { text: '3x-ui — Xray 协议面板', link: '/tools/3x-ui' },
@@ -193,8 +194,7 @@ export default withPwa(defineConfig({
           { text: 'Checkstyle — Java代码风格检查', link: '/tools/wx_20261029223108' },
           { text: 'Habblaud — Claude Code 监控面板', link: '/tools/wx_20261029234450' },
           { text: 'OpenMouse — 浏览器鼠标面板', link: '/tools/wx_20261030000903' },
-          { text: 'Thaw — 开源 macOS 菜单栏管理', link: '/tools/wx_20261030001251' },
-          { text: 'dsh-context — DeepSeek Harness 上下文可视化', link: '/tools/wx_20261030001823' }
+          { text: 'Thaw — 开源 macOS 菜单栏管理', link: '/tools/wx_20261030001251' }
         ]
       },
       {

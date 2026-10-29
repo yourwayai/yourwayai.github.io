@@ -161,7 +161,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '🛠️ 系统与运维 (29)',
+        text: '🛠️ 系统与运维 (30)',
         collapsed: false,
         items: [
           { text: '3x-ui — Xray 协议面板', link: '/tools/3x-ui' },
@@ -192,7 +192,8 @@ export default withPwa(defineConfig({
           { text: 'ServerBox — 安卓免Root变Linux服务', link: '/tools/wx_20261015095952' },
           { text: 'Checkstyle — Java代码风格检查', link: '/tools/wx_20261029223108' },
           { text: 'Habblaud — Claude Code 监控面板', link: '/tools/wx_20261029234450' },
-          { text: 'OpenMouse — 浏览器鼠标面板', link: '/tools/wx_20261030000903' }
+          { text: 'OpenMouse — 浏览器鼠标面板', link: '/tools/wx_20261030000903' },
+          { text: 'Thaw — 开源 macOS 菜单栏管理', link: '/tools/wx_20261030001251' }
         ]
       },
       {
@@ -221,7 +222,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (29)',
+        text: '📂 实用与提效 (28)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -251,8 +252,7 @@ export default withPwa(defineConfig({
           { text: 'DocStrange — AI 文档转 Markdown', link: '/tools/wx_20260928193230' },
           { text: 'MarkPDFDown — 视觉大模型转 Markdown', link: '/tools/wx_20261005112903' },
           { text: 'Mimik — 自动化操作指南生成扩展', link: '/tools/wx_20261005120030' },
-          { text: 'WordCraft — 纯Rust复刻Word', link: '/tools/wx_20261030000204' },
-          { text: '一条 brew 命令装完，公证', link: '/tools/wx_20261030001251' }
+          { text: 'WordCraft — 纯Rust复刻Word', link: '/tools/wx_20261030000204' }
         ]
       },
       {

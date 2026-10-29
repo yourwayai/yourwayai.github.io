@@ -9,7 +9,7 @@ import markdownify
 from datetime import datetime
 
 # NVIDIA API Configuration
-NV_API_KEY = "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"
+NV_API_KEY = "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"
 NV_API_URL = "https://integrate.api.nvidia.com/v1/chat/completions"
 
 def fetch_via_curl(url):
@@ -146,7 +146,7 @@ def categorize_article(info):
     }
     
     payload = {
-        "model": "meta/llama-3.1-70b-instruct",
+        "model": "meta/llama-3.2-90b-vision-instruct",
         "messages": [
             {"role": "user", "content": prompt}
         ],
@@ -155,7 +155,7 @@ def categorize_article(info):
     }
     
     try:
-        res = requests.post(NV_API_URL, headers=headers, json=payload, timeout=20)
+        res = requests.post(NV_API_URL, headers=headers, json=payload, timeout=60)
         res.raise_for_status()
         data = res.json()
         ai_response = data['choices'][0]['message']['content'].strip()

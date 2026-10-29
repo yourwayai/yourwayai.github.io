@@ -7,7 +7,7 @@ import base64
 import json
 
 # NVIDIA API Configuration
-NV_API_KEY = "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"
+NV_API_KEY = "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"
 NV_API_URL = "https://integrate.api.nvidia.com/v1/chat/completions"
 
 def fetch_github_info(url):
@@ -145,7 +145,7 @@ Important Instructions:
     }
     
     payload = {
-        "model": "meta/llama-3.1-70b-instruct",
+        "model": "meta/llama-3.2-90b-vision-instruct",
         "messages": [
             {"role": "user", "content": prompt}
         ],

@@ -119,8 +119,9 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 - [**极客首选 Vaultwarden：压榨树莓派的终极金库，10MB内存跑满全功能Bitwarden！**](/tools/wx_20260511214924.html)：极客首选 Vaultwarden：用 Rust 打造的轻量级密码库，10MB 内存跑满全功能 Bitwarden！
 - [**2FAuth**](/tools/2fauth.html)：自托管的 Web 版两步验证（2FA）管理器，安全生成并管理你的动态密码。
 
-## ✍️ 知识与协作 (8)
+## ✍️ 知识与协作 (9)
 
+- [**TaskView — 自托管项目管理**](/tools/wx_20261029235625.html)：实测 TaskView 自托管项目管理平台，支持看板、工作流、依赖、时间追踪、财务报表等功能
 - [**GenOffice — 开源 AI Office 套件**](/tools/wx_20261015100251.html)：支持字节级保真编辑 .docx/.xlsx/.pptx 的开源 AI Office 办公套件与 Agent 技能
 - [**Fleetbase — 开源物流与供应链系统**](/tools/wx_20261005113729.html)：开源模块化物流与供应链操作系统（LSOS），涵盖车队调度、仓储、商城与跨端司机协同
 - [**Papra — 极简自托管文档归档**](/tools/wx_20260928192910.html)：极简自托管文档归档与管理平台，支持全文检索、OCR、邮件收集与多组织标签

@@ -159,7 +159,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '🛠️ 系统与运维 (29)',
+        text: '🛠️ 系统与运维 (28)',
         collapsed: false,
         items: [
           { text: '3x-ui — Xray 协议面板', link: '/tools/3x-ui' },
@@ -189,8 +189,7 @@ export default withPwa(defineConfig({
           { text: 'Pluton — 开源可视化加密备份平台', link: '/tools/wx_20261005115032' },
           { text: 'ServerBox — 安卓免Root变Linux服务', link: '/tools/wx_20261015095952' },
           { text: 'Checkstyle — Java代码风格检查', link: '/tools/wx_20261029223108' },
-          { text: 'Habblaud — Claude Code 监控面板', link: '/tools/wx_20261029234450' },
-          { text: 'TaskView — 自托管项目管理', link: '/tools/wx_20261029235625' }
+          { text: 'Habblaud — Claude Code 监控面板', link: '/tools/wx_20261029234450' }
         ]
       },
       {
@@ -204,7 +203,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '✍️ 知识与协作 (8)',
+        text: '✍️ 知识与协作 (9)',
         collapsed: false,
         items: [
           { text: 'Outline — 团队 Wiki 知识库', link: '/tools/outline' },
@@ -214,7 +213,8 @@ export default withPwa(defineConfig({
           { text: 'Twenty — TypeScript 开源 CRM', link: '/tools/wx_20260611154932' },
           { text: 'Papra — 极简自托管文档归档', link: '/tools/wx_20260928192910' },
           { text: 'Fleetbase — 开源物流与供应链系统', link: '/tools/wx_20261005113729' },
-          { text: 'GenOffice — 开源 AI Office 套件', link: '/tools/wx_20261015100251' }
+          { text: 'GenOffice — 开源 AI Office 套件', link: '/tools/wx_20261015100251' },
+          { text: 'TaskView — 自托管项目管理', link: '/tools/wx_20261029235625' }
         ]
       },
       {

@@ -81,8 +81,9 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 - [**Goose**](/tools/goose.html)：Block 出品的开源 AI Agent：不只是代码补全，而是能在你的机器上自主完成安装、执行、编辑和测试全流程的智能助手。
 - [**Hermes Agent — 会随你共同成长的高扩展智能体框架**](/tools/hermes-agent.html)：搭载长程记忆存储与技能成长系统，能够跨平台接驳 MCP 的下一代开源 Agent 框架。
 
-## 🛠️ 系统与运维 (27)
+## 🛠️ 系统与运维 (28)
 
+- [**Habblaud — Claude Code 监控面板**](/tools/wx_20261029234450.html)：实测像素风监控面板 Habblaud，实时显示 Claude Code 和 Codex 活动、额度、等待、Shell 进度
 - [**Checkstyle — Java代码风格检查**](/tools/wx_20261029223108.html)：实测Checkstyle在12万行Spring Boot项目中的接入体验，涵盖160+内置检查、增量分析、Suppression抑制机制与Spotless自动格式化集成
 - [**ServerBox — 安卓免Root变Linux服务**](/tools/wx_20261015095952.html)：基于 PRoot 的 Android 免 Root 运行完整 Linux 发行版与常驻服务的环境工具
 - [**Pluton — 开源可视化加密备份平台**](/tools/wx_20261005115032.html)：基于 Restic + Rclone 的现代化开源自托管备份平台，可视化管理 3-2-1 加密增量备份与多云灾备恢复

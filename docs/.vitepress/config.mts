@@ -220,7 +220,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (29)',
+        text: '📂 实用与提效 (28)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -250,8 +250,7 @@ export default withPwa(defineConfig({
           { text: 'DocStrange — AI 文档转 Markdown', link: '/tools/wx_20260928193230' },
           { text: 'MarkPDFDown — 视觉大模型转 Markdown', link: '/tools/wx_20261005112903' },
           { text: 'Mimik — 自动化操作指南生成扩展', link: '/tools/wx_20261005120030' },
-          { text: 'WordCraft — 纯Rust复刻Word', link: '/tools/wx_20261030000204' },
-          { text: '让模型直接写 SVG 的时代该', link: '/tools/wx_20261030000656' }
+          { text: 'WordCraft — 纯Rust复刻Word', link: '/tools/wx_20261030000204' }
         ]
       },
       {
@@ -266,7 +265,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '🎨 设计与极客 (11)',
+        text: '🎨 设计与极客 (12)',
         collapsed: false,
         items: [
           { text: 'Penpot — 开源设计工具', link: '/tools/penpot' },
@@ -279,7 +278,8 @@ export default withPwa(defineConfig({
           { text: 'vite-plugin-pwa — Vite 零配置 PWA 插件', link: '/tools/wx_20260915181404' },
           { text: 'Mitosis — 跨框架前端组件编译器', link: '/tools/wx_20260922150202' },
           { text: 'kumo — Cloudflare 开源设计系统', link: '/tools/wx_20260922150348' },
-          { text: 'bolt-slides — 交互式 React 幻灯片框架', link: '/tools/wx_20261005114716' }
+          { text: 'bolt-slides — 交互式 React 幻灯片框架', link: '/tools/wx_20261005114716' },
+          { text: 'SeeCode — AI 原生图表渲染引擎', link: '/tools/wx_20261030000656' }
         ]
       },
       {

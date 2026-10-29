@@ -172,8 +172,9 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 - [**AI 订阅 — 支付宝付款全攻略**](/tools/wx_20260419212858.html)：2026最新保姆级教程：无需海外信用卡，使用支付宝直接订阅海外顶级 AI 大模型（ChatGPT Plus、Claude Pro、Gemini Advanced），合租独享可选，附10%专属优惠码与避坑指南。
 - [**手慢无：送出 5 个免手续费汇款名额**](/tools/wx_20260419212801.html)：跨境支付与手续费减免的独家福利资源分享。
 
-## 🎨 设计与极客 (11)
+## 🎨 设计与极客 (12)
 
+- [**SeeCode — AI 原生图表渲染引擎**](/tools/wx_20261030000656.html)：专为 AI Agent 设计的轻量级可视化规范与渲染引擎，仅需少量 JSON 即可极速生成交互式架构图与图表
 - [**bolt-slides — 交互式 React 幻灯片框架**](/tools/wx_20261005114716.html)：StackBlitz 开源的 React 交互式幻灯片开发框架，支持活数据交互、3D 模型渲染、代码运行与 AI 协作生成
 - [**kumo — Cloudflare 开源设计系统**](/tools/wx_20260922150348.html)：Cloudflare 官方开源的生产级 React 组件库与设计系统，以 Base UI 为底座，内置 Tailwind v4 语义 Token 与 Figma 双向同步。
 - [**Mitosis — 跨框架前端组件编译器**](/tools/wx_20260922150202.html)：一套 JSX Lite 源码编译到 React、Vue、Svelte、Solid 等主流框架的跨框架组件编译器，实现设计系统单一事实来源。

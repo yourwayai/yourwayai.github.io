@@ -195,7 +195,7 @@ export default withPwa(defineConfig({
           { text: 'Habblaud — Claude Code 监控面板', link: '/tools/wx_20261029234450' },
           { text: 'OpenMouse — 浏览器鼠标面板', link: '/tools/wx_20261030000903' },
           { text: 'Thaw — 开源 macOS 菜单栏管理', link: '/tools/wx_20261030001251' },
-          { text: 'Supabase — 开源 Firebase', link: '/tools/wx_20261030002040' }
+          { text: 'Supabase — 开源 Firebase 替代', link: '/tools/wx_20261030002040' }
         ]
       },
       {

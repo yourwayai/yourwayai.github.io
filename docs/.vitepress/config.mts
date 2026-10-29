@@ -84,7 +84,7 @@ export default withPwa(defineConfig({
     // 网站左侧的分类侧边栏
     sidebar: [
       {
-        text: '🤖 AI 与智能体 (70)',
+        text: '🤖 AI 与智能体 (71)',
         collapsed: false,
         items: [
           { text: 'Jellyfish — AI 短剧生产工作台', link: '/tools/wx_20260518005533' },
@@ -156,7 +156,8 @@ export default withPwa(defineConfig({
           { text: 'Agentic Inbox — 边缘AI自托管邮箱', link: '/tools/wx_20261015095001' },
           { text: 'LiveContext — 自托管AI自动化平台', link: '/tools/wx_20261015095301' },
           { text: 'lark-channel-bridge — 飞书连本地Agent', link: '/tools/wx_20261015100531' },
-          { text: 'Ouroboros — 自进化 AI 智能体', link: '/tools/wx_20261029235936' }
+          { text: 'Ouroboros — 自进化 AI 智能体', link: '/tools/wx_20261029235936' },
+          { text: 'Agent Reach — AI 路由层', link: '/tools/wx_20261030000420' }
         ]
       },
       {

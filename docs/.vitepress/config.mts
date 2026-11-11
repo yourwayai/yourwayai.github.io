@@ -234,7 +234,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (30)',
+        text: '📂 实用与提效 (31)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -266,7 +266,8 @@ export default withPwa(defineConfig({
           { text: 'Mimik — 自动化操作指南生成扩展', link: '/tools/wx_20261005120030' },
           { text: 'WordCraft — 纯Rust复刻Word', link: '/tools/wx_20261030000204' },
           { text: 'LinkSwift — 网盘官方API直链提取', link: '/tools/wx_20261111120431' },
-          { text: 'Trackr — 开源实时公交App', link: '/tools/wx_20261111122552' }
+          { text: 'Trackr — 开源实时公交App', link: '/tools/wx_20261111122552' },
+          { text: 'Pagekin — 本地 AI 写作桌面', link: '/tools/wx_20261111123332' }
         ]
       },
       {

@@ -166,7 +166,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '🛠️ 系统与运维 (36)',
+        text: '🛠️ 系统与运维 (37)',
         collapsed: false,
         items: [
           { text: '3x-ui — Xray 协议面板', link: '/tools/3x-ui' },
@@ -204,7 +204,8 @@ export default withPwa(defineConfig({
           { text: 'CleanYourTV — ADB 电视去广告', link: '/tools/wx_20261111120109' },
           { text: 'Komari — 轻量监控与Web终端', link: '/tools/wx_20261111122237' },
           { text: 'Aerial — tvOS 风格桌面', link: '/tools/wx_20261111123102' },
-          { text: 'Beszel — 极简自托管监控', link: '/tools/wx_20261111124059' }
+          { text: 'Beszel — 极简自托管监控', link: '/tools/wx_20261111124059' },
+          { text: 'Neko Master — 网关流量仪表盘', link: '/tools/wx_20261111124333' }
         ]
       },
       {

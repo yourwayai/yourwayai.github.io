@@ -84,7 +84,7 @@ export default withPwa(defineConfig({
     // 网站左侧的分类侧边栏
     sidebar: [
       {
-        text: '🤖 AI 与智能体 (76)',
+        text: '🤖 AI 与智能体 (77)',
         collapsed: false,
         items: [
           { text: 'Jellyfish — AI 短剧生产工作台', link: '/tools/wx_20260518005533' },
@@ -162,7 +162,8 @@ export default withPwa(defineConfig({
           { text: 'Hy-SimulMT — 开源实时同传模型', link: '/tools/wx_20261111120755' },
           { text: 'billion-context — 代理上下文压缩', link: '/tools/wx_20261111121109' },
           { text: 'Flint 1.0 — AI 生成图表', link: '/tools/wx_20261111121412' },
-          { text: 'ffmpeg-skill — Agent视频剪辑技能', link: '/tools/wx_20261111121639' }
+          { text: 'ffmpeg-skill — Agent视频剪辑技能', link: '/tools/wx_20261111121639' },
+          { text: 'Nyxis — 授权安全后端框架', link: '/tools/wx_20261111122820' }
         ]
       },
       {

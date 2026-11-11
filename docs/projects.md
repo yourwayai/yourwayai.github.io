@@ -84,8 +84,9 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 - [**Goose**](/tools/goose.html)：Block 出品的开源 AI Agent：不只是代码补全，而是能在你的机器上自主完成安装、执行、编辑和测试全流程的智能助手。
 - [**Hermes Agent — 会随你共同成长的高扩展智能体框架**](/tools/hermes-agent.html)：搭载长程记忆存储与技能成长系统，能够跨平台接驳 MCP 的下一代开源 Agent 框架。
 
-## 🛠️ 系统与运维 (31)
+## 🛠️ 系统与运维 (32)
 
+- [**nodeterm — 终端和 AI Agent 无限画布**](/tools/wx_20261111115848.html)：基于无限画布与 tmux 持久化会话的终端管理器，原生集成 Claude Code、Codex、Gemini 等 AI Agent 状态监控并支持三端同源访问。
 - [**Supabase — 开源 Firebase 替代**](/tools/wx_20261030002040.html)：基于 Postgres 打造的可自托管 Firebase 开源替代方案，集成 PostgREST、Realtime、GoTrue、Edge Functions 与向量检索。
 - [**Thaw — 开源 macOS 菜单栏管理**](/tools/wx_20261030001251.html)：实测开源无订阅的 macOS 菜单栏管理器 Thaw，支持深链调用、Raycast 扩展与键盘快捷搜索
 - [**OpenMouse — 浏览器鼠标面板**](/tools/wx_20261030000903.html)：基于 WebHID 的开源浏览器鼠标控制面板，免装厂商全家桶驱动即可跨品牌配置鼠标 DPI、回报率与按键

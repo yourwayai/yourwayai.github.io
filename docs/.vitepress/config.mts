@@ -166,7 +166,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '🛠️ 系统与运维 (33)',
+        text: '🛠️ 系统与运维 (34)',
         collapsed: false,
         items: [
           { text: '3x-ui — Xray 协议面板', link: '/tools/3x-ui' },
@@ -201,7 +201,8 @@ export default withPwa(defineConfig({
           { text: 'Thaw — 开源 macOS 菜单栏管理', link: '/tools/wx_20261030001251' },
           { text: 'Supabase — 开源 Firebase 替代', link: '/tools/wx_20261030002040' },
           { text: 'nodeterm — 终端和 AI Agent 无限画布', link: '/tools/wx_20261111115848' },
-          { text: 'CleanYourTV — ADB 电视去广告', link: '/tools/wx_20261111120109' }
+          { text: 'CleanYourTV — ADB 电视去广告', link: '/tools/wx_20261111120109' },
+          { text: 'Komari — 轻量服务器监控', link: '/tools/wx_20261111122237' }
         ]
       },
       {

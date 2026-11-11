@@ -9,8 +9,9 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 
 ---
 
-## 🤖 AI 与智能体 (75)
+## 🤖 AI 与智能体 (76)
 
+- [**ffmpeg-skill — Agent视频剪辑技能**](/tools/wx_20261111121639.html)：专为编码 Agent 打造的本地 FFmpeg 视频处理执行层，集成 42 个结构化工具、机器可读契约与 MCP 服务器，支持离线剪辑与多平台导出。
 - [**Flint 1.0 — AI 生成图表**](/tools/wx_20261111121412.html)：微软开源的 AI 可视化中间语言与编译器，通过四层语义规格一套代码生成 Vega-Lite/ECharts/Plotly/Chart.js/Excel 原生可交互图表。
 - [**billion-context — 代理上下文压缩**](/tools/wx_20261111121109.html)：插在 AI 编码代理与大模型之间的通用上下文压缩中间件，支持增量分层压缩、可逆解压、Prefix-Cache 友好及 20+ 客户端无缝接入。
 - [**Hy-SimulMT — 开源实时同传模型**](/tools/wx_20261111120755.html)：腾讯混元开源的中英双向实时同传大模型（30B-A3B MoE），实现约 3 秒 StreamLAAL 低延迟、零样本声纹克隆与自托管流式推理服务。

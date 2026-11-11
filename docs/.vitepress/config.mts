@@ -227,7 +227,7 @@ export default withPwa(defineConfig({
           { text: 'Fleetbase — 开源物流与供应链系统', link: '/tools/wx_20261005113729' },
           { text: 'GenOffice — 开源 AI Office 套件', link: '/tools/wx_20261015100251' },
           { text: 'TaskView — 自托管项目管理', link: '/tools/wx_20261029235625' },
-          { text: 'Claude Code — 本地优先知识系统', link: '/tools/wx_20261111121945' }
+          { text: 'claude-obsidian — AI 维基知识库', link: '/tools/wx_20261111121945' }
         ]
       },
       {

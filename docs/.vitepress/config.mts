@@ -166,7 +166,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '🛠️ 系统与运维 (35)',
+        text: '🛠️ 系统与运维 (36)',
         collapsed: false,
         items: [
           { text: '3x-ui — Xray 协议面板', link: '/tools/3x-ui' },
@@ -203,7 +203,8 @@ export default withPwa(defineConfig({
           { text: 'nodeterm — 终端和 AI Agent 无限画布', link: '/tools/wx_20261111115848' },
           { text: 'CleanYourTV — ADB 电视去广告', link: '/tools/wx_20261111120109' },
           { text: 'Komari — 轻量监控与Web终端', link: '/tools/wx_20261111122237' },
-          { text: 'Aerial — tvOS 风格桌面', link: '/tools/wx_20261111123102' }
+          { text: 'Aerial — tvOS 风格桌面', link: '/tools/wx_20261111123102' },
+          { text: 'Beszel — 极简自托管监控', link: '/tools/wx_20261111124059' }
         ]
       },
       {

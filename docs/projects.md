@@ -125,8 +125,9 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 - [**FluentFlyout**](/tools/fluentflyout.html)：Windows 11 上最美的开源媒体浮层应用，完美融合 Fluent 2 设计语言，比微软官方做得更好。
 - [**3x-ui — 下一代 Xray 节点可视化管理面板**](/tools/3x-ui.html)：支持目前最全代理通信协议与多出口配置的极客首选自建节点管理系统。
 
-## 🔒 安全与隐私 (4)
+## 🔒 安全与隐私 (5)
 
+- [**Nyxis — 授权安全后端框架**](/tools/wx_20261111122820.html)：基于 Lean 4 与 Cedar 策略语言构建的授权安全后端框架，在编译期通过内核形式化证明杜绝越权访问与数据泄露。
 - [**Perplexity开源 Bumblebee：AI搜索巨头的内部御用外挂，一行代码排查你的开发机隐藏**](/tools/wx_20260530171127.html)：Perplexity开源Bumblebee：AI搜索巨头内部御用外挂，一行代码排查开发机隐藏风险！
 - [**GitHub热榜Fcitx5 for Android：硬核开源输入法，彻底告别隐私泄露与臃肿广告！**](/tools/wx_20260518005748.html)：GitHub热榜Fcitx5 for Android：硬核开源输入法，告别隐私泄露与臃肿广告！
 - [**极客首选 Vaultwarden：压榨树莓派的终极金库，10MB内存跑满全功能Bitwarden！**](/tools/wx_20260511214924.html)：极客首选 Vaultwarden：用 Rust 打造的轻量级密码库，10MB 内存跑满全功能 Bitwarden！

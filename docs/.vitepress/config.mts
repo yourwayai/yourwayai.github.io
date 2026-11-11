@@ -84,7 +84,7 @@ export default withPwa(defineConfig({
     // 网站左侧的分类侧边栏
     sidebar: [
       {
-        text: '🤖 AI 与智能体 (73)',
+        text: '🤖 AI 与智能体 (74)',
         collapsed: false,
         items: [
           { text: 'Jellyfish — AI 短剧生产工作台', link: '/tools/wx_20260518005533' },
@@ -159,7 +159,8 @@ export default withPwa(defineConfig({
           { text: 'Ouroboros — 自进化 AI 智能体', link: '/tools/wx_20261029235936' },
           { text: 'Agent Reach — 智能体全网路由层', link: '/tools/wx_20261030000420' },
           { text: 'dsh-context — 智能体上下文透视', link: '/tools/wx_20261030001823' },
-          { text: 'Hy-SimulMT — 开源实时同传模型', link: '/tools/wx_20261111120755' }
+          { text: 'Hy-SimulMT — 开源实时同传模型', link: '/tools/wx_20261111120755' },
+          { text: 'billion-context — 代理上下文压缩', link: '/tools/wx_20261111121109' }
         ]
       },
       {
@@ -227,7 +228,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (30)',
+        text: '📂 实用与提效 (29)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -258,8 +259,7 @@ export default withPwa(defineConfig({
           { text: 'MarkPDFDown — 视觉大模型转 Markdown', link: '/tools/wx_20261005112903' },
           { text: 'Mimik — 自动化操作指南生成扩展', link: '/tools/wx_20261005120030' },
           { text: 'WordCraft — 纯Rust复刻Word', link: '/tools/wx_20261030000204' },
-          { text: 'LinkSwift — 网盘官方API直链提取', link: '/tools/wx_20261111120431' },
-          { text: '上下文窗口总是不够用？这个「插', link: '/tools/wx_20261111121109' }
+          { text: 'LinkSwift — 网盘官方API直链提取', link: '/tools/wx_20261111120431' }
         ]
       },
       {

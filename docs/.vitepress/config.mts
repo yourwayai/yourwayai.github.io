@@ -257,7 +257,7 @@ export default withPwa(defineConfig({
           { text: 'MarkPDFDown — 视觉大模型转 Markdown', link: '/tools/wx_20261005112903' },
           { text: 'Mimik — 自动化操作指南生成扩展', link: '/tools/wx_20261005120030' },
           { text: 'WordCraft — 纯Rust复刻Word', link: '/tools/wx_20261030000204' },
-          { text: 'LinkSwift：不借用会员', link: '/tools/wx_20261111120431' }
+          { text: 'LinkSwift — 网盘官方API直链提取', link: '/tools/wx_20261111120431' }
         ]
       },
       {

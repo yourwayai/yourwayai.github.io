@@ -264,7 +264,7 @@ export default withPwa(defineConfig({
           { text: 'Mimik — 自动化操作指南生成扩展', link: '/tools/wx_20261005120030' },
           { text: 'WordCraft — 纯Rust复刻Word', link: '/tools/wx_20261030000204' },
           { text: 'LinkSwift — 网盘官方API直链提取', link: '/tools/wx_20261111120431' },
-          { text: 'Trackr v0.0.2：用', link: '/tools/wx_20261111122552' }
+          { text: 'Trackr — 开源实时公交App', link: '/tools/wx_20261111122552' }
         ]
       },
       {

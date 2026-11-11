@@ -145,8 +145,9 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 - [**Memos**](/tools/memos.html)：轻量的带有本地数据主权的碎片化灵感速记与状态共享引擎。
 - [**Outline**](/tools/outline.html)：开源且美观的团队 Wiki 与知识库平台，完美适配现代协作工作流。
 
-## 📂 实用与提效 (29)
+## 📂 实用与提效 (30)
 
+- [**Trackr — 开源实时公交App**](/tools/wx_20261111122552.html)：基于 Kotlin 与 Compose Material 3 构建的开源 Android 实时公交追踪应用，支持高德 3D 底图、免 Key 矢量示意图兜底、雷达与桌面微件。
 - [**LinkSwift — 网盘官方API直链提取**](/tools/wx_20261111120431.html)：零第三方服务器、不借用会员号池，纯浏览器端直连百度/阿里/夸克等 8 大网盘官方 API 提取直链并推送至 aria2/Motrix。
 - [**WordCraft — 纯Rust复刻Word**](/tools/wx_20261030000204.html)：基于纯 Rust + egui + Wasm 构建的 Word 替代品，支持 .docx 极速排版、格式转换与原生 MCP 驱动
 - [**Mimik — 自动化操作指南生成扩展**](/tools/wx_20261005120030.html)：轻量级开源浏览器扩展，自动捕获点击与输入并生成带标注截图的操作指南，数据纯本地存储

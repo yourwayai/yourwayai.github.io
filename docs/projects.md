@@ -9,8 +9,9 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 
 ---
 
-## 🤖 AI 与智能体 (72)
+## 🤖 AI 与智能体 (73)
 
+- [**Hy-SimulMT — 开源实时同传模型**](/tools/wx_20261111120755.html)：腾讯混元开源的中英双向实时同传大模型（30B-A3B MoE），实现约 3 秒 StreamLAAL 低延迟、零样本声纹克隆与自托管流式推理服务。
 - [**dsh-context — 智能体上下文透视**](/tools/wx_20261030001823.html)：DeepSeek Harness 官方推荐的上下文可视化插件，提供跨会话 Token 监控、Step 粒度趋势分析与多 Agent 家谱透视
 - [**Agent Reach — 智能体全网路由层**](/tools/wx_20261030000420.html)：一键为 AI Agent 赋予全网访问能力的路由层，支持推特、小红书、B站等多平台多后端无缝热切换
 - [**Ouroboros — 自进化 AI 智能体**](/tools/wx_20261029235936.html)：实测 Ouroboros 自我创造 AI Agent：具备持久记忆、Git 级自重写架构与专家 Agent 集群指挥能力

@@ -88,8 +88,9 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 - [**Goose**](/tools/goose.html)：Block 出品的开源 AI Agent：不只是代码补全，而是能在你的机器上自主完成安装、执行、编辑和测试全流程的智能助手。
 - [**Hermes Agent — 会随你共同成长的高扩展智能体框架**](/tools/hermes-agent.html)：搭载长程记忆存储与技能成长系统，能够跨平台接驳 MCP 的下一代开源 Agent 框架。
 
-## 🛠️ 系统与运维 (35)
+## 🛠️ 系统与运维 (36)
 
+- [**Beszel — 极简自托管监控**](/tools/wx_20261111124059.html)：基于 Go 与 PocketBase 的极简自托管服务器监控系统，单容器即包含多节点仪表盘、Docker 容器统计、内置 Web 终端与多渠道告警。
 - [**Aerial — tvOS 风格桌面**](/tools/wx_20261111123102.html)：专为国产智能电视打造的开源 tvOS 风格无广告桌面，支持一行 ADB 脚本安装、开机自动接管、手机扫码配网及 HDMI 信号源直达。
 - [**Komari — 轻量监控与Web终端**](/tools/wx_20261111122237.html)：单二进制/单容器 6MB 轻量级自托管服务器监控面板，集多节点指标监控、内置 Web Terminal、告警通知与主题/插件市场于一体。
 - [**CleanYourTV — ADB 电视去广告**](/tools/wx_20261111120109.html)：通过 Wi-Fi ADB 安全停用 Android/Google TV 预装广告与遥测组件，并替换为 390KB 极简 Apple TV 风格原生桌面，全程支持自动备份与一键还原。

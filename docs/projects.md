@@ -151,8 +151,9 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 - [**Memos**](/tools/memos.html)：轻量的带有本地数据主权的碎片化灵感速记与状态共享引擎。
 - [**Outline**](/tools/outline.html)：开源且美观的团队 Wiki 与知识库平台，完美适配现代协作工作流。
 
-## 📂 实用与提效 (31)
+## 📂 实用与提效 (32)
 
+- [**Horizon — AI双语新闻雷达简报**](/tools/wx_20261116221033.html)：开源 AI 驱动的新闻雷达与简报系统，通过 Profile 编辑流水线聚合 RSS 与多平台资讯，自动去重评分并生成每日双语简报。
 - [**Pagekin — 本地 AI 写作桌面**](/tools/wx_20261111123332.html)：专为长篇小说与网文连载打造的本地优先 AI 写作桌面软件，覆盖设定、大纲蓝图、正文生成、AI 审稿到版本历史定稿全工作流，支持多模型与 Skill 插件。
 - [**Trackr — 开源实时公交App**](/tools/wx_20261111122552.html)：基于 Kotlin 与 Compose Material 3 构建的开源 Android 实时公交追踪应用，支持高德 3D 底图、免 Key 矢量示意图兜底、雷达与桌面微件。
 - [**LinkSwift — 网盘官方API直链提取**](/tools/wx_20261111120431.html)：零第三方服务器、不借用会员号池，纯浏览器端直连百度/阿里/夸克等 8 大网盘官方 API 提取直链并推送至 aria2/Motrix。

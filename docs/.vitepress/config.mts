@@ -84,7 +84,7 @@ export default withPwa(defineConfig({
     // 网站左侧的分类侧边栏
     sidebar: [
       {
-        text: '🤖 AI 与智能体 (77)',
+        text: '🤖 AI 与智能体 (78)',
         collapsed: false,
         items: [
           { text: 'Jellyfish — AI 短剧生产工作台', link: '/tools/wx_20260518005533' },
@@ -163,7 +163,8 @@ export default withPwa(defineConfig({
           { text: 'billion-context — 代理上下文压缩', link: '/tools/wx_20261111121109' },
           { text: 'Flint 1.0 — AI 生成图表', link: '/tools/wx_20261111121412' },
           { text: 'ffmpeg-skill — Agent视频剪辑技能', link: '/tools/wx_20261111121639' },
-          { text: 'Claude Cage — 虚拟机防封隔离', link: '/tools/wx_20261116220452' }
+          { text: 'Claude Cage — 虚拟机防封隔离', link: '/tools/wx_20261116220452' },
+          { text: 'Magpie — 编程助手跨模型网关', link: '/tools/wx_20261116220818' }
         ]
       },
       {
@@ -237,7 +238,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (32)',
+        text: '📂 实用与提效 (31)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -270,8 +271,7 @@ export default withPwa(defineConfig({
           { text: 'WordCraft — 纯Rust复刻Word', link: '/tools/wx_20261030000204' },
           { text: 'LinkSwift — 网盘官方API直链提取', link: '/tools/wx_20261111120431' },
           { text: 'Trackr — 开源实时公交App', link: '/tools/wx_20261111122552' },
-          { text: 'Pagekin — 本地 AI 写作桌面', link: '/tools/wx_20261111123332' },
-          { text: 'Magpie：一个本地网关让所', link: '/tools/wx_20261116220818' }
+          { text: 'Pagekin — 本地 AI 写作桌面', link: '/tools/wx_20261111123332' }
         ]
       },
       {

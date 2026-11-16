@@ -239,7 +239,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (32)',
+        text: '📂 实用与提效 (33)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -273,7 +273,8 @@ export default withPwa(defineConfig({
           { text: 'LinkSwift — 网盘官方API直链提取', link: '/tools/wx_20261111120431' },
           { text: 'Trackr — 开源实时公交App', link: '/tools/wx_20261111122552' },
           { text: 'Pagekin — 本地 AI 写作桌面', link: '/tools/wx_20261111123332' },
-          { text: 'Horizon — AI双语新闻雷达简报', link: '/tools/wx_20261116221033' }
+          { text: 'Horizon — AI双语新闻雷达简报', link: '/tools/wx_20261116221033' },
+          { text: 'Chrome太重、Playwr', link: '/tools/wx_20261116223828' }
         ]
       },
       {

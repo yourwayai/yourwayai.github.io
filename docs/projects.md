@@ -9,8 +9,9 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 
 ---
 
-## 🤖 AI 与智能体 (79)
+## 🤖 AI 与智能体 (80)
 
+- [**moli — Agent级Rust无头浏览器**](/tools/wx_20261116223828.html)：专为 AI Agent 从零打造的 Rust 无头浏览器，内存仅 92 MiB，支持语义树直接提取、按需布局渲染与 CDP/BiDi 兼容。
 - [**HyperFrames — HTML视频渲染引擎**](/tools/wx_20261116223616.html)：专为 AI Agent 打造的代码生视频引擎，将 HTML/CSS/GSAP 动画直接编译渲染为确定性 MP4 视频，支持帧级回溯与版本控制。
 - [**Magpie — 编程助手跨模型网关**](/tools/wx_20261116220818.html)：让 Claude Code、Codex、Gemini CLI 等所有编程助手任意调用 DeepSeek、Kimi、GLM 等主流模型，支持配额耗尽静默切号与本地密钥遮罩。
 - [**Claude Cage — 虚拟机防封隔离**](/tools/wx_20261116220452.html)：为 Claude 特化的轻量虚拟机工作区，内置全链路网络隔离、指纹伪装与开箱即用代理适配，彻底告别封号焦虑。

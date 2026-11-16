@@ -9,8 +9,9 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 
 ---
 
-## 🤖 AI 与智能体 (76)
+## 🤖 AI 与智能体 (77)
 
+- [**Claude Cage — 虚拟机防封隔离**](/tools/wx_20261116220452.html)：为 Claude 特化的轻量虚拟机工作区，内置全链路网络隔离、指纹伪装与开箱即用代理适配，彻底告别封号焦虑。
 - [**ffmpeg-skill — Agent视频剪辑技能**](/tools/wx_20261111121639.html)：专为编码 Agent 打造的本地 FFmpeg 视频处理执行层，集成 42 个结构化工具、机器可读契约与 MCP 服务器，支持离线剪辑与多平台导出。
 - [**Flint 1.0 — AI 生成图表**](/tools/wx_20261111121412.html)：微软开源的 AI 可视化中间语言与编译器，通过四层语义规格一套代码生成 Vega-Lite/ECharts/Plotly/Chart.js/Excel 原生可交互图表。
 - [**billion-context — 代理上下文压缩**](/tools/wx_20261111121109.html)：插在 AI 编码代理与大模型之间的通用上下文压缩中间件，支持增量分层压缩、可逆解压、Prefix-Cache 友好及 20+ 客户端无缝接入。

@@ -1,10 +1,11 @@
 ---
 title: Stirling-PDF
+short_title: 'Stirling-PDF — 全能 PDF 工具箱'
 description: 本地托管的强大 PDF 瑞士军刀，满足你对 PDF 的一切操作需求。
 category: '📂 实用与提效'
 date: '2026-04-30T23:00:32+08:00'
 icon: 'https://github.com/Stirling-Tools.png'
-stars: 'N/A'
+stars: '96.9k'
 platforms:
   - Linux
   - macOS
@@ -86,11 +87,11 @@ docker run -d \
 
 <GithubRepoCard 
   repo="Stirling-Tools/Stirling-PDF"
-  initialStars="N/A"
-  initialForks="N/A"
+  initialStars="96.9k"
+  initialForks="9.4k"
   initialContributors="N/A"
   initialVersion="N/A"
-  initialPushedAt="2026-06-11"
+  initialPushedAt="2026-11-18"
   :platforms="['Linux', 'macOS', 'Windows']"
   :deployments="['Docker', 'Source Code']"
 />

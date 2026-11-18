@@ -1,10 +1,11 @@
 ---
 title: Jellyfin
+short_title: 'Jellyfin — 自建私人影院'
 description: 掌握自己全高清影视与音频库的终极媒体中心解决方案，拒绝一切隐藏订阅门槛。
 icon: 'https://github.com/jellyfin.png'
 category: '🍿 影音与娱乐'
 date: '2026-04-13T11:07:20+08:00'
-stars: 'N/A'
+stars: '59.5k'
 platforms:
   - Linux
   - macOS
@@ -78,11 +79,11 @@ services:
 
 <GithubRepoCard 
   repo="jellyfin/jellyfin"
-  initialStars="N/A"
-  initialForks="N/A"
+  initialStars="59.5k"
+  initialForks="5.8k"
   initialContributors="N/A"
   initialVersion="N/A"
-  initialPushedAt="2026-06-11"
+  initialPushedAt="2026-11-18"
   :platforms="['Linux', 'macOS', 'Windows']"
   :deployments="['Docker', 'Source Code']"
 />

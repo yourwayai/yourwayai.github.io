@@ -1,10 +1,11 @@
 ---
 title: Chatwoot
+short_title: 'Chatwoot — 全渠道客服中台'
 description: 现代化、开源且支持自托管的客户支持平台与多渠道客服中心。
 icon: 'https://github.com/chatwoot.png'
 category: '✍️ 知识与协作'
 date: '2026-04-13T11:43:30+08:00'
-stars: 'N/A'
+stars: '40.1k'
 platforms:
   - Linux
   - macOS
@@ -88,11 +89,11 @@ volumes:
 
 <GithubRepoCard 
   repo="chatwoot/chatwoot"
-  initialStars="N/A"
-  initialForks="N/A"
+  initialStars="40.1k"
+  initialForks="9.7k"
   initialContributors="N/A"
   initialVersion="N/A"
-  initialPushedAt="2026-06-11"
+  initialPushedAt="2026-11-18"
   :platforms="['Linux', 'macOS', 'Windows']"
   :deployments="['Docker', 'Source Code']"
 />

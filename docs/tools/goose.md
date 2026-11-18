@@ -1,10 +1,11 @@
 ---
 title: Goose
+short_title: 'Goose — 本地 AI 代理'
 description: "Block 出品的开源 AI Agent：不只是代码补全，而是能在你的机器上自主完成安装、执行、编辑和测试全流程的智能助手。"
 category: '🤖 AI 与智能体'
 date: '2026-04-28T22:46:02+08:00'
 icon: 'https://github.com/aaif-goose.png'
-stars: 'N/A'
+stars: '56.7k'
 platforms:
   - Linux
   - macOS
@@ -121,11 +122,11 @@ Goose 最适合希望将 AI 真正融入工程工作流的开发者。它不只�
 
 <GithubRepoCard 
   repo="aaif-goose/goose"
-  initialStars="N/A"
-  initialForks="N/A"
+  initialStars="56.7k"
+  initialForks="6.6k"
   initialContributors="N/A"
   initialVersion="N/A"
-  initialPushedAt="2026-06-11"
+  initialPushedAt="2026-11-18"
   :platforms="['Linux', 'macOS', 'Windows']"
   :deployments="['Docker', 'Source Code']"
 />

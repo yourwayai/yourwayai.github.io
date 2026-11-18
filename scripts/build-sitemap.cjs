@@ -78,6 +78,7 @@ function main() {
     const stat = fs.statSync(filePath);
     
     if (stat.isFile() && file.endsWith('.md')) {
+      if (file === 'owner.md') continue;
       const relativeRoute = file === 'index.md' ? '' : file.replace(/\.md$/, '.html');
       const url = `${BASE_URL}/${relativeRoute}`;
       const lastmod = getFileLastmod(filePath);

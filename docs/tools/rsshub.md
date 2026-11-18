@@ -1,5 +1,6 @@
 ---
 title: RSSHub
+short_title: 'RSSHub — 万物皆可 RSS'
 description: 🧡 万物皆可 RSS，一个开源、容易使用、易于扩展的 RSS 生成器
 category: '📂 实用与提效'
 date: '2026-04-30T23:02:07+08:00'

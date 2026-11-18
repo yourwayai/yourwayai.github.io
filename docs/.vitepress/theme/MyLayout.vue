@@ -35,7 +35,7 @@ onUnmounted(() => {
     <template #layout-bottom>
       <SiteFooter />
       <ScrollToTopBottom v-show="!chatOpen" />
-      <NexconnChat @update:chat-open="chatOpen = $event" />
+      <NexconnChat v-if="page.relativePath !== 'owner.md'" @update:chat-open="chatOpen = $event" />
     </template>
   </Layout>
 </template>

@@ -229,11 +229,6 @@
                       <span class="radio-custom"></span>
                       <span class="option-text">GitHub Star数</span>
                     </label>
-                    <label class="filter-option-label">
-                      <input type="radio" value="views" v-model="sortBy" />
-                      <span class="radio-custom"></span>
-                      <span class="option-text">浏览热度</span>
-                    </label>
                   </div>
                 </div>
               </div>
@@ -283,7 +278,7 @@
             <p class="tool-desc">{{ tool.desc }}</p>
             <div class="tool-footer">
               <div class="stats">
-                <span v-if="tool.stars !== '-'">⭐ {{ tool.stars }}</span>
+                <span v-if="tool.stars !== '-' && tool.stars !== 'N/A'">⭐ {{ tool.stars }}</span>
                 <span v-if="tool.views !== '-'">👁️ {{ tool.views }}</span>
               </div>
               <div class="visit-btn">详情阅读 →</div>
@@ -521,6 +516,7 @@ const rawTools = Object.entries(modules).map(([path, mod], index) => {
   return {
     id: index,
     name: fm.title || 'Untitled',
+    shortName: fm.short_title || '',
     desc: fm.description || '',
     category: fm.category || '未分类',
     icon: fm.icon || '📦',
@@ -563,10 +559,10 @@ const matchesDeploymentFilter = (toolDeployments, filterVal) => {
     return lowerDeps.includes('source code') || lowerDeps.includes('source')
   }
   if (filterVal === 'CLI / Command Line') {
-    return lowerDeps.includes('cli') || lowerDeps.includes('command line') || lowerDeps.includes('cargo') || lowerDeps.includes('brew') || lowerDeps.includes('pip')
+    return lowerDeps.includes('cli') || lowerDeps.includes('command line') || lowerDeps.includes('cargo') || lowerDeps.includes('brew') || lowerDeps.includes('homebrew') || lowerDeps.includes('pip') || lowerDeps.includes('npm')
   }
   if (filterVal === 'Binary / packages') {
-    return lowerDeps.includes('binary') || lowerDeps.includes('npx') || lowerDeps.includes('plugins')
+    return lowerDeps.includes('binary') || lowerDeps.includes('npx') || lowerDeps.includes('plugins') || lowerDeps.includes('github releases')
   }
   return false
 }
@@ -583,6 +579,7 @@ const baseFilteredTools = computed(() => {
     const q = searchQuery.value.toLowerCase()
     result = result.filter(t => 
       t.name.toLowerCase().includes(q) || 
+      t.shortName.toLowerCase().includes(q) ||
       t.desc.toLowerCase().includes(q) ||
       t.category.toLowerCase().includes(q)
     )

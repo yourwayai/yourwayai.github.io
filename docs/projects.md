@@ -70,27 +70,27 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 - [**Agent Reach — 联网脚手架**](/tools/wx_20260611155218.html)：告别付费 API 与 403 报错：Agent Reach 联网脚手架架构拆解，解决 AI 代理联网问题
 - [**Anthropic Agent Skills — AI 定制化时代**](/tools/wx_20260611154756.html)：Anthropic 开源 Agent Skills 参考库，基于 agentskills.io 标准，提供了大模型按需动态加载专有知识和工作流的官方实现参考。
 - [**NVIDIA Agent Skills — AI 助手精准接管**](/tools/wx_20260611153942.html)：NVIDIA 开源 Agent Skills，让 AI 助手精准接管 CUDA 与大模型开发，提供了一套官方验证过的外挂技能包，支持 24 条产品线的渐进式加载策略和极客级别的供应链安全验证
-- [**港大重磅开源Nanobot：干掉臃肿的 AI 助手，完美集成 MCP 彻底解放你的生产力！**](/tools/wx_20260605173904.html)：港大开源Nanobot：轻量级智能代理框架，完美集成MCP，解放你的生产力！
-- [**清华大学联合开源PilotDeck：Agent 时代的生产力操作系统，重塑 AI 工作流！**](/tools/wx_20260605173728.html)：清华大学联合开源PilotDeck：Agent 时代的生产力操作系统，重塑 AI 工作流！
-- [**开源效率神器 TuriX-CUA：首创热插拔大模型架构，零成本打造你的 24 小时全能桌面助理！**](/tools/wx_20260605173551.html)：开源效率神器 TuriX-CUA：零成本打造 24 小时全能桌面助理！
-- [**Cloudflare官方开源 Agentic Inbox：将AI无缝嵌入私人邮箱，彻底告别繁琐的邮件处理！**](/tools/wx_20260605173109.html)：Cloudflare开源Agentic Inbox：将AI嵌入私人邮箱，告别繁琐邮件处理！
-- [**面壁×清华最新神作 VoxCPM2：用自然语言直接“凭空盲盒”设计音色，这才是真正的未来语音大模型！**](/tools/wx_20260605172524.html)：面壁×清华最新神作 VoxCPM2：用自然语言直接“凭空盲盒”设计音色，真正的未来语音大模型！
-- [**效率革命 Next AI Draw.io：完美集成 MCP，支持本地断网部署的 AI 画图利器终于开源了！**](/tools/wx_20260605172228.html)：Next AI Draw.io：AI 画图利器开源了！支持本地断网部署，自然语言生成架构图，逆天的“以图画图”能力，原生支持 MCP，多模型支持，版本控制等特性。
-- [**GitHub 4K+ Star OmniVoice Studio：ElevenLabs 的终极开源平**](/tools/wx_20260530171254.html)：GitHub 4K+ Star OmniVoice Studio：ElevenLabs 的终极开源平替，3秒克隆全语种人声！
-- [**GitHub热榜/隐私神器 Vane：本地部署的 AI 搜索引擎，彻底告别数据泄露焦虑！**](/tools/wx_20260524214934.html)：GitHub热榜/隐私神器 Vane：本地部署的 AI 搜索引擎，彻底告别数据泄露焦虑！
-- [**字节跳动开源 UI-TARS：下一代多模态 GUI Agent 神器，一句话让 AI 接管你的电脑！**](/tools/wx_20260524214734.html)：字节跳动开源 UI-TARS：下一代多模态 GUI Agent 神器，让 AI 接管你的电脑！
-- [**Claude重磅发布/金融神器 financial-services：彻底颠覆华尔街工作流，一键生成Pitch Deck与财报研报！**](/tools/wx_20260524214529.html)：Claude重磅发布金融神器financial-services，颠覆华尔街工作流，一键生成Pitch Deck与财报研报！
-- [**硬核开源 Supertonic：极速本地TTS引擎发布，零显卡要求解决应用语音合成痛点！**](/tools/wx_20260524214020.html)：硬核开源 Supertonic：极速本地TTS引擎发布，零显卡要求解决应用语音合成痛点！
-- [**GitHub高赞 CLI-Anything：真·软件Agent化终结者，一行指令让AI直接接管GUI**](/tools/wx_20260524213854.html)：GitHub高赞CLI-Anything：让AI直接接管GUI应用，一行指令重塑软件Agent化终结者
-- [**GitHub热榜 llmfit：真·大模型“量体裁衣”神器，一键测出你电脑的显存极限！**](/tools/wx_20260524213111.html)：GitHub热榜：llmfit，大模型“量体裁衣”神器，一键测出电脑显存极限！
-- [**硬核开源Kronos：全球45个交易所数据喂出的交易大模型，个人也能跑通顶级量化策略！**](/tools/wx_20260518005849.html)：全球首个开源金融大模型Kronos，45个交易所数据喂出，个人也能跑通顶级量化策略！
-- [**GitHub热榜Project AIRI：开源界最强“赛博女友”终结者，让你的大模型能玩会聊！**](/tools/wx_20260518005642.html)：GitHub热榜Project AIRI：开源界最强“赛博女友”终结者，让你的大模型能玩会聊！
-- [**开源黑马Jellyfish：首个打通 AI 短剧全流程的终结者，彻底告别分镜与人设崩溃！**](/tools/wx_20260518005533.html)：开源黑马Jellyfish：首个打通AI短剧全流程的终结者，告别分镜与人设崩溃！
-- [**GitHub热榜Mercury Agent：自带“第二大脑”的灵魂AI，告别金鱼记忆的效率神器！**](/tools/wx_20260518005305.html)：GitHub热榜Mercury Agent：自带“第二大脑”的灵魂AI，告别金鱼记忆的效率神器！
-- [**GitHub热榜 The Agency：让你的 AI 瞬间裂变出 144 个顶级专家，彻底告别“AI味”废话！**](/tools/wx_20260518003237.html)：GitHub热榜：The Agency，让你的AI瞬间裂变出144个顶级专家，告别“AI味”废话！
-- [**本地大模型天花板 Rapid-MLX：榨干Mac算力，不仅快还能跑满158B超级模型！**](/tools/wx_20260511215328.html)：Rapid-MLX：本地大模型天花板，榨干Mac算力，不仅快还能跑满158B超级模型！
-- [**Goose**](/tools/goose.html)：Block 出品的开源 AI Agent：不只是代码补全，而是能在你的机器上自主完成安装、执行、编辑和测试全流程的智能助手。
-- [**Hermes Agent — 会随你共同成长的高扩展智能体框架**](/tools/hermes-agent.html)：搭载长程记忆存储与技能成长系统，能够跨平台接驳 MCP 的下一代开源 Agent 框架。
+- [**Nanobot — 港大轻量开源 Agent**](/tools/wx_20260605173904.html)：港大开源Nanobot：轻量级智能代理框架，完美集成MCP，解放你的生产力！
+- [**PilotDeck — Agent 生产力操作系统**](/tools/wx_20260605173728.html)：清华大学联合开源PilotDeck：Agent 时代的生产力操作系统，重塑 AI 工作流！
+- [**TuriX-CUA — 开源桌面自动化助手**](/tools/wx_20260605173551.html)：开源效率神器 TuriX-CUA：零成本打造 24 小时全能桌面助理！
+- [**Agentic Inbox — AI 智能收件箱**](/tools/wx_20260605173109.html)：Cloudflare开源Agentic Inbox：将AI嵌入私人邮箱，告别繁琐邮件处理！
+- [**VoxCPM2 — 未来语音大模型**](/tools/wx_20260605172524.html)：面壁×清华最新神作 VoxCPM2：用自然语言直接“凭空盲盒”设计音色，真正的未来语音大模型！
+- [**Next AI Draw.io — 本地 AI 交互画图**](/tools/wx_20260605172228.html)：Next AI Draw.io：AI 画图利器开源了！支持本地断网部署，自然语言生成架构图，逆天的“以图画图”能力，原生支持 MCP，多模型支持，版本控制等特性。
+- [**OmniVoice Studio — 本地 AI 配音**](/tools/wx_20260530171254.html)：GitHub 4K+ Star OmniVoice Studio：ElevenLabs 的终极开源平替，3秒克隆全语种人声！
+- [**Vane — 本地 AI 搜索引擎**](/tools/wx_20260524214934.html)：GitHub热榜/隐私神器 Vane：本地部署的 AI 搜索引擎，彻底告别数据泄露焦虑！
+- [**UI-TARS — 多模态 GUI Agent**](/tools/wx_20260524214734.html)：字节跳动开源 UI-TARS：下一代多模态 GUI Agent 神器，让 AI 接管你的电脑！
+- [**financial-services — 金融 AI 智能体**](/tools/wx_20260524214529.html)：Claude重磅发布金融神器financial-services，颠覆华尔街工作流，一键生成Pitch Deck与财报研报！
+- [**Supertonic — 极速本地 TTS 引擎**](/tools/wx_20260524214020.html)：硬核开源 Supertonic：极速本地TTS引擎发布，零显卡要求解决应用语音合成痛点！
+- [**CLI-Anything — 软件Agent化终结者**](/tools/wx_20260524213854.html)：GitHub高赞CLI-Anything：让AI直接接管GUI应用，一行指令重塑软件Agent化终结者
+- [**llmfit — 本地 LLM 模型硬件智能管家**](/tools/wx_20260524213111.html)：GitHub热榜：llmfit，大模型“量体裁衣”神器，一键测出电脑显存极限！
+- [**Kronos — 金融大模型**](/tools/wx_20260518005849.html)：全球首个开源金融大模型Kronos，45个交易所数据喂出，个人也能跑通顶级量化策略！
+- [**Project AIRI — 开源赛博女友终结者**](/tools/wx_20260518005642.html)：GitHub热榜Project AIRI：开源界最强“赛博女友”终结者，让你的大模型能玩会聊！
+- [**Jellyfish — AI 短剧生产工作台**](/tools/wx_20260518005533.html)：开源黑马Jellyfish：首个打通AI短剧全流程的终结者，告别分镜与人设崩溃！
+- [**Mercury Agent — 本地 AI 智能体**](/tools/wx_20260518005305.html)：GitHub热榜Mercury Agent：自带“第二大脑”的灵魂AI，告别金鱼记忆的效率神器！
+- [**The Agency — AI 专家智能体**](/tools/wx_20260518003237.html)：GitHub热榜：The Agency，让你的AI瞬间裂变出144个顶级专家，告别“AI味”废话！
+- [**Rapid-MLX — 本地 AI 加速引擎**](/tools/wx_20260511215328.html)：Rapid-MLX：本地大模型天花板，榨干Mac算力，不仅快还能跑满158B超级模型！
+- [**Goose — 本地 AI 代理**](/tools/goose.html)：Block 出品的开源 AI Agent：不只是代码补全，而是能在你的机器上自主完成安装、执行、编辑和测试全流程的智能助手。
+- [**Hermes Agent — 开源 AI 代理**](/tools/hermes-agent.html)：搭载长程记忆存储与技能成长系统，能够跨平台接驳 MCP 的下一代开源 Agent 框架。
 
 ## 🛠️ 系统与运维 (37)
 
@@ -125,20 +125,20 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 - [**Apple Container — macOS 原生容器**](/tools/wx_20260711131141.html)：深度解析 Apple 开源原生容器框架 apple/container，采用 Swift 编写，提供亚秒级冷启动与硬件级 Micro-VM 安全隔离。
 - [**Jujutsu — 极客版本地 Git**](/tools/wx_20260611155310.html)：Jujutsu 是一个全新的版本控制系统，提供了快照式工作区、自动化历史重写和全量操作日志等功能，极大降低了代码合并与回溯的门槛。
 - [**OfficeCLI — 自动化 Office 工作流**](/tools/wx_20260611154651.html)：告别繁杂的 Python 库，用单文件 CLI 重构本地 Office 自动化工作流
-- [**GitHub热榜 optimizerDuck：开源免费的 Windows 调优神器，一键拯救卡顿老电**](/tools/wx_20260530171710.html)：GitHub热榜推荐：optimizerDuck，一款开源免费的Windows调优神器，助你一键拯救卡顿老电脑
-- [**开源神器 DroidDesk：完美调用GPU硬件加速，让闲置手机流畅运行VS Code与本地大模型！**](/tools/wx_20260530171455.html)：开源神器 DroidDesk：让闲置手机流畅运行VS Code与本地大模型！
-- [**GitHub高热 Prometheus：从0到1构建自动化监控预警体系，云原生开发者必备护身符！**](/tools/wx_20260511214354.html)：GitHub高热 Prometheus：从0到1构建自动化监控预警体系，云原生开发者必备护身符！
-- [**beszel**](/tools/beszel.html)：轻量级、极简的服务器和 Docker 容器监控面板，带历史数据与告警。
-- [**FluentFlyout**](/tools/fluentflyout.html)：Windows 11 上最美的开源媒体浮层应用，完美融合 Fluent 2 设计语言，比微软官方做得更好。
-- [**3x-ui — 下一代 Xray 节点可视化管理面板**](/tools/3x-ui.html)：支持目前最全代理通信协议与多出口配置的极客首选自建节点管理系统。
+- [**optimizerDuck — 免费 Windows 调优神器**](/tools/wx_20260530171710.html)：GitHub热榜推荐：optimizerDuck，一款开源免费的Windows调优神器，助你一键拯救卡顿老电脑
+- [**DroidDesk — 轻松部署 Linux 桌面**](/tools/wx_20260530171455.html)：开源神器 DroidDesk：让闲置手机流畅运行VS Code与本地大模型！
+- [**Prometheus — 云原生监控**](/tools/wx_20260511214354.html)：GitHub高热 Prometheus：从0到1构建自动化监控预警体系，云原生开发者必备护身符！
+- [**Beszel — 轻量服务器监控**](/tools/beszel.html)：轻量级、极简的服务器和 Docker 容器监控面板，带历史数据与告警。
+- [**FluentFlyout — 电池弹窗美化**](/tools/fluentflyout.html)：Windows 11 上最美的开源媒体浮层应用，完美融合 Fluent 2 设计语言，比微软官方做得更好。
+- [**3x-ui — Xray 协议面板**](/tools/3x-ui.html)：支持目前最全代理通信协议与多出口配置的极客首选自建节点管理系统。
 
 ## 🔒 安全与隐私 (5)
 
 - [**Nyxis — 授权安全后端框架**](/tools/wx_20261111122820.html)：基于 Lean 4 与 Cedar 策略语言构建的授权安全后端框架，在编译期通过内核形式化证明杜绝越权访问与数据泄露。
-- [**Perplexity开源 Bumblebee：AI搜索巨头的内部御用外挂，一行代码排查你的开发机隐藏**](/tools/wx_20260530171127.html)：Perplexity开源Bumblebee：AI搜索巨头内部御用外挂，一行代码排查开发机隐藏风险！
-- [**GitHub热榜Fcitx5 for Android：硬核开源输入法，彻底告别隐私泄露与臃肿广告！**](/tools/wx_20260518005748.html)：GitHub热榜Fcitx5 for Android：硬核开源输入法，告别隐私泄露与臃肿广告！
-- [**极客首选 Vaultwarden：压榨树莓派的终极金库，10MB内存跑满全功能Bitwarden！**](/tools/wx_20260511214924.html)：极客首选 Vaultwarden：用 Rust 打造的轻量级密码库，10MB 内存跑满全功能 Bitwarden！
-- [**2FAuth**](/tools/2fauth.html)：自托管的 Web 版两步验证（2FA）管理器，安全生成并管理你的动态密码。
+- [**Bumblebee — 开源安全扫描工具**](/tools/wx_20260530171127.html)：Perplexity开源Bumblebee：AI搜索巨头内部御用外挂，一行代码排查开发机隐藏风险！
+- [**Fcitx5 — 开源输入法**](/tools/wx_20260518005748.html)：GitHub热榜Fcitx5 for Android：硬核开源输入法，告别隐私泄露与臃肿广告！
+- [**Vaultwarden — 轻量级密码库**](/tools/wx_20260511214924.html)：极客首选 Vaultwarden：用 Rust 打造的轻量级密码库，10MB 内存跑满全功能 Bitwarden！
+- [**2FAuth — 自托管 2FA 令牌**](/tools/2fauth.html)：自托管的 Web 版两步验证（2FA）管理器，安全生成并管理你的动态密码。
 
 ## ✍️ 知识与协作 (10)
 
@@ -148,10 +148,10 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 - [**Fleetbase — 开源物流与供应链系统**](/tools/wx_20261005113729.html)：开源模块化物流与供应链操作系统（LSOS），涵盖车队调度、仓储、商城与跨端司机协同
 - [**Papra — 极简自托管文档归档**](/tools/wx_20260928192910.html)：极简自托管文档归档与管理平台，支持全文检索、OCR、邮件收集与多组织标签
 - [**Twenty — TypeScript 开源 CRM**](/tools/wx_20260611154932.html)：极客理念的现代开源 CRM 系统 Twenty，支持万物皆代码（CRM as Code），基于 NestJS/React 全栈 TypeScript 生态构建。
-- [**开源神作 Ghost：两分钟部署企业级内容平台，让你的博客提速300%！**](/tools/wx_20260421130229.html)：开源神作 Ghost：两分钟部署企业级内容平台，让你的博客提速300%！
-- [**Chatwoot**](/tools/chatwoot.html)：现代化、开源且支持自托管的客户支持平台与多渠道客服中心。
-- [**Memos**](/tools/memos.html)：轻量的带有本地数据主权的碎片化灵感速记与状态共享引擎。
-- [**Outline**](/tools/outline.html)：开源且美观的团队 Wiki 与知识库平台，完美适配现代协作工作流。
+- [**Ghost — 开源博客系统**](/tools/wx_20260421130229.html)：开源神作 Ghost：两分钟部署企业级内容平台，让你的博客提速300%！
+- [**Chatwoot — 全渠道客服中台**](/tools/chatwoot.html)：现代化、开源且支持自托管的客户支持平台与多渠道客服中心。
+- [**Memos — 碎片化灵感笔记**](/tools/memos.html)：轻量的带有本地数据主权的碎片化灵感速记与状态共享引擎。
+- [**Outline — 团队 Wiki 知识库**](/tools/outline.html)：开源且美观的团队 Wiki 与知识库平台，完美适配现代协作工作流。
 
 ## 📂 实用与提效 (32)
 
@@ -180,21 +180,21 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 - [**anydoc — 办公文档秒转 Markdown**](/tools/wx_20260823171805.html)：Firecrawl 开源的高性能文档转换库，Rust 核心驱动，14 种办公文档格式毫秒级转纯净 Markdown
 - [**MD-This-Page — 网页一键转 Markdown**](/tools/wx_20260815093123.html)：一键将任意网页提取清洗为 LLM 就绪的干净 Markdown 的跨平台浏览器扩展
 - [**LibreTranslate — 自托管离线翻译**](/tools/wx_20260711133932.html)：完整部署 LibreTranslate 开源本地化翻译服务，离线私有化运行，探索其在隐私保护、翻译质量与硬件性能方面的边界。
-- [**GitHub热榜AirTranslate：告别啃生肉！Mac全局音频无损翻译神器，拯救跨国会议！**](/tools/wx_20260530171544.html)：GitHub热榜AirTranslate：Mac全局音频无损翻译神器，告别啃生肉！
-- [**GitHub热榜 LocalSend：全平台 AirDrop 终结者，局域网跨设备秒传大文件！**](/tools/wx_20260511215131.html)：GitHub热榜推荐：LocalSend，全平台AirDrop终结者，局域网跨设备秒传大文件！
-- [**RSSHub**](/tools/rsshub.html)：🧡 万物皆可 RSS，一个开源、容易使用、易于扩展的 RSS 生成器
-- [**Stirling-PDF**](/tools/stirling-pdf.html)：本地托管的强大 PDF 瑞士军刀，满足你对 PDF 的一切操作需求。
-- [**开发者必备 ConvertX：基于 Bun 与 Elysia 打造的高性能引擎，数据 100% 掌握**](/tools/wx_20260429211232.html)：开源神器 ConvertX：支持 1000+ 格式转换，数据 100% 自主掌控
-- [**CookCLI**](/tools/cookcli.html)：基于 Cooklang 的开源菜谱管理工具：命令行+内嵌 Web 服务器，让你的食谱库像代码仓库一样优雅管理。
-- [**最强浏览器杀手 Open Chrome**](/tools/wx_20260413125458.html)：打破常规的浏览器效率神器玩法揭秘。
+- [**AirTranslate — Mac全局音频翻译**](/tools/wx_20260530171544.html)：GitHub热榜AirTranslate：Mac全局音频无损翻译神器，告别啃生肉！
+- [**LocalSend — 跨平台文件传输**](/tools/wx_20260511215131.html)：GitHub热榜推荐：LocalSend，全平台AirDrop终结者，局域网跨设备秒传大文件！
+- [**RSSHub — 万物皆可 RSS**](/tools/rsshub.html)：🧡 万物皆可 RSS，一个开源、容易使用、易于扩展的 RSS 生成器
+- [**Stirling-PDF — 全能 PDF 工具箱**](/tools/stirling-pdf.html)：本地托管的强大 PDF 瑞士军刀，满足你对 PDF 的一切操作需求。
+- [**ConvertX — 格式转换利器**](/tools/wx_20260429211232.html)：开源神器 ConvertX：支持 1000+ 格式转换，数据 100% 自主掌控
+- [**CookCLI — 菜谱管理命令行**](/tools/cookcli.html)：基于 Cooklang 的开源菜谱管理工具：命令行+内嵌 Web 服务器，让你的食谱库像代码仓库一样优雅管理。
+- [**Open Chrome — 浏览器神器**](/tools/wx_20260413125458.html)：打破常规的浏览器效率神器玩法揭秘。
 
 ## 💰 金融与支付 (5)
 
 - [**Claude 订阅 — 低价稳定合租方案**](/tools/wx_20260915175717.html)：告别封号与高价海外信用卡门槛，低至 $5.5/月稳定使用 Claude Pro/Max 的合租拼车与质保方案。
-- [**开源利器 InvoiceShelf：彻底告别糊涂账，专为自由职业者打造的专属财务管家！**](/tools/wx_20260511214626.html)：开源财务管理神器 InvoiceShelf，帮你把报价、开票和收款全流程安排得明明白白！
-- [**手慢无？不是，这是 AI 时代你迟早要补上的那张银行卡**](/tools/wx_20260421112236.html)：AI 时代必备的金融基础设施：N26 数字银行
+- [**InvoiceShelf — 开源财务管理**](/tools/wx_20260511214626.html)：开源财务管理神器 InvoiceShelf，帮你把报价、开票和收款全流程安排得明明白白！
+- [**效率工具 — AI 时代神器推荐**](/tools/wx_20260421112236.html)：AI 时代必备的金融基础设施：N26 数字银行
 - [**AI 订阅 — 支付宝付款全攻略**](/tools/wx_20260419212858.html)：2026最新保姆级教程：无需海外信用卡，使用支付宝直接订阅海外顶级 AI 大模型（ChatGPT Plus、Claude Pro、Gemini Advanced），合租独享可选，附10%专属优惠码与避坑指南。
-- [**手慢无：送出 5 个免手续费汇款名额**](/tools/wx_20260419212801.html)：跨境支付与手续费减免的独家福利资源分享。
+- [**熊猫速汇 — 跨境汇款攻略**](/tools/wx_20260419212801.html)：跨境支付与手续费减免的独家福利资源分享。
 
 ## 🎨 设计与极客 (12)
 
@@ -205,11 +205,11 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 - [**vite-plugin-pwa — Vite 零配置 PWA 插件**](/tools/wx_20260915181404.html)：基于 Workbox 的 Vite 零配置 PWA 插件，开箱即用支持离线缓存、桌面安装与自动更新提示。
 - [**Drawnix — 开源一体化白板与导图**](/tools/wx_20260823173518.html)：基于 Plait 框架的开源一体化白板工具，支持思维导图、可编辑流程图与自由手绘，开箱即用支持 Docker 部署
 - [**PDFx — React 开源 PDF 组件库**](/tools/wx_20260815093312.html)：类 shadcn/ui 范式的 React 开源 PDF 组件库与零运行时 CLI 生成工具
-- [**开源神器 MoBrowser-App-Icon-Maker：彻底告别找设计外包，零基础程序员的专属**](/tools/wx_20260530171623.html)：零基础程序员也能轻松生成macOS图标！开源工具MoBrowser-App-Icon-Maker，告别找设计外包，零成本生成苹果味儿十足的应用图标
-- [**Penpot**](/tools/penpot.html)：开源设计协作平台：专为设计师与开发者团队打造，彻底替代 Figma 的自托管设计工具。
-- [**Storybook — UI 组件驱动开发工作台**](/tools/storybook.html)：全球最受欢迎的 UI 组件开发、测试与文档编写独立工作台，支持 React、Vue、Angular 等几乎所有主流框架。
-- [**V8 Engine**](/tools/v8.html)：Google的开源高性能JavaScript和WebAssembly引擎。
-- [**命令行的艺术**](/tools/the-art-of-command-line.html)：终端环境日常操作的必备指南与极客神仙技巧。
+- [**MoBrowser-App-Icon-Maker — AI 图标生成**](/tools/wx_20260530171623.html)：零基础程序员也能轻松生成macOS图标！开源工具MoBrowser-App-Icon-Maker，告别找设计外包，零成本生成苹果味儿十足的应用图标
+- [**Penpot — 开源设计工具**](/tools/penpot.html)：开源设计协作平台：专为设计师与开发者团队打造，彻底替代 Figma 的自托管设计工具。
+- [**Storybook — UI 组件开发环境**](/tools/storybook.html)：全球最受欢迎的 UI 组件开发、测试与文档编写独立工作台，支持 React、Vue、Angular 等几乎所有主流框架。
+- [**V8 Engine — JS 运行引擎**](/tools/v8.html)：Google的开源高性能JavaScript和WebAssembly引擎。
+- [**The Art of Command Line — 终端神技**](/tools/the-art-of-command-line.html)：终端环境日常操作的必备指南与极客神仙技巧。
 
 ## 🍿 影音与娱乐 (7)
 
@@ -219,5 +219,4 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 - [**Antra — 跨平台无损本地音乐库构建器**](/tools/wx_20260727160923.html)：自动化将流媒体链接解析并下载为高解析无损 FLAC 与完整元数据/歌词的本地音乐库构建器。
 - [**Wizarr — 影音服务器自动化邀请**](/tools/wx_20260722214537.html)：为 Plex/Jellyfin/Emby 提供无缝准入与自动化分发的自托管向导邀请系统。
 - [**video-autopilot-kit — 开源短视频自动化框架**](/tools/wx_20260722214409.html)：纯代码 (FFmpeg) 与 CapCut 辅助双路径的开源短视频自动化生成与 QA 框架。
-- [**Jellyfin**](/tools/jellyfin.html)：掌握自己全高清影视与音频库的终极媒体中心解决方案，拒绝一切隐藏订阅门槛。
-
+- [**Jellyfin — 自建私人影院**](/tools/jellyfin.html)：掌握自己全高清影视与音频库的终极媒体中心解决方案，拒绝一切隐藏订阅门槛。

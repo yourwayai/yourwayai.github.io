@@ -1,107 +1,29 @@
 <script setup>
 import { ref, computed, onMounted, onUnmounted, nextTick } from 'vue'
-import { useRouter } from 'vitepress'
+import { useRouter, useData } from 'vitepress'
 
 // ── 工具数据 ──────────────────────────────────────────────
-// 从 VitePress sidebar config 中提取的扁平化工具列表
-// 使用 import.meta.glob 在构建时获取所有工具 frontmatter
-const allTools = ref([])
-const isLoading = ref(true)
+// VitePress srcDir 为 docs/，因此 glob 路径必须以 /tools/ 开头
+const modules = import.meta.glob('/tools/*.md', { eager: true })
 
-// 加载所有工具的 frontmatter
-const loadTools = async () => {
-  try {
-    // VitePress 在客户端没有直接的方式访问所有页面数据
-    // 所以我们从预生成的 JSON 或内联数据获取
-    const modules = import.meta.glob('/docs/tools/*.md', { eager: false })
-    const tools = []
-    
-    for (const path in modules) {
-      try {
-        const mod = await modules[path]()
-        const fm = mod.__pageData?.frontmatter || {}
-        const slug = path.replace('/docs/tools/', '').replace('.md', '')
-        if (fm.title) {
-          tools.push({
-            title: fm.title,
-            description: fm.description || '',
-            category: fm.category || '',
-            icon: fm.icon || '',
-            stars: fm.stars || '',
-            link: `/tools/${slug}`,
-          })
-        }
-      } catch (e) {
-        // skip
-      }
+const allTools = Object.entries(modules)
+  .map(([path, mod]) => {
+    const fm = mod.default?.__pageData?.frontmatter || mod.__pageData?.frontmatter || {}
+    const slug = path.replace('/tools/', '').replace(/\.md$/, '')
+    const rawTitle = fm.title || slug
+    const displayTitle = fm.short_title || rawTitle
+    return {
+      title: displayTitle,
+      fullTitle: rawTitle,
+      description: fm.description || '',
+      category: fm.category || '',
+      icon: fm.icon || '',
+      stars: fm.stars || '',
+      date: fm.date || '2000-01-01',
+      link: `/tools/${slug}`,
     }
-    allTools.value = tools
-  } catch (e) {
-    // Fallback: use inline data from sidebar
-    allTools.value = INLINE_TOOLS
-  } finally {
-    isLoading.value = false
-  }
-}
-
-// 内联的工具数据 fallback（与 config.mts sidebar 同步）
-const INLINE_TOOLS = [
-  { title: 'Jellyfish — AI 短剧生产工作台', link: '/tools/wx_20260518005533', category: '🤖 AI 与智能体' },
-  { title: 'Kronos — 金融大模型', link: '/tools/wx_20260518005849', category: '🤖 AI 与智能体' },
-  { title: 'Hermes Agent — 开源 AI 代理', link: '/tools/hermes-agent', category: '🤖 AI 与智能体' },
-  { title: 'Goose — 本地 AI 代理', link: '/tools/goose', category: '🤖 AI 与智能体' },
-  { title: 'Rapid-MLX — 本地 AI 加速引擎', link: '/tools/wx_20260511215328', category: '🤖 AI 与智能体' },
-  { title: 'The Agency — AI 专家智能体', link: '/tools/wx_20260518003237', category: '🤖 AI 与智能体' },
-  { title: 'Mercury Agent — 本地 AI 智能体', link: '/tools/wx_20260518005305', category: '🤖 AI 与智能体' },
-  { title: 'Project AIRI — 开源赛博女友终结者', link: '/tools/wx_20260518005642', category: '🤖 AI 与智能体' },
-  { title: 'llmfit — 本地 LLM 模型硬件智能管家', link: '/tools/wx_20260524213111', category: '🤖 AI 与智能体' },
-  { title: 'CLI-Anything — 软件Agent化终结者', link: '/tools/wx_20260524213854', category: '🤖 AI 与智能体' },
-  { title: 'Supertonic — 极速本地 TTS 引擎', link: '/tools/wx_20260524214020', category: '🤖 AI 与智能体' },
-  { title: 'financial-services — 金融 AI 智能体', link: '/tools/wx_20260524214529', category: '🤖 AI 与智能体' },
-  { title: 'UI-TARS — 多模态 GUI Agent', link: '/tools/wx_20260524214734', category: '🤖 AI 与智能体' },
-  { title: 'Vane — 本地 AI 搜索引擎', link: '/tools/wx_20260524214934', category: '🤖 AI 与智能体' },
-  { title: 'OmniVoice Studio — 本地 AI 配音', link: '/tools/wx_20260530171254', category: '🤖 AI 与智能体' },
-  { title: 'Next AI Draw.io — 本地 AI 交互画图', link: '/tools/wx_20260605172228', category: '🤖 AI 与智能体' },
-  { title: 'VoxCPM2 — 未来语音大模型', link: '/tools/wx_20260605172524', category: '🤖 AI 与智能体' },
-  { title: 'Agentic Inbox — AI 智能收件箱', link: '/tools/wx_20260605173109', category: '🤖 AI 与智能体' },
-  { title: 'TuriX-CUA — 开源桌面自动化助手', link: '/tools/wx_20260605173551', category: '🤖 AI 与智能体' },
-  { title: 'PilotDeck — Agent 生产力操作系统', link: '/tools/wx_20260605173728', category: '🤖 AI 与智能体' },
-  { title: 'Nanobot — 港大轻量开源 Agent', link: '/tools/wx_20260605173904', category: '🤖 AI 与智能体' },
-  { title: 'NVIDIA Agent Skills — AI 助手精准接管', link: '/tools/wx_20260611153942', category: '🤖 AI 与智能体' },
-  { title: 'Anthropic Agent Skills — AI 定制化时代', link: '/tools/wx_20260611154756', category: '🤖 AI 与智能体' },
-  { title: 'Agent Reach — 联网脚手架', link: '/tools/wx_20260611155218', category: '🤖 AI 与智能体' },
-  { title: '3x-ui — Xray 协议面板', link: '/tools/3x-ui', category: '🛠️ 系统与运维' },
-  { title: 'Beszel — 轻量服务器监控', link: '/tools/beszel', category: '🛠️ 系统与运维' },
-  { title: 'Prometheus — 云原生监控', link: '/tools/wx_20260511214354', category: '🛠️ 系统与运维' },
-  { title: 'FluentFlyout — 电池弹窗美化', link: '/tools/fluentflyout', category: '🛠️ 系统与运维' },
-  { title: 'DroidDesk — 轻松部署 Linux 桌面', link: '/tools/wx_20260530171455', category: '🛠️ 系统与运维' },
-  { title: 'optimizerDuck — 免费 Windows 调优神器', link: '/tools/wx_20260530171710', category: '🛠️ 系统与运维' },
-  { title: 'OfficeCLI — 自动化 Office 工作流', link: '/tools/wx_20260611154651', category: '🛠️ 系统与运维' },
-  { title: 'Jujutsu — 极客版本地 Git', link: '/tools/wx_20260611155310', category: '🛠️ 系统与运维' },
-  { title: '2FAuth — 自托管 2FA 令牌', link: '/tools/2fauth', category: '🔒 安全与隐私' },
-  { title: 'Vaultwarden — 轻量级密码库', link: '/tools/wx_20260511214924', category: '🔒 安全与隐私' },
-  { title: 'Fcitx5 — 开源输入法', link: '/tools/wx_20260518005748', category: '🔒 安全与隐私' },
-  { title: 'Bumblebee — 开源安全扫描工具', link: '/tools/wx_20260530171127', category: '🔒 安全与隐私' },
-  { title: 'Outline — 团队 Wiki 知识库', link: '/tools/outline', category: '✍️ 知识与协作' },
-  { title: 'Memos — 碎片化灵感笔记', link: '/tools/memos', category: '✍️ 知识与协作' },
-  { title: 'Ghost — 开源博客系统', link: '/tools/wx_20260421130229', category: '✍️ 知识与协作' },
-  { title: 'Chatwoot — 全渠道客服中台', link: '/tools/chatwoot', category: '✍️ 知识与协作' },
-  { title: 'Twenty — TypeScript 开源 CRM', link: '/tools/wx_20260611154932', category: '✍️ 知识与协作' },
-  { title: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf', category: '📂 实用与提效' },
-  { title: 'RSSHub — 万物皆可 RSS', link: '/tools/rsshub', category: '📂 实用与提效' },
-  { title: 'LocalSend — 跨平台文件传输', link: '/tools/wx_20260511215131', category: '📂 实用与提效' },
-  { title: 'Open Chrome — 浏览器神器', link: '/tools/wx_20260413125458', category: '📂 实用与提效' },
-  { title: 'ConvertX — 格式转换利器', link: '/tools/wx_20260429211232', category: '📂 实用与提效' },
-  { title: 'CookCLI — 菜谱管理命令行', link: '/tools/cookcli', category: '📂 实用与提效' },
-  { title: 'AirTranslate — Mac全局音频翻译', link: '/tools/wx_20260530171544', category: '📂 实用与提效' },
-  { title: 'InvoiceShelf — 开源财务管理', link: '/tools/wx_20260511214626', category: '💰 金融与支付' },
-  { title: 'Penpot — 开源设计工具', link: '/tools/penpot', category: '🎨 设计与极客' },
-  { title: 'Storybook — UI 组件开发环境', link: '/tools/storybook', category: '🎨 设计与极客' },
-  { title: 'V8 Engine — JS 运行引擎', link: '/tools/v8', category: '🎨 设计与极客' },
-  { title: 'The Art of Command Line — 终端神技', link: '/tools/the-art-of-command-line', category: '🎨 设计与极客' },
-  { title: 'MoBrowser-App-Icon-Maker — AI 图标生成', link: '/tools/wx_20260530171623', category: '🎨 设计与极客' },
-  { title: 'Jellyfin — 自建私人影院', link: '/tools/jellyfin', category: '🍿 影音与娱乐' },
-]
+  })
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 
 // ── 状态 ────────────────────────────────────────────────
 const isOpen = ref(false)
@@ -109,14 +31,15 @@ const query = ref('')
 const activeIndex = ref(0)
 const searchInputRef = ref(null)
 const router = useRouter()
+const { page } = useData()
 
 // ── 搜索逻辑 ────────────────────────────────────────────
 const results = computed(() => {
   const q = query.value.trim().toLowerCase()
-  const tools = allTools.value.length ? allTools.value : INLINE_TOOLS
-  if (!q) return tools.slice(0, 10)
-  return tools.filter(t =>
+  if (!q) return allTools.slice(0, 10)
+  return allTools.filter(t =>
     t.title.toLowerCase().includes(q) ||
+    t.fullTitle.toLowerCase().includes(q) ||
     (t.category || '').toLowerCase().includes(q) ||
     (t.description || '').toLowerCase().includes(q)
   ).slice(0, 12)
@@ -143,13 +66,19 @@ const navigate = (link) => {
 
 // ── 键盘处理 ────────────────────────────────────────────
 const onKeydown = (e) => {
-  if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+  if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
     e.preventDefault()
     isOpen.value ? close() : open()
     return
   }
-  // 全局 / 键（非输入框内）
-  if (e.key === '/' && !isOpen.value && document.activeElement?.tagName !== 'INPUT' && document.activeElement?.tagName !== 'TEXTAREA') {
+  // 全局 / 键（仅在非首页且非输入框内触发，避免与首页页内过滤框冲突）
+  if (
+    e.key === '/' &&
+    !isOpen.value &&
+    page.value.relativePath !== 'index.md' &&
+    document.activeElement?.tagName !== 'INPUT' &&
+    document.activeElement?.tagName !== 'TEXTAREA'
+  ) {
     e.preventDefault()
     open()
     return
@@ -167,7 +96,6 @@ const onInput = () => { activeIndex.value = 0 }
 
 onMounted(() => {
   window.addEventListener('keydown', onKeydown)
-  loadTools()
 })
 onUnmounted(() => { window.removeEventListener('keydown', onKeydown) })
 
@@ -255,11 +183,20 @@ defineExpose({ open })
 </template>
 
 <script>
-// Helper: highlight matching text (plain JS, not in setup for reuse)
+// Helper: highlight matching text safely (escape HTML first)
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+}
+
 function highlightMatch(text, query) {
-  if (!query) return text
-  const escaped = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
-  return text.replace(new RegExp(`(${escaped})`, 'gi'), '<mark>$1</mark>')
+  const safeText = escapeHtml(text)
+  if (!query) return safeText
+  const escaped = escapeHtml(query).replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+  return safeText.replace(new RegExp(`(${escaped})`, 'gi'), '<mark>$1</mark>')
 }
 </script>
 

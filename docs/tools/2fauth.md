@@ -1,5 +1,6 @@
 ---
 title: 2FAuth
+short_title: '2FAuth — 自托管 2FA 令牌'
 description: 自托管的 Web 版两步验证（2FA）管理器，安全生成并管理你的动态密码。
 category: '🔒 安全与隐私'
 date: '2026-04-30T22:55:42+08:00'

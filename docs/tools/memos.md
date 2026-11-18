@@ -1,10 +1,11 @@
 ---
 title: Memos
+short_title: 'Memos — 碎片化灵感笔记'
 description: 轻量的带有本地数据主权的碎片化灵感速记与状态共享引擎。
 icon: 'https://github.com/usememos.png'
 category: '✍️ 知识与协作'
 date: '2026-04-13T11:07:20+08:00'
-stars: 'N/A'
+stars: '64.5k'
 platforms:
   - Linux
   - macOS
@@ -67,11 +68,11 @@ docker run -d \
 
 <GithubRepoCard 
   repo="usememos/memos"
-  initialStars="N/A"
-  initialForks="N/A"
+  initialStars="64.5k"
+  initialForks="5.0k"
   initialContributors="N/A"
   initialVersion="N/A"
-  initialPushedAt="2026-06-11"
+  initialPushedAt="2026-11-18"
   :platforms="['Linux', 'macOS', 'Windows']"
   :deployments="['Docker', 'Source Code']"
 />

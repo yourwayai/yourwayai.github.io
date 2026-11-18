@@ -1,10 +1,11 @@
 ---
 title: Hermes Agent — 会随你共同成长的高扩展智能体框架
+short_title: 'Hermes Agent — 开源 AI 代理'
 description: 搭载长程记忆存储与技能成长系统，能够跨平台接驳 MCP 的下一代开源 Agent 框架。
 category: '🤖 AI 与智能体'
 date: '2026-04-21T11:38:05+08:00'
 icon: 'https://github.com/NousResearch.png'
-stars: 'N/A'
+stars: '264.3k'
 platforms:
   - Linux
   - macOS
@@ -66,11 +67,11 @@ python main.py start --verbose
 
 <GithubRepoCard 
   repo="NousResearch/hermes-agent"
-  initialStars="N/A"
-  initialForks="N/A"
+  initialStars="264.3k"
+  initialForks="59.6k"
   initialContributors="N/A"
   initialVersion="N/A"
-  initialPushedAt="2026-06-11"
+  initialPushedAt="2026-11-18"
   :platforms="['Linux', 'macOS', 'Windows']"
   :deployments="['Docker', 'Source Code']"
 />

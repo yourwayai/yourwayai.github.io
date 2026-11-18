@@ -4,6 +4,8 @@ dist
 docs/.vitepress/dist
 docs/.vitepress/cache
 .vitepress/cache
+.env.local
+.env.*.local
 
 # 自动生成文件 (由 build-sitemap.cjs 在构建时生成，无需追踪)
 docs/projects.md

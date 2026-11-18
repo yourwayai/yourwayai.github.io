@@ -1,5 +1,6 @@
 ---
 title: Outline
+short_title: 'Outline — 团队 Wiki 知识库'
 description: 开源且美观的团队 Wiki 与知识库平台，完美适配现代协作工作流。
 icon: 'https://raw.githubusercontent.com/outline/outline/main/public/images/icon-512.png'
 category: '✍️ 知识与协作'

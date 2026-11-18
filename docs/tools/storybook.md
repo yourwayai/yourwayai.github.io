@@ -1,10 +1,11 @@
 ---
 title: Storybook — UI 组件驱动开发工作台
+short_title: 'Storybook — UI 组件开发环境'
 description: 全球最受欢迎的 UI 组件开发、测试与文档编写独立工作台，支持 React、Vue、Angular 等几乎所有主流框架。
 category: '🎨 设计与极客'
 date: '2026-04-21T11:29:45+08:00'
 icon: 'https://github.com/storybookjs.png'
-stars: 'N/A'
+stars: '91.6k'
 platforms:
   - Linux
   - macOS
@@ -81,11 +82,11 @@ npm run storybook
 
 <GithubRepoCard 
   repo="storybookjs/storybook"
-  initialStars="N/A"
-  initialForks="N/A"
+  initialStars="91.6k"
+  initialForks="10.6k"
   initialContributors="N/A"
   initialVersion="N/A"
-  initialPushedAt="2026-06-11"
+  initialPushedAt="2026-11-18"
   :platforms="['Linux', 'macOS', 'Windows']"
   :deployments="['Docker', 'Source Code']"
 />

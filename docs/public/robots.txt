@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /owner
+Disallow: /owner.html
 
 Sitemap: https://yourwayai.github.io/sitemap.xml

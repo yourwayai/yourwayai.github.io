@@ -1,10 +1,11 @@
 ---
 title: FluentFlyout
+short_title: 'FluentFlyout — 电池弹窗美化'
 description: "Windows 11 上最美的开源媒体浮层应用，完美融合 Fluent 2 设计语言，比微软官方做得更好。"
 category: '🛠️ 系统与运维'
 date: '2026-04-28T22:46:22+08:00'
 icon: 'https://github.com/unchihugo.png'
-stars: 'N/A'
+stars: '4.9k'
 platforms:
   - Linux
   - macOS
@@ -108,11 +109,11 @@ FluentFlyout 基于成熟的 Windows 开发生态构建：
 
 <GithubRepoCard 
   repo="unchihugo/FluentFlyout"
-  initialStars="N/A"
-  initialForks="N/A"
+  initialStars="4.9k"
+  initialForks="250"
   initialContributors="N/A"
   initialVersion="N/A"
-  initialPushedAt="2026-06-11"
+  initialPushedAt="2026-11-11"
   :platforms="['Linux', 'macOS', 'Windows']"
   :deployments="['Docker', 'Source Code']"
 />

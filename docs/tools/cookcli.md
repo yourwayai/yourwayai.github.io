@@ -1,5 +1,6 @@
 ---
 title: CookCLI
+short_title: 'CookCLI — 菜谱管理命令行'
 description: "基于 Cooklang 的开源菜谱管理工具：命令行+内嵌 Web 服务器，让你的食谱库像代码仓库一样优雅管理。"
 category: '📂 实用与提效'
 date: '2026-04-28T22:45:04+08:00'
@@ -170,11 +171,11 @@ CookCLI 是工程师审美与厨房生活的完美结合。如果你习惯用 Gi
 
 <GithubRepoCard 
   repo="cooklang/cookcli"
-  initialStars="N/A"
-  initialForks="N/A"
+  initialStars="1.4k"
+  initialForks="125"
   initialContributors="N/A"
   initialVersion="N/A"
-  initialPushedAt="2026-06-11"
+  initialPushedAt="2026-11-15"
   :platforms="['Linux', 'macOS', 'Windows']"
   :deployments="['Docker', 'Source Code']"
 />

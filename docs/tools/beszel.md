@@ -1,10 +1,11 @@
 ---
 title: beszel
+short_title: 'Beszel — 轻量服务器监控'
 description: 轻量级、极简的服务器和 Docker 容器监控面板，带历史数据与告警。
 category: '🛠️ 系统与运维'
 date: '2026-04-30T22:59:04+08:00'
 icon: 'https://github.com/henrygd.png'
-stars: 'N/A'
+stars: '27.2k'
 platforms:
   - Linux
   - macOS
@@ -95,11 +96,11 @@ docker run -d --name beszel-agent --restart unless-stopped \
 
 <GithubRepoCard 
   repo="henrygd/beszel"
-  initialStars="N/A"
-  initialForks="N/A"
+  initialStars="27.2k"
+  initialForks="1.2k"
   initialContributors="N/A"
   initialVersion="N/A"
-  initialPushedAt="2026-06-11"
+  initialPushedAt="2026-11-10"
   :platforms="['Linux', 'macOS', 'Windows']"
   :deployments="['Docker', 'Source Code']"
 />

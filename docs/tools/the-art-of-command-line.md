@@ -1,10 +1,11 @@
 ---
 title: 命令行的艺术
+short_title: 'The Art of Command Line — 终端神技'
 description: 终端环境日常操作的必备指南与极客神仙技巧。
 icon: 'https://github.com/jlevy.png'
 category: '🎨 设计与极客'
 date: '2026-04-13T11:17:03+08:00'
-stars: 'N/A'
+stars: '162.8k'
 platforms:
   - Linux
   - macOS
@@ -60,11 +61,11 @@ deployments:
 
 <GithubRepoCard 
   repo="jlevy/the-art-of-command-line"
-  initialStars="N/A"
-  initialForks="N/A"
+  initialStars="162.8k"
+  initialForks="14.9k"
   initialContributors="N/A"
   initialVersion="N/A"
-  initialPushedAt="2026-06-11"
+  initialPushedAt="2024-06-25"
   :platforms="['Linux', 'macOS', 'Windows']"
   :deployments="['Docker', 'Source Code']"
 />

@@ -1,10 +1,11 @@
 ---
 title: Penpot
+short_title: 'Penpot — 开源设计工具'
 description: "开源设计协作平台：专为设计师与开发者团队打造，彻底替代 Figma 的自托管设计工具。"
 category: '🎨 设计与极客'
 date: '2026-04-28T22:45:40+08:00'
 icon: 'https://github.com/penpot.png'
-stars: 'N/A'
+stars: '62.5k'
 platforms:
   - Linux
   - macOS
@@ -97,11 +98,11 @@ Penpot 特别适合以下团队：
 
 <GithubRepoCard 
   repo="penpot/penpot"
-  initialStars="N/A"
-  initialForks="N/A"
+  initialStars="62.5k"
+  initialForks="4.4k"
   initialContributors="N/A"
   initialVersion="N/A"
-  initialPushedAt="2026-06-11"
+  initialPushedAt="2026-11-18"
   :platforms="['Linux', 'macOS', 'Windows']"
   :deployments="['Docker', 'Source Code']"
 />

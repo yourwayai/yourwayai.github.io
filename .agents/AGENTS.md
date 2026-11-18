@@ -37,7 +37,7 @@ npm run add-wx-local -- https://mp.weixin.qq.com/s/XXXXXXXXXXXXXXXX
 **脚本自动完成以下所有步骤：**
 1. 用 `curl` + iPhone UA 绕过微信反爬，抓取 HTML
 2. 用 BeautifulSoup 解析标题、作者、正文，转为 Markdown
-3. 调用 NVIDIA LLM API（meta/llama-3.1-70b-instruct）生成分类、短标题、描述
+3. 调用 NVIDIA LLM API（google/gemma-4-31b-it）生成分类、短标题、描述
 4. 创建 `docs/tools/wx_YYYYMMDDHHMMSS.md` 文件
 5. 更新 `docs/.vitepress/config.mts` 侧边栏（自动增加计数）
 6. `git add . && git commit && git push`

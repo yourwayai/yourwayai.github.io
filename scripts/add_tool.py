@@ -6,8 +6,23 @@ import subprocess
 import base64
 import json
 
-# NVIDIA API Configuration
-NV_API_KEY = "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"
+# NVIDIA API Configuration (loaded from environment or .env.local)
+def _load_env_key(key_name: str) -> str:
+    val = os.environ.get(key_name, "").strip()
+    if val:
+        return val
+    env_local = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), ".env.local")
+    if os.path.exists(env_local):
+        with open(env_local, "r", encoding="utf-8") as ef:
+            for line in ef:
+                line = line.strip()
+                if line and not line.startswith("#") and "=" in line:
+                    k, v = line.split("=", 1)
+                    if k.strip() == key_name:
+                        return v.strip().strip("'\"")
+    return ""
+
+NV_API_KEY = _load_env_key("NV_API_KEY")
 NV_API_URL = "https://integrate.api.nvidia.com/v1/chat/completions"
 
 def fetch_github_info(url):
@@ -145,7 +160,7 @@ Important Instructions:
     }
     
     payload = {
-        "model": "meta/llama-3.2-90b-vision-instruct",
+        "model": "google/gemma-4-31b-it",
         "messages": [
             {"role": "user", "content": prompt}
         ],

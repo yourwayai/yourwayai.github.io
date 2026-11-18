@@ -51,7 +51,8 @@ def fetch_github_stars(owner: str, repo: str) -> Optional[int]:
     """通过 GitHub API 获取仓库的 star 数，失败返回 None"""
     # 清理 repo 名称（去掉末尾的 .git 和特殊字符）
     repo = repo.rstrip("/").split("#")[0].split("?")[0]
-    repo = repo.rstrip(".git") if repo.endswith(".git") else repo
+    if repo.endswith(".git"):
+        repo = repo[:-4]
 
     url = f"https://api.github.com/repos/{owner}/{repo}"
     headers = {
@@ -91,7 +92,11 @@ def extract_first_github_repo(content: str) -> Optional[Tuple[str, str]]:
     # 也尝试从 GithubRepoCard 的 repo= 属性直接提取（最精确）
     repo_card_match = re.search(r'repo=["\']([a-zA-Z0-9_.-]+)/([a-zA-Z0-9_.-]+)["\']', clean_content)
     if repo_card_match:
-        return repo_card_match.group(1), repo_card_match.group(2)
+        owner = repo_card_match.group(1)
+        repo = repo_card_match.group(2).rstrip("/").split("#")[0].split("?")[0]
+        if repo.endswith(".git"):
+            repo = repo[:-4]
+        return owner, repo
 
     matches = GITHUB_REPO_PATTERN.findall(clean_content)
     for owner, repo in matches:
@@ -101,8 +106,10 @@ def extract_first_github_repo(content: str) -> Optional[Tuple[str, str]]:
         # 跳过明显不是仓库的链接（如 github.com/orgs, github.com/users 等）
         if owner in ("orgs", "users", "topics", "collections", "sponsors", "apps"):
             continue
-        # 清理 repo 名称
-        clean_repo = repo.split("/")[0].split(".")[0] if "/" in repo or "." in repo else repo
+        # 清理 repo 名称（保留点号以支持 .nvim、.js 等仓库名，仅去除 .git 后缀）
+        clean_repo = repo.split("/")[0].split("#")[0].split("?")[0]
+        if clean_repo.endswith(".git"):
+            clean_repo = clean_repo[:-4]
         # 去除 markdown 链接括号污染
         clean_repo = re.sub(r"[)\]\"'>].*", "", clean_repo)
         if clean_repo:

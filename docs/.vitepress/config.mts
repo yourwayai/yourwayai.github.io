@@ -7,7 +7,7 @@ export default withPwa(defineConfig({
   pwa: {
     outDir: '.vitepress/dist',
     registerType: 'autoUpdate',
-    includeAssets: ['favicon.ico', 'logo.jpg'],
+    includeAssets: ['logo.jpg'],
     manifest: {
       name: 'YourwayAI开源导航站',
       short_name: 'YourwayAI',
@@ -388,10 +388,15 @@ export default withPwa(defineConfig({
     // Ensure head array exists
     pageData.frontmatter.head = pageData.frontmatter.head || []
     
+    // Canonical URL calculation (avoid /index.html for homepage)
+    const canonicalPath = pageData.relativePath === 'index.md' ? '' : pageData.relativePath.replace(/\.md$/, '.html')
+    const pageUrl = `https://yourwayai.github.io/${canonicalPath}`
+
     // Add og:title & og:description dynamically
     pageData.frontmatter.head.push(['meta', { property: 'og:title', content: title }])
     pageData.frontmatter.head.push(['meta', { property: 'og:description', content: desc }])
-    pageData.frontmatter.head.push(['meta', { property: 'og:url', content: `https://yourwayai.github.io/${pageData.relativePath.replace(/\.md$/, '.html')}` }])
+    pageData.frontmatter.head.push(['meta', { property: 'og:url', content: pageUrl }])
+    pageData.frontmatter.head.push(['link', { rel: 'canonical', href: pageUrl }])
     
     // Check if there is a GitHub repository link in content and inject JSON-LD
     let githubUrl = null

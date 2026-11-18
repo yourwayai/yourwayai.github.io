@@ -62,16 +62,22 @@ def fetch_github_info(url):
     # 4. Construct Image URL (GitHub Social Preview)
     og_image = f"https://opengraph.githubassets.com/1/{owner}/{repo_name}"
 
+    stars_count = repo_data.get('stargazers_count', 0)
+    stars_str = f"{stars_count / 1000:.1f}k" if stars_count >= 1000 else str(stars_count)
+
     return {
         'name': repo_data.get('name'),
         'full_name': repo_data.get('full_name'),
+        'owner': owner,
         'description': repo_data.get('description', 'No description provided.'),
-        'stars': repo_data.get('stargazers_count', 0),
+        'stars': stars_count,
+        'stars_str': stars_str,
         'language': repo_data.get('language', 'Unknown'),
         'license': repo_data.get('license', {}).get('name', 'No License') if repo_data.get('license') else 'No License',
         'url': repo_data.get('html_url'),
         'homepage': repo_data.get('homepage') or repo_data.get('html_url'),
         'og_image': og_image,
+        'icon': f"https://github.com/{owner}.png",
         'readme_content': readme_clean,
         'filename': repo_name.lower(),
         'current_date': __import__('datetime').datetime.now().astimezone().isoformat()
@@ -104,6 +110,8 @@ short_title: '{info['name']} — [Short 4-10 char Chinese subtitle]'
 description: [Write a catchy one-line description/pain point in Chinese, max 50 chars]
 category: '[Choose exactly one from: 🤖 AI 与智能体, 🛠️ 系统与运维, 🔒 安全与隐私, ✍️ 知识与协作, 📂 实用与提效, 💰 金融与支付, 🎨 设计与极客, 🍿 影音与娱乐]'
 date: '{info['current_date']}'
+icon: '{info['icon']}'
+stars: '{info['stars_str']}'
 platforms:
   - [Choose from: Linux, macOS, Windows. E.g. Linux]
   - [macOS]
@@ -189,9 +197,11 @@ Important Instructions:
         return f"""---
 title: {info['name']}
 short_title: '{info['name']} — 开源项目'
-description: {info['description'][:50]}
+description: '{info['description'][:50]}'
+icon: '{info['icon']}'
 category: '🎨 设计与极客'
 date: '{info['current_date']}'
+stars: '{info['stars_str']}'
 platforms:
   - Linux
   - macOS
@@ -301,5 +311,13 @@ if __name__ == "__main__":
     info = fetch_github_info(url)
     filename, display_text, category_name = create_markdown(info)
     update_config(info, filename, display_text, category_name)
+    
+    # Run sitemap build BEFORE git push
+    print("Updating sitemap and projects catalog...")
+    try:
+        subprocess.run(["npm", "run", "build:sitemap"], check=True)
+    except Exception as e:
+        print(f"Warning: sitemap build failed: {e}")
+
     git_push(info)
     print("Done!")

@@ -220,3 +220,4 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 - [**Wizarr — 影音服务器自动化邀请**](/tools/wx_20260722214537.html)：为 Plex/Jellyfin/Emby 提供无缝准入与自动化分发的自托管向导邀请系统。
 - [**video-autopilot-kit — 开源短视频自动化框架**](/tools/wx_20260722214409.html)：纯代码 (FFmpeg) 与 CapCut 辅助双路径的开源短视频自动化生成与 QA 框架。
 - [**Jellyfin — 自建私人影院**](/tools/jellyfin.html)：掌握自己全高清影视与音频库的终极媒体中心解决方案，拒绝一切隐藏订阅门槛。
+

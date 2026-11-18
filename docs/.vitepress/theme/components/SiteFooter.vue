@@ -2,12 +2,17 @@
 import { useData } from 'vitepress'
 import { computed } from 'vue'
 
-const { frontmatter } = useData()
-const isHome = computed(() => frontmatter.value.layout === 'home')
+const { frontmatter, page } = useData()
+const hasSidebar = computed(() => {
+  if (frontmatter.value.sidebar === false) return false
+  if (frontmatter.value.layout === 'home') return false
+  if (page.value.relativePath === 'index.md' || page.value.relativePath === 'owner.md') return false
+  return true
+})
 </script>
 
 <template>
-  <footer class="site-footer" :class="{ 'has-sidebar': !isHome }">
+  <footer class="site-footer" :class="{ 'has-sidebar': hasSidebar }">
     <div class="footer-inner">
       <div class="footer-top">
         <!-- Left: SEO Optimized Brand Section -->
@@ -38,8 +43,9 @@ const isHome = computed(() => frontmatter.value.layout === 'home')
           </div>
           <div class="footer-links-column">
             <h3 class="footer-column-title">关注动态</h3>
-            <a href="https://x.com" target="_blank" rel="noopener" class="footer-link">X (Twitter)</a>
-            <a href="https://threads.net" target="_blank" rel="noopener" class="footer-link">Threads</a>
+            <a href="https://github.com/yourwayai/yourwayai.github.io" target="_blank" rel="noopener" class="footer-link">GitHub 源码仓库</a>
+            <a href="/projects" class="footer-link">精选项目全目录</a>
+            <span class="footer-link" style="opacity: 0.85; cursor: default;">微信公众号：YourwayAI</span>
           </div>
           <div class="footer-links-column">
             <h3 class="footer-column-title">生态推荐</h3>

@@ -136,7 +136,7 @@ def categorize_article(info):
     prompt = f"""
     Analyze the following markdown content of a WeChat article.
     1. Determine the most appropriate category from this exact list: {', '.join(categories)}.
-       If it's an open-source project/tool, select the matching category. If unsure, default to '💡 微信专栏'.
+       If it's an open-source project/tool, select the matching category. If unsure, default to '📂 实用与提效'.
     2. Generate a highly concise sidebar title for this article in the format 'ProjectName — Subtitle'.
        - For open-source tools, use 'ToolName — Short Description' (e.g., 'Ghost — 开源博客系统').
        - For articles/columns, use 'Keyword — Short Description' (e.g., 'AI 订阅 — 支付宝付款攻略').
@@ -180,11 +180,11 @@ def categorize_article(info):
         if ai_response.endswith('```'): ai_response = ai_response[:-3]
         
         result = json.loads(ai_response.strip())
-        cat = result.get('category', '💡 微信专栏')
+        cat = result.get('category', '📂 实用与提效')
         short_title = result.get('short_title', info['title'][:15])
         description = result.get('description', f"来自 {info['author']} 的优选资源与文章推荐")
         
-        valid_cat = cat if any(c in cat for c in categories) else '💡 微信专栏'
+        valid_cat = cat if any(c in cat for c in categories) else '📂 实用与提效'
         print(f"AI Category Selected: {valid_cat}, Short Title: {short_title}")
         return valid_cat, short_title, description
     except Exception as e:
@@ -245,13 +245,17 @@ def save_article(info, category, short_title, description):
             
     icon_val = f"https://github.com/{owner}.png" if github_url else '💡'
 
+    # Safely escape YAML frontmatter string values
+    def ym_str(s):
+        return json.dumps(str(s).strip(), ensure_ascii=False)
+
     content = f"""---
-title: {info['title'][:50]}
-short_title: '{short_title}'
-description: '{description}'
-icon: '{icon_val}'
-category: '{category}'
-date: '{current_date}'
+title: {ym_str(info['title'])}
+short_title: {ym_str(short_title)}
+description: {ym_str(description)}
+icon: {ym_str(icon_val)}
+category: {ym_str(category)}
+date: {ym_str(current_date)}
 ---
 # {info['title']}
 
@@ -338,8 +342,13 @@ if __name__ == "__main__":
     category, short_title, description = categorize_article(info)
     filename = save_article(info, category, short_title, description)
     update_config(info, filename, category, short_title)
-    git_push(info)
     
-    # Run sitemap build
-    subprocess.run(["npm", "run", "build:sitemap"], check=True)
+    # Run sitemap build BEFORE git push so changes are included in the commit
+    print("Updating sitemap and projects catalog...")
+    try:
+        subprocess.run(["npm", "run", "build:sitemap"], check=True)
+    except Exception as e:
+        print(f"Warning: sitemap build failed: {e}")
+
+    git_push(info)
     print("Done!")

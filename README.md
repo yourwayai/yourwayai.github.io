@@ -39,7 +39,7 @@ npm run add-tool -- https://github.com/用户名/仓库名
 ### 引擎 2：微信公众号长文极限破壁收录
 用来对付反爬手段极其严苛的微信公众号文章体系。
 ```bash
-npm run add-wx -- https://mp.weixin.qq.com/s/xxxxxx
+npm run add-wx-local -- https://mp.weixin.qq.com/s/xxxxxx
 ```
 **它会自动做这些事**：
 1. 在您本地高信誉度 IP 下直穿微信防爬火墙。
@@ -74,7 +74,7 @@ YourwayAI/
 │   └── public/                  # 专属 Logo 及公共资源
 ├── scripts/            
 │   ├── add_tool.py              # GitHub 收录引擎器
-│   └── add_wx.py                # 微信文章破壁引擎器
+│   └── add_wx_local.py          # 微信文章破壁引擎器
 └── package.json                 # 快捷终端命令定义
 ```
 

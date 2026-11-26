@@ -160,7 +160,7 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 
 ## 📂 实用与提效 (36)
 
-- [**Mister Download**](/tools/wx_20261126232018.html)：来自 YourwayAI 的优选资源与文章推荐
+- [**Mister Download Manager — Rust版IDM**](/tools/wx_20261126232018.html)：纯 Rust 从零重写的开源下载管理器，像素级复刻 IDM 界面，支持 HTTP/BT/视频三合一与多连接加速
 - [**Fox — Markdown AI 伴读工具**](/tools/wx_20261126231652.html)：yourwayai 开源的 Markdown AI 伴读工具，提供 Zed 分栏阅读、零复制划选提问与透明 Token 预算管理
 - [**Google Maps Scraper — 地图数据采集**](/tools/wx_20261126231446.html)：用 Go 编写的开源 Google Maps 数据采集工具，支持 CLI、Web UI、REST API、SaaS 部署与 AI Agent Skill 原生集成
 - [**FluentRead — 开源双语阅读扩展**](/tools/wx_20261126231048.html)：开源浏览器双语翻译扩展，覆盖网页/文档/图片/视频全模态翻译，支持本地 Ollama 模型与 AI 读书卡

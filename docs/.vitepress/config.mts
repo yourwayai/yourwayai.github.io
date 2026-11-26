@@ -283,7 +283,7 @@ export default withPwa(defineConfig({
           { text: 'FluentRead — 开源双语阅读扩展', link: '/tools/wx_20261126231048' },
           { text: 'Google Maps Scraper — 地图数据采集', link: '/tools/wx_20261126231446' },
           { text: 'Fox — Markdown AI 伴读工具', link: '/tools/wx_20261126231652' },
-          { text: 'Mister Download', link: '/tools/wx_20261126232018' }
+          { text: 'Mister Download Manager — Rust版IDM', link: '/tools/wx_20261126232018' }
         ]
       },
       {

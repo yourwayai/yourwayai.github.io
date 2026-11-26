@@ -278,7 +278,7 @@ export default withPwa(defineConfig({
           { text: 'Pagekin — 本地 AI 写作桌面', link: '/tools/wx_20261111123332' },
           { text: 'Horizon — AI双语新闻雷达简报', link: '/tools/wx_20261116221033' },
           { text: 'FluentRead — 开源双语阅读扩展', link: '/tools/wx_20261126231048' },
-          { text: '找客户、做调研、搞数据还在手工', link: '/tools/wx_20261126231446' }
+          { text: 'Google Maps Scraper — 地图数据采集', link: '/tools/wx_20261126231446' }
         ]
       },
       {

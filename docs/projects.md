@@ -9,8 +9,9 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 
 ---
 
-## 🤖 AI 与智能体 (82)
+## 🤖 AI 与智能体 (83)
 
+- [**OpenMausBot — 多Bot协作桌面端**](/tools/wx_20261126231549.html)：开源本地优先的多 AI Bot 协作桌面端，每个联系人都是独立 Agent 并自带云电脑或本地桌面并行工作
 - [**Modern Web Guidance — 现代Web技能包**](/tools/wx_20261126231333.html)：Chrome/Edge/Firefox/MDN 联合发布的 AI 编码 Agent 现代 Web 技能包，含 250+ 特性指南与 Legacy Scan 审计
 - [**TokenEconomizer — 编码Agent省钱插件**](/tools/wx_20261126231213.html)：微软开源的编码 Agent 经验驱动黑盒成本控制插件，通过跨会话记忆、工具剪枝与循环防护降低 18-31% 运行成本
 - [**moli — Agent级Rust无头浏览器**](/tools/wx_20261116223828.html)：专为 AI Agent 从零打造的 Rust 无头浏览器，内存仅 92 MiB，支持语义树直接提取、按需布局渲染与 CDP/BiDi 兼容。
@@ -155,9 +156,8 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 - [**Memos — 碎片化灵感笔记**](/tools/memos.html)：轻量的带有本地数据主权的碎片化灵感速记与状态共享引擎。
 - [**Outline — 团队 Wiki 知识库**](/tools/outline.html)：开源且美观的团队 Wiki 与知识库平台，完美适配现代协作工作流。
 
-## 📂 实用与提效 (35)
+## 📂 实用与提效 (34)
 
-- [**OpenMausBot：开源「**](/tools/wx_20261126231549.html)：来自 YourwayAI 的优选资源与文章推荐
 - [**Google Maps Scraper — 地图数据采集**](/tools/wx_20261126231446.html)：用 Go 编写的开源 Google Maps 数据采集工具，支持 CLI、Web UI、REST API、SaaS 部署与 AI Agent Skill 原生集成
 - [**FluentRead — 开源双语阅读扩展**](/tools/wx_20261126231048.html)：开源浏览器双语翻译扩展，覆盖网页/文档/图片/视频全模态翻译，支持本地 Ollama 模型与 AI 读书卡
 - [**Horizon — AI双语新闻雷达简报**](/tools/wx_20261116221033.html)：开源 AI 驱动的新闻雷达与简报系统，通过 Profile 编辑流水线聚合 RSS 与多平台资讯，自动去重评分并生成每日双语简报。

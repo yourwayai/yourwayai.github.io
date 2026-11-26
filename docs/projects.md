@@ -158,7 +158,7 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 
 ## 📂 实用与提效 (35)
 
-- [**Fox：yourwayai 开**](/tools/wx_20261126231652.html)：来自 YourwayAI 的优选资源与文章推荐
+- [**Fox — Markdown AI 伴读工具**](/tools/wx_20261126231652.html)：yourwayai 开源的 Markdown AI 伴读工具，提供 Zed 分栏阅读、零复制划选提问与透明 Token 预算管理
 - [**Google Maps Scraper — 地图数据采集**](/tools/wx_20261126231446.html)：用 Go 编写的开源 Google Maps 数据采集工具，支持 CLI、Web UI、REST API、SaaS 部署与 AI Agent Skill 原生集成
 - [**FluentRead — 开源双语阅读扩展**](/tools/wx_20261126231048.html)：开源浏览器双语翻译扩展，覆盖网页/文档/图片/视频全模态翻译，支持本地 Ollama 模型与 AI 读书卡
 - [**Horizon — AI双语新闻雷达简报**](/tools/wx_20261116221033.html)：开源 AI 驱动的新闻雷达与简报系统，通过 Profile 编辑流水线聚合 RSS 与多平台资讯，自动去重评分并生成每日双语简报。

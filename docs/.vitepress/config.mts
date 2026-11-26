@@ -84,7 +84,7 @@ export default withPwa(defineConfig({
     // 网站左侧的分类侧边栏
     sidebar: [
       {
-        text: '🤖 AI 与智能体 (81)',
+        text: '🤖 AI 与智能体 (82)',
         collapsed: false,
         items: [
           { text: 'Jellyfish — AI 短剧生产工作台', link: '/tools/wx_20260518005533' },
@@ -167,7 +167,8 @@ export default withPwa(defineConfig({
           { text: 'Magpie — 编程助手跨模型网关', link: '/tools/wx_20261116220818' },
           { text: 'HyperFrames — HTML视频渲染引擎', link: '/tools/wx_20261116223616' },
           { text: 'moli — Agent级Rust无头浏览器', link: '/tools/wx_20261116223828' },
-          { text: 'TokenEconomizer — 编码Agent省钱插件', link: '/tools/wx_20261126231213' }
+          { text: 'TokenEconomizer — 编码Agent省钱插件', link: '/tools/wx_20261126231213' },
+          { text: 'Modern Web Guidance — 现代Web技能包', link: '/tools/wx_20261126231333' }
         ]
       },
       {
@@ -241,7 +242,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (34)',
+        text: '📂 实用与提效 (33)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -276,8 +277,7 @@ export default withPwa(defineConfig({
           { text: 'Trackr — 开源实时公交App', link: '/tools/wx_20261111122552' },
           { text: 'Pagekin — 本地 AI 写作桌面', link: '/tools/wx_20261111123332' },
           { text: 'Horizon — AI双语新闻雷达简报', link: '/tools/wx_20261116221033' },
-          { text: 'FluentRead — 开源双语阅读扩展', link: '/tools/wx_20261126231048' },
-          { text: 'Modern Web Guid', link: '/tools/wx_20261126231333' }
+          { text: 'FluentRead — 开源双语阅读扩展', link: '/tools/wx_20261126231048' }
         ]
       },
       {

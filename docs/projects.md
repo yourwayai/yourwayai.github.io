@@ -9,8 +9,9 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 
 ---
 
-## 🤖 AI 与智能体 (83)
+## 🤖 AI 与智能体 (84)
 
+- [**PiBot — 多Agent团队桌面端**](/tools/wx_20261126231757.html)：开源本地优先多 Agent 团队桌面端，支持群聊分工、沙箱执行、审批审计与手机/Runner E2E 加密远程协作
 - [**OpenMausBot — 多Bot协作桌面端**](/tools/wx_20261126231549.html)：开源本地优先的多 AI Bot 协作桌面端，每个联系人都是独立 Agent 并自带云电脑或本地桌面并行工作
 - [**Modern Web Guidance — 现代Web技能包**](/tools/wx_20261126231333.html)：Chrome/Edge/Firefox/MDN 联合发布的 AI 编码 Agent 现代 Web 技能包，含 250+ 特性指南与 Legacy Scan 审计
 - [**TokenEconomizer — 编码Agent省钱插件**](/tools/wx_20261126231213.html)：微软开源的编码 Agent 经验驱动黑盒成本控制插件，通过跨会话记忆、工具剪枝与循环防护降低 18-31% 运行成本
@@ -156,9 +157,8 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 - [**Memos — 碎片化灵感笔记**](/tools/memos.html)：轻量的带有本地数据主权的碎片化灵感速记与状态共享引擎。
 - [**Outline — 团队 Wiki 知识库**](/tools/outline.html)：开源且美观的团队 Wiki 与知识库平台，完美适配现代协作工作流。
 
-## 📂 实用与提效 (36)
+## 📂 实用与提效 (35)
 
-- [**PiBot：开源「本地优先多**](/tools/wx_20261126231757.html)：来自 YourwayAI 的优选资源与文章推荐
 - [**Fox — Markdown AI 伴读工具**](/tools/wx_20261126231652.html)：yourwayai 开源的 Markdown AI 伴读工具，提供 Zed 分栏阅读、零复制划选提问与透明 Token 预算管理
 - [**Google Maps Scraper — 地图数据采集**](/tools/wx_20261126231446.html)：用 Go 编写的开源 Google Maps 数据采集工具，支持 CLI、Web UI、REST API、SaaS 部署与 AI Agent Skill 原生集成
 - [**FluentRead — 开源双语阅读扩展**](/tools/wx_20261126231048.html)：开源浏览器双语翻译扩展，覆盖网页/文档/图片/视频全模态翻译，支持本地 Ollama 模型与 AI 读书卡

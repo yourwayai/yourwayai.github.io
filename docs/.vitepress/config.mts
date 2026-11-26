@@ -84,7 +84,7 @@ export default withPwa(defineConfig({
     // 网站左侧的分类侧边栏
     sidebar: [
       {
-        text: '🤖 AI 与智能体 (83)',
+        text: '🤖 AI 与智能体 (84)',
         collapsed: false,
         items: [
           { text: 'Jellyfish — AI 短剧生产工作台', link: '/tools/wx_20260518005533' },
@@ -169,7 +169,8 @@ export default withPwa(defineConfig({
           { text: 'moli — Agent级Rust无头浏览器', link: '/tools/wx_20261116223828' },
           { text: 'TokenEconomizer — 编码Agent省钱插件', link: '/tools/wx_20261126231213' },
           { text: 'Modern Web Guidance — 现代Web技能包', link: '/tools/wx_20261126231333' },
-          { text: 'OpenMausBot — 多Bot协作桌面端', link: '/tools/wx_20261126231549' }
+          { text: 'OpenMausBot — 多Bot协作桌面端', link: '/tools/wx_20261126231549' },
+          { text: 'PiBot — 多Agent团队桌面端', link: '/tools/wx_20261126231757' }
         ]
       },
       {
@@ -243,7 +244,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (36)',
+        text: '📂 实用与提效 (35)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -280,8 +281,7 @@ export default withPwa(defineConfig({
           { text: 'Horizon — AI双语新闻雷达简报', link: '/tools/wx_20261116221033' },
           { text: 'FluentRead — 开源双语阅读扩展', link: '/tools/wx_20261126231048' },
           { text: 'Google Maps Scraper — 地图数据采集', link: '/tools/wx_20261126231446' },
-          { text: 'Fox — Markdown AI 伴读工具', link: '/tools/wx_20261126231652' },
-          { text: 'PiBot：开源「本地优先多 ', link: '/tools/wx_20261126231757' }
+          { text: 'Fox — Markdown AI 伴读工具', link: '/tools/wx_20261126231652' }
         ]
       },
       {

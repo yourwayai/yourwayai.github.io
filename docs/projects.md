@@ -155,7 +155,7 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 
 ## 📂 实用与提效 (33)
 
-- [**FluentRead：开源双语**](/tools/wx_20261126231048.html)：来自 YourwayAI 的优选资源与文章推荐
+- [**FluentRead — 开源双语阅读扩展**](/tools/wx_20261126231048.html)：开源浏览器双语翻译扩展，覆盖网页/文档/图片/视频全模态翻译，支持本地 Ollama 模型与 AI 读书卡
 - [**Horizon — AI双语新闻雷达简报**](/tools/wx_20261116221033.html)：开源 AI 驱动的新闻雷达与简报系统，通过 Profile 编辑流水线聚合 RSS 与多平台资讯，自动去重评分并生成每日双语简报。
 - [**Pagekin — 本地 AI 写作桌面**](/tools/wx_20261111123332.html)：专为长篇小说与网文连载打造的本地优先 AI 写作桌面软件，覆盖设定、大纲蓝图、正文生成、AI 审稿到版本历史定稿全工作流，支持多模型与 Skill 插件。
 - [**Trackr — 开源实时公交App**](/tools/wx_20261111122552.html)：基于 Kotlin 与 Compose Material 3 构建的开源 Android 实时公交追踪应用，支持高德 3D 底图、免 Key 矢量示意图兜底、雷达与桌面微件。

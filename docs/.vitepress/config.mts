@@ -242,7 +242,7 @@ export default withPwa(defineConfig({
         ]
       },
       {
-        text: '📂 实用与提效 (34)',
+        text: '📂 实用与提效 (35)',
         collapsed: false,
         items: [
           { text: 'Stirling-PDF — 全能 PDF 工具箱', link: '/tools/stirling-pdf' },
@@ -278,7 +278,8 @@ export default withPwa(defineConfig({
           { text: 'Pagekin — 本地 AI 写作桌面', link: '/tools/wx_20261111123332' },
           { text: 'Horizon — AI双语新闻雷达简报', link: '/tools/wx_20261116221033' },
           { text: 'FluentRead — 开源双语阅读扩展', link: '/tools/wx_20261126231048' },
-          { text: 'Google Maps Scraper — 地图数据采集', link: '/tools/wx_20261126231446' }
+          { text: 'Google Maps Scraper — 地图数据采集', link: '/tools/wx_20261126231446' },
+          { text: 'OpenMausBot：开源「', link: '/tools/wx_20261126231549' }
         ]
       },
       {

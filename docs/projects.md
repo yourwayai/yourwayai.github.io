@@ -155,8 +155,9 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 - [**Memos — 碎片化灵感笔记**](/tools/memos.html)：轻量的带有本地数据主权的碎片化灵感速记与状态共享引擎。
 - [**Outline — 团队 Wiki 知识库**](/tools/outline.html)：开源且美观的团队 Wiki 与知识库平台，完美适配现代协作工作流。
 
-## 📂 实用与提效 (34)
+## 📂 实用与提效 (35)
 
+- [**OpenMausBot：开源「**](/tools/wx_20261126231549.html)：来自 YourwayAI 的优选资源与文章推荐
 - [**Google Maps Scraper — 地图数据采集**](/tools/wx_20261126231446.html)：用 Go 编写的开源 Google Maps 数据采集工具，支持 CLI、Web UI、REST API、SaaS 部署与 AI Agent Skill 原生集成
 - [**FluentRead — 开源双语阅读扩展**](/tools/wx_20261126231048.html)：开源浏览器双语翻译扩展，覆盖网页/文档/图片/视频全模态翻译，支持本地 Ollama 模型与 AI 读书卡
 - [**Horizon — AI双语新闻雷达简报**](/tools/wx_20261116221033.html)：开源 AI 驱动的新闻雷达与简报系统，通过 Profile 编辑流水线聚合 RSS 与多平台资讯，自动去重评分并生成每日双语简报。

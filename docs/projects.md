@@ -9,8 +9,9 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 
 ---
 
-## 🤖 AI 与智能体 (80)
+## 🤖 AI 与智能体 (81)
 
+- [**TokenEconomizer — 编码Agent省钱插件**](/tools/wx_20261126231213.html)：微软开源的编码 Agent 经验驱动黑盒成本控制插件，通过跨会话记忆、工具剪枝与循环防护降低 18-31% 运行成本
 - [**moli — Agent级Rust无头浏览器**](/tools/wx_20261116223828.html)：专为 AI Agent 从零打造的 Rust 无头浏览器，内存仅 92 MiB，支持语义树直接提取、按需布局渲染与 CDP/BiDi 兼容。
 - [**HyperFrames — HTML视频渲染引擎**](/tools/wx_20261116223616.html)：专为 AI Agent 打造的代码生视频引擎，将 HTML/CSS/GSAP 动画直接编译渲染为确定性 MP4 视频，支持帧级回溯与版本控制。
 - [**Magpie — 编程助手跨模型网关**](/tools/wx_20261116220818.html)：让 Claude Code、Codex、Gemini CLI 等所有编程助手任意调用 DeepSeek、Kimi、GLM 等主流模型，支持配额耗尽静默切号与本地密钥遮罩。
@@ -153,9 +154,8 @@ description: YourwayAI 收录的所有优质开源项目、极客工具与技术
 - [**Memos — 碎片化灵感笔记**](/tools/memos.html)：轻量的带有本地数据主权的碎片化灵感速记与状态共享引擎。
 - [**Outline — 团队 Wiki 知识库**](/tools/outline.html)：开源且美观的团队 Wiki 与知识库平台，完美适配现代协作工作流。
 
-## 📂 实用与提效 (34)
+## 📂 实用与提效 (33)
 
-- [**TokenEconomizer**](/tools/wx_20261126231213.html)：来自 YourwayAI 的优选资源与文章推荐
 - [**FluentRead — 开源双语阅读扩展**](/tools/wx_20261126231048.html)：开源浏览器双语翻译扩展，覆盖网页/文档/图片/视频全模态翻译，支持本地 Ollama 模型与 AI 读书卡
 - [**Horizon — AI双语新闻雷达简报**](/tools/wx_20261116221033.html)：开源 AI 驱动的新闻雷达与简报系统，通过 Profile 编辑流水线聚合 RSS 与多平台资讯，自动去重评分并生成每日双语简报。
 - [**Pagekin — 本地 AI 写作桌面**](/tools/wx_20261111123332.html)：专为长篇小说与网文连载打造的本地优先 AI 写作桌面软件，覆盖设定、大纲蓝图、正文生成、AI 审稿到版本历史定稿全工作流，支持多模型与 Skill 插件。
